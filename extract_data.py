@@ -1,8 +1,11 @@
 # -*- coding: utf-8 -*-
 """
-鐵人賽文章與圖片數據萃取工具
-從 RSS feed 中解析所有 28 篇（含番外）文章、所有圖片 URL、說明文字（Caption），
-並關聯至本地 AI 圖，為 GitHub Pages 網頁產生結構化 ironman_data.json。
+鐵人賽文章與圖片數據萃取工具 (升級版)
+功能：
+1. 自動連線至 iThome 官方 RSS Feed (https://ithelp.ithome.com.tw/rss/series/9607) 抓取最新文章。
+2. 同時儲存/更新本地快取 series_rss.xml。
+3. 解析全系列文章、圖片 URL、說明文字 (Caption)，並自動清洗非必要字樣。
+4. 輸出結構化 ironman_data.json，並自動同步產出免 CORS 的 data.js。
 """
 
 import xml.etree.ElementTree as ET
@@ -10,34 +13,59 @@ import re
 import json
 import os
 import sys
+import requests
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 
-RSS_FILE = r"C:\Users\Anubis.Chan\.gemini\antigravity-ide\brain\440bf893-6f5a-4893-a42d-32c59e06cd4e\.system_generated\steps\126\content.md"
-TARGET_DIR = r"C:\Users\Anubis.Chan\Downloads\鐵人賽\實驗場所\鐵人賽網頁"
+RSS_URL = "https://ithelp.ithome.com.tw/rss/series/9607"
+TARGET_DIR = os.path.dirname(os.path.abspath(__file__))
+CACHE_XML = os.path.join(TARGET_DIR, "series_rss.xml")
 OUTPUT_JSON = os.path.join(TARGET_DIR, "ironman_data.json")
+OUTPUT_JS = os.path.join(TARGET_DIR, "data.js")
 
 def clean_caption(caption: str) -> str:
     """清理圖說，移除 Midjourney 示意圖字樣及多餘標點"""
     cap = re.sub(r'[*_~`#]', '', caption)
-    # 移除 (Midjourney 示意圖) / （Midjourney 示意圖） / midjourney示意圖 / Midjourney概念示意圖 等
     cap = re.sub(r'[\(（]\s*midjourney\s*.*?[\)）]', '', cap, flags=re.IGNORECASE)
     cap = re.sub(r'midjourney\s*示意圖', '', cap, flags=re.IGNORECASE)
     cap = re.sub(r'midjourney\s*概念示意圖', '', cap, flags=re.IGNORECASE)
     cap = re.sub(r'midjourney', '', cap, flags=re.IGNORECASE)
-    # 清理多餘空白及符號
     cap = re.sub(r'▲\s*', '', cap)
     cap = cap.strip(' ：:，,⋯…-–—')
     return cap.strip()
 
-def run_extraction():
-    print("正在讀取 RSS 來源資料...")
-    with open(RSS_FILE, "r", encoding="utf-8") as f:
-        text = f.read()
+def fetch_rss_content() -> str:
+    """取得 RSS XML 內容：優先從線上抓取，失敗時讀取本地快取"""
+    print(f"正在從 iThome 官方 RSS 連線抓取最新文章...")
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+    }
+    try:
+        resp = requests.get(RSS_URL, headers=headers, timeout=20)
+        resp.encoding = "utf-8"
+        if resp.status_code == 200 and "<rss" in resp.text:
+            print("✅ 成功取得線上最新 RSS Feed！")
+            with open(CACHE_XML, "w", encoding="utf-8") as f:
+                f.write(resp.text)
+            return resp.text
+        else:
+            print(f"⚠️ 線上請求返回狀態碼 {resp.status_code}，嘗試讀取本地快取...")
+    except Exception as e:
+        print(f"⚠️ 連線線上 RSS 失敗: {e}，嘗試使用本地快取...")
 
-    xml_start = text.find("<?xml")
-    xml_text = text[xml_start:] if xml_start != -1 else text
+    if os.path.exists(CACHE_XML):
+        with open(CACHE_XML, "r", encoding="utf-8") as f:
+            print("📁 讀取本地快取 series_rss.xml 成功。")
+            return f.read()
+
+    raise RuntimeError("無法取得 RSS 資料（線上請求與本地快取皆不可用）！")
+
+def run_extraction():
+    raw_xml = fetch_rss_content()
+
+    xml_start = raw_xml.find("<?xml")
+    xml_text = raw_xml[xml_start:] if xml_start != -1 else raw_xml
 
     root = ET.fromstring(xml_text)
     channel = root.find("channel")
@@ -45,14 +73,14 @@ def run_extraction():
 
     articles = []
 
-    # 本地 AI 圖檔名對應表 (Day 1 ~ Day 28)
+    # 本地 AI 圖檔名對應表 (Day 1 ~ Day 30)
     ai_img_map = {
         1: "day1.png", 2: "day 2.png", 3: "day 3.png", 4: "day 4.png", 5: "day5.png",
         6: "day 6.png", 7: "day7.png", 8: "day 8.png", 9: "day 9.png", 10: "day 10.png",
         11: "day11.png", 12: "day 12.png", 13: "day13.png", 14: "day14.png", 15: "day15.png",
         16: "day 16.png", 17: "day 17.png", 18: "day 18.png", 19: "day 19.png", 20: "day 20.png",
         21: "day 21.png", 22: "day 22.png", 23: "day 23.png", 24: "day 24.png", 25: "day 25.png",
-        26: "day26.png", 27: "day 27.png", 28: "day 28.png"
+        26: "day26.png", 27: "day 27.png", 28: "day 28.png", 29: "day 29.png", 30: "day 30.png"
     }
 
     # 故事化案件卷宗分類 (Case Arcs)
@@ -96,10 +124,12 @@ def run_extraction():
             "id": "CASE-ARC-06",
             "name": "檔案卷宗 VI：終極共識與時間哲學",
             "codename": "TIME MATRIX & ULTIMATE ALIGNMENT",
-            "days": [25, 26, 27, 28],
+            "days": [25, 26, 27, 28, 29, 30],
             "desc": "建立 GitHub Pages 戰略發布首頁、賽博時空簽證護照計時器，深入辯證人機犯錯光譜——到底錯的是我，還是這個世界？唯有溝通能達成共識。"
         }
     }
+
+    img_pattern = re.compile(r'<img[^>]+src=[\'"]([^\'"]+)[\'"][^>]*(?:alt=[\'"]([^\'"]*)[\'"])?[^>]*>', re.IGNORECASE)
 
     for item in items:
         title = item.find("title").text or ""
@@ -119,16 +149,8 @@ def run_extraction():
         if not clean_title:
             clean_title = title
 
-        # 提取文章中所有的圖片區塊
-        # 尋找 <p><img ...><br /><em>...</em></p> 或獨立 <img> 與 <em/figcaption>
-        # 使用正規表達式匹配 img 標籤與後續的圖說
-        img_pattern = re.compile(r'<img[^>]+src=[\'"]([^\'"]+)[\'"][^>]*(?:alt=[\'"]([^\'"]*)[\'"])?[^>]*>', re.IGNORECASE)
-        
-        # 尋找所有 <img> 及其周圍的 <em> 圖說
-        # 尋找片段切片
+        # 提取文章中所有的圖片與圖說
         image_entries = []
-        
-        # 用正則切分找尋 <img ...> 及其鄰近的 <em>
         splits = re.split(r'(<img[^>]+>)', html)
         curr_img_src = None
         curr_img_alt = None
@@ -139,11 +161,8 @@ def run_extraction():
                 curr_img_src = img_m.group(1)
                 curr_img_alt = img_m.group(2) or ""
             elif curr_img_src:
-                # 在後續文字找 <em>...</em> 或圖說文字
                 em_m = re.search(r'<em>(.*?)</em>', part, re.DOTALL | re.IGNORECASE)
                 raw_caption = em_m.group(1).strip() if em_m else curr_img_alt
-                
-                # 清洗圖說
                 caption = clean_caption(raw_caption)
                 if not caption or len(caption) < 2:
                     caption = clean_caption(curr_img_alt)
@@ -159,7 +178,6 @@ def run_extraction():
                 curr_img_src = None
                 curr_img_alt = None
 
-        # 若沒抓到但有 img，用簡易模式抓
         if not image_entries:
             for match in img_pattern.finditer(html):
                 src = match.group(1)
@@ -172,13 +190,15 @@ def run_extraction():
                 })
 
         # 找出本篇的第一張 AI 概念圖
-        ai_concept_img = None
-        if image_entries:
-            ai_concept_img = image_entries[0]
+        ai_concept_img = image_entries[0] if image_entries else None
 
-        # 匹配本地 AI 圖檔
+        # 匹配本地 AI 圖檔（若本地檔案存在則關聯）
         local_ai_filename = ai_img_map.get(day_num, None)
-        local_ai_path = f"assets/ai-images/{local_ai_filename}" if local_ai_filename else None
+        local_ai_path = None
+        if local_ai_filename:
+            candidate_path = os.path.join(TARGET_DIR, "assets", "ai-images", local_ai_filename)
+            if os.path.exists(candidate_path):
+                local_ai_path = f"assets/ai-images/{local_ai_filename}"
 
         # 歸屬卷宗
         assigned_arc = None
@@ -209,24 +229,36 @@ def run_extraction():
             "images_count": len(image_entries)
         })
 
-    # 按照 Day 排序 (Day 1 到 Day 28)
+    # 按照 Day 排序 (Day 1 到 Day XX)
     articles.sort(key=lambda x: (x["day"] if x["day"] is not None else 999, 1 if x["is_extra"] else 0))
 
     final_payload = {
         "series_title": "學生身份如何每天透過Vibe Coding每天做跨領域的創新項目",
         "series_url": "https://ithelp.ithome.com.tw/2026ironman/signup/user/20184140",
-        "rss_url": "https://ithelp.ithome.com.tw/rss/series/9607",
-        "total_days": 28,
+        "rss_url": RSS_URL,
+        "total_days": max((a["day"] for a in articles if a["day"] is not None), default=28),
         "total_articles": len(articles),
         "case_arcs": case_arcs,
         "articles": articles
     }
 
+    # 1. 寫入 ironman_data.json
     with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
         json.dump(final_payload, f, ensure_ascii=False, indent=2)
 
-    print(f"成功萃取 {len(articles)} 篇圖文數據至 {OUTPUT_JSON}！")
-    print(f"包含 28 天 AI 線索圖與全部 {sum(len(a['all_images']) for a in articles)} 張文章配圖。")
+    # 2. 同步產出 data.js (免除 CORS 限制)
+    json_str = json.dumps(final_payload, ensure_ascii=False, indent=2)
+    with open(OUTPUT_JS, "w", encoding="utf-8") as f:
+        f.write(f"// 鐵人賽系列圖文數據庫 (Series 9607) - 自動由 RSS 萃取生成\nwindow.IRONMAN_DATA = {json_str};\n")
+
+    total_imgs = sum(len(a["all_images"]) for a in articles)
+    print("==================================================")
+    print(f"🎉 RSS 更新完成！")
+    print(f"📊 總收錄文章數：{len(articles)} 篇")
+    print(f"🖼️ 總收錄展示配圖：{total_imgs} 張")
+    print(f"💾 已更新：{OUTPUT_JSON}")
+    print(f"🌐 已更新：{OUTPUT_JS}")
+    print("==================================================")
 
 if __name__ == "__main__":
     run_extraction()

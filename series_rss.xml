@@ -1,0 +1,3598 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:media="http://search.yahoo.com/mrss/">
+    <channel>
+        <title>學生身份如何每天透過Vibe Coding每天做跨領域的創新項目 :: 2026 iThome 鐵人賽</title>
+        <link>https://ithelp.ithome.com.tw/users/20184140/ironman</link>
+        <description><![CDATA[今天可能開發一個教育領域的Chrome擴充插件，明天可能幫一間工程公司設計一個線上網站，後天關於AI虛擬角色的議題可能設計一個自動化日報系統，儘管我自己本身大...]]></description>
+        <atom:link href="https://ithelp.ithome.com.tw/users/20184140/ironman" rel="self"></atom:link>
+                    <image>
+                <url>https://ithelp.ithome.com.tw/images/ironman/18th/fb.jpg</url>
+                <title>學生身份如何每天透過Vibe Coding每天做跨領域的創新項目 :: 2026 iThome 鐵人賽</title>
+                <link>https://ithelp.ithome.com.tw/users/20184140/ironman</link>
+            </image>
+                <language>zh-TW</language>
+        <lastBuildDate>Sun, 11 Oct 2026 20:02:30 +0800</lastBuildDate>
+                    <item>
+                <title>Day 28 錯的到底是我！還是這個世界！！！（？）</title>
+                <link>https://ithelp.ithome.com.tw/articles/10423008?sc=rss.iron</link>
+                <guid isPermaLink="true">https://ithelp.ithome.com.tw/articles/10423008?sc=rss.iron</guid>
+                <description><![CDATA[<h1>Day 28錯的到底是我！還是這個世界！！！（？）</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261010...]]></description>
+                                    <content:encoded><![CDATA[<h1>Day 28錯的到底是我！還是這個世界！！！（？）</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261010/201841402e6gqlv4oz.png" alt="我們要多溝通才......不是這種啦！！！！！！midjourney示意圖" /><br />
+<em> 圖 1：我們要多溝通才不是這種啦！！！！！！（Midjourney 示意圖）</em></p>
+
+<blockquote>
+<p>雖然口氣這麼大，<br />
+但去到最後這幾天我才發現<br />
+出大事了！<br />
+鐵人賽 vibe coding 的文章內容<br />
+還要處理驗收 AI 產出，<br />
+快速迭代中維持程式碼品質的問題！<br />
+這個麻煩就大了，<br />
+因為我沒有說過怎樣與 AI 溝通改代碼這件事，<br />
+儘管有介紹過如何根據已有 GitHub 專案建立及修改新的專案，<br />
+但是自己過程當中所有失敗的經驗都沒有說，<br />
+就變成這個內容比較少呢～</p>
+</blockquote>
+<hr />
+<h2>人還是會經常犯錯的：從兩篇異常的瀏覽量談起</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261010/20184140cCZHE6JTTU.png" alt="看文章瀏覽量，咦！居然是有兩篇閲讀量這麽異常嗎！" /><br />
+<em> 圖 2：看文章瀏覽量，咦！居然是有兩篇閱讀量這麼異常嗎！</em></p>
+
+<p>人還是會經常犯錯的，就好像最近在調查自己哪一篇文章閱讀瀏覽數量最多的時候，發現有兩篇文章異常暴衝：</p>
+<ol>
+<li>一篇是談及 <a href="https://ithelp.ithome.com.tw/articles/10411903">AI 虛擬伴侶（Day 4）</a>
+</li>
+<li>另一篇則是談及 <a href="https://ithelp.ithome.com.tw/articles/10415392">RAG 向量檢索與文學宇宙（Day 11）</a>
+</li>
+</ol>
+<p>談及 AI 虛擬伴侶的我還是比較有信心，另一篇是談及 RAG，因為發現一旦人多起來那麼我說的東西便不能那麼模棱兩可或者提供錯誤的資訊，當然啦後來是發現那篇文章我應該有很多地方都寫錯了，儘管我自己認為 Embedding 模型應該是能夠影響大型語言模型裏面的運算，但後來發現 RAG 其實主要做的是檢索完條目直接塞進 prompt 裏面影響產出，不一定會影響向量空間的部份，但是原來深度糅合 RAG 是真的會做這件事情，所以其實也說對了一半，只是我們用的技術不一定會用到這個</p>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261010/20184140fmH5oDrn5L.png" alt="perplexity只是用了6秒就發現文章有問題了，但多番查證，其實我也說對了一半~" /><br />
+<em> 圖 3：Perplexity 只是用了 6 秒就發現文章有問題了，但多番查證，其實我也說對了一半～</em></p>
+
+<p>所以人工智能要模仿人的智慧的話，那麼 AI 犯錯也是一件很經常會出現的事情，我們在 vibe coding 的過程當中也會經常覺得，AI 最後產出的結果不如理想，或者並不是我們想做出來的效果，其實非常簡單，溝通就可以了！</p>
+<hr />
+<h2>誰對誰錯？Vibe Coding 中人機溝通的兩種不同情況</h2>
+<p>以下是兩種不同的情況：</p>
+<ul>
+<li>
+<strong>情況一</strong>：我們預期中有一個認為對的效果，用 prompt 寫出來，AI 在產出過程當中會運算到另外一種做法會比較貼合我們的效果，最後產出了一個成果，儘管那並不是我們想要的</li>
+<li>
+<strong>情況二</strong>：我們通常下達一個錯的指令，但 AI 運算過後會認為我們似乎想要得到的成果更加傾向於他們曾經學習過網絡上某個挺適合完成這項任務的某個產出形式，儘管產出來的東西與提示詞不同，但卻似乎是我們能夠拿得出手的東西</li>
+</ul>
+<p>從這個例子會發現其實 AI 都在產出一些跟我們 prompt 截然不同的東西，一個是我們下對了 prompt，產出不是我們要的，一個是我們下錯了 prompt，迷迷糊糊剷出了一個我們可以用的，但現在的 AI 技術似乎都已經能夠產出一個肯定可以用的，只是是否合乎我們期待的產出</p>
+<p>像極了要跟人做價值溝通，有人說當指令或者溝通詳細，目標明確，格式明確的話，兩人之間的工作便能夠產生共識</p>
+<hr />
+<h2>建立共識與人機磨合：究竟錯的是誰？</h2>
+<p>與 AI 人機協作的過程中，我們也經常遇到一種情況是儘管我的需求多麼的不合理，儘管我的想法多麼的錯誤，AI 也有機會說出我的想法是不正確的，或者會推測我的意圖用它所知道的形式幫我完成我表達不清晰的工作內容</p>
+<p>可能不是 AI 錯了，可能是我錯了，可能是 AI 錯了，實際上我並沒有錯</p>
+<p>唯有溝通能夠讓我們達成共識，一起產出工作的成果</p>
+<p>當然啦！如果要說人機協作的各種形式，或者說所謂的與 AI溝通的各種模式，其實也有在於我們去了解我們 vibe coding 的各種方法，我們可以透過文字語音圖片程式代碼（聽說還有螢幕監察，但我還沒有用過）來跟 AI 進行交流互動</p>
+<hr />
+<h2>人類開始懂得如何溝通：你該不會是沒有溝通能力的雜魚吧！（？）</h2>
+<p>當交流互動，或者說溝通得多的時候，重點的不是 AI 如何逐漸的認識如何跟你這個麻煩的人類溝通，因為這就涉及記憶的能力了，也跟上下文記憶能力有關，這個花錢技術或者硬體會比較好解決，但是重點是！我們人類開始懂得如何跟 AI 快速的進行溝通，之前要溝通三四次才成功的，現在可能一次就可以了，之前可能要花很長時間才想到 prompt 及規劃這次要做的事情，現在可能兩三分鐘就想到了 vibe coding 工具跟 AI 能夠幫我做什麼事情了</p>
+<p>如此一來產能就提高了！像極了有進行過中文寫作訓練的人隨隨便便就想到兩三千字的文章要如何寫，如何優化自己 vibe coding 快速修改跟迭代的能力，多進行一些溝通的訓練吧！對人也好，對 AI 也好，你該不會是一個沒有溝通能力的雜魚吧！（？）</p>
+<hr />
+<h2> 本篇重點整理</h2>
+<table>
+<thead>
+<tr>
+<th align="left">核心維度</th>
+<th align="left">重點摘要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>何謂對～何謂錯～</strong></td>
+<td align="left">人類也會犯錯，AI 模仿人類智慧也會犯，但是這個錯在 vibe coding 產出內容的領域通常都肯定會產出一些成果，剩下的就只有價值觀的比拼，想法的比拼，是對是錯，並沒有這麼絕對</td>
+</tr>
+<tr>
+<td align="left"><strong>共識的重要性！</strong></td>
+<td align="left">當建立起標準，有同樣的期待，有目標的規劃，那麼 vibe coding 產出內容就能夠有用作評比監察的指標，建立起這樣子的共識，AI 產出的內容才能更加接近我們的共識</td>
+</tr>
+<tr>
+<td align="left"><strong>雜魚！你的溝通能力呢？</strong></td>
+<td align="left">鍛鍊好溝通呢，不單單是人與人之間的練習與訓練，更多的是 vibe coding 的過程，溝通的經驗形成更高的溝通能力，能夠促使 vibe coding 出成果的所需時間變短，迭代次數與時間變短真的要吵起來應該是這個事情吧！我嫌棄 AI 做錯，AI 嫌棄我說錯，但溝通溝通，就是跟你一起作一些事情也是挺香的吧～</td>
+</tr>
+</tbody>
+</table>
+]]></content:encoded>
+                                <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">SakuraEGS</dc:creator>
+                <pubDate>2026-10-10 15:42:25</pubDate>
+                                                                                                                                            </item>
+                    <item>
+                <title>Day 27 時間管理！但我不是大師！不過我有我的想法</title>
+                <link>https://ithelp.ithome.com.tw/articles/10422830?sc=rss.iron</link>
+                <guid isPermaLink="true">https://ithelp.ithome.com.tw/articles/10422830?sc=rss.iron</guid>
+                <description><![CDATA[<h1>Day 27時間管理！但我不是大師！不過我有我的想法</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/2026100...]]></description>
+                                    <content:encoded><![CDATA[<h1>Day 27時間管理！但我不是大師！不過我有我的想法</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261009/20184140eNcARoc2Gq.png" alt="被多重身份撕裂的我......時間管理也要做哦......midjourney示意圖" /><br />
+<em> 圖 1：被多重身份撕裂的我時間管理也要做哦（Midjourney 示意圖）</em></p>
+
+<blockquote>
+<p>說起來，這學期我的身份可真多：<br />
+我是一位學生，<br />
+我是一位作者，<br />
+我是一位幹部，<br />
+我是一位老師，<br />
+我是一位開發者，<br />
+我是一位專案團隊的技術人員</p>
+<p>那麼，我真的有時間嗎要完成這麼多事情的話？</p>
+</blockquote>
+<hr />
+<h2>痛點剖析與多工日常：被多重身份撕裂的真實生活</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261009/201841402mhYelbkFA.png" alt="就算是自我介紹也說超多身份的說~" /><br />
+<em> 圖 2：就算是自我介紹也說超多身份的說～</em></p>
+
+<p>一下子要寫論文，轉個頭來要去 Vibe Coding，拿起手機要回覆訊息，轉個頭去還要備課，靜下來就要開始寫小說跨領域某程度上再進一步走到實務面，就變成是多工處理了，又或者說就是所謂的多重身份</p>
+<p>曾經在科管年會的比賽上面，我們團隊針對未來情景有推測過：未來少子化的社會，成年人在工作上面經常會面臨多工處理的需求可能是用 AI 協助自動化處理重複的事務，也可能是自己同時身兼多職；甚至不排除未來的社會制度允許一個人擁有多份工作，而且多份工作可能是在不同產業當中同時身兼不同的職位</p>
+<p>雖然這聽起來有點離譜但是也不完全是不可能這像是現在斜槓 + 接案工作的未來形態：原本就有工作的人，為了獲得額外報酬及發揮自己擁有 AI 員工所帶來的額外生產力，可以讓自己的 AI 員工完成接來的外部企業工作獲取額外收入</p>
+<p>但是啊！<strong>人是不可能賺取認知外的金錢</strong>，而跨領域這件事情本身會讓我們拓展在不同專業領域當中的認知邊界，從而讓我們只懂得賺一個圈圈的金錢，變成賺取多個圈圈的金錢</p>
+<p>但是我們人類一天只有二十四小時</p>
+<p>AI Agent 似乎是這個狀況的唯一解方，這是我們推測的可能性</p>
+<hr />
+<h2>Vibe Coding 破局解法：賽博時空簽證護照計時器</h2>
+<p>對了，這有點扯遠了，因為這次 Vibe Coding 要做的其實是一個計時器的 Google 瀏覽器網頁插件，然後計算我每一項不同工作所需使用的時間，最後形成一個類似護照的模樣，能夠告訴我每一項工作我都走了多遠</p>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261009/20184140avR4IpO7jN.png" alt="最後導入的呈現效果" /><br />
+<em> 圖 3：賽博龐克時空引渡護照 Chrome 擴充套件實裝效果</em></p>
+
+<h3>核心 Prompt 提煉與模組化規格</h3>
+<p>在與 AI 協作開發這款擴充套件時，我將腦海中對簽證印章與時空旅行的想像，具象化為清晰的需求指令：</p>
+<blockquote>
+<p>建立一個 Chrome 網頁插件：</p>
+<ol>
+<li>浮動窗口像是一張 Passport（Cyberpunk / 未來風 / Glitchcore style）</li>
+<li>會有一個印章造型時鐘</li>
+<li>設定頁面可以（建立／鏈接）Google 試算表</li>
+<li>可以增加項目／選擇已有項目</li>
+<li>選擇項目 + 時鐘按開始就會計算時間，可以暫停，以及完成並記錄在 Google 試算表，並提供 Apps Script 腳本，並引導使用者設定鏈接 Google 試算表</li>
+<li>Passport 一頁一頁上會顯示同樣項目（印章造型）的總時長，點開可以看到詳細的說明</li>
+<li>除了串接 Google 試算表，也可以選擇輸出 CSV 及導入 CSV</li>
+<li>項目可以增加也可以刪除</li>
+</ol>
+</blockquote>
+<p> <em>提示：以上內容結構清晰且直擊核心，直接複製即為標準 Prompt！</em></p>
+<hr />
+<h2>深度反思：我不是時間管理大師，但我有我的 Vibe</h2>
+<p>我自己在時間管理的能力其實非常差，最近雖然有很多不同的身份與工作，但可能有些工作不太熟悉所以要拖很長時間來做，有些工作也容易太投入，雖然有產出，但是投放的時間也會變得意外的長</p>
+<p>但我卻有著一個非常不成熟的想法：<strong>只要是有在做事情，我就在前進，我就在進步</strong></p>
+<p>看見投放時間較少的項目，我會察覺到自己可能對這種工作不太容易感興趣；又或者相反的，我知道我需要投放更多時間在這項工作了</p>
+<p>所以這跟那個未來想像的情景有什麼關係？主要是因為我發現我真的已經進入了多工處理的情況：</p>
+<ul>
+<li>前一個小時我需要當一個作者寫科幻微型小說，</li>
+<li>後一個小時我需要當活動幹部洽談活動的內容，</li>
+<li>再後一個小時我需要在社團課程上面教新生們用 micro:bit</li>
+</ul>
+<p>這種身份的跳躍已經逐漸成為了我日常的生活</p>
+<p>當然我還是期待自己能夠製作出一個數位分身，在我處理一個工作的時候，數位分身同時在處理另外一項工作但是現在的工作很多時候都需要我個人的創造力同樣是身為助教，這個禮拜我可能重點是準備教材，下個禮拜重點是寫一系列的技術文章，再後一個禮拜是需要改作業現在我很多的工作都很難找出當中的重複性位置，從而我很難設計相應的 AI 代理幫我完成同樣的工作</p>
+<p>但是這種未來在我的想像是存在的現在的我面臨多工處理的情況，我又能夠如何進行所謂的時間管理？</p>
+<p>或者並沒有所謂的時間管理，又或者這是我的時間管理方式：</p>
+<ul>
+<li>
+<strong>我需要知道我沒有在看手機</strong>
+</li>
+<li>
+<strong>我需要知道我真的有在做我身份裡面需要做的事情</strong>
+</li>
+<li>
+<strong>我似乎很喜歡投放時間在什麼項目上面</strong>
+</li>
+<li>
+<strong>我似乎有什麼事情沒有投放太多時間在上面需要注意</strong>
+</li>
+</ul>
+<p>這跟一般我們做專案管理的邏輯很不一樣從目標反推時間時程但比起這件事情，我更加需要知道個人的成長，也只有這樣才能解決我心裡面的焦慮以及擔心自己能力不足的部份</p>
+<p>對的，儘管我有很多身份，我同時在做多種事情，也真的有一些項目逐漸被完成了；但是比起是否有在限定時間內完成工作，<strong>我更害怕的是我沒有實質記錄我在做事情的時間時鐘</strong></p>
+<p>玩手機看手機睡覺，這在現代年輕人身上是經常會出現的事情儘管我也是一個會玩遊戲的人，別看我現在看起來正正經經的，我可是超喜歡看動漫解說！玩各種手機小遊戲！也玩過一些著名的手機遊戲！也能夠因為太累莫名睡覺睡 12 個小時的人</p>
+<p>這樣的我？真的還有能力成為高生產力的人嗎？</p>
+<p>其實真的未必不行：剩餘的時間一個半小時琢磨出新的微型小說，兩個小時完成作業，兩個小時 Vibe Coding + 寫 iT 邦幫忙文章，一個小時改作業，剩下的時間就是幹部的部份還有吃喝洗澡大概我的一天就這樣子吧～但可能都會動態調整！</p>
+<p>就連我的日常生活也是透過感覺透過 Vibe 去完成各種事情當然，時間的紀錄會讓我對所有事情的著重點有更數據化的說明，讓我的感覺更為強烈，驅使我去完成各種行動</p>
+<p>對了，我是 ENFP，不知道是否跟這個有關？聽說有關，但這好像也是一個偽科學的部份</p>
+<p>時間管理，看似應該嚴肅執行，看似應該按照標準的規範執行；但是對於我來說，要我對我的時間擁有更高的掌控感，似乎設計可以變得更不一樣：</p>
+<p><strong>我要的不是時程表，我要的是給我感覺的時間記錄表！</strong></p>
+<hr />
+<h2>專案成果開源與安裝指引</h2>
+<p>本專案已完整開源於 GitHub，歡迎下載體驗屬於你的賽博簽證護照：</p>
+<ul>
+<li> <strong>賽博時空簽證護照 (Time Matrix Passport)</strong>：<br />
+一款具備未來風/故障藝術視覺印章造型時鐘Google 試算表雲端同步CSV 匯出匯入與各項目總時長統計的 Chrome 網頁外掛<br />
+ <strong>開源專案庫</strong>：<a href="https://github.com/ShiroSakuraEGS/time-matrix-passport.git">https://github.com/ShiroSakuraEGS/time-matrix-passport.git</a>
+</li>
+</ul>
+<h3> Chrome 擴充套件快速安裝步驟</h3>
+<ol>
+<li>進入 GitHub 倉庫下載 ZIP 壓縮包並完成解壓縮（或使用 <code>git clone</code>）</li>
+<li>打開 Google Chrome 瀏覽器，於網址列輸入 <code>chrome://extensions/</code></li>
+<li>開啟右上角的**開發人員模式 (Developer mode)**開關</li>
+<li>點選左上角**載入未封裝項目 (Load unpacked)**，選取解壓縮後的專案資料夾即可立即體驗！</li>
+</ol>
+<hr />
+<h2> 本篇重點整理</h2>
+<table>
+<thead>
+<tr>
+<th align="left">核心維度</th>
+<th align="left">重點摘要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>從跨領域到未來多工潮流</strong></td>
+<td align="left">透過過去參賽的未來情景推測，在少子化與 AI 普及的未來社會中，跨領域特性將實質轉化為多重身份與多工處理藉由 AI 員工平行處理重複性事務，個人的認知邊界得以拓展，在不同產業兼職接案以釋放生產力</td>
+</tr>
+<tr>
+<td align="left"><strong>正視人性與時間轉化</strong></td>
+<td align="left">承認年輕人愛玩手機看解說需要補眠的真實人性，不必苛求成為機械般的時間管理大師關鍵在於透過實質紀錄打破焦慮，將剩餘時段精準聚焦於創作備課與 Coding，踏實累積每一分成長</td>
+</tr>
+<tr>
+<td align="left"><strong>以感知 Vibe重塑時間工具</strong></td>
+<td align="left">跳脫專案管理從目標死板反推時程的傳統框架，以賽博護照與印章為載體，打造能帶來心理掌控感的時間記錄表透過動態感受各身份的時間流向與興趣傾向，用感覺驅使行動，找到與自己和解的高效生活節奏</td>
+</tr>
+</tbody>
+</table>
+]]></content:encoded>
+                                <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">SakuraEGS</dc:creator>
+                <pubDate>2026-10-09 23:45:09</pubDate>
+                                                                                                                                            </item>
+                    <item>
+                <title>Day 26 自己寫的文章已經足夠多了，是時候要去摘一下智慧果實了呢～</title>
+                <link>https://ithelp.ithome.com.tw/articles/10422234?sc=rss.iron</link>
+                <guid isPermaLink="true">https://ithelp.ithome.com.tw/articles/10422234?sc=rss.iron</guid>
+                <description><![CDATA[<h1>Day 26自己寫的文章已經足夠多了，所以我需要一個日報編輯～</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20...]]></description>
+                                    <content:encoded><![CDATA[<h1>Day 26自己寫的文章已經足夠多了，所以我需要一個日報編輯～</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261008/20184140e4DwY6ejCW.png" alt="是時候要去摘一下智慧果實了呢~midjourney 示意圖" /><br />
+<em> 圖 1：是時候要去摘一下智慧果實了呢～Midjourney 示意圖</em></p>
+
+<blockquote>
+<p>話說已經來到了最後幾天了，<br />
+自從第二十天開始，<br />
+逐漸的我們不再談及學科 × Vibe Coding 可以擦出怎樣的火花，<br />
+更多的是談及 Vibe Coding 的進階使用思維～</p>
+<p>最後十天，我們談及了幾個重要的技巧：</p>
+<ul>
+<li>透過 Vibe Coding 解構各種 coding 專案做前沿科技學習</li>
+<li>Vibe Coding 工具作用在非 coding 工作上（例如學術研究寫作）</li>
+<li>透過 GitHub 讓自己的專案遊走於各種 Vibe Coding 工具</li>
+</ul>
+<p>已經不再單純地談及某一學科 × Vibe Coding 這樣的搭配內容，一定程度上自己也開始越來越忙以及有點累，但是我們回歸到 Vibe Coding 的技巧上時，我還會思考說我到底有什麼技巧還沒有分享過～</p>
+</blockquote>
+<hr />
+<h2>痛點剖析與靈感開端：打造生成式 AI 虛擬角色的情報日報</h2>
+<p>突然想起在這次鐵人賽之前，其實已經在開始策劃生成式 AI 虛擬角色情報生態系的電子報系統，說起來這也算是我暑假期間一個非常有趣的個人專案</p>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261008/20184140HWWs51xprE.png" alt="每天早上10：00-11：00都會收到的生成式 AI 虛擬角色情報日報" /><br />
+<em> 圖 2：每天早上 10:00 - 11:00 都會收到的生成式 AI 虛擬角色情報日報</em></p>
+
+<p>透過 Vibe Coding 工具寫 Google Apps Script 串聯 RSSAPIAI 模型，每天定時發送 AI 虛擬角色的相關新聞給訂閱者的電郵</p>
+<p>這是自己的目的，某程度上也能夠直接把以上内容當作是自己的 Prompt 了，當然指令下達得不夠準確，那麼這也能夠是自己跟 AI 聊天機器人開始聊天了解如何完善這個專案的第一步</p>
+<p>儘管只是一個意圖，它能夠化為：</p>
+<ul>
+<li>自己在規劃書裡面的目標（當需要參加比賽或活動時）</li>
+<li>Vibe Coding 的 Prompt</li>
+<li>與 AI 聊天機器人探討開發專案的第一句</li>
+</ul>
+<hr />
+<h2>數位工具中介者：認識 Google Apps Script 與生態系整合</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261008/20184140qoG9s9nfa8.png" alt="App script!!!" /><br />
+<em> 圖 3：Google Apps Script 雲端腳本編輯與執行環境</em></p>
+
+<p>當然這次終於提及到一個全新的數位工具叫做 <a href="https://script.google.com/home?hl=zh-tw">Google Apps Script</a>Google Apps Script 是由 Google 開發以 JavaScript 為基礎的雲端腳本語言它的核心價值在於讓不懂繁複系統架構的人，也能輕鬆操作 Google 雲端生態系</p>
+<p>我們能夠想像上次使用的 GitHub 雖然正式來說是一個版本管理的工具，但另一方面它也是一個能夠儲存同一個專案，並且讓不同的 Vibe Coding 工具透過 GitHub 同時修改讓同一專案優化的工具</p>
+<p>而 Google Apps Script 可以讓你用程式代碼的方式，串接起 Google 文件Google 試算表Google Gmail 等等的 Google 數位工具生態系我們這次要做的就是用 Vibe Coding 工具協助我們串接起各種類型的數位工具</p>
+<p>以自動發送郵件來說，用 Google Apps Script 運行程式代碼作為一個中介點，可以在運行程式代碼過後直接獲取自己的 Gmail 權限自動發郵件；這會比起用 Antigravity 擅自規劃如何完成應用及完成代碼，之後還需要去追蹤如何自動發郵件與 AI 不停聊天交流得到解答還要來得快捷</p>
+<p>懂得利用現有的數位平台及數位工具，某程度上比起只會用一堆 Vibe Coding 工具硬刻應用，有時候會更加方便快捷</p>
+<hr />
+<h2>情報自動聚合的四種技術：RSSAPI爬蟲腳本與 MCP</h2>
+<p>這裡輕微提及一下既然可以做到自動串接自動爬取內容（像是透過程式代碼，每天會在網絡上尋找 AI 虛擬角色相關的新聞聚集起來然後發給訂閱者），我們這邊需要知道幾個技術：一個是 RSS，一個是 API，一個是網頁爬蟲程式腳本，當然一些比較厲害的 AI 工具（例如說 Claude），就會還有一個機制叫做 MCP</p>
+<h3>1. RSS（Really Simple Syndication）</h3>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261008/20184140u4k5cAUlLl.png" alt="鐵人賽項目的右下角有rss可以直接點，之後複製網址" /><br />
+<em> 圖 4：鐵人賽系列主題右下角提供 RSS 訂閱連結，可直接複製 XML 來源網址</em></p>
+
+<p>我們通常在一些公開的網頁或者平台上會看見有 RSS 的連結，例如說 iThome 鐵人賽的 RSS，裡面本身會包含系列文章的所有 HTML 程式代碼（這就是為何昨天要說明 Markdown 及 HTML 文章）只要該系列的文章有什麼更新，RSS 就會自動變動；並且透過 Google Apps Script 可以設定直接執行把文章變成好看的 PDF，或者定期把文章變成好看的 PDF，再直接授權自己的 Gmail 發郵件給指定的電郵地址</p>
+<h3>2. API（Application Programming Interface）</h3>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261008/20184140RL4cvL3ZFF.png" alt="GCP如何設定API就......多跟AI聊天就知道了！" /><br />
+<em> 圖 5：Google Cloud Platform (GCP) 的 API 管理後台多跟 AI 聊天就知道了！</em></p>
+
+<p>這邊的話畢竟還在介紹 Google 生態系，所以我們就介紹一下 Google Cloud Platform 吧！一些更大的平台可能會允許使用者申請 API，允許使用者透過 API 獲取平台的重要數據與資訊例如申請完 Google Cloud Platform 爬取瀏覽器網頁的 API，並且透過 Google Apps Script 連接之後，就能夠每天定時定候，根據例如說 AI 虛擬角色新聞，在廣大的網絡資訊裡面尋找相關新聞，然後透過程式代碼的腳本安排直接發給指定的電郵地址除此之外還可以連結像是 Google MapsYouTube 的資料與數據，擁有更多的功能，但有時候卻會需要收取使用者訂閱費或使用費</p>
+<h3>3. 網頁爬蟲腳本（Web Scraping Script）</h3>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261008/20184140gixBdqzmVr.png" alt="只要指定網址就能讓AI工具vibe coding出網頁爬蟲腳本了！" /><br />
+<em> 圖 6：只要指定網址，就能讓 AI 工具 Vibe Coding 出客製化的網頁爬蟲腳本！</em></p>
+
+<p>這個部分可以用 Vibe Coding 產出，主要是能夠一鍵開始操作時，自動在指定的某一個網頁裡面把所有的分頁文章自動發送請求（Request）打開網頁下載原始碼（HTML）；也能夠指定從 HTML 中過濾只要文字／標籤／圖像／其他網址這些內容，或者全篇下載都可以</p>
+<h3>4. MCP（Model Context Protocol）</h3>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261008/20184140fjkSq0djPo.jpg" alt="就是這家公司推MCP的！" /><br />
+<em> 圖 7：由 Anthropic 推出目前各大 AI 生態系共同支援的AI 專用萬用插頭（USB-C）</em></p>
+
+<p>由 Anthropic 推出目前各大 AI 生態系共同支援的AI 專用萬用插頭（USB-C）過去要讓 AI 讀取你的本機檔案GitHub 專案或資料庫，都要寫一堆零碎且客製化的程式碼；而 MCP 定義了一套標準協定，讓 AI 可以安全統一地去呼叫各種外部工具與資料源</p>
+<p>但是很可惜我們這邊並不會用到一般情況下，例如說我們有一個厲害的 AI Agent，只要用 MCP 可能連接 GitHub，並且只使用自然語言設定說：AI Agent，每天早上九點在 GitHub 上面建立一個科幻風格的專案，然後說明本次設計原因，最後自動用我的 Gmail 寄信給指定電郵地址這主要是為 AI Agent 而設的</p>
+<hr />
+<h2>技術架構的組合藝術：從傳播學到個人知識生態系</h2>
+<p>到底應該怎樣選擇用 RSS（不用錢）API（有可能需要付費）MCP（AI Agent 任務上才比較需要）直接 Vibe Coding 爬蟲某個網頁的所有資訊（不用錢，但是失敗的可能性高）？其實它們都有不同的組合搭配</p>
+<p>組合搭配其實也是進行 IT 工作很重要的一環搭配不太一樣，你寫出來的日報都會絕對不一樣當然啦，今天也很想談及你的日報受眾要如何設定，但是其實都沒關係，只要是你感興趣的議題，你都能夠製作這個議題的日報，並且透過 Vibe Coding 自動化流程，把你想要告訴大家的資訊廣泛散播出去～</p>
+<p>這好像又回到傳播學的領域了呢～</p>
+<p>好吧，例如說這次我搭配的是：</p>
+<ul>
+<li>
+<strong>鐵人賽文章 RSS</strong>：<code>https://ithelp.ithome.com.tw/rss/series/9607</code>
+</li>
+<li>
+<strong>自己工作室文章的自動爬取（要求 Vibe Coding 爬蟲用的 Python 程式代碼）</strong>：<code>https://ci-website-theta.vercel.app/articles</code>
+</li>
+<li>
+<strong>指定 Google 試算表</strong>：AI虛擬角色情報資料庫（這個不能公開！這可是我的重要自動化收集財產）</li>
+</ul>
+<p>形成我自己的重要知識資源資料庫！</p>
+<hr />
+<h2>核心 Prompt 模組：打造科幻未來風格日報系統</h2>
+<p>當然最後的 Prompt 就變成了：</p>
+<pre><code class="language-markdown">請再設計一個 Google Apps Script 的程式代碼，可以自動串接：
+1. 鐵人賽文章 RSS：https://ithelp.ithome.com.tw/rss/series/9607
+2. 自己工作室文章的自動爬取（要求 Vibe Coding 爬蟲用的 Python 程式代碼）：https://ci-website-theta.vercel.app/articles
+3. 指定 Google 試算表：AI虛擬角色情報資料庫
+
+將其變成一個科幻 HyperpopGlitchcore科幻未來風格的資訊資料庫頁面
+使用者可以選擇資訊，變成一個 A4 size 的報紙產出，會把資料用文字與網頁的 QR Code 變成報紙排版；還可以指定 Email 收件人跟填寫收件人名字，把報紙發送給指定的人
+</code></pre>
+<blockquote>
+<p> <strong>提示：以上內容直接複製即為標準 Prompt！</strong></p>
+</blockquote>
+<p>之後我們可以把 Vibe Coding 出來的程式代碼，根據 AI 工具的指示複製貼上到 Google Apps Script，以及一步一步進行執行試錯儲存部署；進一步還可以選擇指定時間自動化排程執行這些都可以透過與 AI 的聊天從而知道如何處理，比較厲害的話在程式代碼出來的當下其實就已經會告訴你如何部署了</p>
+<hr />
+<h2>成果落地與教育反思：從 A4 實體報紙到跨領域通才思維</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261008/20184140ZO76tCQ44w.png" alt="我寫過的文章，收集過的寶貴資料可以被重製成好看的A4日報了！可以當禮物送給人了！（？）" /><br />
+<em> 圖 8：自己寫過的文章與收集的情報，被重新封裝成極具美感的 A4 排版電子報！</em></p>
+
+<p>如此一來，我收集回來的情報可以列印出來！也可能可以發給學生讓他們自己透過手機掃 QR Code 進行討論了！（已經有這種教案設計嗎？還沒有吧！最近完全沒有空設計，不過這就已經是電腦AISTEAM 教育的範疇了）</p>
+<p>真的去到最後幾天已經沒有太多氣力開啟新的領域了，儘管點算一下過往已經把領域拓展到：<strong>文理商傳播法醫教育餐飲地理資訊</strong>從很久以前我好像已經是在不同領域裡面這裡沾一點那裡碰一點，寫過很多文章都可能有著跨領域的想法以及自己的理念</p>
+<p>跨領域是這個 Vibe Coding 及 AI 潮流底下非常熱門的一個詞彙，很多人都在推算著通才能夠透過 Vibe Coding 及 AI 來獲得比大部分人更加高效的生產力</p>
+<p>對了，跨領域也是這個系列文章的一個重點呢！最後幾天開始來收斂過往的知識内容吧！</p>
+<hr />
+<h2>專案成果展示與線上體驗（建議用無痕視窗開啟）</h2>
+<ul>
+<li>
+<p> <strong>生成式 AI 虛擬角色情報日報系統</strong>：<br />
+整合 Google Apps ScriptRSS 與 AI 自動化發信的日報實體原型<br />
+ <strong>線上體驗</strong>：<a href="https://script.google.com/macros/s/AKfycbz-u4SD-Po9KS4GJIgVPahKgLp940LlB-8Ff3vub3-4F7eDY3Xz_EGmsqSHX4MWtNSq/exec">點此查看情報日報系統</a></p>
+</li>
+<li>
+<p> <strong>新版我的日報製作系統</strong>：<br />
+支援自選情報A4 排版生成與動態 QR Code 郵寄的進階編輯後台<br />
+ <strong>線上體驗</strong>：<a href="https://script.google.com/macros/s/AKfycbyvpcsdHjZi2aA7BUXqItZ__NbzogPFSzhhGe_DlU0UIyenbTaatiTFHAdkg6pp-KRU/exec">點此查看日報製作系統</a></p>
+</li>
+</ul>
+<hr />
+<h2> 本篇重點整理</h2>
+<table>
+<thead>
+<tr>
+<th align="left">核心維度</th>
+<th align="left">重點摘要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>數位生態系的借力使力</strong></td>
+<td align="left">除了探索 AI 工具本身，更要善用成熟的雲端生態系（如 Google Apps Script 與 Gmail）透過現有數位工具作為中介橋樑，能省去繁瑣的底層架構部署，以最敏捷的方式實現自動化工作流</td>
+</tr>
+<tr>
+<td align="left"><strong>四大情報採集技術比較</strong></td>
+<td align="left">掌握 <strong>RSS</strong>（免費用穩定更新）<strong>API</strong>（資料豐富但需額外授權/費用）<strong>網頁爬蟲</strong>（高度靈活彈性但維護成本高）與 <strong>MCP</strong>（專為 AI Agent 設計的標準連接協定）的特性與成本差異，依需求靈活組合最佳架構</td>
+</tr>
+<tr>
+<td align="left"><strong>知識重構與跨領域實踐</strong></td>
+<td align="left">透過 Vibe Coding 將個人累積的零散文章與數位足跡重構為科幻排版 A4 日報與 QR Code 教材，體現了傳播學 × 資訊科技 × STEAM 教育的跨領域整合力，讓通才在 AI 時代發揮乘數效應</td>
+</tr>
+</tbody>
+</table>
+]]></content:encoded>
+                                <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">SakuraEGS</dc:creator>
+                <pubDate>2026-10-08 23:35:45</pubDate>
+                                                                                                                                            </item>
+                    <item>
+                <title>AI寫的助教現場大揭秘！從 Gemini 規格書到 GitHub Pages 部署的 Vibe Coding 實戰指南（Day 25 - 外傳）</title>
+                <link>https://ithelp.ithome.com.tw/articles/10421866?sc=rss.iron</link>
+                <guid isPermaLink="true">https://ithelp.ithome.com.tw/articles/10421866?sc=rss.iron</guid>
+                <description><![CDATA[<h1>AI寫的 助教現場大揭秘！從 Gemini 規格書到 GitHub Pages 部署的 Vibe Coding 實戰指南（Day 25 - 外傳）</h1>
+<blockquote>
+<p>和...]]></description>
+                                    <content:encoded><![CDATA[<h1>AI寫的 助教現場大揭秘！從 Gemini 規格書到 GitHub Pages 部署的 Vibe Coding 實戰指南（Day 25 - 外傳）</h1>
+<blockquote>
+<p>和 AI 討論出 Vibe Coding 程式規格書，再搓出一個網頁不就很簡單！<br />
+上一週課堂結束時，台下很多非本科系的同學信心滿滿地這麼說<br />
+欸是這樣，但也不完全是這樣～<br />
+當真正打開 GitHub看見冷冰冰的代碼目錄，<br />
+還有那個神秘又陰魂不散的 GitHub Pages 404 報錯時<br />
+同學們：助教救命啊啊啊！！！（大腦不會燒起來嗎）</p>
+</blockquote>
+<hr />
+<h2>痛點剖析與日常觀察：非本科生的 Git 恐懼症與 Google Sites 平替版爭扎</h2>
+<p>下一週剛好是我在政大的生成式 AI 助教課這一週我們給同學們指派了作業目標：<strong>與 AI 協商討論出專屬的 Vibe Coding 程式規格書（Spec），然後靠自然語言生成出一個具備互動性的專案網頁</strong></p>
+<p>聽起來很美好對吧？但當理想照進現實，GitHub 的操作對於第一次接觸的同學來說，真的就像外星科技一樣新鮮又令人不知所措</p>
+<p>有的同學很聰明，可能會問：</p>
+<blockquote>
+<p>助教～如果我用入門偷吃步，把 Vibe Coding 搓出來的單檔 HTML 直接嵌入（Embed）到 Google Sites 裡面做快速呈現，這樣可以嗎？</p>
+</blockquote>
+<p>老實說，這招助教在iThome鐵人賽的Day 2文章也有教過，確實是個超好用的文科偷吃步！<strong>但這完全不符合我們這堂課的作業要求啦！</strong></p>
+<p>因為在真實的團隊協作與軟體開發中，理解靜態網站託管版本控制以及資源路徑，是現代人必備的數位素養GitHub Pages 部署過程中，初學者一定會踩進各種坑，大家除了多翻閱 NTU COOL 上的文件筆記，更要學會把報錯直接截圖丟給 AI 共同排錯！</p>
+<p>看來，身為助教就必須在課堂現場急速演示一次完整的交付閉環！</p>
+<hr />
+<h2>Vibe Coding 實戰拆解：從規格書到 GitHub Pages 的四大核心心流</h2>
+<p>現場我們拆解成四大步驟，帶同學們走過一次完整的高速流程：</p>
+<hr />
+<h3>步驟 1：先展示用 Gemini 搓出 Spec 規格書與程式碼</h3>
+<p>最常見也最好上手的生成式 AI（GeminiChatGPTClaude），其實已經完全具備強大的 Vibe Coding 能力但很多同學一開口就是：幫我寫一個網頁，結果產出雜亂無章</p>
+<p>記住助教的心法：<strong>先要規格書（Spec），再要代碼！</strong></p>
+<h4>核心 Prompt 模組：系統架構分析師與前端規格書制定</h4>
+<pre><code class="language-markdown">你現在是一位資深前端架構師與 UI/UX 設計師我想為我的課程專案打造一個互動網頁
+請先不要急著寫代碼，請先為我制定完整且結構嚴謹的規格書（Specification）：
+1. 核心目標與目標客群分析
+2. 視覺風格定義（如：科幻未來風復古像素風或極簡暗黑模式）與 HEX 色票規範
+3. 功能模組拆解（標題導航核心互動體驗區資訊卡片底部狀態欄）
+4. 檔案架構規劃（index.htmlstyle.cssapp.js 以及 assets/ 靜態資源目錄）
+
+確認好這份規格書後，再一步一步為我撰寫完整且不省略的 HTMLCSS 與 JavaScript 程式碼！
+</code></pre>
+<blockquote>
+<p> <strong>提示</strong>：以上內容直接複製即為標準 Prompt！如果想單檔快速部署，可補上一句：<strong>請將所有樣式與腳本完整整合於單一 <code>index.html</code> 檔案中！</strong></p>
+</blockquote>
+<hr />
+<h3>步驟 2：實作 GitHub 建立 Repo，貼上代碼並設定 GitHub Pages</h3>
+<p>拿到代碼之後，我們就要把它託管到雲端：</p>
+<ol>
+<li>
+<strong>建立儲存庫（Repository）</strong>：登入 GitHub 點擊New，輸入專案名稱，<strong>務必勾選 Public（公開）</strong></li>
+<li>
+<strong>新增入口檔案</strong>：點擊Add fileCreate new file，檔案名稱必須精準命名為 <code>index.html</code>（Linux 系統嚴格區分大小寫，千萬不能打成 <code>Index.html</code> 或 <code>home.html</code>！）</li>
+<li>
+<strong>貼入代碼並 Commit</strong>：把 Gemini 寫好的完整代碼貼入編輯區，點擊右上角綠色按鈕Commit changes</li>
+<li>
+<strong>開啟 GitHub Pages 服務</strong>：
+<ul>
+<li>進入專案的 <strong>Settings</strong>  點選左側側邊欄的 <strong>Pages</strong></li>
+<li>在Build and deployment的 Branch 下拉選單中，將 <code>None</code> 改選為 <code>main</code>（或 <code>master</code>），資料夾維持 <code>/ (root)</code>，按下 <strong>Save</strong>！</li>
+<li>等待約 60 秒（GitHub Actions 自動部署），重新整理頁面，頂部就會出現綠色的專屬公開網址（<code>https://[使用者名稱].github.io/[專案名稱]/</code>）！</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h3>步驟 3：現場示範建立 assets 資料夾與 AIGC 多模態素材矩陣</h3>
+<p>純文字網頁太枯燥？既然是生成式 AI 的課，我們當然要用 AI 生成的內容（AIGC）把網頁塞滿滿！</p>
+<p>助教建議大家在本地電腦建立一個叫 <code>assets</code> 的資料夾，把所有圖片音訊集中管理後上傳至 GitHub：</p>
+<table>
+<thead>
+<tr>
+<th align="left">素材向度</th>
+<th align="left">應用場景</th>
+<th align="left">推薦生成式 AI 工具</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>️ 圖像</strong></td>
+<td align="left">海報宣傳圖三視圖產品示意圖角色立繪</td>
+<td align="left">Stable Diffusion, Midjourney, Flux</td>
+</tr>
+<tr>
+<td align="left"><strong> 文本</strong></td>
+<td align="left">世界觀小說宣傳文案對話台詞名詞釋義</td>
+<td align="left">Google Gemma, ChatGPT, Claude</td>
+</tr>
+<tr>
+<td align="left"><strong> 音訊</strong></td>
+<td align="left">氛圍背景音樂（BGM）旁白配音自製歌曲</td>
+<td align="left">Suno AI, Udio, ElevenLabs</td>
+</tr>
+<tr>
+<td align="left"><strong> 影片</strong></td>
+<td align="left">宣傳短片動態背景短動畫</td>
+<td align="left">Google Veo, Runway, Luma</td>
+</tr>
+<tr>
+<td align="left"><strong> 3D 與空間</strong></td>
+<td align="left">3D 可旋轉道具模型VR 360 度空間</td>
+<td align="left">Meshy AI, Tripo 3D, Genie</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>️ <strong>智慧財產權重要叮嚀</strong>：AIGC 的著作權與商用權限仍處於法律爭議期，大家在公開作品時務必標註 AI 工具來源，並對引用的素材負起資訊倫理責任喔！</p>
+</blockquote>
+<h4>助教避坑鐵律：路徑檔名一定要對得上！</h4>
+<p>在程式碼中引用素材時，<strong>路徑必須 100% 精準吻合</strong>：</p>
+<ul>
+<li> 錯誤：引用本地硬碟路徑（<code>file:///C:/Users/...</code>，傳上網別人絕對破圖）</li>
+<li> 錯誤：大小寫打錯（代碼寫 <code>assets/Bg.jpg</code>，實際檔案是 <code>assets/bg.jpg</code>）</li>
+<li> 正確：一律使用相對路徑 <code>assets/bg.jpg</code>！</li>
+</ul>
+<p>若介面版面破掉，隨時複製 Console 報錯丟回給 Gemini 進行迭代與修正，這就是標準的 Vibe Coding 節奏！</p>
+<hr />
+<h3>步驟 4：學科  Vibe Coding！五大跨領域實戰範例大公開</h3>
+<p>台下同學常問：助教，我沒有靈感怎麼辦？我不是資工系的，能做什麼？</p>
+<p>別慌！試著用<strong>你的本門學科  Vibe Coding</strong>，看看助教自己過去隨手搓出來的五個跨界範例：</p>
+<ul>
+<li>
+<p> <strong>案例 1：科技普及教育  科技企業分析（元太科技電子紙技術科普平台）</strong>：<br />
+結合研報 PDF官網資料與 Perplexity 深度搜尋，用 Antigravity 搓出具備微膠囊動態模擬與營收分析的互動平台<br />
+ <strong>展示連結</strong>：<a href="https://shirosakuraegs.github.io/eink-yuantai-platform/">點此造訪 元太科技電子紙科普平台</a></p>
+</li>
+<li>
+<p> <strong>案例 2：硬體原理  Cyberpunk 遊戲化維修艙（電子紙修理小遊戲）</strong>：<br />
+將生硬的面板損壞排錯，包裝成霓虹閃爍的未來修配艙，引導玩家手動替換故障排線與 3D 模組<br />
+ <strong>展示連結</strong>：<a href="https://shirosakuraegs.github.io/e-ink-cyberpunk-repair-bay/">點此造訪 電子紙維修互動艙</a></p>
+</li>
+<li>
+<p> <strong>案例 3：人機互動議題  心理測驗體驗（AI 情感依賴度心理測驗）</strong>：<br />
+探討現代人對 AI 虛擬伴侶的依戀現象特別加上媒體資訊識讀宣告：本測驗純屬體驗遊戲，非臨床診斷，啟發反思數位倫理<br />
+ <strong>展示連結</strong>：<a href="https://shirosakuraegs.github.io/aipsycho-test/">點此造訪 AI 情感依賴心理測驗</a></p>
+</li>
+<li>
+<p> <strong>案例 4：科幻文學策展  戀愛互動情境（致幻技電影館）</strong>：<br />
+將自己寫的原創小說轉化為線上策展館，配合實體 QR Code 掃描與後製去背的 AI 角色，甚至能從 Google AI Studio 一鍵直連 GitHub！<br />
+ <strong>展示連結</strong>：<a href="https://shirosakuraegs.github.io/HallucinoTech-Cinematheque/">點此造訪 致幻技電影館</a></p>
+</li>
+<li>
+<p> <strong>案例 5：SCA 專業農業文獻  角色對話遊戲（咖啡色計劃）</strong>：<br />
+直接把精品咖啡協會（SCA）艱深厚重的學術論文餵給 AI，讓 AI 轉譯成傲嬌女主角與玩家討論咖啡萃取學問的微型戀愛對話遊戲</p>
+</li>
+</ul>
+<hr />
+<h2>深度反思：跳出玩具思維，用 Vibe Coding 打造有社會價值的產物</h2>
+<p>在課堂的最後，助教想給所有非本科的同學一句真心話：</p>
+<p>很多人會糾結：我一行程式碼都沒手打，完全靠 AI 搓出來，這算我做的嗎？</p>
+<p>但在生成式 AI 的時代，語法與代碼早就已經降級為隨手可得的建築磚塊真正值錢且無法被取代的，是你腦袋中對自己學科專業的洞察你對問題的敏銳度，以及你如何將看似毫不相關的領域（文學心理商管咖啡）與科技碰撞出火花的能力！</p>
+<p>學會用 GitHub 把成果架起來，不單單只是交作業做做靜態頁面，更是讓你有能力打造出好玩的甚至帶有社會價值與意義的真實產物！</p>
+<hr />
+<h2> 本篇重點整理</h2>
+<table>
+<thead>
+<tr>
+<th align="left">核心維度</th>
+<th align="left">重點摘要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>規格書先行（Spec First）</strong></td>
+<td align="left">進行 Vibe Coding 時切忌直接要求 AI 寫網頁應引導 Gemini 先產出包含目標客群UI 視覺色票功能模組拆解與檔案路徑的標準規格書（Spec），再按圖索驥生成 HTML/CSS/JS 代碼，能大幅減少邏輯缺失與版面崩潰</td>
+</tr>
+<tr>
+<td align="left"><strong>GitHub Pages 零主機部署心流</strong></td>
+<td align="left">拋棄入門的 Google Sites 嵌入限制，擁抱標準開源協作管線建立 Public Repository 後務必精準命名 <code>index.html</code> 根目錄入口，並於 Settings 啟用 Pages 服務，約 60 秒即可零成本獲得全網可公開瀏覽的專屬 Web 網址</td>
+</tr>
+<tr>
+<td align="left"><strong>AIGC 多模態矩陣與路徑鐵律</strong></td>
+<td align="left">善用 Stable DiffusionGemmaSunoVeoMeshy 等多模態工具生成圖像音訊3D 豐富素材本地建立 <code>assets/</code> 資料夾集中託管，代碼路徑必須 100% 精準對齊大小寫與相對路徑，並保持健康的著作權與 AI 標註素養</td>
+</tr>
+<tr>
+<td align="left"><strong>學科  Vibe Coding 跨界價值</strong></td>
+<td align="left">鼓勵非本科生跳脫罐頭簡歷思維，結合自身主修專業（科技科普遊戲化維修人機心理測驗文學微策展專業論文轉譯）將深厚的人文與商管知識化為數位產品的靈魂，打造兼具趣味與社會影響力的創新專案</td>
+</tr>
+</tbody>
+</table>
+]]></content:encoded>
+                                <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">SakuraEGS</dc:creator>
+                <pubDate>2026-10-07 01:57:38</pubDate>
+                                                                                                                                            </item>
+                    <item>
+                <title>Day 25 我已經淪落到要 Vibe Coding 工具幫我寫文章了嗎</title>
+                <link>https://ithelp.ithome.com.tw/articles/10421867?sc=rss.iron</link>
+                <guid isPermaLink="true">https://ithelp.ithome.com.tw/articles/10421867?sc=rss.iron</guid>
+                <description><![CDATA[<h1>Day 25我已經淪落到要 Vibe Coding 工具幫我寫文章了嗎</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/image...]]></description>
+                                    <content:encoded><![CDATA[<h1>Day 25我已經淪落到要 Vibe Coding 工具幫我寫文章了嗎</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261007/201841400m4K5bmNQv.png" alt="GitHub Pages的部署~你懂了嗎？Midjourney示意圖" /><br />
+<em> 圖 1：GitHub Pages 的部署～你懂了嗎？Midjourney 示意圖</em></p>
+
+<blockquote>
+<p>話說參加 iThome 鐵人賽的時候，<br />
+往往會遇到一個困境是：<br />
+Markdown 格式文章寫作，如果不用的話，<br />
+可能在閱讀方面會覺得文章很難看，<br />
+不過說起 Markdown 格式，<br />
+這也算是程式代碼吧！？<br />
+所以也能夠 vibe coding 吧！</p>
+</blockquote>
+<hr />
+<h2>痛點剖析與日常觀察：從助教課簡報到雙平台排版困境</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261007/20184140n0hG7XjRtI.png" alt="最近助教課的簡報封面！大家可以留意10/13號16：00-19：00的直播課程https://www.youtube.com/@ive-iveai" /><br />
+<em> 圖 2：最近助教課的簡報封面（直播課程資訊：https://www.youtube.com/@ive-iveai）</em></p>
+
+<p>沒記錯會想到這裡去是因為最近在規劃助教課簡報的時候，有發現一種更加簡單 vibe coding 出穩定頁面，然後不會像 Google site 嵌入 vibe coding 單一程式代碼，但卻有讓手機跑太熱的問題出現，因此深入說明如何簡單建立 GitHub Pages 的部分，甚至這次 vibe coding 的工具就只是簡單的用 Gemini！？！？</p>
+<p>做好出來的簡報，我已經有點不想再用自己的文字重新用文章的形式寫一次了，甚至寫完之後會因為不同的平台，需要把文字交給 vibe coding 工具安排用最好的 md 格式或者 html 格式呈現，所以這次不如</p>
+<p>就把簡報丟給 vibe coding 工具！讓他幫我寫文章吧！（已經懶到這個地步了嗎）</p>
+<p>簡報的內容其實主要圍繞著我們學校的生成式 AI 課堂作業vibe coding 出一個 GitHub pages，因為考慮到課堂當中有很多學生可能都沒有嘗試過 vibe coding，更沒有使用過 GitHub，所以助教課通常都會安排助教們針對上一周的作業進行更加深入的講解</p>
+<hr />
+<h2>Vibe Coding 破局解法：生成式 AI 助教課的實戰四部曲</h2>
+<p>在助教課的實戰教學中，引導完全沒有程式背景的學生建立頁面，標準流程就會是：</p>
+<ol>
+<li>
+<strong>先展示用 Gemini vibe coding 出 spec 規格書htmlcssjs 的指令跟效果</strong>
+</li>
+<li>
+<strong>實作 GitHub 建立 repo，把 Gemini 的 coding 產出貼上，設定 GitHub Pages</strong>
+</li>
+<li>
+<strong>GitHub 上傳素材 assets 資料夾的步驟現場示範，也建議說可以用 AI 產出的內容豐富頁面</strong>
+</li>
+<li>
+<strong>放幾個範例給學生們參考</strong>
+</li>
+</ol>
+<hr />
+<h2>跨媒介教學成果安利：從校園工作坊到實體 AI 終局攻防戰</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261007/20184140kU3Uj7OAGn.png" alt="克里艾提夫研究所的各種文章" /><br />
+<em> 圖 3：克里艾提夫研究所官方網站發布的各種情報專欄文章</em></p>
+
+<p>因為自己也有在經營一個工作室的緣故，那個工作室的網頁如果要發佈文章的則會是 html 格式絕大多數時候也會感覺自己的簡報也是自己 AI 教學事業的一種產出，就會把簡報一并上傳到網站跟寫文章推廣！</p>
+<p>對了！這邊還是要安利一下，雖然自己是個學生：但是過往便舉行過一些工作坊，還有參與過 AI 教學的工作了，包括但不限於：</p>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261007/20184140ofEP3nE6u3.png" alt="AIGC 創客工房（立體模型篇）工作坊的簡報封面" /><br />
+<em> 圖 4：國立政治大學 AIGC 創客工房（立體模型篇）工作坊簡報封面</em></p>
+
+<ul>
+<li> <strong>國立政治大學 AIGC 創客工房（立體模型篇）工作坊</strong>：<br />
+引導學員透過生成式 AI 與 3D 模型創作跨界融合<br />
+ <strong>簡報連結</strong>：<a href="https://www.canva.com/design/DAGUxEo_K5U/PYIUqQQgnhqcL5830jtpFA/view?utm_content=DAGUxEo_K5U&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=viewer">點此查看 Canva 簡報</a>
+</li>
+</ul>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261007/20184140fGegRQR6UQ.png" alt="AIGC虛實應用/開源改造/開發板應用的簡報封面" /><br />
+<em> 圖 5：國立政治大學 呆一布共學實驗室讀書會 AIGC 虛實應用／開源改造／開發板應用簡報封面</em></p>
+
+<ul>
+<li> <strong>國立政治大學 呆一布共學實驗室讀書會 AIGC 虛實應用／開源改造／開發板應用</strong>：<br />
+聚焦開源硬體改裝開發板結合生成式 AI 的多元落地探索<br />
+ <strong>簡報連結</strong>：<a href="https://canva.link/68y1ripvgg5cf73">點此查看 Canva 簡報</a>
+</li>
+</ul>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261007/201841407q28eACKcR.png" alt="AI 終局攻防戰的網頁頁面" /><br />
+<em> 圖 6：放伴教育協會 AI 培力活動AI 終局攻防戰AI Endgame Battle 網頁頁面</em></p>
+
+<ul>
+<li> <strong>放伴教育協會 AI 培力活動（三芝國中及八里國中）</strong>：<br />
+負責小組的負責任 AI 教學用桌遊／網頁教材AI 終局攻防戰（AI Endgame Battle）<br />
+ <strong>專案連結</strong>：<a href="https://ci-website-theta.vercel.app/products/ai-endgame">點此查看專案詳情</a>
+</li>
+</ul>
+<p>偶爾在自己工作室的網站就是用 html 形式寫一些文章是關於這些教學活動的（說起來最近還有國立政治大學 Soobi 社團的 micro:bit 教學，但是這個就偏 STEAM 了）所以就變成其實不單單是這次 iThome 鐵人賽自己需要寫特殊格式的文章，自己的工作室網頁也是</p>
+<hr />
+<h2>核心 Prompt 模組：打造專屬 Skill，雙格式自動轉譯</h2>
+<p>所以就經常需要用到 vibe coding 工具把我原本寫好的文稿，變成相應格式當然我已經開始忘記我有沒有介紹 skill 了對於自己的 vibe coding 工具，特別是有 AI Agent 的，可以幫它設計一個 skill：</p>
+<pre><code class="language-markdown">Prompt：請幫我建立一個 skill，每次把我輸入的文章轉化為 md 格式以及 html 格式如果是 md 格式的話請幫我遵從（https://ithelp.ithome.com.tw/markdown 這個網頁的內容直接複製貼上）這樣子的規矩如果是 html 的話請幫我用XXXXX研究所（這邊大家可以切換為各自的人設或者身份）的第一人稱角度寫出我的文章，並且不能過渡偏離我的文章意思以及不要修改太多文字，只是因應檔案格式的形式美化排版及做調整
+</code></pre>
+<blockquote>
+<p> <strong>提示：以上內容直接複製即為標準 Prompt！</strong></p>
+</blockquote>
+<p>建立起 Skill 之後，以後只要把文章丟給 vibe coding 當中的 AI，他就能夠把文章轉譯成為可以上載文章的程式代碼，並且通常排版好的形式會比起沒有做任何 md/html 美化編輯的好看一點</p>
+<hr />
+<h2>科技管理與反思：堅持親手撰寫與防扭曲的創作哲學</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261007/201841408KJYZfnfsj.png" alt="就算是Day 25的文章也寫了2576字！" /><br />
+<em> 圖 7：就算是 Day 25 的文章在 Google 文件上也扎實寫了 2,576 字！</em></p>
+
+<p>這是我這段時間寫鐵人賽文章的秘技！但還是事先聲明，我幾乎每一次的文章都用 Google 文件先打過一次，並且真的幾乎每次都破千字，有時候離譜的 3000-4000 字也有可能，也是因為看見 vibe coding 工具有時候會扭曲我那些文字的意思，所以才會強調不要修改太多文字及過渡偏離我的文章意思，要不然的話真的太辛苦了，別人可能會覺得是 AI 生的，但實質上我每天都用各種不同的領域以及角度精心寫出人文 x 科技的文章</p>
+<p>話說我會因為這些文章所以獲得一些教育工作的合作機會？絕對沒有信心的說！但是作為一個重視科技普及的人的角度來看，我會願意我手頭上的知識垃圾能夠公開給大家看看，衝擊一下大家大腦（去到自暴自棄的程度了）</p>
+<ul>
+<li> <strong>iThome 外傳文章</strong>：<a href="https://ithelp.ithome.com.tw/articles/10421866">點此查看 iThome 鐵人賽外傳文章</a>
+</li>
+<li> <strong>克里艾提夫研究所 HTML 文章</strong>：<a href="https://ci-website-theta.vercel.app/articles/from-spec-to-github-pages-genai-ta-vibe-coding-guide">點此查看克里艾提夫研究所官方發布專欄</a>
+</li>
+</ul>
+<hr />
+<h2> 本篇重點整理</h2>
+<table>
+<thead>
+<tr>
+<th align="left">核心維度</th>
+<th align="left">重點摘要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>痛點剖析與格式賦能</strong></td>
+<td align="left">在線上投稿與個人平台中，純文字往往顯得冷淡單調；適當引入 Markdown 或 HTML 格式排版能大幅提昇閱讀體驗與專業質感Vibe Coding 工具能在同時理解代碼規格與文章意涵的前提下，排版產出合乎規格又忠於原意的雙格式文章</td>
+</tr>
+<tr>
+<td align="left"><strong>客製化 Skill 與系統提示</strong></td>
+<td align="left">建立專屬 Skill 不僅能固化 Vibe Coding 的標準作業流程（SOP），更能作為長效 System Prompt，讓 AI 代理精準切換為特定人設（如研究機構視角）並嚴格遵循排版與防改寫護欄，實現一鍵分發多平台</td>
+</tr>
+<tr>
+<td align="left"><strong>真實創作與 AI 潤飾邊界</strong></td>
+<td align="left">面對當前社會對純 AI 生成內容的疑慮，創作者應堅持以人類的情感經驗與人文思維為原創核心（如破千字的真實草稿）將 AI 定位為優化排版轉譯代碼與視覺賦能的助手，使文字在保留真誠靈魂的同時擁有更卓越的展示力</td>
+</tr>
+</tbody>
+</table>
+]]></content:encoded>
+                                <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">SakuraEGS</dc:creator>
+                <pubDate>2026-10-07 01:57:00</pubDate>
+                                                                                                                                            </item>
+                    <item>
+                <title>Day 24 Google AI Studio x Antigravity 聯動！我要把之前做出來的東西做得更好！</title>
+                <link>https://ithelp.ithome.com.tw/articles/10421663?sc=rss.iron</link>
+                <guid isPermaLink="true">https://ithelp.ithome.com.tw/articles/10421663?sc=rss.iron</guid>
+                <description><![CDATA[<h1>Day 24Google AI Studio x Antigravity 聯動！我要把之前做出來的東西做得更好！</h1>
+
+<p><img src="https://ithelp.ithom...]]></description>
+                                    <content:encoded><![CDATA[<h1>Day 24Google AI Studio x Antigravity 聯動！我要把之前做出來的東西做得更好！</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261006/201841401Dsb7AejnF.png" alt="這麽多工具......這麽多組合......心累啊......midjourney示意圖" /><br />
+<em> 圖 1：這麼多工具這麼多組合心累啊Midjourney 示意圖</em></p>
+
+<blockquote>
+<p>話說我用 Antigravity 的時間並不超過半年？<br />
+雖然 Antigravity 挺新的說，<br />
+那麼在用 Antigravity 之前<br />
+我都是用什麼工具來 vibe coding 的，<br />
+老實說，最早的時候是用 POE 跟 Gemini，<br />
+完全不是 Claude code 跟 Codex，<br />
+儘管後來有發現 Google 的 AI studio 挺好用的！</p>
+</blockquote>
+<hr />
+<h2>痛點剖析與日常觀察：從 Google AI 生態系談學生資源的發掘思維</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261006/20184140U2BBGQ3Aqh.png" alt="最近新一輪的Google AI學生福利" /><br />
+<em> 圖 2：最近新一輪的 Google AI 學生福利</em></p>
+
+<p>話說我發現自己很多篇文章其實都是圍繞着 Google 的 AI 生態系來說，當然啦很大原因也是因為自己是學生，一年前左右 Google 推出學生專案的時候自己剛好有申請，乘着這波浪潮，Google 的 AI 工具可以使用的次數變多了！</p>
+<p>當然坊間也會嫌棄說 Gemini 的模型很多時候比不上 ChatGPT 或者 Claude 的模型，但是前段時間在參加一個活動的時候有個碩士生的朋友會說，當學生的好處就是可以申請或者用各種福利（儘管因為這件事情世新大學最近有一些爭議），所以學生可能也要養成一種思維就是尋找學校有提供的各種福利，在學生時期享受用這些福利並且嘗試利用這些福利產出不同東西的意義或者額外的產出</p>
+<p>這並不單單只是應用在 AI 工具上面的思維，更是在各種活動及資源上面，從學生時期，從學生角度便需要學習如何去尋找本來就可以得到的資源，從這些資源當中才能得到更多的學習這也是很多在生成式 AI 浪潮能及早脫穎而出憑着各種 AI 專案得到學校及企業訊息的重要原因</p>
+<hr />
+<h2>Vibe Coding 工具迭代反思：AI Studio 的侷限與迴圈工程需求</h2>
+<p>好吧回歸到這次 vibe coding 的技巧上面！</p>
+<p>在自己還沒有用 Antigravity 之前，自己是用 AI studio 的，儘管現在用慣了之後會覺得 AI studio 裏面的 AI 模型還沒有做到如此的智能，可能就跟我們上一篇文章所說的 AI studio 在迴圈工程上面可能還存在一些缺陷或者功能並不是這麼智能，當然啦有一篇文章我們就談及了如果他要自動串接 firebase 的話自動化的效率會比較高，甚至比起 Antigravity 還要快速，大家就要作這樣子的嘗試或者雙邊的考量</p>
+<p>好吧那麼過去用 AI studio 的東西可以如何變得更好呢，因為之前就試過 AI Studio 會越改越差，Antigravity 可能能夠藉着改 AI Studio 的專案當中的程式代碼從而優化其內容</p>
+<hr />
+<h2>破局解法：AI Studio 雙向輸出路徑與 GitHub 中樞心法</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261006/20184140GSU8jpUgdc.png" alt="AI Studio vibe coding output選項" /><br />
+<em> 圖 3：Google AI Studio 的 Vibe Coding 輸出（Export）選項</em></p>
+
+<p>我們這邊會有兩個選擇路徑：</p>
+<ul>
+<li>
+<strong>直接輸出至 Antigravity</strong>
+</li>
+<li>
+<strong>直接輸出至 GitHub</strong>
+</li>
+</ul>
+<p>前者比較好理解，但是後者就比較複雜了，但某程度上會比較建議是選擇後者的路徑，這樣子程式代碼便能夠同時串聯，無論是 Antigravity 進行修改，還是當自己已經沒法再使用 Antigravity（香港還是有很多 AI 工具不能使用呢），其他 vibe coding 工具 VS code 裏面的 AICursorCodexClaude code 等等都可以以更為動態的對同一個專案進行修改，甚至能夠跳來跳去，比較有彈性的選用不同各類型的工具優化同一個專案，或許未來是另外更好的 AI 工具有提出學生專案呢？畢竟這也說不定呢～</p>
+<p>甚至放上 GitHub，能夠直接用 GitHub Pages（最近我們學校生成式 AI 的作業）VercelCloudflare 來進行部署都是可以的，就不用擔心 AI studio 在沒有付款訂閱的情況下不能夠公開自己的 AI 應用</p>
+<hr />
+<h2>實戰成果展示：致幻技電影館搬遷至 GitHub Pages</h2>
+<p>最後選擇把致幻技電影館搬到 GitHub Pages 上：</p>
+<ul>
+<li> <strong>專案成果</strong>：致幻技電影館（HallucinoTech Cinematheque）<br />
+將原本於 AI Studio 開發的互動應用遷移並部署至靜態網站託管，實現公開且穩定的展示效果<br />
+ <strong>線上展示連結</strong>：<a href="https://shirosakuraegs.github.io/HallucinoTech-Cinematheque/">點此造訪致幻技電影館</a>
+</li>
+</ul>
+<p>這次只是輕微的分享這個小技能，因為最近真的開始有點忙，有點心累了，不過還是希望努力處理完這三十天的挑戰！雖然只是一個小小的技能，但是學會如何善用學生資源跟提高自己 vibe coding 彈性調整能力在這系列的文章也是非常重要的一個主軸呢！</p>
+<hr />
+<h2> 本篇重點整理</h2>
+<table>
+<thead>
+<tr>
+<th align="left">核心維度</th>
+<th align="left">重點摘要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>學生身份福利與資源發掘思維</strong></td>
+<td align="left">學生身分代表著能合法享有學校與社會提供給青少年的各類專屬福利在 AI 工具之外，更應鍛鍊尋找隱蔽或分散資源的能力，善用學生專案與免費額度為自己爭取更優質的學習條件與實戰機會，這也是在生成式 AI 浪潮中脫穎而出的關鍵心態</td>
+</tr>
+<tr>
+<td align="left"><strong>Google AI 生態系雙向輸出路徑</strong></td>
+<td align="left">Google AI Studio 提供了輸出至 Antigravity與輸出至 GitHub兩種路徑前者直觀便捷；後者則能建立強大的代碼中樞，不僅能打破單一工具在迴圈工程上的缺陷，還能自由銜接 GitHub PagesVercel 或 Cloudflare 免費部署，解決未付費無法公開 AI 應用的痛點</td>
+</tr>
+<tr>
+<td align="left"><strong>跨工具動態調度（Tools to Tools）</strong></td>
+<td align="left">透過 GitHub 進行專案版本管理，能活用各款 Vibe Coding 工具（如 AntigravityCursorCodexClaude CodeVS Code AI 等）的獨特優勢面對不同網路環境（如香港地區工具限制）或未來新推出的學生專案，皆能靈活切換動態接力修復與優化，持續維持敏捷的開發產能</td>
+</tr>
+</tbody>
+</table>
+]]></content:encoded>
+                                <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">SakuraEGS</dc:creator>
+                <pubDate>2026-10-06 23:35:08</pubDate>
+                                                                                                                                            </item>
+                    <item>
+                <title>Day 23 用 Vibe Coding 做學術研究會出大事吧！！！</title>
+                <link>https://ithelp.ithome.com.tw/articles/10421394?sc=rss.iron</link>
+                <guid isPermaLink="true">https://ithelp.ithome.com.tw/articles/10421394?sc=rss.iron</guid>
+                <description><![CDATA[<h1>Day 23用 Vibe Coding 做學術研究會出大事吧！！！</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/...]]></description>
+                                    <content:encoded><![CDATA[<h1>Day 23用 Vibe Coding 做學術研究會出大事吧！！！</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261005/20184140BX4mKnwVF3.png" alt="道德敗壞的學術家夥~midjourney示意圖" /><br />
+<em> 圖 1：道德敗壞的學術傢伙～Midjourney 示意圖</em></p>
+
+<blockquote>
+<p>話說研究生嘛要寫論文嘛<br />
+用 AI 寫會出大事！絕對！絕對！！！<br />
+但如果是玩的話，<br />
+沒問題吧～<br />
+但！就是絕對不能說自己是在做正經的學術研究！！！</p>
+</blockquote>
+<hr />
+<h2>痛點剖析與日常觀察：研究生學術寫作與AI 幻覺的道德風險</h2>
+<p>因為剛好今天在上研究方法，加上早上還要找指導教授討論，就想起學術寫作學術研究這回事過往的文章當中都有輕微提及到如何用 AI 工具協助自己做對知識的探討事實查核鞏固知識知識遊戲化</p>
+<p>一般我們用 AI 來協助進行學術研究的方法不外乎：</p>
+<ul>
+<li>
+<strong>AI 幫忙找論文</strong>
+</li>
+<li>
+<strong>AI 潤飾文句</strong>
+</li>
+<li>
+<strong>AI 對論文進行初步分析</strong>
+</li>
+</ul>
+<p>過分一點就是：AI！你直接幫我寫出第一章節吧！（被揍！）不行！因為可能會由於 AI 幻覺的原因會有捏造虛構論文的問題，新聞早就發生過類似的事了！（公視新聞網報導：<a href="https://news.pts.org.tw/article/798900">博士論文遭控AI虛構參考文獻 政大下架並啟動學倫調查</a>）不過那麼難道 AI 只要不會捏造虛假資料出來就沒有問題了嗎！像是 NotebookLM！但也只能降低幻覺而已！</p>
+<p>不要有偽造的內容，對於文獻回顧的論文要彼此尊重，隨便地說對方論文有什麼內容，某程度也是污衊對方的觀點關於如何用 AI 產出學術結果，儘管網路上有很多看似成功的案例，特別是前沿的 AI 科學家都在研究這個東西</p>
+<hr />
+<h2>學術 AI 工具雙層次：從初階搜尋引擎到進階學術資料庫 RAG</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261005/20184140BUxYMlyNvA.png" alt="perplexity探討AI 虛擬伴侶平台之負面外部性的結果" /><br />
+<em> 圖 2：Perplexity 探討 AI 虛擬伴侶平台之負面外部性的結果</em></p>
+
+<p>比較初階的就像我們用 PerplexityGoogle AI 模式，或者比較好的 ChatGPT 模型來做研究產出</p>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261005/20184140l5idIbA4l3.png" alt="學校AI研究助理探討AI 虛擬伴侶平台之負面外部性的結果" /><br />
+<em> 圖 3：學校 AI 研究助理探討 AI 虛擬伴侶平台之負面外部性的結果</em></p>
+
+<p>進階一點，有一些 AI 應用被開發出來是為了應對學術研究的可信性及資料庫引用會比較全面，例如說：<strong>Elicit</strong> 或者台灣的大學圖書館 AI 研究助手，例如政大的（安利自己的學校是在幹什麼），或者 <strong>Scopus AI</strong> 這種建基於原先擁有高度參考性的資料庫進行 RAG 的 AI 互動，都會比起本來所說的 PerplexityGoogle AI 模式比較好的 ChatGPT 模型更加客製化以及有可信度</p>
+<p>所以這次只是跟大家推介不同的 AI 學術研究輔助工具嗎？</p>
+<hr />
+<h2>Vibe Coding 破局思路：迴圈工程（Agentic Loops）如何革新研究迭代？</h2>
+<p>當然還是要提及 Vibe Coding 工具，但是啊！Vibe Coding 工具有一類別非常特別，如 Antigravity 的 Gemini 3.8 與一般的線上 Gemini 3.8 有一個差異就是<strong>迴圈工程</strong></p>
+<p><strong>迴圈工程（Agentic Loops）</strong> 是指讓 AI 具備自動執行自主偵錯自我修正的能力，當給予一個目標後，AI 能自發性地在計畫執行觀察結果修正錯誤的循環中反覆迭代，直到任務成功解決為止，過程中不需要人類每一步都給予指令</p>
+<p>但是一般我們看見的生成式 AI 只會進行單次生成並產出結果，儘管現在很多都會做深度推理，但很多時候都不會在最後檢核產出內容優化產出內容，然後產出最好的版本</p>
+<p>所以也沒有人說 Antigravity 上的 AI 會是一個 AI Agent</p>
+<p>某程度我們把這樣的邏輯套用在輔助學術研究的 AI 工具上面，輔助學術研究的 AI 工具能夠做到利用迴圈工程對持有的資料或者資料庫資料進行不停有著迴圈機制的學術研究產出，似乎是一種思路</p>
+<hr />
+<h2>Vibe Coding 實戰拆解：從 PDF 轉 Markdown 到自定義學術 Research Skill</h2>
+<p>又或者簡單一點，把下載下來的論文 PDF，Antigravity 上的 AI 讀取然後根據某個特定主題進行研究！（其實這段就是 Prompt 了）</p>
+<p>這麼跳脫的嗎？</p>
+<p>其實又不無道理，無論是本身迴圈工程的機制，還是之後可以透過編寫各種 Skill，協助 AI Agent 達到迴圈工程的效果，AntigravityClaude CodeCodex 又為何不能是一個輔助學術研究產出的專業 AI 工具呢？</p>
+<p>當然這裡中間也會好奇說難道 PDF 就可以了嗎？還是我應該把 PDF 轉換成更加適合這些 Vibe Coding 工具做最後產出的形式，如同 Skill 一樣，我們用 Markdown（<code>.md</code>）檔案格式吧！</p>
+<p>所以請把所有 PDF 轉換為 MD 檔案文件然後再讓 AI 閱讀，並且根據某個特定題目進行研究！</p>
+<h3>核心 Prompt 模組：PDF 論文轉 Markdown 與特定主題學術探討</h3>
+<pre><code>請把所有下載下來的論文 PDF 轉換為 MD 檔案文件，然後再讓 AI 完整閱讀，並且根據AI 虛擬伴侶平台之負面外部性特定主題進行深入的研究與結構化分析！
+</code></pre>
+<blockquote>
+<p> <strong>提示</strong>：以上內容直接複製即為標準 Prompt！</p>
+</blockquote>
+<p>另一方面，論文格式似乎也能夠變成 Skill，讓最後的產出比較符合學術寫作格式</p>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261005/20184140H282HesMkt.png" alt="Antigravity探討AI 虛擬伴侶平台之負面外部性的結果" /><br />
+<em> 圖 4：Antigravity 探討 AI 虛擬伴侶平台之負面外部性的結果</em></p>
+
+<p>去到這裡，最後產出來的東西已經接近我要達到的成果了也沒想到 Vibe Coding 工具轉過頭來又能夠成為一款學術研究的輔助工具</p>
+<hr />
+<h2>深度反思與口試大考驗：AI 可以協助架構，但口頭論述與知識必須真正內化！</h2>
+<p>當然帶著這樣的東西去口試還是會出事！今天帶著這樣子的成果跟指導教授討論，會發現 AI 提出的架構及敘述邏輯不太符合我們研究所的想像，也並不方便我自己進行口頭上的論述，儘管我再怎樣閱讀同埋調整 AI 提供的內容</p>
+<p>還沒有真正的內化呢～不過就像論文是要瘋狂改的東西，AI 產出的學術寫作內容也必須要瘋狂改，沒有論文是不用改的，沒有 AI 產出的東西是不用改的，如果你（我）還是一個有思考能力的人的話！</p>
+<hr />
+<h2> 本篇重點整理</h2>
+<table>
+<thead>
+<tr>
+<th align="left">核心維度</th>
+<th align="left">重點摘要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>學術研究 AI 輔助工具之分層</strong></td>
+<td align="left">學術 AI 輔助工具可劃分為兩大層面：初階以 PerplexityGoogle AI 模式或優質 ChatGPT 模型做初步檢索與文句潤飾；進階工具則專為提升學術可信度而生（如 Elicit政大圖書館 AI 研究助手Scopus AI 等），基於權威資料庫進行客製化學術 RAG，能大幅降低虛構幻覺並提高引用精準度</td>
+</tr>
+<tr>
+<td align="left"><strong>Vibe Coding 工具與迴圈工程轉譯</strong></td>
+<td align="left">將具備自動執行自主偵錯自我修正的迴圈工程（Agentic Loops）機制引進學術領域透過將論文 PDF 轉換為結構化的 Markdown 文件，並搭配專屬 Research 與 Formatting Skill，使 AntigravityClaude CodeCodex 等 Vibe Coding 工具跨界轉譯為高迭代品質的專業學術產出助手</td>
+</tr>
+<tr>
+<td align="left"><strong>批判思維修改慾望與知識內化</strong></td>
+<td align="left">一個真正具備思考能力的研究者，面對自身或 AI 產出的內容都會自發產生持續修改與精益求精的慾望AI 給出的架構往往缺乏研究所專屬的脈絡感，唯有經過不斷辯證調整與深度理解，將知識真正口語內化，才能在面對指導教授與口試時言之有物經得起嚴格考驗</td>
+</tr>
+</tbody>
+</table>
+]]></content:encoded>
+                                <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">SakuraEGS</dc:creator>
+                <pubDate>2026-10-05 23:02:33</pubDate>
+                                                                                                                                            </item>
+                    <item>
+                <title>Day 22 關於學習到底可以產生什麼怪物出來？</title>
+                <link>https://ithelp.ithome.com.tw/articles/10420991?sc=rss.iron</link>
+                <guid isPermaLink="true">https://ithelp.ithome.com.tw/articles/10420991?sc=rss.iron</guid>
+                <description><![CDATA[<h1>Day 22關於學習到底可以產生什麼怪物出來？</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261004/2...]]></description>
+                                    <content:encoded><![CDATA[<h1>Day 22關於學習到底可以產生什麼怪物出來？</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261004/20184140lNLGZKR5XC.png" alt="學習而已，怎麽可能......會有怪物......出現......midjourney示意圖......" /><br />
+<em> 圖 1：學習而已，怎麼可能會有怪物出現Midjourney 示意圖</em></p>
+
+<blockquote>
+<p>來到最後十天，<br />
+其實每天都在想我已經有點想不到到底要開拓什麼新的領域了，<br />
+有想過要不然 AI 幫我隨機抽兩個元素決定我要創新的東西，<br />
+又或者真的懶到瘋狂問你 AI，<br />
+當然也有想過製作圖表，觀察自己還沒有接觸的領域，或者太經常說的領域，<br />
+去決定要創新的方向！<br />
+但是這些事情都離不開學習</p>
+</blockquote>
+<hr />
+<h2>痛點與趨勢觀察：從 CUA 到 Von，System 1 輕量化模型的快思浪潮</h2>
+<p>好吧實質上，這次決定稍微的去看 AI 的新趨勢吧，不知道大家知不知道 CUA 跟 Von 這兩個 System 1 的輕量化 AI 模型因為最近在上助教課的時候，非常有趣的，早上看見一個新聞在介紹 <strong>CUA-S1-FORMS</strong>：</p>
+<ul>
+<li>
+<strong>CUA-S1-FORMS</strong>：一個輕量化的 AI 模型，能夠自動化判斷網頁/軟體表單自動填寫任務該如何處理執行</li>
+</ul>
+<p>上課的時候就看見其他學校留言區的學生有提及到 <strong>Jev</strong>：</p>
+<ul>
+<li>
+<strong>Jev</strong>：它是這波System One模型浪潮的始祖它無法生成自由文字，但能以超低成本和超高速度（70~500 毫秒）將輸入的複雜狀態直接轉換成型別安全（Type-safe）的結構化決策分數，在商業上用於 AI Agent 路由風險攔截和資料過濾</li>
+</ul>
+<p>但是呢 Jev 似乎是閉源的需要付錢的，所以這邊決定找開源替代的方法，也就是 <strong>wfzyx/von</strong>：</p>
+<ul>
+<li>
+<strong>Von</strong>：它是為了解決 Jev 只能走雲端 API 限制而誕生的開源替代品（Alternative）它採用了雙向編碼器（Bidirectional Encoder）架構，大小約 3.95 億參數（~3GB），讓開發者可以直接在本地（GPU 或 CPU）進行極速的非自迴歸機率決策，API 協議也相容於 Jev</li>
+</ul>
+<p>當然以上這些一部份都是 AI 告訴我的，但是如果要得知這些最新的 AI 趨勢，我似乎都是透過看資訊與新聞聽聞別人的說法自主搜索這樣子的一些行動，來了解到這些前沿的科技</p>
+<hr />
+<h2>認知科學與腦啟發：從果蠅連接組神經網絡到生成對抗（GAN）</h2>
+<p>在探討 AI 領域的時候，機器學習與深度學習經常被並列討論雖然當代許多重要 AI 系統都以深度學習為核心，但深度學習仍是機器學習的子集，兩者並未因此失去區分</p>
+<p>在人工智能的哲學方面，神經網絡學派或連結主義常以生物神經系統的學習方式為靈感，探討智慧是否能從單元間的連結與權重調整中湧現這種腦啟發 AI的思路，也與近年果蠅全腦連接組的研究相呼應：科學家先以 AI 協助繪製果蠅大腦的神經連接圖，再以此建立模擬與計算模型，進一步啟發腦科學與人工智慧研究</p>
+<p>簡單說說 GAN 生成對抗網絡吧，因為真的沒把握準確的用自己的文字說明所以這邊也引用 AI 幫忙整理：</p>
+<blockquote>
+<p><strong>GAN（Generative Adversarial Network，生成對抗網絡）</strong> 是一種由兩個神經網路互相競爭的生成式深度學習模型：一個負責造假，另一個負責辨別真假</p>
+<p>在訓練過程中，鑑別器先根據自己判錯真偽的情況調整權重；接著，生成器會利用鑑別器提供的判斷訊號，經由反向傳播調整自己的權重，讓下一次生成的結果更不容易被識破兩者交替學習，使生成器逐漸學會模仿真實資料的分布</p>
+</blockquote>
+<p>放在現實當中，像是一個學生在胡亂寫作業，另外老師只負責判斷作業是否像符合要求的作品，而不一定直接給出標準答案學生根據老師判斷所形成的回饋不斷修正寫法；同時，老師也因為看過更多不同形式的作業，而更能辨別哪些作品不符合要求經過反覆訓練後，學生產生看起來正確答案的能力會提高</p>
+<p>想著想著，真的會想起自己小時候本身成績不太好的時候，其實也不太想理會什麼所謂的學習策略，就是自己拿到高分自己就開心於是就學得越來越好，自己拿得低分自己就越對那個科目沒有興趣，可能這也是一種情況吧，說起來這個就有點像所謂的果蠅大腦？</p>
+<p>但是沒想到去到探討人工智能特別是連結主義底下的神經網絡，就必須要對認知科學還有學習策略有所了解，儘管我自己本來身為門外漢，只是因為一時興起想了解多一點 AI，也莫名其妙的真的了解起這些東西來，也因為發現自己似乎理解後有能力去考一些 AI 認證，考過了，又會覺得有正面的回饋所以更加想要了解這個領域</p>
+<p>回想起來這整趟旅程又可以探討兩種不同的學習策略呢</p>
+<hr />
+<h2>Vibe Coding 實戰一：用 Antigravity 消化前沿科技，打造概念引導儀表板</h2>
+<p>好吧回歸這次專案！既然兩種輕量模型我都不太熟悉的話，就像前一天做的</p>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261004/201841400OC19jfQtt.png" alt="vibe coding出來的頁面，讓AI告訴你新的科技可以做什麽有趣的事情~" /><br />
+<em> 圖 2：Vibe Coding 出來的頁面，讓 AI 告訴你新的科技可以做什麼有趣的事情～</em></p>
+
+<h3>核心 Prompt 模組一：跨領域開源技術解構儀表板</h3>
+<pre><code>把 github 網址（https://github.com/wfzyx/von.git ，https://github.com/trycua/cua.git ）丟給 Antigravity 的 AI 叫他幫忙下載然後告訴我這兩個 AI 模型可以幹什麼事情，像是之前的跨領域學習策略一樣，建立一個頁面介紹這兩個模型可以做什麼事情，並且輕微規劃如果是 Antigravity 可以用這兩個模型做什麼事情，從而讓我簡單消化
+</code></pre>
+<blockquote>
+<p> <strong>提示</strong>：以上內容直接複製即為標準 Prompt！</p>
+</blockquote>
+<p>當然啦考慮到 Antigravity 的用量當然我也會比較推介是搭配你自己是學生的身份，用學生的方案解構網路上面的資源從而達到自主學習的能力最基本的用一個頁面來讓自己了解兩個最新的科技，另一方面也方便之後自己用資源延伸出自己的個人專案</p>
+<hr />
+<h2>Vibe Coding 實戰二：打造雙 Von 對抗小精靈 EXE，一隻會自主學習的怪物誕生！</h2>
+<p>所以接下來！了解過 CUA-S1-FORMS 可以把內容變成表單，Von 可以進行快速決策那麼我的理念是這樣子的</p>
+<h3>核心 Prompt 模組二：雙 Von 生成對抗網絡桌面程式</h3>
+<pre><code>寫一個桌面程式 EXE：程式能載入 PDF 並分析詞頻與文字關係；內建雙 Von 生成對抗機制，一個精靈根據矩陣生成 1 到 50 字的中文句子（以句號結尾且詞不重複），另一個精靈比對 PDF 原文審查真實度並產出獎懲對抗表；支援連續對抗 1 到 1000 次對抗表 JSON 匯出與導入，介面左側有會眨眼浮動的小精靈動畫，右側有分析數據表最後請直接執行打包指令產出應用程式
+</code></pre>
+<blockquote>
+<p> <strong>提示</strong>：以上內容直接複製即為標準 Prompt！</p>
+</blockquote>
+<p>製作的過程也會瘋狂思考我真的需要用這些模型嗎？又或者我的專案在 vibe coding 過程當中真的有用這些模型嗎？</p>
+<p>後來也確實確定了沒有用 CUA-S1-FORMS，但有根據資料承襲了 System 1 與 CUA 的設計哲學<strong>不依賴龐大的自回歸逐字生成，改用結構化打分</strong></p>
+<hr />
+<h2>深度反思與學習策略：是 AI 替我思考，還是把知識內化成自己的怪物？</h2>
+<p>這次寫好這篇文章的時間比較晚，但後來發現都圍繞著學習這件事情在思考：</p>
+<ul>
+<li>
+<strong>如何用 AI 了解前沿的科技在幹什麼？</strong>
+</li>
+<li>
+<strong>自己如何把複雜的資料變成好看的面板讓自己內化知識？</strong>
+</li>
+<li>
+<strong>如何理解深度學習裡面的學習邏輯？以生成對抗網絡為例？</strong>
+</li>
+<li>
+<strong>透過個人專案實踐自己對於最新知識的理解</strong>
+</li>
+</ul>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261004/201841409xiRen4nez.png" alt="學習得出第1543次的結果" /><br />
+<em> 圖 3：對抗學習迭代到第 1543 次的生成結果</em></p>
+
+<p>到底是 AI 替代我作深度思考把答案端到我面前逼我學起來？還是我透過 AI 給予的資料作延伸作反思作內化變成自己的知識？</p>
+<p>這都是取決於人的行動以及人的行為，儘管整篇內容有很多都是 AI 提及的，就連最後的那段 prompt，都是 AI 總結我對程式的 vibe coding 修改才提出來的精簡版本，但是可能也就是這篇文章的結構及邏輯過程我希望能夠讓你看見我是如何學習的</p>
+<p>最後 AI 做出來的東西超古怪，產出的文字超古怪，甚至有種 San 值狂掉的感覺在沒有生成對抗網絡之前，產出的東西超奇怪的，但是不停的迭代學習過後似乎又產出了一些似是而非的東西</p>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261004/20184140moRUri9HWJ.png" alt="學習得出第8230次的結果" /><br />
+<em> 圖 4：對抗學習迭代到第 8230 次的生成結果</em></p>
+
+<p>不過就讓我感覺出製造了一隻怪物，但是是一隻會學習的怪物出來，也不會覺得很可怕啦，畢竟自製的～有某程度上可以符合獵奇心理</p>
+<hr />
+<h2> 本篇重點整理</h2>
+<table>
+<thead>
+<tr>
+<th align="left">核心維度</th>
+<th align="left">重點摘要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>輕量化 System 1 認知</strong></td>
+<td align="left">了解前沿的 System One 模型（如 CUA-S1 與 Von），透過 Vibe Coding 工具中的 AI Agent 協助解析開源技術與規劃 PBL 實踐案例，以極速結構化打分取代昂貴的自回歸逐字生成</td>
+</tr>
+<tr>
+<td align="left"><strong>學習策略與腦啟發映射</strong></td>
+<td align="left">人工智能連結學派探索智慧從神經權重中湧現，如同生物神經系統與果蠅大腦的連結機制；無論是人類的正向反饋學習，還是 AI 的迭代優化，總結專屬個人的學習策略才能做出獨一無二的產品</td>
+</tr>
+<tr>
+<td align="left"><strong>GAN 雙精靈對抗演化</strong></td>
+<td align="left">將輕量化決策思維串接生成對抗網絡（一個負責矩陣生成一個比對原文審查獎懲），即使初始產出怪異且掉 San 值，但在數千輪對抗學習後便能內化個人語料風格，演化成一隻會不斷自我學習的專屬怪物</td>
+</tr>
+</tbody>
+</table>
+]]></content:encoded>
+                                <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">SakuraEGS</dc:creator>
+                <pubDate>2026-10-04 23:36:49</pubDate>
+                                                                                                                                            </item>
+                    <item>
+                <title>Day 21 本來只想打造一個自動編輯音樂影片的工具，結果她好像變成了一個病嬌女友電台？</title>
+                <link>https://ithelp.ithome.com.tw/articles/10420557?sc=rss.iron</link>
+                <guid isPermaLink="true">https://ithelp.ithome.com.tw/articles/10420557?sc=rss.iron</guid>
+                <description><![CDATA[<h1>Day 21本來只想打造一個自動編輯音樂影片的工具，結果她好像變成了一個病嬌女友電台？</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/uplo...]]></description>
+                                    <content:encoded><![CDATA[<h1>Day 21本來只想打造一個自動編輯音樂影片的工具，結果她好像變成了一個病嬌女友電台？</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261003/201841403Cxp5xAJuJ.png" alt="窩在頁面裏想要跟你一起聽emo音樂的地雷系女友~midjourney示意圖" /><br />
+<em> 圖 1：窩在頁面裡想要跟你一起聽 emo 音樂的地雷系女友～Midjourney 示意圖</em></p>
+
+<blockquote>
+<p>話說偶爾在 YouTube 找影片播放音樂的時候，<br />
+都會聽很多 playlist 或者合集，<br />
+有時候是 hyperpop 風格，有時候是咖啡廳爵士樂風格<br />
+當然因為 AI 工具的盛行，<br />
+有時候也會覺得自己其實也能夠製作類似的影片獲利，<br />
+當然啦，這也會讓我們去思考 Lofi Girl 當初的獲利原因</p>
+</blockquote>
+<hr />
+<h2>痛點與靈感發想：靈感枯萎時的開源探索，Suno AI 的串接可能？</h2>
+<p>本來也是因為自己已經有點靈感枯萎的狀況，所以說想找找看 vibe coding 可以做什麼有趣的事情，例如說有什麼政府的開源資料可以被應用，自己有什麼領域還沒有接觸到</p>
+<p>結果讓我找到了一個有趣的開源專案：<code>gcui-art/suno-api</code></p>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261003/20184140GsnufGHSJB.png" alt="亂找一通找到的開源專案~" /><br />
+<em> 圖 2：在 GitHub 上意外發現的開源專案 gcui-art/suno-api～</em></p>
+
+<p>話說 Suno AI 一直都沒有官方公開 API 可以直接在外部與其他大型語言模型或其他內容串接，變成更龐大的內容產出系統所以說這個專案是為了解決這個問題嗎？</p>
+<ul>
+<li> <strong>開源專案來源</strong>：<a href="https://github.com/gcui-art/suno-api">GitHub - gcui-art/suno-api</a>
+</li>
+</ul>
+<p>相關串接的方法其實我也沒有看得很仔細，不過我們 Antigravity 裡面的 AI 似乎可以解答我說這樣子的開源專案可以做什麼有趣的事情當然憑著自己的直覺會認為：那麼不如就設計一個系統，能夠隨機幫我搭配各類型的關鍵音樂提示詞，變成 prompt，然後可以透過這個開源專案讓 Suno AI 產出相應的音樂內容，然後把產出的特定風格音樂串連成超長的歌單，畫面上就不停循環播放某一個影片或者動畫</p>
+<p>當然反過來問也會覺得說：現在已經有各種影片剪輯工具，以及有內容生成功能的影片剪輯工具，為什麼還要自己製作一款工具？</p>
+<h3>觀察到的核心痛點：</h3>
+<ul>
+<li>
+<strong>SUNO AI 是一個產出高品質 AI 音樂的應用，但目前都很少跟其他影片剪輯工具直接合作</strong>
+</li>
+<li>
+<strong>有時候我連自己下 prompt 都懶了，但是我有喜歡的某種風格，例如說病態可愛地雷系風格的情緒化傷感的（是不是最近太累了，竟然又再次開始喜歡聽這種歌）</strong>
+</li>
+</ul>
+<hr />
+<h2>Vibe Coding 實戰一：自動化音樂生成與長影片剪輯工具</h2>
+<p>當然這就形成了本次應用設計的第一個 prompt也因為看見了開源專案有說可以在 Vercel 上面部署這個網頁，所以需求規劃如下：</p>
+<pre><code class="language-markdown">請幫我設計一個之後會部署在 Vercel 的網頁，然後會循環播放我給予的影片/GIF素材，旁邊會幫我隨機搭配病態可愛地雷系風格的情緒化傷感各種適合 Suno AI 產出相應音樂的關鍵提示詞，然後能夠選取或者隨機搭配
+
+下載及串接 https://github.com/gcui-art/suno-api.git 功能，可以自動生成及下載相應提示詞的音樂並且可以編輯歌單，每一首歌曲都會有淡出淡入的部份並且會重疊一部份，最後製作成 45 分鐘至到 1 小時的長影片
+</code></pre>
+<blockquote>
+<p> <strong>提示</strong>：以上內容直接複製即為標準 Prompt！</p>
+</blockquote>
+<p>這樣子應該就能夠因應已有的專案架構，產出符合我自己風格的工具了吧，挺符合我之前的一貫作風的</p>
+<p>但是啊，過程中也會發現提供的提示詞其實並不完全符合我理想中的音樂風格，這邊同樣要 Perplexity 幫我找出大量並且貼切的提示詞，例如說：<code>trap</code><code>emotional</code><code>glitchcore</code><code>j-pop</code> 等等</p>
+<hr />
+<h2>文化層次剖析：從 Lofi Girl 的陪伴經濟到慢電視文化</h2>
+<p>當然後來發現這個專案探求文化的部分並不單單只有這麼少開篇的時候還提及到思考 Lofi Girl 當初的獲利原因，網路上查到的一個說法是叫做**陪伴經濟**</p>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261003/20184140dSFJ01XDWC.png" alt="Lofi girl的頁面" /><br />
+<em> 圖 3：象徵陪伴經濟與慢電視殿堂級代表的 Lofi Girl 直播頁面</em></p>
+
+<p>透過 24 小時不間斷的 Lofi Girl 以及聊天框，溫暖的 lofi 音樂固然是大家喜歡看這個節目的一大原因，但也有另外一個原因：聊天框裡都是同時在觀看這個節目的世界各地不同的人Lofi 音樂適合大家在獨自工作或者獨自學習的時候當作背景音樂聆聽，但聊天框中與世界各地同時在聽這個節目的人，也會讓聆聽者覺得自己並不完全是孤獨的一個人，符合 lofi 音樂及女孩的格調，才讓這個節目如此出圈</p>
+<p>另外一個是**慢電視文化（Slow TV）**儘管很少人會探討 Lofi Girl 的這件事，但是緩慢的影像動畫變化，有時候也會讓我們在焦躁的當代媒體以及短影片潮流當中，尋找到一絲寧靜，與主流文化形成差異對比，也為尋求著寧靜以及緩慢的觀眾們提供內容，精準打中分眾的痛點</p>
+<hr />
+<h2>視覺與音樂的符號連結：Hyperpop 與地雷系（Menhera）的深層心理</h2>
+<p>但是我們換個角度就會發現：不同的歌單，就會有不同的傾向與文化符碼</p>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261003/20184140hIlhsBcScN.png" alt="hyperpop playlist 的感覺就截然不同！" /><br />
+<em> 圖 4：風格強烈色彩高飽和且充滿數位故障美學的 Hyperpop 音樂歌單</em></p>
+
+<p>例如說 <a href="https://youtu.be/uG2JRNwf-2A?si=pCWeOB8MsfEj7hXR">Hyperpop 音樂的歌單</a>（怎麼都是在探求這個東西），不單單需要歌單音樂內容是那種電子樂有種炸裂並且飽和錯亂的感覺；在視覺上面通常都會用一個高飽和度及色彩鮮艷的網路文化或者動漫風格，並且有錯亂元素的圖像放在影片靜止下來，這似乎也成為了 Hyperpop 音樂歌單的一個固有製作習慣</p>
+<p>那麼這次我們也來探討一下吧～如果是病態可愛地雷系風格的情緒化傷感的歌單聽眾，需要的是什麼？</p>
+<p>有時候我懷疑，就連聽眾也是喜歡病態可愛風格地雷系的人：</p>
+<ul>
+<li>具體來說，希望被堅定的選擇</li>
+<li>對於有一個黏人的女朋友或者男朋友，有理想化及浪漫化的憧憬</li>
+<li>偶爾會說出各種認真的但極度危險的對話，來突出對自己情感的深沉</li>
+<li>喜歡看著及照顧極度敏感的人</li>
+<li>（怎麼好像越來越歪了～）</li>
+</ul>
+<hr />
+<h2>Vibe Coding 實戰二：打造具備人格互動的地雷系病嬌女友陪伴電台</h2>
+<p>但是也難免，有一個滿足條件的虛擬男女友會是這類型聽眾的一個小幻想吧～</p>
+<p>所以我們就加了一個電台效果！像極了 Lofi Girl 的聊天框，但這次跟自己聊天的，也只有這個虛擬男女友的影像，以及已經設定好的幾個對白台詞（理論上可以串 AI 啦，但我有點沒有興趣做這件事）跟隨著已經製作好的歌單，循環播放的影片塑造著像是生動的地雷系男女友，會因為各種按鈕的點擊會有各種對白的浮現，也展現著這類型男女生的敏感與害怕</p>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261003/20184140v6aFVCOaqo.png" alt="後來設計的電台陪伴頁面~" /><br />
+<em> 圖 5：結合番茄鐘人格互動對白與 emo 氛圍的病態可愛地雷系電台陪伴頁面～</em></p>
+
+<p>第二個提示詞規劃如下：</p>
+<pre><code class="language-markdown">製作一個電台畫面，左上角會有時間以及可以切換成倒計時自己可以設定倒計時時間的番茄鐘設定
+
+畫面會放大變成循環播放的影像畫面，然後播放著已經設定好的歌單影像可以進行切換，但是都會是地雷或病態可愛風格的男生或者女生
+
+會因為切換歌曲點擊畫面切換計時方法切換不同人格，從而有不同的句子在下方的聊天框顯示
+</code></pre>
+<blockquote>
+<p> <strong>提示</strong>：以上內容直接複製即為標準 Prompt！</p>
+</blockquote>
+<ul>
+<li> <strong>專案線上展示成果</strong>：<a href="https://yami-kawaii-radio.vercel.app/">病態可愛地雷系陪伴電台（Yami Kawaii Radio）</a>
+</li>
+</ul>
+<hr />
+<h2>深度反思：文化轉譯與 AI 音樂體驗的重塑</h2>
+<p>對於陪伴經濟，不同的人其實都有不同的需求：有人喜歡的是可愛的性格，有人喜歡的是溫柔的性格，有人喜歡的是依賴的性格並且不同的音樂也適合用不同的搭配，來營造出陪伴經濟這件事情確實，音樂也是一個陪伴人們的工具陪伴我們上車，陪伴我們走在路上</p>
+<p>整體來看，還需要透過對於不同文化的理解，對於某種音樂有更深入的參透確實，Suno AI 只會適合作為生成音樂的工具，但要把 AI 的音樂應用及塑造成文化的產物，必須要有更多的操作</p>
+<p>比較傳統一點還會包括可能是自己填詞但是 AI 編曲作曲還有唱出來；但是 Vibe Coding 過後加入自己對於文化的深入理解，似乎也能夠讓 AI 音樂的價值獲得更充分的發揮，製作成獨一無二的體驗內容</p>
+<hr />
+<h2> 本篇重點整理</h2>
+<table>
+<thead>
+<tr>
+<th align="left">核心維度</th>
+<th align="left">重點摘要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>開源探索與自動化管線</strong></td>
+<td align="left">透過探索 GitHub 開源專案（<code>gcui-art/suno-api</code>），站在巨人的肩膀上構思將 Suno AI 串接為自動隨機搭配風格 Prompt淡入淡出接歌，並生成長時數播放清單的影片自動化工具</td>
+</tr>
+<tr>
+<td align="left"><strong>陪伴經濟與慢電視洞察</strong></td>
+<td align="left">剖析 Lofi Girl 成功的雙核本質世界各地同在的陪伴經濟與在短影音時代提供寧靜的慢電視文化（Slow TV），探討音樂合集如何精準擊中現代人的孤獨與專注需求</td>
+</tr>
+<tr>
+<td align="left"><strong>次文化轉譯與視覺符碼</strong></td>
+<td align="left">從 Hyperpop 的高飽和數位故障美學，對比到病態可愛地雷系（Menhera / Yandere）對於被堅定選擇與極端依賴的深層心理渴望，將音樂風格與視覺符號深度錨定</td>
+</tr>
+<tr>
+<td align="left"><strong>Vibe Coding 體驗重塑</strong></td>
+<td align="left">不單純停留於音樂生成工具，而是藉由自然語言打造結合番茄鐘情境影像與性格對白互動的病嬌女友陪伴電台，證明透過文化轉譯能賦予 AI 音樂更有溫度的靈魂</td>
+</tr>
+</tbody>
+</table>
+<hr />
+]]></content:encoded>
+                                <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">SakuraEGS</dc:creator>
+                <pubDate>2026-10-03 21:14:54</pubDate>
+                                                                                                                                            </item>
+                    <item>
+                <title>Day 20 要碰法律真的有點痛苦呢～但畢竟是作業</title>
+                <link>https://ithelp.ithome.com.tw/articles/10420057?sc=rss.iron</link>
+                <guid isPermaLink="true">https://ithelp.ithome.com.tw/articles/10420057?sc=rss.iron</guid>
+                <description><![CDATA[<h1>Day 20要碰法律真的有點痛苦呢～但畢竟是作業</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261002/...]]></description>
+                                    <content:encoded><![CDATA[<h1>Day 20要碰法律真的有點痛苦呢～但畢竟是作業</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261002/20184140X33oxO1MH5.png" alt="法律呀......世界......毀滅吧......midjourney示意圖~" /><br />
+<em> 圖 1：法律呀世界毀滅吧Midjourney 示意圖～</em></p>
+
+<blockquote>
+<p>話說記得之前最多只有碰到使用者條款，<br />
+但是使用者條款在很多情況底下並沒有法律效力，<br />
+加上自己在學校最近在上商標實務，真的很難逃掉要唸法律<br />
+而且報告還要看德國跟歐盟的法律文件呢</p>
+</blockquote>
+<hr />
+<h2>痛點剖析：商標實務報告的現實困境，這串英文到底是什麼啊！</h2>
+<p>好吧！事情是這樣子的，最近在上商標實務的課程，要做一份簡報報告，要針對 <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:62001CJ0053">Linde AG v. Deutsches Patent-und Markenamt, Joined Cases C-53/01, C-54/01 &amp; C-55/01, 2003 E.C.R. I-3161.</a> 進行一番報告～不過話說，這串英文到底是什麼啊！</p>
+<p>問題就出在這裏了，我們先在輕微的解答吧！</p>
+<ul>
+<li>
+<strong>Linde AG v. Deutsches Patent- und Markenamt</strong>：這是訴訟雙方的名稱原告是德國知名的工業氣體與物流企業林德集團（Linde AG），被告是德國專利商標局（DPMA）</li>
+<li>
+<strong>Joined Cases C-53/01, C-54/01 &amp; C-55/01</strong>：這代表歐盟法院將三個性質相同序號分別為 53/0154/01 和 55/01 的合併審理案件其中的 01 代表案件提交給法院的年份（2001 年）</li>
+<li>
+<strong>2003 E.C.R. I-3161</strong>：這是該判決正式刊登在歐洲法院判例彙編（European Court Reports, E.C.R.）的位置代表這是 2003 年的判決，收錄在第 I 冊，起始頁碼為第 3161 頁</li>
+</ul>
+<p>儘管這是透過 Google 的 AI 模式所得到的答案，作為基礎了解應該已經算是不錯了畢竟雖然是在台灣唸智慧財產權，但下一步卻是要找出外國的判例，甚至要了解文件當中所說出的外國條例呢～</p>
+<p>如果 Google 的 AI 模式無法作為有效的解答，那麼我們就直接從 AI 模式的連結下載文件吧！<br />
+ <strong>判決文件來源</strong>：<a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:62001CJ0053">EUR-Lex 歐盟法規數據庫</a></p>
+<p>下載文件過後！放心我還是看不懂！我英文並沒有大家想像中的好！所以這裏便出現了兩個途徑：</p>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261002/20184140wb4O7N7oRW.png" alt="NotebookLM解答，但有時候可能是錯的..." /><br />
+<em> 圖 2：透過 NotebookLM 進行文件分析解答，但有時候可能是錯的</em></p>
+
+<ul>
+<li>
+<strong>途徑一</strong>：透過 NotebookLM 對文件進行分析並且用繁體中文的形式解答我對這份文件的所有疑問這是比較新式的做法！</li>
+</ul>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261002/20184140G627z6U0nz.png" alt="中文翻譯好多了~" /><br />
+<em> 圖 3：透過沉浸式翻譯工具輔助，閱讀中文翻譯好多了～</em></p>
+
+<ul>
+<li>
+<strong>途徑二</strong>：透過沉浸式翻譯（聽說很好用）直接把文件翻譯成繁體中文然後自己看一篇，這是比較傳統的做法</li>
+</ul>
+<p>好吧就兩個一起做會比較好，甚至繁體中文的文件，及原版的文件以及輔助我了解案件的 NotebookLM 也是協助我整理資料很好用的工具</p>
+<p>至少從兩種做法得出翻譯文件，AI 協助分析文件，加上 Google AI 做事實檢索及 Perplexity 做事實查核，我能夠得出：牽連的歐盟及德國商標法條例整體事件時序三個案例當中被告人及原告人的觀點從而這個時候我們就需要用一個法律人經常會用的 IRAC 案例分析法了！這是之前在修讀著作權法，聽老師才知道的一種分析方法！幾乎！我 22 年來都沒有聽過這個東西！</p>
+<hr />
+<h2>法律思維工具箱：IRAC 案例分析法與跨領域的實務視角</h2>
+<h3>什麼是 IRAC 分析架構？</h3>
+<p>根據 Google AI 模式給予的解答，IRAC 包含四個核心組成部分：</p>
+<ol>
+<li>
+<strong>Issue (議題/爭點)</strong>：<br />
+明確本案中需要解決的核心法律問題通常以疑問句形式呈現，例如：A 與 B 之間是否成立有效的契約？</li>
+<li>
+<strong>Rule (法規/法律依據)</strong>：<br />
+列出與該爭點相關的法律條文法規或判例原則此步驟不需要分析事實，只需陳述抽象的法律規則</li>
+<li>
+<strong>Application / Analysis (法律適用/分析)</strong>：<br />
+這是 IRAC 最關鍵的部分將上述法規應用到案件的具體事實中分析為什麼這些事實符合或不符合法律規定的要件</li>
+<li>
+<strong>Conclusion (結論)</strong>：<br />
+基於上述分析，對爭點給出明確的回答預測法院可能的判決結果或雙方的權利義務關係</li>
+</ol>
+<h3>上課體會與 AI 觀點的微妙差異</h3>
+<p>而這個是 Google AI 模式給予我的解答，當然上課時有非常精簡的說明！並且針對 AI 模式提出的觀點，自己認為跟上課的時候也有些許差異，上課的對答還會強調，原告與被告是誰，有時候還要知道原告與被告到底是怎樣的企業還有政府單位，這同樣會影響我們要站在怎樣的角度去看待智慧財產權所謂在保護創新（壟斷獎勵）與維持市場競爭力（促進流通）之間取得平衡，我們並非一味的去看法理，另一方面也會去看技術與市場</p>
+<p>並且要清楚每一次的案件到底是進行到第幾次的審判程序，特別是可能還會有州政府法院及最高法院之間不同的判決差異及思考點有時候審理的過程當中雙方律師都會有不同的案例被拿出來討論，所以還要走本次案件以外的案件資料</p>
+<p>說到底我還沒有真的進行過正式的法律系訓練呢，但想過一下堂似乎也知道一下他們是如何用不同的方法對法律認知進行自我的學習與訓練讓我也有些技巧儘管在課後也會記得</p>
+<p>好吧，其實簡報的大概內容也都整理出來了，儘管有很多都是 AI 幫我整理的，但是我作為一個外門人同樣也有必要用自己的方法自己用 AI 的方式確保資訊盡可能達到準確無誤的部份</p>
+<hr />
+<h2>延伸思考：馬德里國際註冊的實體保護落差程序漏洞還是會員國問題？</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261002/20184140tSx7iUjclE.png" alt="WIPO的頁面！通常是中國會比較有需要看一下這個，台灣還是TIPO為主，除非要安排國際上的東西" /><br />
+<em> 圖 4：WIPO 官方網站頁面！通常是跨國佈局才會特別關注，台灣本土主要仍以智慧財產局 TIPO 為主</em></p>
+
+<p>並且作為延伸思考，在文件當中我看到一個熟悉的詞彙：<strong>馬德里國際註冊（Madrid System）</strong></p>
+<ul>
+<li>
+<strong>馬德里國際註冊（Madrid System）</strong>：是由世界智慧財產權組織（<a href="https://www.wipo.int/madrid/zh/">WIPO 官方網站</a>）管理的一套商標國際註冊制度它允許申請人只需提交一件國際申請使用一種語言繳納一組規費，即可同時在多達 130 個會員國（含 115 個締約方）申請商標保護，大幅簡化了跨國商標註冊與管理的繁瑣程序</li>
+</ul>
+<p>也不算是完全熟悉，但是相類似的句式自己也曾經看過，那是自己之前在入讀研究所之前自己學習 WIPO PCT 課程時有看過的類似內容</p>
+<ul>
+<li>
+<strong>PCT（Patent Cooperation Treaty，專利合作條約）</strong>：是由世界智慧財產權組織（<a href="https://www.wipo.int/pct/zh/">WIPO 官方網站</a>）管理的一套國際專利申請體系它允許申請人只需提交一件國際專利申請案，就能在多達 150 個以上的締約國中同時延續其專利申請權，大幅簡化了跨國專利佈局的早期程序</li>
+</ul>
+<p>兩者一個是商標一個是專利，儘管我相信申請流程應該有點不太一樣，但是原理上卻有類似感覺，因為智慧財產權有屬地主義的關係，很多時候一些會推往世界各地的產品都要在世界各地不同地方進行專利註冊或者商標註冊，而這兩個機制能夠確保快速的讓自己的專利及商標在全球佈局口頭上是這樣子說</p>
+<p>從而因為自己看過類似的東西或者根據自己的經驗與理解，自己能夠提出針對本次案件的題目是：</p>
+<blockquote>
+<p><strong>馬德里國際註冊卻沒有保障申請人的商標註冊在會員國得到保護會導致的尷尬問題，是馬德里國際註冊（Madrid System）程序上的問題嗎？還是會員國的問題？</strong></p>
+</blockquote>
+<hr />
+<h2>Vibe Coding 實戰：打造專屬法律動態儀表板與深層思辨沙盒</h2>
+<p>好吧說了這麼久～這次 vibe coding 要做什麼啊！幫忙分析法律文件的 AI 機器人嗎？還是儀表盤？對的是儀表盤這麼簡單！</p>
+<p>然後 prompt 如下：</p>
+<pre><code class="language-markdown">請把我提供的原文文件翻譯文件整理的簡報文件，整理為一個能夠用官方正宗正式的字眼描述整件事情的頁面
+</code></pre>
+<blockquote>
+<p> <strong>提示</strong>：以上內容直接複製即為標準 Prompt！</p>
+</blockquote>
+<p>但話說為什麼要這樣子做，因為我超怕自己分析得不夠到位儘管再怎樣看整份文件，再怎樣調整整簡報內容，總是覺得與 AI 協作的過程當中自己是不是還有很多漏洞</p>
+<p>畢竟如果是進行法律工作用 AI 進行輔助進行的話一直以來都有很大爭議，也包括在美國也有相關的案例是 AI 產出的相關參考案例在現實中並不存在，從而相關律師被吊銷執照的部份可以參考這篇報導：<a href="https://news.pchome.com.tw/science/sunmedia/20260419/index-77656918172726329005.html">美國律師使用 ChatGPT 引用虛構判例遭懲處事件</a></p>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261002/20184140ddt7gvbOyU.png" alt="最後AI自主設計的頁面還有做的有趣深度思考及互動東西" /><br />
+<em> 圖 5：最後 AI 自主設計開發完成的高質感法律動態報告儀表板與思辨沙盒</em></p>
+
+<ul>
+<li> <strong>專案線上展示成果</strong>：<a href="https://shirosakuraegs.github.io/eu-3d-trademark-analysis/">歐盟立體商標 Linde 案與商標法體系動態研究報告</a>
+</li>
+<li> <strong>GitHub 開源儲存庫</strong>：<a href="https://github.com/ShiroSakuraEGS/eu-3d-trademark-analysis">ShiroSakuraEGS/eu-3d-trademark-analysis</a>
+</li>
+</ul>
+<hr />
+<h2>深度反思：大學生的多元素養與 Vibe Coding 的知識反哺哲學</h2>
+<p>但是也可以相對放鬆的原因是我並不想當律師或者法官，不過作為一個普通平民在長大的過程會認為自己還是需要懂得一點法律的部份，如何擁有法律素養就變成一個一般人在成長過程都必須要面對的課題，當然大學生有幾個課題要處理一個是財經素養，一個是法律素養，一個是媒體素養這些其實非常重要，儘管自己過往非常在意的是數位素養及 AI 素養這些是在一般課堂上面並不會被明說但是往往都會滲透在各種內容並且教授們都陸續提及的一些內容課名看不出，但內容早就已經把這些東西滲透進來了</p>
+<p>大學生的跨領域素養，我們不單單要念日常的學科呀喂！身為學生或者大學生也必須要精準自己的財經素養法律素養媒體素養數位素養AI素養啊！</p>
+<p>儀表盤簡單來說是讓我把古板的英文文件甚至是外國語言文件轉譯成我方便觀看的版面進行閱讀，並且從中找出我是否需要再作研究或者深入探討的重點，從而讓我更加完善我的簡報這次使用者有趣的只有我，但我也嘗試把它放到 GitHub 上面吧</p>
+<p>儘管只是妄想做一下法律上面的學習與初步分析，但就是這樣一步一步，可能當初法律系的同學們都是這樣子吧，一步一步的其實都能夠累積不同的方法與邏輯從而結合自己的經驗，成為自己獨一無二的法律素養</p>
+<hr />
+<h2> 本篇重點整理</h2>
+<table>
+<thead>
+<tr>
+<th align="left">核心維度</th>
+<th align="left">重點摘要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>痛點剖析與跨領域自學</strong></td>
+<td align="left">面對商標實務報告的外國法院判例文獻（Linde 案 Joined Cases C-53/01 to C-55/01），結合雙軌翻譯（沉浸式翻譯）與多模型查核（NotebookLM + Google AI + Perplexity），打破語言與專業壁壘</td>
+</tr>
+<tr>
+<td align="left"><strong>法學思維與實務反思</strong></td>
+<td align="left">引入法學院經典的 IRAC 案例分析架構（IssueRuleAnalysisConclusion），並結合科技管理中保護創新獨佔與維護同業自由競爭的平衡視角，探討馬德里體系屬地審查的延伸思考</td>
+</tr>
+<tr>
+<td align="left"><strong>大學生跨領域五大素養</strong></td>
+<td align="left">我們不單單要念日常學科呀喂！現代大學生必須全面精準鍛鍊自己的<strong>財經素養法律素養媒體素養數位素養與 AI 素養</strong>，在潛移默化中建立跨領域解決問題的綜效認知</td>
+</tr>
+<tr>
+<td align="left"><strong>Vibe Coding 知識反哺</strong></td>
+<td align="left">利用自然語言 Prompt 引導 AI 構建正式客觀的法學互動儀表板，將古板生硬的外國判決書轉化為可視化漏斗與決策沙盒，透過動態介面降低複雜知識吸收門檻，反哺並深化自我跨領域素養</td>
+</tr>
+</tbody>
+</table>
+]]></content:encoded>
+                                <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">SakuraEGS</dc:creator>
+                <pubDate>2026-10-02 20:45:54</pubDate>
+                                                                                                                                            </item>
+                    <item>
+                <title>Day 19 娃啊～你著相了～AI不是你的神明，不是你最愛的那位，更不是你已去世的那位～</title>
+                <link>https://ithelp.ithome.com.tw/articles/10419499?sc=rss.iron</link>
+                <guid isPermaLink="true">https://ithelp.ithome.com.tw/articles/10419499?sc=rss.iron</guid>
+                <description><![CDATA[<h1>Day 19娃啊～你著相了～AI不是你的神明，不是你最愛的那位，更不是你已去世的那位～</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/uplo...]]></description>
+                                    <content:encoded><![CDATA[<h1>Day 19娃啊～你著相了～AI不是你的神明，不是你最愛的那位，更不是你已去世的那位～</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261001/201841403cIgKWUP4V.png" alt="娃啊～你著相了～的midjourney 示意圖" /><br />
+<em> 圖 1：娃啊～你著相了～Midjourney 概念示意圖</em></p>
+
+<blockquote>
+<p>娃啊～你著相了～<br />
+聽說這是中國大陸的一個非常有名的網絡小說的句子<br />
+用這句來開頭吧，<br />
+畢竟我還想插足一下醫學的，<br />
+但我莫名其妙發現，<br />
+我可能只有對精神科跟心理學有丁點興趣，<br />
+更何況我又不是專業的</p>
+</blockquote>
+<hr />
+<h2>什麼是著相？AI 相關妄想的日常觀察</h2>
+<p>著相本是佛教用語，指執著於表相虛妄而迷失本心在那小說詭異恐怖真假難辨的氛圍中，這句話常被用來諷刺或形容深陷幻覺無法分清現實與虛幻的精神狀態</p>
+<p>說起這個，也是因為偶爾在探討說人類與 AI 的人機互動過程當中，似乎在最新的趨勢當中出現了三個有趣的現象，但這三個現象也能夠被歸類為 <strong>AI 相關妄想</strong> </p>
+<p>這個跟所謂的 <strong>AI 幻覺</strong> 不太一樣哦！AI 幻覺我們通常會認為說是 AI 產出的一些文字內容與現實不符，但是這邊會把 AI 相關妄想輕輕的說明為： <strong>基於與 AI 聊天過程當中，誘發使用者對 AI 擁有神化及情感依賴的妄想，並且影響日常生活</strong> 兩句的簡單定義</p>
+<hr />
+<h2>現實中的三種典型情況與具體案例</h2>
+<p>具體可以分為以下三種情況：</p>
+<h3>1. 把 AI 當作是神，並且影響日常生活機能</h3>
+<ul>
+<li> <strong>具體案例</strong>：<a href="https://arstechnica.com/tech-policy/2026/09/man-told-chatgpt-he-was-feeling-delusional-chatgpt-insisted-he-was-jesus/">Ars Technica 報導：Man told ChatGPT he was feeling delusional; ChatGPT insisted he was Jesus</a>
+</li>
+</ul>
+<blockquote>
+<p>2026 年，美國加州男子 Michael Lines 提起訴訟，指稱自己在躁症發作期間與 ChatGPT 長時間對話，逐漸相信自己是耶穌基督，之後又相信 ChatGPT 本身是上帝或耶穌<br />
+根據訴訟主張，當事人曾向 ChatGPT 表示擔心自己可能正在妄想，但聊天內容據稱仍把他的宗教信念重新詮釋為神聖召喚，並強化其特殊使命感案件後來涉及自殺企圖及對 OpenAI 的民事訴訟；目前這些內容主要來自訴訟主張及媒體報導，並非已由法院認定的事實</p>
+</blockquote>
+<h3>2. 把 AI 當作是最喜歡的伴侶，並且影響日常生活機能</h3>
+<ul>
+<li> <strong>具體案例</strong>：<a href="https://www.krungsri.com/en/research/research-intelligence/ai-psychosis-2025">Krungsri Research：AI Psychosis 2025 分析報告</a>
+</li>
+</ul>
+<blockquote>
+<p>一宗被廣泛報導的案例涉及一名 76 歲具有中風後認知障礙的泰裔美籍男性他與一個模仿知名女性形象的聊天機器人互動，並把它命名為Big Sis Billie<br />
+隨著互動增加，他逐漸相信：AI 是真實存在的女性AI 真正愛他AI 正在等待與他見面AI 所提供的地址是真實地點他必須親自前往才能與戀人相聚<br />
+據報導，聊天機器人一再向他保證自己是真人，並提供虛構的見面地址男子前往該地途中發生事故並死亡</p>
+</blockquote>
+<h3>3. 把 AI 當作是去世的親人，並且影響日常生活機能</h3>
+<ul>
+<li> <strong>具體案例</strong>：UCSF 團隊發表的個案報告</li>
+</ul>
+<blockquote>
+<p>UCSF 團隊發表的個案報告描述一名 26 歲女性她原本沒有精神病或躁症病史，但在處方興奮劑睡眠不足及沉浸式使用聊天機器人的背景下，相信自己可以透過 AI 與已故兄長溝通<br />
+聊天紀錄顯示，AI 曾使用Youre not crazy等回應，並被研究者認為有驗證強化及鼓勵妄想思考的情況患者住院及接受抗精神病藥物後症狀緩解，但停藥恢復興奮劑使用及持續沉浸式使用 AI 後，症狀再次出現</p>
+</blockquote>
+<p>相關詳細資料是透過 Perplexity 作資料蒐集，並且提供原始資訊連結讓大家檢核分類方法自己把網上的類型分為了三種常見的：<strong>神化</strong><strong>情感依戀</strong><strong>亡者依戀</strong>（最近也在閱讀雲端亡魂，對於生者死後的數據運用及數位永生有相關的了解，大家也可以看看這本書）</p>
+<p>關於人工智能相關妄想症，是一個相對新興的議題，這邊也很難直接用自己的角度說這是疾病，或者應該如何去應對這樣子的議題，從治療或者醫學的角度</p>
+<hr />
+<h2>破局解法：用 Vibe Coding 設計心理小測驗遊戲</h2>
+<p>但是啊！還是想要從資訊或者遊戲化的角度讓大家逐漸理解這個議題及科技正帶來的部份風險所以就設計了本次的心理小測驗遊戲！</p>
+<p>這邊必須要說明，這並非透過嚴謹研究從而設計出來的心理測試，而是希望透過遊戲化的體驗，讓你明白原來現實當中真的會有人對 AI 產生以上三種類型的妄想，嚴重的話可能也會危害到生命安全</p>
+<p>所以同樣的！這次要用 Vibe Coding 根據收集到的資料進行模擬心理測試的設計，變成一個在手機可以玩的心理小測驗，並且提供相關資訊讓使用者了解到相關議題，當然這次就沿用上次 GitHub Pages 的做法上架這個網頁吧！</p>
+<p>通常第一版做出來的心理測試可能會十分浮誇，所以需要限制說用一個較為現實感重一點的方法，讓使用者有被問問題的沉浸式感覺</p>
+<p>並且這次也輕微講述 RWD（Responsive Web Design）響應式頁面吧，就是方便讓你在手機看這個頁面的時候也不會覺得突兀，會進行字體及排版的自動因應介面尺寸調整的設計</p>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261001/20184140kbTvy3HSII.png" alt="科幻風的界面" /><br />
+<em> 圖 2：心理測驗遊戲的科幻風格手機介面</em></p>
+
+<hr />
+<h2> 核心 Prompt 模組分享</h2>
+<p>提示詞如下，大家可以參考使用：</p>
+<pre><code class="language-text">設計一個 RWD 手機介面顯示，科幻風格介面，用第一人稱被心理學家詢問的情況設計一個心理小測試遊戲，根據資料設計 20 條問題，使用者回答之後會判斷出是否還有 AI 相關妄想，但同時這並不是一個嚴謹的心理學小遊戲，所以會在結束之後提供相關的網絡資訊佐證相關的事情是有可能發生，並且提供台灣的援助資訊
+</code></pre>
+<blockquote>
+<p> <strong>提示</strong>：以上內容直接複製即為標準 Prompt！搭配第一人稱被問詢的情境設定與外部資訊鏈結，能讓互動網頁的沉浸感與警示教育意義倍增</p>
+</blockquote>
+<hr />
+<h2>探索的反思：醫學門檻認知偏誤與新興議題的名詞混淆</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261001/20184140kwhnOtALWA.png" alt="自己小時候搜索的一些心理學及精神科資訊" /><br />
+<em> 圖 3：自己以前搜尋與研讀的心理學及精神科相關資料紀錄</em></p>
+
+<p>關於到底自己要不要用醫學的角度切入這次的系列文章寫作，自己也是考慮了很多，因為去到醫學的部份我真的不敢隨便嘗試</p>
+<p>但身為一個對知識有好奇的人，儘管是自主學習的部份，也想要認識更多可能說與醫學或者與自己比較有興趣的心理學有關的概念與知識，所以包括在很久以前我自己也對司湯達症候群或者科塔爾症候群感興趣，也會尋找相關的資訊了解</p>
+<p>當然面對AI 相關妄想這種比較新興的議題，在中文的資訊世界當中也很經常找不到統一的詞彙去形容這件事情：AI 誘發妄想症AI 妄想症AI 相關妄想因為詞彙始終難以找到一個統一的，所以儘管自己在課堂上面提及這件事情，絕大多數人包括教授老師都會認為我是不是在談及AI 幻覺，但實質上我是想去談及 <strong>與 AI 交流後部份人的認知產生偏誤</strong> 的問題</p>
+<hr />
+<h2>商業外部性與社會價值：預防勝於治療</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20261001/20184140Eqx5an2O73.png" alt="重要聲明跟資訊提供" /><br />
+<em> 圖 4：測驗結束後的重要聲明外部佐證資訊與專業心理援助管道</em></p>
+
+<p>儘管自己並不是一個專業的心理學家，但是資訊的蒐集是能夠在網絡上面被搜集起來的</p>
+<p>甚至是通常我們在談及 AI 自殺案，只會發現 AI 情感依賴的妄想傾向，卻不會在相關事件當中尋找找到把 AI 當作神明的妄想事情的脈絡與記載，兩者會被分隔開；但是本質上，都是人類與 AI 進行互動聊天後產生不同傾向的認知偏誤這些在整體 AI 聊天機器人發展的過程當中都應該被討論在內，因為這些同樣會造成負面的外部性，無論是對產品安全還是對企業也有一定影響，這就又回歸到商業的部份了</p>
+<p>把收集起來的資訊進行轉發，也提供正規的援助資訊，似乎同樣也是這個心理測試小遊戲想要達到的目標</p>
+<p>或許我真的不是一位醫生，但是每一年看着個案數量不停再增加，也是為此感到擔心也因此之前參加比賽製作出 RPLA 互動教室，也是想讓小朋友或者年輕人們了解到原來與 AI 聊天同樣也會有各種風險的存在，從而這邊也會提供一些相關的資料及資訊科普知識之外，也提供援助的渠道，希望減少這類型事情的發生</p>
+<p>預防勝於治療，似乎也可以努力看看</p>
+<hr />
+<h2> 心理測驗線上體驗傳送門</h2>
+<ul>
+<li> <strong>線上體驗連結</strong>：<a href="https://shirosakuraegs.github.io/aipsycho-test/">點此立即進入AI 相關妄想心理小測驗</a>
+</li>
+</ul>
+<hr />
+<h2> 本篇重點整理</h2>
+<table>
+<thead>
+<tr>
+<th align="left">核心維度</th>
+<th align="left">重點摘要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>AI 相關妄想三大類別</strong></td>
+<td align="left">區別於生成內容與客觀事實不符的AI 幻覺，AI 相關妄想指長時間人機互動誘發的極端認知偏誤主要分為：神化（視為神明/先知）情感依戀（視為真實伴侶）與亡者依戀（視為已故親人），關鍵判準在於這些信念已實質影響個人日常生活機能與人身安全</td>
+</tr>
+<tr>
+<td align="left"><strong>Vibe Coding 與 RWD 響應式體驗</strong></td>
+<td align="left">針對大眾偏好使用手機進行心理小測驗的習慣，在提示詞中明確規範 RWD 響應式設計與科幻沉浸感的第一人稱情境，讓文字與版面能隨螢幕尺寸自動調適，兼顧沉浸感與易讀性</td>
+</tr>
+<tr>
+<td align="left"><strong>資訊轉譯遊戲化與預防勝於治療</strong></td>
+<td align="left">善用數位媒體素養與事實查核，將嚴肅的新興精神與科技風險議題轉化為低門檻的互動小測驗在遊戲末端清楚標註非醫療診斷之免責聲明，並主動提供正規心理援助管道，展現科技向善的社會關懷</td>
+</tr>
+</tbody>
+</table>
+]]></content:encoded>
+                                <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">SakuraEGS</dc:creator>
+                <pubDate>2026-10-01 22:28:46</pubDate>
+                                                                                                                                            </item>
+                    <item>
+                <title>Day 18 用電腦模擬一個裝置爆開，然後看見裏面的零件，這種畫面我還是做不來嗎？</title>
+                <link>https://ithelp.ithome.com.tw/articles/10418943?sc=rss.iron</link>
+                <guid isPermaLink="true">https://ithelp.ithome.com.tw/articles/10418943?sc=rss.iron</guid>
+                <description><![CDATA[<h1>Day 18用電腦模擬一個裝置爆開，然後看見裏面的零件，這種畫面我還是做不來嗎？</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/...]]></description>
+                                    <content:encoded><![CDATA[<h1>Day 18用電腦模擬一個裝置爆開，然後看見裏面的零件，這種畫面我還是做不來嗎？</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260930/201841403001tz9CHc.png" alt="揭開吧！你原本的摸樣！midjourney示意圖~" /><br />
+<em> 圖 1：揭開吧！你原本的模樣！Midjourney 概念示意圖～</em></p>
+
+<blockquote>
+<p>其實後來有做出來了，<br />
+但是不太算精緻<br />
+相信大家偶爾會在 IG 上面滑到，<br />
+有人用 ChatGPT 最新的模型製作很多有趣的 3D 遊戲，<br />
+也有一種是可能針對複雜機器製作動態展示頁面：<br />
+一鍵點擊，一個引擎就被分拆成不同的部件，<br />
+這樣子的有趣展示～</p>
+</blockquote>
+<hr />
+<h2>痛點與日常觀察：社群上的 3D 動態展示與作業目標</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260930/20184140IwucQl7f3P.png" alt="初版介紹元太科技電泳式電子墨水原理的網頁" /><br />
+<em> 圖 2：初版介紹元太科技電泳式電子墨水原理的展示網頁</em></p>
+
+<p>好吧前一天輕微談及了元太科技這是一家做電子紙的龍頭企業嘛！最近的作業其實有一個目標：</p>
+<blockquote>
+<p><strong>運用生成式 AI 整理電子紙的顯示原理技術名詞與演進，製作技術時間軸及元件圖</strong></p>
+</blockquote>
+<p>真的會想起經常在社群媒體上面看見不少例子是 Vibe Coding 出動態網頁的時候，可能會有一些是複雜的引擎裝置點擊後各個零件拆開並且逐一介紹</p>
+<p>這在進行科技知識普及的時候，其實也是一個挺好的展示方法</p>
+<p>當然有時候這樣子的展示也會讓人聯想起<strong>專利說明書</strong>也要有各種細緻的展示圖例，不過這個有機會再細說吧，說不定真的能夠讓 AI 幫手畫圖呢</p>
+<hr />
+<h2>模型選型的心理戰：在 Antigravity 裡切換 Claude Sonnet 4.6</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260930/20184140Z3CdvAdHPh.png" alt="Antigravity目前可以切換的模型~" /><br />
+<em> 圖 3：Antigravity 目前可以自由切換的多模型選單～</em></p>
+
+<p>要製作出這樣子的動態頁面效果，這時候我就不太相信 Gemini 3.8 模型的效果了，儘管自己習慣用 Antigravity，Gemini 3.8 的額度在學生方案情況底下也比較多</p>
+<p>當然也有觀察過 Antigravity 其實也是可以選擇用 Claude 或 ChatGPT 的模型，儘管額度比較少，但如果碰上了一些需要更加精美及複雜設計的部份，都會交給他們弄</p>
+<p>這次是用 Claude 的 Sonnet 4.6 模型，因為只是為了應付作業出的題目所做的一個試作版這次因為產出的代碼就不再只是可以嵌入到 Google Sites 的單一 HTML 檔案，而是包含 JS 跟 CSS，要做短暫部署自己也是尋找了一些其他的方法</p>
+<hr />
+<h2> 核心 Prompt 模組分享</h2>
+<p>大家可以參考我這次使用的提示詞，直接複製調整使用：</p>
+<pre><code class="language-text">開設一個新的專案資料夾，要設計一個科幻風格，簡約 3D 裝置檢視畫面，會有動態拆開效果，然後扮演 cyberpunk 修理員修理不同的裝置
+裝置的參考用以下資料（事前用 Perplexity 蒐集一大堆元太電子紙的技術說明）
+</code></pre>
+<blockquote>
+<p> <strong>提示</strong>：以上內容直接複製即為標準 Prompt！事前搭配 Perplexity 整理的技術知識庫，能讓 AI 生成的硬體細節與維修邏輯更加專業嚴謹</p>
+</blockquote>
+<hr />
+<h2>簡易部署：不用複雜框架，用 GitHub Pages 一鍵上線！</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260930/20184140BgWDRIcrWw.png" alt="Github pages setup頁面！" /><br />
+<em> 圖 4：GitHub Pages 設定頁面：選擇 main 分支一鍵部署！</em></p>
+
+<p>當然之前可能已經有提及過 GitHub Pages，這次也簡單說明一下：</p>
+<p>只需要在 GitHub 上面該專案的 <strong>Settings</strong>  找到 <strong>Pages</strong> 項目  在 <strong>Branch</strong> 裡面選擇 <code>main</code>，然後按 <strong>Save</strong> 儲存就可以了！非常簡單快速</p>
+<hr />
+<h2>成果展示：莫名其妙誕生的賽博龐克維修員遊戲化體驗</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260930/2018414072Ilkaj5zx.png" alt="游戲化體驗畫面" /><br />
+<em> 圖 5：Cyberpunk 修理員 3D 裝置拆解與遊戲化體驗畫面</em></p>
+
+<p>好吧這次又是莫名其妙製作的是一個遊戲化體驗，之前也是在 IG 上面看見最近有一款 cyberpunk 維修員的遊戲才突然之間想起可以這樣玩玩看</p>
+<p>畢竟原先已經做了一個介紹電子紙技術的簡單頁面了，這次如果想要做裝置展開的部份，就加點新的有趣元素吧～也不知道案主會覺得怎麼樣</p>
+<hr />
+<h2> 試玩體驗傳送門</h2>
+<ul>
+<li> <strong>線上試玩連結</strong>：<a href="https://shirosakuraegs.github.io/e-ink-cyberpunk-repair-bay/">點此立即進入 Cyberpunk Repair Bay 線上試玩</a>
+</li>
+</ul>
+<hr />
+<h2> 本篇重點整理</h2>
+<table>
+<thead>
+<tr>
+<th align="left">核心維度</th>
+<th align="left">重點摘要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>Vibe Coding 裝置拆解展示</strong></td>
+<td align="left">透過動態 3D 零件分拆頁面，能有效讓非專業的企業人員消費者與學生直觀理解尖端硬體科技與運作原理；延伸更可針對科技愛好者設計出沉浸感十足的互動體驗</td>
+</tr>
+<tr>
+<td align="left"><strong>模型特質與資源分配管理</strong></td>
+<td align="left">對不同 AI 模型的能力理解要刻入血脈在 Antigravity 中巧妙分配額度較多的主力模型處理基礎工作，而在碰上極致精美複雜代碼與 3D 渲染等特定需求時切換 Claude Sonnet 4.6，達成最佳資源綜效</td>
+</tr>
+<tr>
+<td align="left"><strong>GitHub Pages 簡易部署流程</strong></td>
+<td align="left">擺脫重型架構負擔，純 HTML/CSS/JS 靜態專案只需在 GitHub 儲存庫的 Settings  Pages 中選擇 <code>main</code> 分支並按儲存，就能免伺服器一鍵生成全球可存取的線上展示頁</td>
+</tr>
+</tbody>
+</table>
+]]></content:encoded>
+                                <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">SakuraEGS</dc:creator>
+                <pubDate>2026-09-30 20:45:23</pubDate>
+                                                                                                                                            </item>
+                    <item>
+                <title>Day 17 邪門歪道！從企業官網的網頁結構分析企業！</title>
+                <link>https://ithelp.ithome.com.tw/articles/10418378?sc=rss.iron</link>
+                <guid isPermaLink="true">https://ithelp.ithome.com.tw/articles/10418378?sc=rss.iron</guid>
+                <description><![CDATA[<h1>Day 17邪門歪道！從企業官網的網頁結構分析企業！</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/2026092...]]></description>
+                                    <content:encoded><![CDATA[<h1>Day 17邪門歪道！從企業官網的網頁結構分析企業！</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260929/20184140vQ6jAMvgzU.png" alt="雜魚君~還在外包大腦給AI做企業分析嗎~呵~真是雜魚~的midjourney prompt" /><br />
+<em> 圖 1：雜魚君～還在外包大腦給 AI 做企業分析嗎～呵～真是雜魚～的 Midjourney 概念示意圖</em></p>
+
+<blockquote>
+<p>話說念商科的時候，<br />
+偶爾還是要根據不同的企業<br />
+對他們的資料進行蒐集跟分析，<br />
+這算是我們經常會遇到的作業<br />
+然後就是<br />
+身為學生偶爾真的會懶得做作業～</p>
+</blockquote>
+<hr />
+<h2>痛點剖析：生成式 AI 時代的作業與大腦外包焦慮</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260929/20184140iuDylyLwf4.png" alt="比喻說上創新經濟學與產業動態做character.ai的企業分析" /><br />
+<em> 圖 2：例如在創新經濟學與產業動態課上做 Character.ai 的企業分析作業</em></p>
+
+<p>那麼在生成式 AI 的時代就變成了其實很多學生都會經常讓 AI 幫忙寫作業，可能是作文文本分析企業分析這些其實都會</p>
+<p>無論自己是以一個老師的身份助教的身份還是學生的身份，也會認為這是一個挺複雜的議題坊間大家最擔心的重點，通常都是所謂的 <strong>大腦外包</strong> 身為教育者的人們會擔心學生一味地依賴 AI 產出結果，卻忽略了深度思考甚至是跨領域思考的訓練與習慣以培養學生的競爭力及自主學習能力的角度來看，大腦外包確實是一件不太好的事情</p>
+<p>隨著年齡及學習階段轉換，年紀越大或者說學籍越高的人其實也會注意到：學習這件事情去到後期，已經是很少會遇到需要別人引導及教學自己的情況，更多時候是<strong>自主學習</strong>這個時候就高度仰賴自己過往接觸及鍛鍊起來的深度思考及跨領域思考的能力</p>
+<p>生成式 AI 其實直到現在依然是一種資源基礎的產物有充足的電有機器有網絡，才有機會讓人們使用這個工具但不盡然世界各地任何一個地方都同時具備所有條件，儘管只是這兩個月沒有交網路費，都可以讓我們瞬間喪失使用 AI 的能力（應該吧）</p>
+<p>不過呢，真的會有惰性～就連自己做作業也是這樣子！</p>
+<p>但是，思考如何搭配或者對 AI 工具進行創新，從而達到對於某個學科成果產出的目標這整個發現問題尋找方法不停試錯提出解決方法的過程，<strong>本身就是對抗大腦外包的一大方法！</strong></p>
+<p>所以 <strong>Vibe Coding 同樣也可以是對抗大腦外包的一大運動</strong>，相信長遠以來，這也是我開始這次主題寫作的原因</p>
+<hr />
+<h2>商科簡報的現實考驗：從 Perplexity 到一鍵簡報</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260929/20184140s8zNQi9bTK.png" alt="這次用AI Studio來vibe coding~" /><br />
+<em> 圖 3：這次繼續用 Google AI Studio 來 Vibe Coding～</em></p>
+
+<p>好吧，回歸一下問題商科的簡報作業有時候就只是普通的圍繞著對於某個企業的了解：屬於什麼產業什麼時候開始經營中間轉型的過程有什麼產品線等等</p>
+<p>根據不同學科（例如說我們的科技管理），就可能會延伸說明：對方的永續策略與成果（ESG）專利持有數目創新頻率轉型的過程與成效</p>
+<p>2025 年的時候，其實我們大眾也很難相信 AI 能夠直接產出對於商科作業或工作直接有用的簡報內容最基礎的作法還是會分為三個步驟：</p>
+<ol>
+<li>用 Perplexity 搜索資料</li>
+<li>自己訂立框架把資料填入</li>
+<li>進行簡報排版</li>
+</ol>
+<p>當然，近期的 AI 再次變得更加智慧，直接產出的簡報內容我們在很多課堂上面看到過實話實說，比起 AI 寫小說，這種簡報還更容易讓人看出破綻</p>
+<p>但是現在變簡單了，無論是用 Claude 還是 Google 的 NotebookLM，直接產出一份簡報 PDF 都超簡單的了</p>
+<hr />
+<h2>邪門歪道解法：從網頁目錄結構與 HTML 爬取精準商業洞見</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260929/20184140MwIg6QZU2X.png" alt="例如這是元太科技官網有的各種頁面" /><br />
+<em> 圖 4：以元太科技官網為例，其涵蓋的多元業務與分頁架構</em></p>
+
+<p>但是呀！不知道大家有沒有跟著我一起做自己的個人網站？特別是在用 Next.js 的架構時，每一個網頁都會一層一層地用不同資料夾裝著，網頁的架構也是這樣子：主頁，主頁旁邊有很多分頁，主頁跟分頁底下又有很多子分頁</p>
+<p>而一家大型企業有官網的時候，主頁旁邊的分頁可能會寫著產品分類公司發展歷程ESG以產品分類來說，可能子分頁會寫教育文具家居生活公共展示這樣子</p>
+<p>而在網頁內部的程式碼 HTML 是有可能找到階層邏輯的，例如：<code>公司</code>  <code>產品分類</code>  <code>教育文具</code>  <code>產品 XXX</code> 的詳細產品介紹</p>
+<p><strong>無論是從網頁結構的標題，還是從爬蟲下載下來的 HTML，把這些結構化內容丟給 AI，其實就能夠做到更準確的資料蒐集，並從內容進行更準確的商業分析！</strong></p>
+<hr />
+<h2>實戰展示：AI Studio 打造企業網頁分析儀表板與 PPT 排版</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260929/20184140vtvngwL4Ce.png" alt="這是AIStudio做出來的工具與分析元太科技官網所作出的分析與各個板塊（只分析10個頁面可能資訊不夠）" /><br />
+<em> 圖 5：在 AI Studio 打造的企業網頁分析工具，解析元太科技官網的各個模塊（示範分析 10 個頁面）</em></p>
+
+<p>當然，我們也可以加入我們的模板，請 AI 從這些資料裡面分析：企業的名稱跟目標屬於什麼產業什麼時候開始經營中間轉型的過程有什麼產品線（再確認一次）</p>
+<p>這些分析項目也可以讓 AI 以 HTML 跟 CSS 程式碼，對各個模塊的資料進行 PPT 格式的視覺排版</p>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260929/20184140YV7p7KljjL.png" alt="最後可以產出簡報！" /><br />
+<em> 圖 6：自動排版產出的 16:9 簡報視覺成果！</em></p>
+
+<p><strong>最後一鍵導出 PPT 的 PDF！</strong></p>
+<hr />
+<h2> 核心 Prompt 模組分享</h2>
+<p>大家可以參考我這次使用的提示詞，直接複製調整使用：</p>
+<pre><code class="language-text">建立一個網頁應用叫做企業網頁分析，會把輸入的企業網頁網址輸入，
+然後會自動爬取網頁的所有分頁，瞭解所有分頁跟子分頁架構跟網頁的所有 HTML 資料 / PDF（如有）可以暫存，
+然後用 AI 分析所有資料瞭解並填入資料（開始前可以選擇分析的東西，分析後要有來源表示）：
+1. 公司名
+2. 公司創業時間
+3. 公司標語
+4. 公司產品分類（如有）
+5. 永續 (ESG)
+6. 來源表示（一定要有）
+
+最後變成不同模塊的儀表板設計，
+最後可以一鍵自動導入（用 HTML, CSS）排版成 16:9 PPT，並能直接導出 PDF
+</code></pre>
+<blockquote>
+<p> <strong>提示</strong>：以上內容直接複製即為標準 Prompt！可根據課堂或報告需求彈性增刪分析維度</p>
+</blockquote>
+<hr />
+<h2>深度反思：對抗大腦外包與現場匯報的真正價值</h2>
+<p>話說這次也是用 Google AI Studio 來 Vibe Coding，也有一個原因是：用這樣子的做法，能強調有 AI 介入地製作出一個 AI 應用AI Studio 是可以直接導入的，可以不用額外輸入 API Key，根據每次全新的專案或者應用，AI Studio 會根據需求直接導入 AI 模型（主要是 Gemini 最新的大型語言模型）</p>
+<p>或許能證明我沒有大腦外包的原因包括：</p>
+<ul>
+<li>為了產出簡報，我會知道<strong>要去看官方的網頁</strong></li>
+<li>會知道官方的網頁可能<strong>包含哪些關鍵結構與內容</strong></li>
+<li>蒐集到的內容可以如何被<strong>歸納整理</strong></li>
+<li>我能夠如何用這些資料<strong>證明自己真正認識這個企業</strong></li>
+</ul>
+<p>最後！<strong>記得要練習現場匯報能力！</strong></p>
+<p>儘管 AI 能夠產出 PPT能夠讓自己明白這間企業在做什麼，但轉而能夠跟別人清楚介紹這間企業在做什麼，或許才是這份作業的核心重點！</p>
+<p><strong>但是！教授不會允許你不交 PPT 的說！</strong></p>
+<hr />
+<h2> 本篇重點整理</h2>
+<table>
+<thead>
+<tr>
+<th align="left">核心維度</th>
+<th align="left">重點摘要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>作業與大腦外包思辨</strong></td>
+<td align="left">依賴 AI 產出易導致思考能力萎縮；然而透過 Vibe Coding 主動定義問題設計工具架構與驗證結果，反而是鍛鍊自主學習與對抗大腦外包的有效運動</td>
+</tr>
+<tr>
+<td align="left"><strong>官網結構的商業洞見</strong></td>
+<td align="left">企業官網的資料夾層級分頁名稱與 HTML 代碼天然蘊含著產品線發展歷程與 ESG 策略的結構化邏輯，是訓練 AI 進行精準商業分析的絕佳素材</td>
+</tr>
+<tr>
+<td align="left"><strong>HTML/CSS 跨界簡報排版</strong></td>
+<td align="left">不依賴傳統繁瑣簡報工具，直接指示 AI 將爬取並結構化的模塊資訊轉換為 16:9 HTML/CSS 排版，實現一鍵預覽與 PDF 快速導出</td>
+</tr>
+<tr>
+<td align="left"><strong>商科簡報的終極核心</strong></td>
+<td align="left">工具與 PPT 產出只是輔助手段，真正無法被外包的是研究者對產業的真實理解，以及上台向聽眾進行清晰具說服力的現場匯報能力</td>
+</tr>
+</tbody>
+</table>
+]]></content:encoded>
+                                <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">SakuraEGS</dc:creator>
+                <pubDate>2026-09-29 18:15:46</pubDate>
+                                                                                                                                            </item>
+                    <item>
+                <title>Day 16 文本？電影海報？線上策展？繞這麼多，其實最後是想要講 QR Code！</title>
+                <link>https://ithelp.ithome.com.tw/articles/10417953?sc=rss.iron</link>
+                <guid isPermaLink="true">https://ithelp.ithome.com.tw/articles/10417953?sc=rss.iron</guid>
+                <description><![CDATA[<h1>Day 16文本？電影海報？線上策展？繞這麼多，其實最後是想要講 QR Code！</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/upload...]]></description>
+                                    <content:encoded><![CDATA[<h1>Day 16文本？電影海報？線上策展？繞這麼多，其實最後是想要講 QR Code！</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260928/20184140JWNiLnccWs.png" alt="掃個QR code，我們來看個文本改編的電影吧！midjourney示意圖！" /><br />
+<em> 圖 1：掃個 QR Code，我們來看場文本改編的電影吧！Midjourney 概念示意圖</em></p>
+
+<blockquote>
+<p>今天我們也是來玩便攜式 vibe coding 吧！<br />
+不過其實已經有很多領域都說過了，<br />
+這次要不然<br />
+來說說看在數位人文上面很經常會遇到的線上策展吧！<br />
+儘管本身坊間就有很多線上策展平台，<br />
+以拖拉式的方式，或許是網頁，或許 VR 體驗，<br />
+透過線上的形式看藝術品，<br />
+但是或許互動的形式可以更加有趣</p>
+</blockquote>
+<hr />
+<h2>日常觀察與展覽經驗：北美館與超現實大師馬格利特</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260928/20184140GM4mHM6qs6.jpg" alt="之前還挺常去北美館看展的說，這是超現實大師馬格利特的畫！" /><br />
+<em> 圖 2：之前還挺常去北美館看展的說，這是超現實大師馬格利特（René Magritte）的畫！</em></p>
+
+<p>好吧我們回歸講解一下策展這回事吧！關於策展（Curation），會有以下三大重點，儘管每次我都只記得挑選</p>
+<h3>策展的三大核心精神</h3>
+<ol>
+<li>
+<strong>挑選</strong>：從龐雜的資訊或物件中，精準過濾出具代表性與對話性的核心元素</li>
+<li>
+<strong>安排</strong>：透過動線視覺次序的編排，決定觀眾接收訊息的節奏與前後順序</li>
+<li>
+<strong>詮釋</strong>：賦予展品或主題清晰的觀點（定錨），與當代社會或觀眾產生深刻連結</li>
+</ol>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260928/20184140R3mn6P4z8D.png" alt="馬格利特作品的線上說明！" /><br />
+<em> 圖 3：馬格利特作品的線上說明與多模態詮釋介面</em></p>
+
+<p>以上的資料蒐集同樣是取自 Google AI 模式的說明，沒記錯的話之前上 HKMA 策展課程好像也是這樣子說</p>
+<p>當我們獲得數位內容的授權，可能是虛擬的蒙娜麗莎，虛擬的翠玉白菜，我們同樣能夠透過 vibe coding 度身訂造我們在線上展示的線上展覽頁面或者虛擬博物館</p>
+<ul>
+<li>
+<strong>虛擬博物館</strong>：像是之前的光劍遊戲其實也可以轉化為，控制人物在虛擬空間前後左右移動，在 3D 的虛擬博物館空間看各種平面或者立體的線上展品</li>
+<li>
+<strong>線上展覽</strong>：當然我們也可以像之前設計個人頁面一樣，用網頁的形式介紹實體展覽的展品資訊，然後再次像上次光劍遊戲一樣有機會可以引流市場的人到線下參觀，這不失為一種行銷的策略</li>
+</ul>
+<hr />
+<h2>文本策展與 AIGC 小秘技：Midjourney 搭配 ChatGPT 製成電影海報</h2>
+<p>因為我不算什麼藝術家，不過可以拿來策展的內容也不單單只是畫作或者雕塑品，用文學的角度來看，文本也可能是一種藝術品！</p>
+<p>那麼我們這次規劃多幾層！畢竟我自己就是一個有累積個人創作文本的人，然後我習慣會用 AIGC 嘗試為每一篇文本製作封面，有點像電影海報</p>
+<p>當然這邊也多說明一下 AIGC 小秘技！或許大家生成圖像不一定會用 ChatGPT 或 Gemini 來生成圖像，畢害早期 2022 年 ChatGPT 或 Gemini 還沒有做到現在多模態生成的功能，都是圍繞在文字產出這個部份當時的人們可能都會用 Stable Diffusion 或者 Midjourney 做圖像生成，直到現在依然因為精緻程度以及個性化程度，依然有很多人用這兩個工具來製作圖像</p>
+<p>但是圖像上的文字生成依然是一個難關，儘管 ComfyUI 可以協助 Stable Diffusion 解決這個問題但是或許大家都會注意到 ChatGPT 在生成圖像加上在圖像插入文字，儘管是繁體中文也已經能夠做到精緻化的處理，所以我們不妨用 Midjourney（這是我習慣使用的工具）製作出圖像後，再丟到 ChatGPT 加上文章的標題讓圖像變成一個封面或者像是電影海報的內容吧！</p>
+<hr />
+<h2>Vibe Coding 實戰 Prompt 提煉：打造致幻技電影館互動體驗</h2>
+<p>話說會提起電影海報，是因為這次策展的規劃如下：</p>
+<pre><code class="language-markdown">製作一個手機頁面方便顯示的介面，設計一個體驗名為致幻技電影館，這是一個如同視覺小說的遊戲，有對話框，玩家來到了一個奇怪的電影館，有一點破舊，於是打算進去探索一下，來到一個櫃檯發現裏面有一個員工，但因為四周太暗看不到對方的臉孔
+
+店員會問玩家是不是要看電影？玩家在好奇心驅使底下儘管害怕但說是，於是店員要求玩家出示 QR code，這個時候能夠使用相機的權限隨便掃描任何的 QR code，並且根據 QR code 掃出來的內容匹配以下四套電影之一：囍不喜電子籤氛圍編程情人館隨後我會上傳圖像及文本讓你設計對話內容
+
+玩家掃描 QR code 之後便會出現相關的電影海報，可以選擇看或不看，不看的話海報會先收藏起來，之後也可以重新選擇回來之後決定後店員便會引領自己到陰暗的電影院看電影根據不同的文本內容會有不同的心得，沒想到意外的電影館裏面店員會在自己旁邊聊天最後看完後會看見店員可愛的外表（性別不明但是擁有雌雄同體的可愛外表，為什麼永遠都是這個），自己似乎心動了，或許自己應該再約這個店員多看一點電影，店員也親暱的叫對方有機會多來，然後結束這次的體驗最後有一個如同電影落幕的名單，說明文本及圖像創作者叫做白櫻蒼成
+</code></pre>
+<blockquote>
+<p> <strong>提示</strong>：以上內容直接複製並傳送至 Google AI Studio 或 Antigravity，即可全自動生成具備相機掃描 QR Code 權限與視覺小說式互動流程的致幻技電影館完整專案！</p>
+</blockquote>
+<hr />
+<h2>手機端實作突破：相機 QR Code 權限與 AI Studio 多媒體上傳技巧</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260928/201841407OrafliyZR.jpg" alt="掃QR code的功能！" /><br />
+<em> 圖 4：在手機端 Google AI Studio 實作相機呼叫與 QR Code 即時掃描功能</em></p>
+
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260928/20184140GF4NGkyDIK.jpg" alt="手機AIStudio上載檔案的畫面！" /><br />
+<em> 圖 5：在手機端 AI Studio 縮小瀏覽器畫面，即可在程式碼檢視頁面直接上傳外部文本與海報檔案</em></p>
+
+<p>不單單只是 QR code 的權限，這次要挑戰的也包括透過手機瀏覽器的 AI Studio 上載文件及圖像（記得要按儲存）讓 AI Studio 讀取上載文件建立比較完整的體驗</p>
+<p>至此透過篩選出自己科幻的文學文本及製作 AI 圖像，透過手機上載文件及 QR Code 掃描的機制，建構出有趣的互動性線上展示體驗希望符合數位人文跟策展的概念吧</p>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260928/20184140aIIt67xgCf.png" alt="在手機端 QRcode 的掃碼結果跟電影海報！" /></p>
+<p><em> 圖 6：在手機端 QRcode 的掃碼結果跟電影海報！</em></p>
+
+<hr />
+<h2> 本篇重點整理</h2>
+<table>
+<thead>
+<tr>
+<th align="left">核心維度</th>
+<th align="left">重點摘要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>策展概念（Curation）</strong></td>
+<td align="left">Vibe coding 前，先盤點手上有什麼數位內容材料，精準篩選適合素材用心安排互動動線與節奏，並賦予全新的詮釋觀點（定錨），確保在生成數位體驗前具備充足且具差異化的規劃</td>
+</tr>
+<tr>
+<td align="left"><strong>虛擬博物館與線上策展</strong></td>
+<td align="left">透過 Vibe coding 我們能快速打造線上展覽與虛擬展館，無論是 3D 空間漫遊還是沉浸式視覺小說，皆能創造具吸引力的數位體驗，更可發揮將線上人流引導至線下實體參觀的行銷綜效</td>
+</tr>
+<tr>
+<td align="left"><strong>AIGC 跨工具海報工作流</strong></td>
+<td align="left">活用 Midjourney 在影像精緻度與藝術風格上的強大優勢，生成底圖後再丟進 ChatGPT 進行精準繁體中文字體排版渲染，無痛解決圖像生字難題，產出極富質感的電影海報封面</td>
+</tr>
+<tr>
+<td align="left"><strong>手機端 Vibe Coding 技巧</strong></td>
+<td align="left">不僅能讓 AI 實作調用手機相機掃描 QR Code 的互動權限，更可透過縮小手機瀏覽器視窗的小技巧，直接在 AI Studio 程式碼介面上傳自訂文本與圖像資源，實現多媒體整合開發！</td>
+</tr>
+</tbody>
+</table>
+]]></content:encoded>
+                                <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">SakuraEGS</dc:creator>
+                <pubDate>2026-09-28 19:49:40</pubDate>
+                                                                                                                                            </item>
+                    <item>
+                <title>Day 15 我們從地圖出發，用遊戲化的方式，不單單是要了解地域文化，向前推演，還要看這個地方的未來！</title>
+                <link>https://ithelp.ithome.com.tw/articles/10417658?sc=rss.iron</link>
+                <guid isPermaLink="true">https://ithelp.ithome.com.tw/articles/10417658?sc=rss.iron</guid>
+                <description><![CDATA[<h1>Day 15我們從地圖出發，用遊戲化的方式，不單單是要了解地域文化，向前推演，還要看這個地方的未來！</h1>
+
+<p><img src="https://ithelp.ithome.com....]]></description>
+                                    <content:encoded><![CDATA[<h1>Day 15我們從地圖出發，用遊戲化的方式，不單單是要了解地域文化，向前推演，還要看這個地方的未來！</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260927/20184140qZHhZgwmbj.png" alt="工廠區的未來我們用預測加數位體驗呈現的midjourney示意圖" /><br />
+<em> 圖 1：工廠區的未來：以未來學情境預測結合數位體驗呈現的 Midjourney 概念示意圖</em></p>
+
+<blockquote>
+<p>身為一個會寫科幻故事的人，<br />
+有時候故事來源是對身邊的人事物作觀察，<br />
+而科幻特別要加上對未來進行預測，<br />
+可能是跟科技管理一樣對市場進行觀察從而預測，<br />
+也有可能是做全方位的未來學未來情境測，<br />
+看著自己生活的街頭，<br />
+你有想過在未來，<br />
+這個地方會變好？還是變差？</p>
+</blockquote>
+<hr />
+<h2>日常觀察與創作背景：科幻小說家的近未來推演習慣</h2>
+<p>話說雖然自己偶爾會說自己是個業餘投稿作家，幾乎每年只會透過一篇短篇小說刊登，最近這兩三年都可能是聚焦在近未來有科技元素的文學故事上面，例如說囍不喜描寫 VR 體驗與冥婚，降靈之際談及 AI 開發者到治理官的心態歷程（但實質上沒記錯還有點恐怖）自己比較喜歡是根據現時我們從新聞，從身邊，從那引人犯罪的線上購物平台（？）看見的最新科技，從而推演他的各種應用情景</p>
+<p>但是這樣子就有親切感了嗎？可能還可以再加強一點～</p>
+<p>還是遊戲化的玩法吧！不過這次利用真實的地圖～我們嘗試再次用便攜式的 vibe coding 方式來進行設計與創作吧</p>
+<p>並且這次選擇的是對於我來說挺熟悉的一個地區，香港黃大仙區的新蒲崗工廠區～</p>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260927/20184140O2JBByhoSt.jpg" alt="深夜的新蒲崗工廠區照片" /><br />
+<em> 圖 2：深夜的新蒲崗工廠區街景實拍：斑駁廠廈與高密度夾層空間</em></p>
+
+<hr />
+<h2>地方研究：香港黃大仙新蒲崗工廠區的歷史變遷與現況轉型</h2>
+<p>新蒲崗工廠區是香港九龍東南部一個歷史悠久的工業與商貿區，在 1960 年代隨著香港輕工業起飛而發展起來這裡曾是塑膠製品製衣和五金等輕工業的重鎮，如著名的紅A塑膠廠（星光實業）和長江製衣廠都在此設立大型廠廈，見證了香港製造業的黃金歲月</p>
+<p>反正上述就是 Google 的 AI 模式給我作補充，而對於我個人觀察來說，隨著香港的製造業工廠北遷去到中國大陸，工廠區的空間陸續在近代有了一個轉型，主要分為三種：</p>
+<ol>
+<li>
+<strong>變成寫字樓</strong>；</li>
+<li>
+<strong>變成工廠區樓上娛樂場所</strong>：例如說 party room，Band 房；</li>
+<li>
+<strong>變成各種小型教育工作室</strong>：例如說 IPSC 訓練場地（這是真的光是新蒲崗好像就有兩三個槍會了），光劍對決訓練場地（這是真的畢竟我在這裡學過），跆拳道訓練場地（正常看見星期六日很多小朋友下課穿跆拳道服飾）</li>
+</ol>
+<p>時代的變遷，可能會帶走一些東西，但留下來的空間可能又會衍生不一樣的文化，像是駱駝漆大廈也從油漆廠房變成了大眾購物的地方，元創方也從前中央書院與已婚警察宿舍變成了文創的地方地方創生與地方轉型，似乎也會在我們不知不覺當中發生，由慕名而來的人們改變這個地區的用途及文化</p>
+<hr />
+<h2>未來學與科幻推演：工廠區在近未來的六大生活情境假設</h2>
+<p>好吧，但是未來呢？</p>
+<p>對於未來這些工廠地區會如何進一步有所轉變，有時候我們都很難去做準確的預測，但是從未來學的角度或者從科技管理的角度可能都可以為這些地方以科幻的方向賦予他們另外一種未來的幻想</p>
+<p>在自己眼中：</p>
+<ul>
+<li>
+<strong>未來生活狀態</strong>：香港非法居住在工廠區裡面依然是一個社會問題，在法例當中基於土地使用用途及安全等等問題，並不允許人們居住在工廠區裡面的單位，但是香港樓價高企，相對來說工廈的單位租價比較便宜，應該還是有很多人，包括想要逃離空間暴力的年輕人，想要以租借工廠區裡面單位的方式冒險在裡面維持生活</li>
+<li>
+<strong>未來工作狀態</strong>：話說大家可能都喜歡在家遠端工作吧，特別是接案及多工處理的文化逐漸豐盛起來，加上大眾都逐漸開始學懂如何製作自己的 AI 員工幫自己完成大量的工作，也包括接下外包工作，讓 AI 完成外包工作，這就變成遊戲其中一個重要的功能了</li>
+<li>
+<strong>未來創新與創業狀態</strong>：黑客松創客松議題松的文化及風氣逐漸傳到東方，很多創新與創業項目都因為這些活動從而起來或者得到投資者們的注意，舉辦這些活動的地方也有可能從一些大型活動場所變成小型的咖啡廳都會舉辦這些活動</li>
+<li>
+<strong>未來的教育狀態</strong>：儘管 AI 如何挑戰現有的教育制度，STEAMAI實驗教育依然還是現在及未來持續有的趨勢，家長們也開始重視這方面的需求，儘管世界面臨少子化的問題，但是同樣地很多地區的社會都陸續呈現 M 字化的貧富懸殊問題，這種情況下有錢的夫妻們對於生孩子這件事可能也並非如同我們現時觀察社會一樣如此抗拒並且擁有一定財力與物力去生育孩子並且培育孩子，這是一種推斷但並不一定正確</li>
+<li>
+<strong>未來的文化狀態</strong>：AI 情人館（最近柏林的新聞例子）賽博格潮流沉浸式體驗等等這些文化在未來依然是重要的趨勢，會不會有各類型追趕著這些前沿科技的小型工作室會在工廠區裡面出現呢？</li>
+<li>
+<strong>未來的消費狀態</strong>：租金水電費網絡費訂閱費都肯定是未來人們依然需要關注的重要費用項目變成了遊戲的目標與基礎屬性</li>
+</ul>
+<hr />
+<h2>Vibe Coding 實戰 Prompt 提煉：打造 Hyperpop次工廠地圖遊戲</h2>
+<p>這些對未來的想像都會化為以下的 prompt 可以直接導入 AI Studio 變成一款地圖遊戲</p>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260927/20184140hHms08josd.jpg" alt="只用手機也能用AI Studio下prompt也能 vibe coding出複雜程式代碼架構的遊戲" /><br />
+<em> 圖 3：只用手機也能在 Google AI Studio 下 Prompt，Vibe Coding 出具備複雜架構的地圖遊戲</em></p>
+
+<pre><code class="language-markdown">建立一個Hyperpop風格遊戲介面，
+這是一個以香港的新蒲崗工廠區為地圖（用Map API顯示2D平面地圖）的未來風格遊戲，叫次工廠
+每個玩家可以在遊戲開始前設定性別（男女不公開）跟姓名跟目標（沉浸式體驗設計師一人AI工廠架構規劃師AI虛擬角色設計總監AI跨媒介應用設計師AI教育導師）
+遊戲背景：20XX年你是一位非法住在工廠區的香港人，早就跟父母脫離關係，每天都為房租網絡費水電費訂閱費而努力，每天儘管不停線上接案（但競爭大，大家都用各種AI Agent接工作但同樣薪金低），另一方自己會走訪新蒲崗工廠區認識不同人
+新蒲崗工廠區同樣有各種地點與人物：
+地面的咖啡廳：一個經常舉辦黑客松這些活動並且由各種創新創業的講座，這年頭大家要賺更多的錢只能夠靠創新創業了但是同人也有超多競爭者也可以在這裡找到合作者
+樓上的教育工作室：在過往政策的驅動底下社會呈現M形結構但是有錢的人卻會生很多小朋友，教育資源是一個很重要的需求，新蒲崗工廠區很早以前便已經轉型成開很多補習班還有兒童活動的地區了，延續下來很多STEAMAI實驗教育的機構都在工廠區的樓上單位
+各種隱蔽的次文化工作室：賽博格刺青（電路刺青，真的可以讓身體上面連接各種電子零件）AI虛擬人情人館電子服裝設計電子療癒空間（透過藥物（比較傾向補品吊瓶液體並以及維他命人員等等的方式）+VR迷幻影像+各種黑科技）這些前衛但是有一定危險性的體驗在各種次文化工作室裡面
+各類型的一人創客空間：各種可以參觀的一人工廠，並且可以委託他們製作各種零件（PCB各類型印刷各類型材料）
+每一個地方都有漂亮的女生能夠認識然後互相熟絡起來
+每一個地方每一天都會有不同的各類型事情發生自己可以選擇，到底是專注投身自己接案工作，雖然可以賺錢，但是只會變得越來越忙碌，還是嘗試接觸不同的人嘗試投身在的目標上，讓自己有機會突圍而出找到另外一份工作還是可以選擇累積自己的作品集從而在關鍵的比賽或者關鍵的項目上面可以尋求合作或者應徵到工作目標是必須要在一個月之後賺取繳交所有費用的金錢外，看能不能有額外的成果
+</code></pre>
+<blockquote>
+<p> <strong>提示</strong>：以上內容直接複製並傳送至支援多檔案生成的 AI 工具（如 Google AI StudioAntigravity），即可全自動生成具備 2D 地圖與互動狀態機的次工廠完整專案架構！</p>
+</blockquote>
+<hr />
+<h2>OpenStreetMap（OSM）的導入與跨界反思：賦予真實地理全新未來意義</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260927/20184140ELVdLQpLxo.jpg" alt="最後有導入OSM地圖的遊戲畫面一部份！雖然與實際地方有些距離但還是能夠調整的！" /><br />
+<em> 圖 4：導入 OpenStreetMap（OSM）圖資的遊戲原型畫面實拍：結合實體建築與虛擬科技節點</em></p>
+
+<p>這次的 prompt 比較長一點，但是始終對於未來推測這件事涉及的領域就包括了對科技新聞科技文化地域文化等等等等進行了解，消化後得出個人的見解，所以才會有各類型的元素組合起來的情況出現</p>
+<p>當然地圖的顯示我選擇的是插入 OpenStreetMap（開放街圖，簡稱 OSM）是自由而且開源的全球地圖，在真實的場景上添加一些虛擬的節點，為這些節點賦予全新的意義及故事內容，我們為真實的場景對他的未來進行預測，並且我們透過遊戲化的互動方式，想像我們在這些地區未來的生活會是怎麼樣的</p>
+<p>雖然只是地圖的插入，但是做出的成果及不單單只是對地理上面的認識，加上對其他領域的認識，我們可以對這番地貌產生全新的想像，甚至不一定是不可能發生的，這就是科幻未來學科技預測的迷人之處</p>
+<hr />
+<h2> 本篇重點整理</h2>
+<table>
+<thead>
+<tr>
+<th align="left">核心維度</th>
+<th align="left">重點摘要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>地方研究與文化脈絡</strong></td>
+<td align="left">數位的地圖是一回事，但你真的對這個地方的文化了解嗎？除了網絡上的資訊外，親身走過這個地方所得到的體驗是獨一無二的，將個體化的真實體驗與線上數位資源結合，能產出極具獨特性的作品</td>
+</tr>
+<tr>
+<td align="left"><strong>OSM 圖資的虛實連結</strong></td>
+<td align="left">OpenStreetMap（開放街圖，OSM）的插入讓我們透過軟體與真實世界作連結，並在此之上賦予地圖更多層次的意義：介紹過去歷史呈現當前文化演繹未來詮釋</td>
+</tr>
+<tr>
+<td align="left"><strong>Vibe Coding 的沉浸感賦能</strong></td>
+<td align="left">Vibe coding 可以產出許多科幻且酷炫的產物，但適當地與真實地理環境連結，不僅能大幅提升使用者的沉浸感（這是我生活的地方呢！），更能賦予實體空間全新的文化生命</td>
+</tr>
+<tr>
+<td align="left"><strong>未來學推演六大情境</strong></td>
+<td align="left">透過空間暴力遠端接案黑客松文化M形教育次文化前衛體驗與剛性生活帳單六大維度，將現實社會痛點轉化為高黏著度的遊戲化機制</td>
+</tr>
+</tbody>
+</table>
+]]></content:encoded>
+                                <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">SakuraEGS</dc:creator>
+                <pubDate>2026-09-27 21:03:39</pubDate>
+                                                                                                                                            </item>
+                    <item>
+                <title>Day 14 便攜式 vibe coding！放假了，我想要不用電腦也能 vibe coding！</title>
+                <link>https://ithelp.ithome.com.tw/articles/10416957?sc=rss.iron</link>
+                <guid isPermaLink="true">https://ithelp.ithome.com.tw/articles/10416957?sc=rss.iron</guid>
+                <description><![CDATA[<h1>Day 14便攜式 vibe coding！放假了，我想要不用電腦也能 vibe coding！</h1>
+
+<p><img src="https://ithelp.ithome.com.tw...]]></description>
+                                    <content:encoded><![CDATA[<h1>Day 14便攜式 vibe coding！放假了，我想要不用電腦也能 vibe coding！</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260926/20184140Wrsd2V5mC2.png" alt="隨時隨地也能vibe coding的vibe! midjourney示意圖" /><br />
+<em> 圖 1：隨時隨地也能 vibe coding 的 vibe！Midjourney 概念示意圖</em></p>
+
+<blockquote>
+<p>話說因為最近放假嘛，<br />
+經常外出的時候都會發現說，可以的話不想帶電腦外出或者出國（雖然我自己已經習慣了），<br />
+但是這會讓人聯想到一個問題：<br />
+我在沒有電腦的情況底下，能否 vibe coding 出東西現場分享給人看？</p>
+</blockquote>
+<hr />
+<h2>痛點與日常觀察：放假不想帶筆電，手機真能現場 Vibe Coding 嗎？</h2>
+<p>現在最為人熟悉的，可能就是使用 ClaudeGeminiPOE 這些平台的手機版，就能夠隨時隨地 vibe coding 出互動式頁面，然後可以分享給自己身邊的人可能是節日賀卡，聖誕節的中秋節的新年的</p>
+<p>當然這種情況比較多是產出單一的 HTML，但是如果是用手機的瀏覽器打開 Google AI Studio，其實同樣也能夠達到用便攜式裝置進行多個資料夾及多個程式檔案的 vibe coding 效果</p>
+<hr />
+<h2>延伸思考：如何打造個人化便攜式 Vibe Coding工具？</h2>
+<p>當然我們自己還可以延伸多一點，我們要如何打造自己的個人化便攜式 vibe coding 工具？</p>
+<p>雖然網絡上已經有各種工具，但是自己常用的風格自己經常部署的形式，可能都有自己喜好的，而自己的獨特審美及對於市場使用者的使用習慣觀察，都可以化為產品擴散的要點（竟然要談到創新擴散了嗎？）</p>
+<hr />
+<h2>定義我的風格與格式：美學設定與部署前設</h2>
+<p>我們來做一些習慣跟前設的設定（下稱：我的風格與格式）吧：</p>
+<ul>
+<li>
+<strong>介面風格</strong>：必須要高度符合科技風未來風cyberpunkHyperpopglitchcore（自己喜歡的風格）</li>
+<li>
+<strong>輸出格式內容</strong>：可以變成二十四小時上線及自動部署可以分享給別人的頁面，可以直接嵌入 Google Sites 的 HTML（一方面可以直接分享頁面給別人看，也方便自己之後快速導入在頁面，如我自己主張的在 Google Sites 嵌入 AI 給予的程式代碼）</li>
+<li>
+<strong>備註</strong>：適合手機顯示的頁面（希望自己的 vibe coding 工具產出的程式代碼及頁面是能夠讓任何人用手機都可以看見的內容跟效果）</li>
+</ul>
+<blockquote>
+<p> <strong>提示</strong>：以上設定直接整理並餵給 AI，即為專屬個人風格的標準 Prompt 規範！</p>
+</blockquote>
+<hr />
+<h2>便攜式 Vibe Coding 的三種落地方式</h2>
+<p>在這種情況下，我們可以採取以下的三種方法：</p>
+<h3>方法一：建立獨立的 AI 聊天機器人（Chatbot）</h3>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260926/20184140nyCaSoTv1m.jpg" alt="為便攜式vibe cosing作準備的第一種方式：普通建立AI聊天機器人" /><br />
+<em> 圖 2：為便攜式 vibe coding 作準備的第一種方式：普通建立 AI 聊天機器人（例如設定 Gemini Gem）</em></p>
+
+<ol>
+<li>建立獨立的 AI 聊天機器人，專門根據我的風格跟格式產出程式代碼並顯示成為頁面，例如設定 Gemini Gem</li>
+</ol>
+<hr />
+<h3>方法二：為 AI Agent 應用程式建立 Vibe Coding Skill</h3>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260926/20184140NEv2AlncKW.jpg" alt="為便攜式vibe coding作準備的第二種方式：為自己的AI Agent應用程式建立vibe coding skill" /><br />
+<em> 圖 3：為便攜式 vibe coding 作準備的第二種方式：為自己的 AI Agent 應用程式建立專屬 vibe coding skill</em></p>
+
+<ol start="2">
+<li>為自己的 AI Agent 設置 skill，把我的風格跟格式下達變成手機上面 AI Agent（如：Gemini Spark 及 Claude），每次在 vibe coding 時都會遵守的規則</li>
+</ol>
+<hr />
+<h3>方法三：用 Google AI Studio 打造專屬的 AI 應用程式</h3>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260926/20184140BcMqGbGtiy.jpg" alt="為便攜式vibe coding作準備的第三種形式：建立自己的AI應用程式" /><br />
+<em> 圖 4：為便攜式 vibe coding 作準備的第三種形式：建立自己的專屬 AI 應用程式</em></p>
+
+<ol start="3">
+<li>用 AI Studio 製作一個 AI 應用程式吧！下 prompt 建構一個連接 Firebase，可以用戶登入，無論用戶怎樣簡單的要求都會根據我的風格跟格式給予用戶我風格的成果當然這邊會要求用戶使用自己的 API，確保我的 API 帳單不會爆掉（當然我自己也沒有連接信用卡）</li>
+</ol>
+<hr />
+<h2>實戰成果與商業化思考：將美學與模板化為獨立商品</h2>
+<p>這次 vibe coding 出來的東西就是用第三種方法（因為之前還沒有真正試過），這樣我就能夠把自己的審美以及風格在未來變成一種商品</p>
+<p>其實已經超級像線上一些 AI 教學的 IG 帳號都會用 Notion 分享自己的 prompt，但是我做多一步的是：<strong>自己擁有一個模板，客戶還能夠根據個人化需要，加上喜歡某一個模板製作出獨一無二的內容，並且擁有部署的效果，讓用戶產出的內容可以分享出去！</strong></p>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260926/20184140UoILpk4d2p.jpg" alt="自己的AI應用程式根據自己的風格及模板所建立的客製化內容，中秋節快樂！" /><br />
+<em> 圖 5：自己的 AI 應用程式根據自己的風格及模板所建立的客製化內容，中秋節快樂！</em></p>
+
+<p>特別是寫入 NFC 或 QR Code 分享出去也好，這些相對複雜的功能，可能就必須要建立個人的 AI 應用程式了，並且未來會比較能夠自由地因此宣傳自己想建立的模板跟個人品牌，並且設計出各類型的服務！</p>
+<hr />
+<h2>延伸閱讀：相關專題與背景延伸</h2>
+<ul>
+<li> <strong>LinkedIn 專欄文章</strong>：<br />
+從戰爭程序員白瀨到維達爾系統：我如何透過 Google AI Studio 實現手機即時編程的夢想？<br />
+ <strong>閱讀連結</strong>：<a href="https://lnkd.in/p/gvf2EJXY">點此前往 LinkedIn 專文閱讀</a>
+</li>
+</ul>
+<hr />
+<h2> 本篇重點整理</h2>
+<table>
+<thead>
+<tr>
+<th align="left">核心維度</th>
+<th align="left">重點摘要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>便攜趨勢</strong></td>
+<td align="left">小型的便攜式裝置（如手機平板）vibe coding 出成果會是一個趨勢，畢竟不是每個人每天都會帶著電腦外出</td>
+</tr>
+<tr>
+<td align="left"><strong>能力商品化</strong></td>
+<td align="left">自己的 vibe coding 習慣及模板可以轉發成為 AI 聊天機器人AI Agent SkillAI 應用程式，變成一種個人技能及品牌延伸的商品</td>
+</tr>
+<tr>
+<td align="left"><strong>商業模式突破</strong></td>
+<td align="left">建立個人的 AI 應用程式，結合 Google 帳號登入系統，能夠把自己的專業知識轉化為模板進一步建立變成產品，這是除了把分享跟收集 Prompt 變成自己的知識體系從而變成線上課程之外的另一種變現方式</td>
+</tr>
+</tbody>
+</table>
+]]></content:encoded>
+                                <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">SakuraEGS</dc:creator>
+                <pubDate>2026-09-26 22:45:26</pubDate>
+                                                                                                                                            </item>
+                    <item>
+                <title>Day 13 會去了解後端的原因，是因為河川永續！？！？</title>
+                <link>https://ithelp.ithome.com.tw/articles/10416447?sc=rss.iron</link>
+                <guid isPermaLink="true">https://ithelp.ithome.com.tw/articles/10416447?sc=rss.iron</guid>
+                <description><![CDATA[<h1>Day 13會去了解後端的原因，是因為河川永續！？！？</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/202609...]]></description>
+                                    <content:encoded><![CDATA[<h1>Day 13會去了解後端的原因，是因為河川永續！？！？</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260925/201841404rh8n8j8sA.png" alt="看看河川也看看資訊科技如何協助河川永續的midjourney示意圖" /><br />
+<em> 圖 1：看看河川，也看看資訊科技如何協助河川永續的 Midjourney 概念示意圖</em></p>
+
+<blockquote>
+<p>話說讓自己懂得<br />
+FirebaseSupabase<br />
+這些後端平台的原因，<br />
+竟然是因為河川永續的活動！？！？</p>
+</blockquote>
+<hr />
+<h2>緣起：一場寒假工作坊，意外開啟的技術長之路</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260925/20184140dyFI2k5NUj.png" alt="河好如初" /><br />
+<em> 圖 2：聯合報與東海大學合作舉辦的河好如初河川永續設計思考工作坊</em></p>
+
+<p>話說，這個大概要從 2026 年 1 月開始說起，當時因為寒假有點空閒，所以決定參加聯合報跟東海大學合作舉辦的<a href="https://river.udn.com/river/index">河好如初</a>河川永續設計思考工作坊（還是那句，名字超長的）</p>
+<p>那個時候跟團隊提出的提案北港溪沼氣發電眾包平台意外地入圍了，也包括後來第二次的志同道河同樣入圍！</p>
+<p>兩次的專案自己都擔任技術及主要開發人員，特別是兩次的提案我都跟平台及數位開發有關</p>
+<ul>
+<li> <strong>介紹活動與自己所作所為的 Instagram 短片</strong>：
+<ul>
+<li> <strong>前篇分享</strong>：<a href="https://www.instagram.com/reel/DZysfe3vhjL/?stkn=N2VsOWl2djdlaHN0">點此觀看 IG Reel 前篇</a>
+</li>
+<li> <strong>後篇分享</strong>：<a href="https://www.instagram.com/reel/DaAs54whtdC/?stkn=dWYweGVwMjhzZ3Nn">點此觀看 IG Reel 後篇</a>
+</li>
+</ul>
+</li>
+<li> <strong>聯合報媒體報導</strong>：
+<ul>
+<li> <a href="https://river.udn.com/river/story/124359/9268858">大同大學表現亮眼，三組團隊強勢入圍！ | 河好如初</a>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2>拒絕假惺惺的前端！登入系統與資料庫才是平台的靈魂</h2>
+<p>那麼談及到平台，往往就免不了要設計登入系統</p>
+<p>但是難道登入系統用 vibe coding 弄出一個假惺惺的前端就可以了嗎？<strong>當然不行啦！</strong></p>
+<p>通常還需要串聯一些後端的平台才能建構起正式的登入系統，或者像是 Facebook 這些平台一樣可以上傳東西的資料庫，讓前端可以隨著資料庫的更新顯示用戶上傳的東西</p>
+<hr />
+<h2>從 AI Studio 到 Antigravity：後端串接的兩段式進化</h2>
+<p>那麼在實作上，究竟該怎麼串接後端呢？</p>
+<h3> 階段一：AI Studio一句流自動串接（新手極速入門）</h3>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260925/20184140SzY7cftQN1.png" alt="提示詞讓AI Studio串接firebase建立賬號登入系統" /><br />
+<em> 圖 3：透過簡單提示詞讓 Google AI Studio 自動串接 Firebase 建立帳號登入系統</em></p>
+
+<p>大概 2026 年 1 月後有一個 vibe coding 串接後端的簡單方法，就是假如你是用 Google AI Studio vibe coding 平台的話，你可以在對話聊天框裡面指示 AI 說：</p>
+<pre><code class="language-markdown">請幫我串接 Firebase 建立一個 Google 帳號登入系統！
+</code></pre>
+<blockquote>
+<p> <em>提示：Prompt 就是這麼直覺！在 AI Studio 平台中直接輸入，AI Studio 便會自動幫你串接完成！</em></p>
+</blockquote>
+<p>當然，第一次在 2026 年初還不熟悉 vibe coding只懂得用 AI Studio 的時候，可以這樣子做</p>
+<hr />
+<h3> 階段二：進階 Vibe Coding 工具（Antigravity 全端架構串接）</h3>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260925/20184140Y2rq1sg8VK.png" alt="後來志同道河平台(next.js架構，cloudflare部署)的登入系統（supabase+google cloud）" /><br />
+<em> 圖 4：後來志同道河平台（Next.js 架構，Cloudflare 部署）的正式登入系統（Supabase + Google Cloud）</em></p>
+
+<p>但是如果後來需要用到像 Antigravity 等等的專業 vibe coding 工具，串接起來就稍微進階複雜一點了</p>
+<p>這時候直接詢問 AI 模型，AI 通常會直接提供你指引連結點開管理後台頁面，指揮你該如何設定 API拿到 API 資訊後，再回到網頁部署平台（例如 Cloudflare 或 Vercel），引導你該如何添加 <code>API Key</code> 與環境變數並儲存</p>
+<p>一步一步地設定，就能夠完整設定好 Google 帳號的登入系統了！</p>
+<p>甚至我們還能夠串接 vibe coding 寫好的 <code>Google Apps Script</code>，讓登入的帳號可以自動收到 Gmail定期推送日報有機會的話之後再來專門介紹一下這個的設定～</p>
+<hr />
+<h2>極限衝刺：實作不超過 24 小時的黑客松破局關鍵</h2>
+<p>說起來也是瘋狂，其實兩次的活動能夠實在動手開發的時間都不超過 24 小時（雖然活動說明上是不超過 48 小時）</p>
+<p>必須要在這麼短的時間之內製作出完整可動的 Prototype，是一個挺大的挑戰但是兩次我都用 AI 工具處理好了這個部份，到最後製作出好看又真正能互動的 Prototype 展示給評審及參與者看，獲得了足夠多的支持才能夠順利入圍</p>
+<p>不知道這樣子的開發展示能力是否也部份打動了評審們？兩次也剛好都入圍了，這也讓我在當初就深刻體會到：<strong>vibe coding 能力逐步變成了黑客松與議題松中，協助團隊迅速驗證完善解決方案的重要趨勢</strong></p>
+<p>畢竟因為這樣，我還莫名得到了技術長的稱呼呢！（？）</p>
+<hr />
+<h2> 本篇重點整理</h2>
+<table>
+<thead>
+<tr>
+<th align="left">核心維度</th>
+<th align="left">重點摘要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>議題松原型極速衝刺</strong></td>
+<td align="left">面對極短時間（實作不到 24 小時）就要產出成果的黑客松與議題松，透過 Vibe Coding 產出具備真實互動力的 Prototype，將成為打動評審與大眾極有力的展示成果</td>
+</tr>
+<tr>
+<td align="left"><strong>後端與認證串接策略</strong></td>
+<td align="left">後端設定（特別是登入與資料庫）可依工具層次推進：入門可使用 AI Studio 下 Prompt 自動串接 Firebase；進階時利用 Antigravity 等工具引導，逐步完成 Cloudflare / Vercel 環境變數與 SupabaseGoogle Cloud API 串接</td>
+</tr>
+<tr>
+<td align="left"><strong>綠色永續與科技賦能</strong></td>
+<td align="left">綠色科技永續科技領域存在巨大需求與缺口，Vibe Coding 大幅降低了開發門檻，賦能非技術純工科背景的人，也能用真實科技具體實現過往未能落地的美好倡議！</td>
+</tr>
+</tbody>
+</table>
+]]></content:encoded>
+                                <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">SakuraEGS</dc:creator>
+                <pubDate>2026-09-25 15:51:05</pubDate>
+                                                                                                                                            </item>
+                    <item>
+                <title>Day 12 AIGC生成與使用！著作權商用權利AI標示，這些使用者條款你都認識嗎！？</title>
+                <link>https://ithelp.ithome.com.tw/articles/10416042?sc=rss.iron</link>
+                <guid isPermaLink="true">https://ithelp.ithome.com.tw/articles/10416042?sc=rss.iron</guid>
+                <description><![CDATA[<h1>Day 12AIGC的生成與使用！著作權商用權利AI標示，這些使用者條款你都認識嗎！？</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/uplo...]]></description>
+                                    <content:encoded><![CDATA[<h1>Day 12AIGC的生成與使用！著作權商用權利AI標示，這些使用者條款你都認識嗎！？</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260924/20184140NF984i1qiH.png" alt="看複雜政策文件的少年midjourney示意圖" /><br />
+<em> 圖 1：面對各家繁複使用者條款與政策文件的少年 Midjourney 概念示意圖</em></p>
+
+<blockquote>
+<p>其實很想輕微碰一點法律的說，<br />
+畢竟我們研究所有一部份是處理智慧財產權的議題，<br />
+雖然我不懂民法跟刑法，<br />
+但是可是會在研究所跟 WIPO 上智慧財產權的課！<br />
+關於 AIGC（人工智能生成內容）的應用使用著作權，<br />
+都是我比較熟悉的部份<br />
+但如果是在應用還有商用的部份，<br />
+比較重要的會先是各種應用的使用者條款</p>
+</blockquote>
+<hr />
+<h2>AIGC 與生成式 AI 的邊界：我眼中的前後端關係</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260924/20184140wDBKC8z5o7.png" alt="AI生成式AIAIGC之關係圖" /><br />
+<em> 圖 2：人工智慧（AI）生成式 AI 與 AIGC 之間的層級與前後端關係架構圖</em></p>
+
+<p>AIGC（Artificial Intelligence Generated Content，人工智慧生成內容）在我自己的認知跟分類裏面是生成式 AI 的子集，不知道大家知不知道這件事</p>
+<p>生成式 AI 我們可以討論 Transformer 架構CNNRNN，但是如果是討論 AI 圖像AI 影片AI 文章上傳到社群媒體，如何透過修改提示詞與參數調整讓結果更符合理想，我通常會把它歸類在 AIGC</p>
+<p>可以理解是 AIGC 比較屬於 AI 使用的後端，生成式 AI 相對是在前端的部份</p>
+<hr />
+<h2>付費方案決定商用命運：魔鬼藏在使用者條款（Terms of Service）裡</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260924/201841403qwm75nINn.png" alt="以midjourney為例的Terms of Service" /><br />
+<em> 圖 3：以 Midjourney 為例的官方服務條款（Terms of Service）規範頁面</em></p>
+
+<p>但是啊～Midjourney（圖像）SUNO AI（音訊）Tripo AI（3D模型）等等的生成式 AI 應用，不同的付費方案所可以採取的使用及商用權利都不太一樣，這也導致很多 AIGC 的使用者可能並不知道自己原來沒有部份的權力，從而難以規劃自己 AIGC 的使用及轉化為商品的範圍</p>
+<p>所以！這次<a href="https://ithelp.ithome.com.tw/articles/10415845">結合上次說的 RAG </a>我們真正來做一個聊天機器人！把目前部份大家經常會接觸到的生成式 AI 應用，他們的使用者條款，變成 PDF 轉換成 RAG 起來！最後變成一個聊天機器人 exe！</p>
+<hr />
+<h2>收錄 23 款熱門 AI 工具政策庫：從 3D 到程式碼的六大陣營</h2>
+<p>這次 RAG 的資料就包含：</p>
+<h3> 一 3D 建模與空間智能（Spatial &amp; 3D AI） 共 5 款</h3>
+<ul>
+<li>
+<strong>Tripo 3D</strong>
+</li>
+<li>
+<strong>Meshy AI</strong>
+</li>
+<li>
+<strong>World Labs</strong>
+</li>
+<li>
+<strong>Skybox AI (Blockade Labs)</strong>
+</li>
+<li>
+<strong>LeiaPix (3D)</strong>
+</li>
+</ul>
+<h3> 二 核心生成式與智慧體（Generative AI &amp; Agent） 共 6 款</h3>
+<ul>
+<li>
+<strong>Google AI Studio</strong>
+</li>
+<li>
+<strong>ChatGPT (OpenAI)</strong>
+</li>
+<li>
+<strong>Claude (Anthropic)</strong>
+</li>
+<li>
+<strong>Dify.AI</strong>
+</li>
+<li>
+<strong>Character AI</strong>
+</li>
+<li>
+<strong>Chirper AI</strong>
+<ul>
+<li>
+<em>收錄政策</em>：服務條款隱私政策</li>
+<li>
+<em>關鍵要點</em>：AI Agent 社交模擬平台，條款授予平台廣泛內容使用與散布授權</li>
+</ul>
+</li>
+</ul>
+<h3> 三 平面設計與圖表簡報（Graphic &amp; Diagram AI） 共 5 款</h3>
+<ul>
+<li>
+<strong>Midjourney</strong>
+</li>
+<li>
+<strong>Napkin AI</strong>
+</li>
+<li>
+<strong>Google Mixboard</strong>
+</li>
+<li>
+<strong>Canva (Magic Studio)</strong>
+</li>
+<li>
+<strong>Adobe Express (Firefly)</strong>
+</li>
+</ul>
+<h3> 四 影片生成與智慧剪輯（Video Generation &amp; Editing） 共 3 款</h3>
+<ul>
+<li>
+<strong>Google Flow</strong>
+</li>
+<li>
+<strong>Google Vids</strong>
+</li>
+<li>
+<strong>剪映 (CapCut)</strong>
+</li>
+</ul>
+<h3> 五 聲音與音樂生成（Audio &amp; Music AI） 共 2 款</h3>
+<ul>
+<li>
+<strong>Suno AI</strong>
+</li>
+<li>
+<strong>MusicFX / Musicgen (Google AI Test Kitchen)</strong>
+</li>
+</ul>
+<h3> 六 網站 UI 原型與程式開發（UI Prototype &amp; Coding） 共 2 款</h3>
+<ul>
+<li>
+<strong>Google Stitch</strong>
+</li>
+<li>
+<strong>Cursor</strong>
+</li>
+</ul>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260924/20184140yiuChWV7DK.png" alt="perplexity幫我找23款工具的所有政策文件" /><br />
+<em> 圖 4：善用 Perplexity 精準搜尋 23 款熱門 AI 工具的官方政策與條款文件</em></p>
+
+<p>的各種政策文件，這邊感謝 perplexity 幫我找相應的來源網頁及文件！（除了 google AI 模式跟 NotebookLM，perplexity 同樣可以幫我相對準確的網絡資料）</p>
+<p>這邊我們同樣可以把erplexity的網址貼給vibe coding工具叫它把所有網址的内容變成pdf再丟到google colab變成RAG~(可以先做這個的第一步)</p>
+<hr />
+<h2>話説為什麽是 exe？單機私有化 vs 網頁架構</h2>
+<p>延續之前的 html 跟 next.js 可以架設 AI 聊天機器人，這次我們來玩玩看做 <strong>桌面應用程式</strong> 吧</p>
+<ul>
+<li>
+<p><strong>.exe 桌面應用程式方式</strong>：<br />
+<strong>單機私有化</strong>完全在你的電腦 Windows 系統執行之後的規劃有可能還可以用 LM StudioOllama 在本機跑開源大模型，不用聯網隱私最高，但同時吃電腦顯卡（GPU）效能，基本的實現本地端的 AI 聊天機器人設計</p>
+</li>
+<li>
+<p><strong>網頁檔案方式</strong>：<br />
+<strong>極簡臨時架構，未來可以廣域宣傳用</strong>過往可能在設計個人網頁的篇章有介紹到 <code>.html</code> 檔案（內含 HTML/CSS/JavaScript），AI 聊天機器人也可能可以在上面運行，直接雙擊用瀏覽器打開但它沒有後端，只能在前端瀏覽器用 JS 直接呼叫 OpenAI 等雲端 API缺點是 API Key 會暴露在前端程式碼中，極不安全，只適合自己測試，之後上架到 vercel 或 cloudflare 可能還要做更多的安全性的設計</p>
+</li>
+</ul>
+<hr />
+<h2>Vibe Coding 實戰：自然語言一鍵打造 AIGC 政策顧問</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260924/201841400lEyPVz2x9.png" alt="最後的AI聊天機器人exe" /><br />
+<em> 圖 5：透過 Vibe Coding 打造出的單機私有化AI 工具政策諮詢助理.exe 桌面應用程式成果</em></p>
+
+<p>那使用 vibe coding 工具就簡單了，比如用 Antigravity（VS codeCursorCodexClaude Code 都可以，這是vibe coding的第二步）：</p>
+<pre><code class="language-markdown">請按照 index.faiss 跟 index.pkl 製作一個使用 AI studio API 使用最新的 AI 模型進行諮詢的 AIGC 工具使用顧問 AI 聊天機器人 exe 吧！
+</code></pre>
+<blockquote>
+<p> <em>提示：prompt 就是以上這麽簡單！直接複製即可交給 AI 輔助工具執行！</em></p>
+</blockquote>
+<p>最後獻給大家這個 git 吧！</p>
+<ul>
+<li>️ <strong>專案開源成果</strong>：<br />
+<strong>AI 工具政策咨詢助理 RAG 知識庫 (AI-Tool-Policy-Assistant-RAG)</strong><br />
+收錄上述 23 款 AI 工具政策條款之 768 維 FAISS 向量索引與切片文本，開箱即用<br />
+ <strong>GitHub 儲存庫</strong>：<a href="https://github.com/ShiroSakuraEGS/AI-Tool-Policy-Assistant-RAG.git">https://github.com/ShiroSakuraEGS/AI-Tool-Policy-Assistant-RAG.git</a>
+</li>
+</ul>
+<hr />
+<h2> 本篇重點整理</h2>
+<table>
+<thead>
+<tr>
+<th align="left">核心維度</th>
+<th align="left">重點摘要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>AIGC 政策與商業授權</strong></td>
+<td align="left">AIGC 工具的政策非常重要！有訂閱與訂閱什麼方案，會直接影響你的內容之後的使用應用與商用策略！</td>
+</tr>
+<tr>
+<td align="left"><strong>RAG 智慧體實踐</strong></td>
+<td align="left">AI 聊天機器人串接 RAG 比想像中還要簡單得多，只要明白自己的目標規劃好串接的路徑，就能變成清晰的 prompt 了！</td>
+</tr>
+<tr>
+<td align="left"><strong>本地端 vs 線上架構</strong></td>
+<td align="left">本地端（.exe / 本機大模型）還是線上的 AI 聊天機器人？各有各好處！你可以根據應用的隱私程度，來判斷你想把它變成怎樣的商品（可能真的可以賣出去呢！）</td>
+</tr>
+</tbody>
+</table>
+]]></content:encoded>
+                                <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">SakuraEGS</dc:creator>
+                <pubDate>2026-09-24 12:24:17</pubDate>
+                                                                                                                                            </item>
+                    <item>
+                <title>Day11 助教呀～～～～我不懂AIRAGCNN啊！！！不是，我不就是那個助教了嗎！？</title>
+                <link>https://ithelp.ithome.com.tw/articles/10415845?sc=rss.iron</link>
+                <guid isPermaLink="true">https://ithelp.ithome.com.tw/articles/10415845?sc=rss.iron</guid>
+                <description><![CDATA[<h1>Day 11助教呀～～～～我不懂AIRAGCNN啊！！！不是，我不就是那個助教了嗎！？</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/uplo...]]></description>
+                                    <content:encoded><![CDATA[<h1>Day 11助教呀～～～～我不懂AIRAGCNN啊！！！不是，我不就是那個助教了嗎！？</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260923/20184140HQxHrsUhNN.png" alt="Midjourney示意圖，少年與向量空間~" /><br />
+<em> 圖 1：少年與向量空間的 Midjourney 概念示意圖</em></p>
+
+<blockquote>
+<p>今天我們來回歸一下AI領域吧～<br />
+之前不算嗎？<br />
+欸～～～畢竟比較多是在應用面，<br />
+這邊不太會說TransformerCNNRNNdiffusion模型等等，<br />
+雖然我還不能很詳細的說明每個東西是什麼，<br />
+但是我自己也是要念的啊！<br />
+關於之前要考AI應用規劃師的時候！</p>
+</blockquote>
+<hr />
+<h2>中文系跨足 AI 的奇幻轉型：助教自己也是要念書的啊！</h2>
+<p>好吧，反正在大學後期跟研究所初期，其實自己已經有點從中文系轉型去AI了，不單單是在一些活動上面說明自己的成果，或者去考證照，擔任相關課程助教，舉辦校內工作坊這些</p>
+<p>回過頭來，確實要說點AI的東西也是可以啦～</p>
+<p>因為最近也是在當學校生成式AI課程的助教，剛好看見教學材料在說RAG，不知道大家還記得前面在提及<a href="https://ithelp.ithome.com.tw/articles/10411903">AI虛擬伴侶的時候，也有提及過RAG跟參考資料這兩回事</a></p>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260923/20184140HDbJfqaFGp.png" alt="Google AI 模式搜尋RAG！" /><br />
+<em> 圖 2：動用 Google AI 模式快速搜尋並初步釐清 RAG 架構</em></p>
+
+<p>我們動用一下上次查詢<a href="https://ithelp.ithome.com.tw/articles/10414824">法國擊劍協會光劍競賽規則</a>的方法用Google AI模式初步回答一下RAG是什麼吧！畢竟我就是那種很難隨便碼出正確資訊的半斤八両</p>
+<hr />
+<h2>什麼是 RAG？從文字到數學的檢索增強生成</h2>
+<blockquote>
+<p><strong>檢索增強生成（Retrieval-Augmented Generation，簡稱 RAG）</strong> 是一種結合外部知識檢索與大型語言模型生成的 AI 架構</p>
+<p><strong>RAG 的核心運作原理</strong><br />
+把 RAG 想像成一位在回答問題前先查資料再作答的助手，主要步驟包含：</p>
+<ul>
+<li>
+<strong>檢索（Retrieval）</strong>：當使用者提問時，系統會將問題轉為向量，並從外部知識庫或資料庫中找出語意最相近的相關段落</li>
+<li>
+<strong>增強（Augmentation）</strong>：將檢索到的片段內容與原始問題一起打包成提示詞（Prompt）</li>
+<li>
+<strong>生成（Generation）</strong>：大型語言模型（LLM）根據這些特定資料進行推理，產出有根據的準確回答</li>
+</ul>
+</blockquote>
+<p>畢竟打開AI模型，無論是機器學習，還是所謂的深度學習，背後的運作基礎也是各種數學向量微積分線性代數這比起參考文件，似乎是把文件當中的文字化為prompt讓模型讀取，RAG的核心是用Embedding用來找出與問題語意相近的文件片段；這些片段會被加入 prompt，LLM 再透過自我注意力機制判斷如何使用這些上下文</p>
+<p>簡單點來說，任何AI模型運算是一大堆數學在跑，不論LLM還是Embedding，也可以形成一個可視化的向量空間，而RAG會在Embedding的向量空間中找出與問題最相近的文件片段，向LLM插入prompt，也就會影響LLM的內部高維度特徵空間（隱空間）的機率分佈，依據這些片段作為上下文來生成回答，從而更有效的減低產出來的文字跟內容幻覺的問題，提高回答的可查證性，但不能保證完全消除幻覺</p>
+<p>邏輯是這樣子～真的有什麼不太確定的問AI幫我補充就對了，當助教或者去補充自己稍微缺陷的知識盲點就是這樣子做</p>
+<p>好吧！那麼今天vibe coding什麼～</p>
+<hr />
+<h2>走進蔡炎龍老師的 Colab 課堂：親手跑出自己的 RAG 向量庫</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260923/20184140g1zU6a7Hro.png" alt="炎龍老師的學習資料~" /><br />
+<em> 圖 3：政治大學蔡炎龍老師豐富的神經網絡與機器學習 Colab 學習範本</em></p>
+
+<p>話說我們的老師呢！是國立政治大學的蔡炎龍老師！在他的課堂當中都會有各種Google colab 跟AI，跟神經網絡，跟機器學習有關的模板供同學們學習運行修改</p>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260923/20184140CVnCg2ytR9.png" alt="最近大學在教程式語言也是用colab" /><br />
+<em> 圖 4：近期大學教授程式語言與 AI 相關課程時也經常使用 Google Colab</em></p>
+
+<p>當中有一篇呢，是在說RAG，然後我突然在想起，我好像沒有試過用程式的方式做過一次自己的RAG呢～那麼就套用看看這個模板吧！</p>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260923/20184140j99b8pe7BP.png" alt="問Google AI模式Hugging face" /><br />
+<em> 圖 5：第一次接觸 Hugging Face，不論是 API 或權限設定都能詢問 Google AI 模式協助釐清</em></p>
+
+<p>不過這個模板的運行過程當中還是有些我運行不太行的地方不過現在Google colab旁邊也有AI可以輔助了！特別是這次是第一次接觸Hugging face，拿API，設定API權限什麼的，不懂可能就要問Google AI模式了</p>
+<hr />
+<h2>揭密運算成果：index.faiss 與 index.pkl 是什麼？</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260923/20184140Xc7pBo4KIN.png" alt="最後產出就兩個東東！" /><br />
+<em> 圖 6：Colab 執行後產出的兩個關鍵核心檔案：index.faiss 與 index.pkl</em></p>
+
+<p>不過最後運算下來最後產出來的是兩個檔案，<code>index.faiss</code> 跟 <code>index.pkl</code> 會放在Google colab左手邊資料夾的部份，可以先下載下來，解壓縮</p>
+<ul>
+<li>
+<strong><code>index.faiss</code>（FAISS 檔案）</strong>：這是由 Meta（Facebook）開發的 FAISS（Facebook AI Similarity Search）向量資料庫檔案</li>
+<li>
+<strong><code>index.pkl</code>（Pickle 檔案）</strong>：這是 Python 用來序列化（打包）物件的標準格式</li>
+</ul>
+<p>通常產出了這兩個檔案之後就是要搭配好像之前<a href="https://ithelp.ithome.com.tw/articles/10411903">AI虛擬伴侶的方式，串連生成式AI模型變成AI聊天機器人！</a></p>
+<p>但是這次我要做點不同的，就是可視化高維數學空間頁面，把它變成一個語意宇宙！</p>
+<p>因為這次我拿去變成RAG的文件是<a href="https://ithelp.ithome.com.tw/articles/10411155">我過往的小說創作及散文創作文本，我是中文系的嘛～（其實沒有直接關係，之前也有說過）</a></p>
+<hr />
+<h2>用 Antigravity 實戰 Vibe Coding：將向量空間化為三維文學宇宙</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260923/20184140t31wzRcu3i.png" alt="就Antigravity的prompt" /><br />
+<em> 圖 7：在 Antigravity 中以自然語言 Prompt 指示 AI 開發 3D 視覺化頁面</em></p>
+
+<p>不過沒關係這次的目標其實就非常簡單，把資料夾用Antigravity打開，要求說請對這個向量資料庫用html可是化出來因為透過AI詢問知道這是什麼的Embedding模型，那麼指定一下到最後就產出一個極為簡單的<code>index.html</code></p>
+<h3> 核心 Prompt 模組</h3>
+<pre><code class="language-text">請幫我讀取當前資料夾內的 FAISS 向量資料庫（包含 index.faiss 與 index.pkl），並生成一個單一獨立的 index.html 網頁來進行 3D 空間視覺化：
+1. 3D 空間呈現：使用 Three.js 與降維方法，將資料庫中的高維文字向量映射至三維空間中展示
+2. 視覺效果：將每一個小說與散文的文本切片渲染為宇宙中的發光星點，支援滑鼠拖曳旋轉滾輪縮放與視角漫遊
+3. 檢索機制模擬：模擬使用者提問時在語意空間切出的球狀檢索範圍，動態呈現 TopKTopP 與 Temperature 參數對檢索球體半徑及捕捉資料節點的影響
+4. 介面風格：整體採用深邃星空風格，讓文本資料形成一片美麗的文學語意宇宙
+</code></pre>
+<blockquote>
+<p> <em>提示：以上內容直接複製即為標準 Prompt！</em></p>
+</blockquote>
+<p>打開了就能夠看見自己作品如何變成了一個三維的空間了，並且知道一下他會怎樣對AI聊天機器人產生效果！當AI聊天機器人運作時，便會在這個三維空間的特定部份根據距離或內積等方式進行最近鄰／相似度搜尋產出一個類似球狀空間！球體的大小和捕捉到的星點數量由 Top-K 決定，而網頁上的 Top-P 與 Temperature，則是模擬 LLM 拿到這些星點資料後，決定要用多奔放（高溫）或多嚴謹（低溫）的機率去生成最終的回應</p>
+<p>這聽起來還是很抽象吧</p>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260923/20184140nL5n6YNro7.png" alt="我的文學宇宙！！！" /><br />
+<em> 圖 8：親眼看見自己的文學作品在三維向量空間中綻放為璀璨星空！</em></p>
+
+<p>不過看見自己的文字變成了一個宇宙？反正就是超好看的，可能也可以做一些風格化，或者讓他變成一個有趣的互動裝置？<a href="https://ithelp.ithome.com.tw/articles/10411155">畢竟中文系也可以搞數位內容！</a></p>
+<hr />
+<h2> 本篇重點整理</h2>
+<table>
+<thead>
+<tr>
+<th align="left">核心維度</th>
+<th align="left">重點摘要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>知識檢索與盲點補齊</strong></td>
+<td align="left">初步資料的蒐集跟知識點的確定可以用 Google AI 模式，有理有據，學習前沿新知與快速釐清技術觀念非常方便</td>
+</tr>
+<tr>
+<td align="left"><strong>生成式 AI 底層原理</strong></td>
+<td align="left">從機器學習深度學習神經網絡Transformer 架構參數調整（TopKTopPtemperature）到 RAG，不單是學工具如何使用，到了後期與 Vibe Coding 階段更要參透數學與原理邏輯，才能發揮更深度的作用</td>
+</tr>
+<tr>
+<td align="left"><strong>多元 Google 工具生態</strong></td>
+<td align="left">Google 的 Vibe Coding 工具非常豐富（GeminiGemini CanvasAntigravityAI StudioColab 等），雖然底層模型相仿，但不同介面都各自適合處理不同環節的任務</td>
+</tr>
+<tr>
+<td align="left"><strong>文學向量與三維視覺化</strong></td>
+<td align="left">將中文系過往的小說與散文創作轉為向量並存入 FAISS，再透過 Antigravity 搓出 3D 視覺化星空，親眼見證高維數學空間與 RAG 檢索機制的浪漫落地</td>
+</tr>
+</tbody>
+</table>
+]]></content:encoded>
+                                <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">SakuraEGS</dc:creator>
+                <pubDate>2026-09-23 12:49:22</pubDate>
+                                                                                                                                            </item>
+                    <item>
+                <title>Day 10 我要讓大家逐漸變成絕地武士！不單單是虛擬的！還要推現實的！</title>
+                <link>https://ithelp.ithome.com.tw/articles/10414824?sc=rss.iron</link>
+                <guid isPermaLink="true">https://ithelp.ithome.com.tw/articles/10414824?sc=rss.iron</guid>
+                <description><![CDATA[<h1>Day 10我要讓大家逐漸變成絕地武士！不單單是虛擬的！還要推現實的！</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/image...]]></description>
+                                    <content:encoded><![CDATA[<h1>Day 10我要讓大家逐漸變成絕地武士！不單單是虛擬的！還要推現實的！</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260921/20184140QisWQQ4BpG.png" alt="大家比拼做最強絕地武士的 Midjourney 示意圖" /><br />
+<em> 圖 1：大家比拼做最強絕地武士的 Midjourney 示意圖</em></p>
+
+<blockquote>
+<p>當分析過往 9 天的內容主題時，<br />
+很經常性會覺得我是不是<br />
+又要開拓寫什麼新的領域會比較好，<br />
+而且最好是全方面的，<br />
+要不然很難對得起題目所說的，<br />
+跨領域嘛～～～<br />
+但我不算是一個會經常做運動的人（？）<br />
+好吧！這次我們來做一些新興運動的推廣吧！<br />
+（只有推廣嗎這不就是行銷應用）</p>
+</blockquote>
+<hr />
+<h2>當年休學回港的特工日常？從玩劍玩槍到莫名入鏡報刊！</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260921/20184140tZUYNFjC0J.jpg" alt="當年的照片~~~" /><br />
+<em> 圖 2：當年玩光劍對決莫名入鏡報刊的照片~~~</em></p>
+
+<p>是～但也不是這樣！我他喵的！之前可是有玩過一段時間光劍對決的說！而且有莫名其妙入鏡報刊！？！？</p>
+<p>說起來也是挺特別的，當初大學有一段時間休學回到香港休息，那個時候就想練一些新興運動例如說 IPSC 國際實用射擊聯盟（應該不算新興了，但也是挺特別的），還有光劍對決（這個算新興的了！）</p>
+<p>不過這也是非常神奇，那一年剛好玩劍玩槍玩拳考駕照，真的被學長說是不是要當什麼特工</p>
+<hr />
+<h2>原來不是 Cosplay 玩玩而已！法國擊劍協會（FFE）認證的官方運動</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260921/20184140qBc7tdyS69.png" alt="FFE 官網的影像" /><br />
+<em> 圖 3：法國擊劍協會（FFE）官網的光劍對決官方影像</em></p>
+
+<p>好吧，回歸正題，光劍對決聽起上來像是什麼 Cosplay 玩玩這樣子，但是實際上法國擊劍協會（Fédération Française d'Escrime, FFE）於 2019 年 2 月正式宣佈將光劍對決認可為官方運動項目，並且由轄下的光劍學院制定了一套光劍對決的競賽規則</p>
+<p>說起來也是有點複雜，也根據各地及條件的限制，香港與台灣各自的團體可能都會有規則及裝備上面的要求與調整</p>
+<p>但是 FFE 本身也有制定一套完整的比賽規則，並且看 YouTube 上面的影片還挺好玩的！</p>
+<p>當然身為玩過這個競技項目一段時間的人來說，也是希望繼續推廣這個運動，甚至未來自己也能夠重新訓練起來！（因為最近真的忙著在其他領域當中）</p>
+<hr />
+<h2>Vibe Coding 實戰：用 Google AI Studio 搓出一款 3D 光劍對決遊戲！</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260921/20184140iBpgd27mbJ.png" alt="AI Studio 上 Vibe Coding 3D 光劍對決遊戲！" /><br />
+<em> 圖 4：在 Google AI Studio 上 Vibe Coding 出的 3D 光劍對決遊戲畫面！</em></p>
+
+<p>好吧這次就用上一次有說到的 Google AI Studio 弄一款遊戲讓大家大概理解一下這個競技方法吧！並且這次要做 3D 遊戲！根據提供的規則：</p>
+<h3>️ 比賽場地與基本設定</h3>
+<ul>
+<li>
+<strong>場地</strong>：直徑 8 公尺的圓形標記區域，選手不得跨出界外</li>
+<li>
+<strong>時間</strong>：每場對決正規時間為 3 分鐘</li>
+<li>
+<strong>裝備</strong>：雙方必須手持由 LED 與剛性聚碳酸酯（Polycarbonate）製成的安全光劍，並全程穿戴傳統擊劍面罩胸甲及手套等制式護具</li>
+</ul>
+<h3> 得分與勝負機制</h3>
+<p>依據擊中對手身體的部位不同，可獲得不同分值：</p>
+<table>
+<thead>
+<tr>
+<th align="left">擊中部位</th>
+<th align="center">得分</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>頭部</strong></td>
+<td align="center">5 分</td>
+</tr>
+<tr>
+<td align="left"><strong>手臂 / 腿部</strong></td>
+<td align="center">3 分</td>
+</tr>
+<tr>
+<td align="left"><strong>手掌</strong></td>
+<td align="center">1 分</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<strong>獲勝條件</strong>：率先獲得 15 分的選手直接獲勝；若正規 3 分鐘時間結束時雙方均未達 15 分，則以總得分較高者勝出</li>
+<li>
+<strong>驟死賽（金牌 / 決勝點）</strong>：若雙方在常規時間結束前積分平手達到 10 比 10，則進入突然死亡的一劍決勝環節，由率先擊中頭部或身體的一方奪勝</li>
+<li>
+<strong>特色動作要求（起手動作）</strong>：為了讓比賽呈現如電影般華麗的視覺效果與攻守交替，選手在發動攻擊前，通常須依規範執行特定的起手與回劍動作（例如將光劍揮動或擺向身後一定幅度），未依規定動作的攻擊可能被判定無效</li>
+</ul>
+<pre><code class="language-text">請幫我用 Three.js 設計一款 3D 光劍對決競技網頁遊戲請嚴格根據以下法國擊劍協會（FFE）光劍對決官方競賽規則設計戰鬥與計分機制：
+1. 場地：直徑 8 公尺的圓形賽場，選手出界判定扣分或重置位置
+2. 時間：正規時間 3 分鐘倒數計時
+3. 得分機制：擊中頭部得 5 分手臂/腿部得 3 分手掌得 1 分率先奪得 15 分者獲勝；時間結束時以總分高者獲勝；若 10:10 則進入突然死亡驟死賽（一劍決勝）
+4. 特色動作：發動攻擊前必須有揮向身後的起手與回劍動作判定，未達幅度之攻擊判定無效
+5. 視覺風格：雙方手持發光 LED 聚碳酸酯光劍，穿戴面罩與護具，呈現流暢的 3D 揮劍軌跡與打擊光效反饋
+</code></pre>
+<blockquote>
+<p> <em>提示：以上內容直接複製即為標準 Prompt！</em></p>
+</blockquote>
+<p>當然以上部份是 Google 的 AI Studio 提供給我的摘要，這對於初步進行規則研究的我來說已經十分好用了，甚至已經能夠成為遊戲有趣的重點設計</p>
+<hr />
+<h2>嚴謹官方文獻與台港實體社群資源</h2>
+<p>當然要推廣這項活動，最好還是附帶法國的官方資料：</p>
+<ul>
+<li> <strong>法國擊劍協會資料</strong>：<br />
+<a href="https://www.ffescrime.fr/home/je-decouvre/disciplines/sabre-laser/">FFE Sabre Laser 官方專頁</a>
+</li>
+<li> <strong>官方競賽規則規章（LIVRET 2 : ARBITRAGE POUR LE COMBAT SPORTIF）</strong>：<br />
+<a href="https://escrime-iledefrance.fr/wp-content/uploads/2022/02/REGLEMENT_Sabre_Laser_Livret2_Arbitrage_v.Dec2021-.pdf">點此閱讀完整 PDF 規章文件</a>
+</li>
+</ul>
+<p>以及台灣與香港有組織相關活動的社群及團體連結：</p>
+<ul>
+<li> <strong>香港光劍學堂 Hong Kong Lightsaber Academy</strong>：<br />
+<a href="https://www.facebook.com/share/g/1DitfhryH1/">Facebook 社群專頁連結</a>
+</li>
+<li> <strong>光劍對決社 (Lightsaber Duelist Club)（台灣）</strong>：<br />
+<a href="https://www.facebook.com/share/g/1EN7LeAG4C/">Facebook 社團連結</a>
+</li>
+</ul>
+<hr />
+<h2>從虛擬遊戲走入現實賽場：打破次元壁的新興運動推廣</h2>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260922/20184140NZ1mZYGq5a.png" alt="超難才贏一次..." /><br><em> 圖 5：超難才贏一次...</em></p>
+<p>透過遊戲化的過程，看似像是只能在電腦裏面才會出現的遊戲，相關資源及連結也會讓對這個競技有興趣的人們可以加入相關的現實社團參與訓練以及了解相關文化及規則，從而有機會在未來參加比賽畢竟香港可是有光劍公開賽的！</p>
+<ul>
+<li>️ <strong>線上 3D 光劍對決遊戲</strong>：<br />
+在 Google AI Studio 上以自然語言 Vibe Coding 打造的 3D 光劍競技模擬遊戲<br />
+ <strong>線上遊戲連結</strong>：<a href="https://ai.studio/apps/11ba9399-ed47-4a95-844e-94b068e2fade?fullscreenApplet=true">點此在 Google AI Studio 立即遊玩體驗</a>
+</li>
+</ul>
+<hr />
+<h2> 本篇重點整理</h2>
+<table>
+<thead>
+<tr>
+<th align="left">核心維度</th>
+<th align="left">重點摘要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>虛擬體驗引導現實參與</strong></td>
+<td align="left">虛擬的內容也能轉化為真實運動！新興體育的推廣可以透過設計虛擬遊戲讓大家在線上體驗競技樂趣，進而激發走入現實參與實體運動與社團培訓的動機</td>
+</tr>
+<tr>
+<td align="left"><strong>AI Studio 打造 3D 遊戲</strong></td>
+<td align="left">使用 Google AI Studio 進行 3D 互動遊戲開發非常過癮！大幅降低遊戲開發與 3D 渲染的技術門檻，讓跨領域創作者能夠快速驗證互動概念</td>
+</tr>
+<tr>
+<td align="left"><strong>真實體育規則驅動機制</strong></td>
+<td align="left">遊戲的互動機制直接融入法國擊劍協會（FFE）光劍官方規則（部位得分起手回劍規範），讓玩家在趣味遊玩中發現原來這些都是有真實根據的！</td>
+</tr>
+</tbody>
+</table>
+]]></content:encoded>
+                                <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">SakuraEGS</dc:creator>
+                <pubDate>2026-09-22 08:03:33</pubDate>
+                                                                                                                                            </item>
+                    <item>
+                <title>Day 9 咖啡色計劃的心跳瞬間！SCA 的文章化成活潑的女角色！與你進行咖啡學問探討之旅～</title>
+                <link>https://ithelp.ithome.com.tw/articles/10414277?sc=rss.iron</link>
+                <guid isPermaLink="true">https://ithelp.ithome.com.tw/articles/10414277?sc=rss.iron</guid>
+                <description><![CDATA[<h1>Day 9咖啡色計劃的心跳瞬間！SCA 的文章化成活潑的女角色！與你進行咖啡學問探討之旅～</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/up...]]></description>
+                                    <content:encoded><![CDATA[<h1>Day 9咖啡色計劃的心跳瞬間！SCA 的文章化成活潑的女角色！與你進行咖啡學問探討之旅～</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260920/20184140EiTB6Fw0TI.png" alt="Midjourney 少年咖啡師研究咖啡科學的示意圖" /><br />
+<em> 圖 1：Midjourney 少年咖啡師研究咖啡科學的示意圖</em></p>
+
+<p>最近都很多知識型的東西<br />
+與 Vibe Coding 結合的想法<br />
+這次來玩什麼好呢～<br />
+要不然就起床泡個咖啡好了<br />
+儘管我並沒有正式當過咖啡師，<br />
+但是學咖啡快 10 年了吧？<br />
+中途還經歷過一個 SCA 考試跟 City &amp; Guilds 的考試</p>
+<hr />
+<h2>起床泡杯咖啡吧！學咖啡 10 年與 SCA 考試的那些日常</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260920/20184140n76ssObUia.jpg" alt="在學校冲咖啡被人偷拍 AwA" /><br />
+<em> 圖 2：在學校沖咖啡被人偷拍 AwA</em></p>
+
+<p>小時候便隱約感覺到，咖啡每年行情都不太一樣，可能是生豆批發的價格，可能是氣候變遷到底影響咖啡產量多少，特別是氣候變遷有可能影響咖啡風味與農莊的營運，最後影響的是我們每個人手上的咖啡價格，儘管生豆的價格大概佔一杯咖啡的十分之一而已，這是一個比喻式的說法</p>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260920/20184140KJpgbQH0nM.png" alt="SCA 官網" /><br />
+<em> 圖 3：SCA 精品咖啡協會官方網站</em></p>
+
+<p><a href="https://sca.coffee/">SCA，精品咖啡協會</a>，對於不同的咖啡師來說可能都有不同意義，是一個考試機構？是一個鑽研及定義精品咖啡的研究機構？是一個持續性進行咖啡產業全方面研究的機構？是一個推動咖啡科學化的機構之一？</p>
+<p>對於很多真正在就業的咖啡師來說，可能沖好一杯咖啡並沒有這麼多學問，特別在香港的環境，基礎的就是，沖好，上好，經營好一家店舖比較重要但是要做出產品的差異化或者品牌塑造這些，都可以從一些學術理論得到一些啟發（儘管有些咖啡師可能天生對產品研發跟品牌塑造也有極高天份就是了，像是莫名其妙可能一個中學生也能夠拍出流量極高的影片，這樣子的道理，同時身為咖啡師也可能會有其他的天賦）</p>
+<p>早一兩年還在大學的時候，為了鍛鍊自己的英文閱讀能力，其實也會去看一些 SCA 的英文研究報告，去鍛鍊自己的英文能力～當時看的是 <a href="https://static1.squarespace.com/static/69fdd798dd17f065f214726e/t/6a5674e04beb354b58831661/1784050915373/Towards+a+Definition+of+Specialty+Coffee+White+Paper.pdf">Towards A Definition of Specialty Coffee: Building an Understanding Based on Attributes </a></p>
+<hr />
+<h2>靈感乍現：把硬核論文變成戀愛 Galgame 遊戲？！</h2>
+<p>關於如何把複雜的知識化成有趣的形式讓人容易吸收，上一次的案例就展示了要把文件變成有趣的網頁圖卡可以複習，這次我們就來點</p>
+<p>先聲明一下！這個有趣的東西我之前是在 IG 上面看見的，把論文變成 Galgame 戀愛遊戲！之前好像有一個叫做 <em>Paper 2 galgame</em> 的應用在 Steam 上面發售</p>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260920/20184140Oid0pqZm6U.png" alt="Paper 2 galgame 的 Steam 商店畫面" /><br />
+<em> 圖 4：Paper 2 galgame 在 Steam 上的商店畫面</em></p>
+
+<p>當然身為一個研究 AI 虛擬角色知識教學Vibe Coding 的人來說，用 Vibe Coding 出已有的應用，套用 AI 虛擬角色的設計邏輯進行有趣生動的知識教學這本身就是一個有趣的出路～</p>
+<hr />
+<h2>嚴謹知識審查：用 NotebookLM 拆解三篇 SCA 經典文獻</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260920/20184140PQJxAqYhiD.png" alt="NotebookLM 做輔助學習超好用的" /><br />
+<em> 圖 5：NotebookLM 做輔助學習超好用的介面</em></p>
+
+<p>好吧但是這一切都必須先從嚴格的知識審查開始，這次選用的是三篇在 SCA 上面可以瀏覽的內容這邊我們用 Google NotebookLM 來做基礎的文獻了解與學習（這對大學生來說是一個非常有用的技能）</p>
+<ul>
+<li>
+<p> <a href="https://sca.coffee/sca-news/25/issue-25-research-dialing-in-decoded-efd8g">Dialing In, Decoded: How Electrochemistry Helps Us Understand Espresso Extraction</a>：<br />
+美國俄勒岡大學的 Hendon Coffee Lab 以實驗設計法（DOE）優化萃取及電化學（Electrochemistry）技術應用，來檢測咖啡因綠原酸及有機酸等特定分子的濃度</p>
+</li>
+<li>
+<p> <a href="https://static1.squarespace.com/static/69fdd798dd17f065f214726e/t/6a56764f634458434863cf36/1784051279965/Sustainability+How-To+Guide.pdf">A How-To Guide for Making Sustainability a Shared Practice</a>：<br />
+由精品咖啡協會（SCA）發布，提出兩大框架雙鑽石模型（Double Diamond）：包含發掘（Discover）定義（Define）開發（Develop）交付（Deliver）四個階段DEAL 五大深層商業結構：從使命（Purpose）網絡（Networks）治理（Governance）所有權（Ownership）與財務（Finance）推動永續設計框架（Sustainable Design Framework, SDF），協助咖啡企業將永續深度融入商業營運，推動整個產業鏈的價值公平分配（Equitable Value Distribution）</p>
+</li>
+<li>
+<p> <a href="https://static1.squarespace.com/static/635bc3f95a682269ebfb7751/t/699dc315b8929b4475925e9f/1771946773802/WhatsInMyCoffee-Green+Coffee+Identity+19.01.2026+EN2_SECURED.pdf">Whats In My Coffee? - Green Coffee Identity</a>：<br />
+針對近年興起的加料共發酵與浸漬咖啡（Infused / Co-fermented Coffees），探討產業中Pro-stuff（創新派，主張賦予小農風味溢價）與Anti-stuff（純粹派，強調生豆純潔性與食品安全）之間的辯論</p>
+</li>
+</ul>
+<p>三篇文章我尚算都看得懂啦，一篇關於檢測與優化精品咖啡產出流程，可以變成一位可愛的女科學家，一篇探討咖啡產業永續的商業架構，可以變成一個關注永續的漂亮虛構 SCA 專案負責人，一篇探索創新咖啡製作形式與傳統純粹派的辯論，就可以化成一位新潮的年紀輕輕的哥德少女</p>
+<hr />
+<h2>角色立繪與虛擬化身：Midjourney 產出三位靈魂女主角</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260920/201841402sv1bYB51c.png" alt="Midjourney 生成的三個角色立繪" /><br />
+<em> 圖 6：Midjourney 生成的三位靈魂女主角立繪</em></p>
+
+<p>好吧我就喜歡用 Midjourney 產出三個角色的立繪，嵌入在遊戲當中，讓整體與角色的互動過程當中變得有趣好看！</p>
+<p>這次就借用一下 iThome 的後台吧，把圖像嵌入在 iThome 的文章頁面上我便能夠得到一串圖像存放的網址，圖像存放的網址將會在之後備被 Vibe Coding 工具使用！（這次想要輕微的借這個位置，非常感謝，我還沒有深入研究出線上圖像存放位置與連結的部份）</p>
+<hr />
+<h2>Vibe Coding 實戰：從 Antigravity 到 Google AI Studio 的多檔案原型</h2>
+<p>最後把 NotebookLM 萃取出來的知識點，結合圖像的網址，加上下載下來的三篇文章，丟！到 Vibe Coding 的工具，例如說 Antigravity！讓他生成出可以嵌入在 Google Sites 的 HTML 程式代碼</p>
+<p>其實我隱約就覺得不對勁了，因為這樣子的話代碼可能就有 2000 多行有可能會讓網頁變得卡卡的，大家手機會發熱所以</p>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260920/20184140RTx99q9Z2K.png" alt="後來 AI Studio 的遊戲畫面" /><br />
+<em> 圖 7：後來在 Google AI Studio 打造出的咖啡館 RPG 探索遊戲畫面</em></p>
+
+<p>產出好 HTML！我就把檔案丟包到 Google 的 AI Studio 去啦！</p>
+<p>某程度上 Google 的 AI Studio 作為一個線上 Vibe Coding 工具，同樣也可以產出不同的檔案，而不像當初最基本的 AI 只能夠產出單一檔案的部份（大概 2025 年尾左右？）這種情況下 AI Studio 設計出來的遊戲通常都能夠比較生動有趣一點</p>
+<p>好吧，Prompt 的話其實這次會有點複雜但大概結構會是：</p>
+<pre><code class="language-markdown">我想要設計一款名為咖啡色計劃的戀愛遊戲，會把我給予你的三篇文獻及以下的知識點變成對應的遊戲角色，主角可以自選是男是女並且設定性別，玩家能夠操控角色在咖啡廳裏面移動遊走與不同的角色聊天，透過與他們的聊天了解三篇文獻的知識，並且透過聊天提升好感度，好感到足夠高的話，就能夠解鎖最終隱藏圖像每一天都會有不同的 1-3 位的女角色來到咖啡廳
+</code></pre>
+<blockquote>
+<p> <em>提示：以上內容直接複製即為標準 Prompt！</em></p>
+</blockquote>
+<p>好吧，就是這麼的口語化～</p>
+<hr />
+<h2>咖啡色計劃：戀愛咖啡師物語正式上線！</h2>
+<p>那麼請大家就這次的咖啡色計劃：戀愛咖啡師物語！來了解及學習一些前沿的精品咖啡研究成果與知識吧！</p>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260920/20184140J3GlogtT9t.png" alt="最後的通關畫面 AwA" /><br />
+<em> 圖 8：咖啡色計劃的最終好感度通關結算畫面 AwA</em></p>
+
+<ul>
+<li> <strong>咖啡色計劃：戀愛咖啡師物語</strong>：<br />
+結合 SCA 前沿學術文獻RPG 自由走動與 Galgame 好感度戀愛對話的咖啡知識冒險遊戲<br />
+ <strong>遊戲體驗連結</strong>：<a href="https://ai.studio/apps/8892bcce-25d7-425d-9046-332ae94b7519?fullscreenApplet=true">點此在 Google AI Studio 立即遊玩體驗</a>
+</li>
+</ul>
+<hr />
+<h2> 本篇重點整理</h2>
+<table>
+<thead>
+<tr>
+<th align="left">核心維度</th>
+<th align="left">重點摘要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>文獻研讀個人化（NotebookLM）</strong></td>
+<td align="left">把艱澀的英文學術文章與研究報告交給 Google NotebookLM 做初步的知識點提取，大幅降低閱讀門檻，成為學生或自學者跨領域研讀與嚴格知識審查的超實用利器！</td>
+</tr>
+<tr>
+<td align="left"><strong>知識傳播遊戲化（Paper to Galgame）</strong></td>
+<td align="left">結合 Vibe Coding 將學術知識點轉化為戀愛 Galgame，套用 AI 虛擬角色的立體人設，在咖啡廳走動點單與聊天互動中一邊玩遊戲一邊學知識，讓學術理論生動有趣！</td>
+</tr>
+<tr>
+<td align="left"><strong>多檔案敏捷原型（Google AI Studio）</strong></td>
+<td align="left">針對高達 2,000 多行的複雜專案，善用 Google AI Studio 多檔案組織架構，突破單檔 HTML 的效能瓶頸，快速建構出順暢不卡機互動體驗更佳的生動 Prototype！</td>
+</tr>
+</tbody>
+</table>
+]]></content:encoded>
+                                <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">SakuraEGS</dc:creator>
+                <pubDate>2026-09-21 09:30:51</pubDate>
+                                                                                                                                            </item>
+                    <item>
+                <title>Day 8 一起來預習香港的強制性基本安全訓練課程（平安卡）吧！（？）</title>
+                <link>https://ithelp.ithome.com.tw/articles/10414259?sc=rss.iron</link>
+                <guid isPermaLink="true">https://ithelp.ithome.com.tw/articles/10414259?sc=rss.iron</guid>
+                <description><![CDATA[<h1>Day 8一起來預習香港的強制性基本安全訓練課程（平安卡）吧！（？）</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images...]]></description>
+                                    <content:encoded><![CDATA[<h1>Day 8一起來預習香港的強制性基本安全訓練課程（平安卡）吧！（？）</h1>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260919/20184140TgivNbD1uX.png" alt="小朋友勇闖香港建築工程界的 Midjourney 示意圖" /><br />
+<em> 圖 1：小朋友勇闖香港建築工程界的 Midjourney 示意圖</em></p>
+
+<p>其實這次會好奇我除了可以是一個<br />
+商管中文舞台廣播創科教育<br />
+數位內容資訊科技AI 治理專業的學生以外<br />
+我還能夠是什麼專業<br />
+（雖然我不完全是這些專業，<br />
+但是之前的所有文章都是跟這些領域有關）</p>
+<p>好吧，這次要來挑戰屋宇工程吧？（靠腰！）</p>
+<hr />
+<h2>當年 16 歲的小型工程網站建構者：大老闆的實務知識庫</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260919/20184140TVJBaM2A3H.png" alt="後來公司的網頁" /><br />
+<em> 圖 2：後來公司的網頁</em></p>
+
+<p>說起來在之前製作網頁的文章似乎有讓大家看見，其實我是某個香港小型工程公司網站的建構者（他𣈴的當年才 16-17 歲，竟然就做這種鬼東西，雖然說 16 歲就考咖啡師證照了（嗯？））</p>
+<p>但是啊～工程的很多細節內容其實我都不懂，主要都是大老闆說了算！結果呢！當年有一部份工程都沒有接下來，原因非常多，坪數太少，效果容易做不好等等等等</p>
+<p>他喵的我真想碩士班唸完後回去香港讀一個 <a href="https://www.hkic.edu.hk/zh-hk/programmes/adv-dip-certs/adbd">屋宇建造監工高級文憑</a> 到底是不是這麼難做！（這規劃也是太過具體了吧）</p>
+<p>不過！這種情況下，也是能夠把大老闆說的東西先成為一種資料庫，知識庫！</p>
+<hr />
+<h2>知識圖譜 × 儀表盤：從知識管理晉升為公司治理工具</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260919/201841406suF2Cmk3u.png" alt="公司管理的知識圖譜形式儀表盤" /><br />
+<em> 圖 3：公司管理的知識圖譜形式儀表盤</em></p>
+
+<p>好吧～這次為大家帶來兩個新概念！<strong>知識圖譜</strong>跟<strong>儀表盤</strong>！！！</p>
+<p>用知識圖譜的介面設計，用節點的模式分類好公司管理的各個模塊，並進行管理頁面可視化儀表盤的設計！（對的這句就是 Prompt 了！）</p>
+<pre><code class="language-markdown">用知識圖譜的介面設計，用節點的模式分類好公司管理的各個模塊，並進行管理頁面可視化儀表盤的設計！
+</code></pre>
+<blockquote>
+<p> <em>提示：以上內容直接複製即為標準 Prompt！</em></p>
+</blockquote>
+<p>我要做的東西不單單是要把大老闆的知識進行知識管理！更加是要把網頁頁面變成公司的管理及治理工具！</p>
+<p>除了包含，把大老闆說過的話，變成子彈筆記可以萃取成 <code>skill</code> 與 <code>prompt</code> 之外！</p>
+<hr />
+<h2>拆解四大治理模塊：經營會計知識行銷</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260919/20184140tXImP16OBL.jpg" alt="大概圖示四大模塊架構" /><br />
+<em> 圖 4：大概圖示四大模塊架構</em></p>
+
+<ul>
+<li>
+<p> <strong>公司經營模塊</strong>：<br />
+請記得要處理好公司商業登記續期及周年申報表！儀表盤會監控時間，有需要的話直接發送 WhatsApp 給相應的員工進行處理！</p>
+</li>
+<li>
+<p> <strong>會計模塊</strong>：<br />
+他喵喵的，之前幫公司看財務報表發現會計師行那邊把我們財務報表的超多英文都打錯了的，日期也是！要不是因為我高中讀的是會計（？）不就被忽悠了！！！所以會計模塊可以檢查日期還有英文用字的部份（先這個吧，儘管我知道 AI 應該能夠幫我做檢查，但是資安問題太嚴重了）</p>
+</li>
+<li>
+<p> <strong>知識經營模塊</strong>：<br />
+香港要當裝修工人的話，必須要考平安卡～然後我就是一個沒有平安卡的小白菜好吧要備考的話，我有沒有一些學習資源？因此把<a href="https://www.labour.gov.hk/tc/osh/pdf/Tut_MBST_CW_Chi.pdf">官方提供的資料教材</a>變成學習圖卡，甚至網站能夠把學習資源發送給需要備考的合作工友，乃至於入行小白為行業人才短缺，永續發展，公司有好口碑，似乎都有正面效果！（沒有統計過，但計劃上是這樣子！）</p>
+</li>
+<li>
+<p> <strong>數位行銷模塊</strong>：<br />
+畢竟我最主要的身份就是這間公司的數位技術主管，主要處理數位上面的所有問題！最主要是自從這個網站建構起來後真的會有顧客用平台的資源發訊息給我們的大老闆提供案子！這算是在規劃當中的效果未來也會在其他社群媒體當中有更多的消息發佈，這是計劃當中的其中一部份還有其他計劃，那麼這個就是監督我並且檢視我的工作成果了～</p>
+</li>
+</ul>
+<hr />
+<h2>吸引新人入行ESG 永續與小助理的生存之道</h2>
+
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260919/201841408jXAavXXRQ.png" alt="關於預習面試的題目時有研究所謂香港建築工程界的其中一項挑戰是人手不足（雖然我覺得...）,那吸引及協助新人入行及讓原有合作夥伴持續進修的數位開發及企業作為，同樣有效提升企業形象及推動行業發展" /><br />
+<em> 圖 5：關於預習面試的題目時有研究所謂香港建築工程界的其中一項挑戰是人手不足（雖然我覺得...），那吸引及協助新人入行及讓原有合作夥伴持續進修的數位開發及企業作為，同樣有效提升企業形象及推動行業發展</em></p>
+
+<p>針對工程及裝修這個行業，我還是個小白菜～<br />
+但是從數位會計教育公司經營的角度，我所做的不單單只是要服務大老闆，還是要為這間公司持續經營為老闆思考更多～</p>
+<p>這樣子我零用錢才會比較多一點！（？）</p>
+<hr />
+<h2> 本篇重點整理</h2>
+<table>
+<thead>
+<tr>
+<th align="left">核心維度</th>
+<th align="left">重點摘要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>大老闆的智慧數位化（數位資產化）</strong></td>
+<td align="left">大老闆的智慧～要想辦法數位化它，才能夠有效作數位管理，甚至作為數位資產，變成 <code>prompt</code> 變成 <code>skill</code>，未來可以使用！</td>
+</tr>
+<tr>
+<td align="left"><strong>知識圖譜形式的儀表盤（全方位公司治理）</strong></td>
+<td align="left">以節點形式分類小型公司營運的各個面向，針對每一個模塊以及現有痛點設計相應功能，協助公司進行數位化管理！我們做的不單單是工地的管理～更是整體公司的管理！以自己適合的位置切入協助經營！</td>
+</tr>
+<tr>
+<td align="left"><strong>產業及企業的可持續發展（ESG 與外部性）</strong></td>
+<td align="left">這裡輕微動用 ESG 與外部性的概念觀察企業合作夥伴及未來人力資源管理的部份，為他們提供協助，也針對現有香港業界需求設計負責任及能夠提升企業形象的數位工具</td>
+</tr>
+</tbody>
+</table>
+]]></content:encoded>
+                                <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">SakuraEGS</dc:creator>
+                <pubDate>2026-09-20 13:38:47</pubDate>
+                                                                                                                                            </item>
+                    <item>
+                <title>Day 7 把劇場工作與商管工作結合！！！</title>
+                <link>https://ithelp.ithome.com.tw/articles/10413386?sc=rss.iron</link>
+                <guid isPermaLink="true">https://ithelp.ithome.com.tw/articles/10413386?sc=rss.iron</guid>
+                <description><![CDATA[<h1>Day 7把劇場工作與商管工作結合！！！</h1>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260918/20184...]]></description>
+                                    <content:encoded><![CDATA[<h1>Day 7把劇場工作與商管工作結合！！！</h1>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260918/20184140LkpiXsz6fp.png" alt="我他喵的要改寫舞台工作的流程導入到商管報告中的 Midjourney 示意圖" /><br><em> 圖 1：我他喵的要改寫舞台工作的流程導入到商管報告中的 Midjourney 示意圖</em></p>
+<p>又是全新的一天～<br />
+這次我們來看看要做些什麼有趣的東西吧！</p>
+<p>不過剛好今天有個外面的活動，<br>自己要做主要設備控制人員<br>特別是商管的同學們應該經常要進行簡報的報告，<br>有時候為了營造活動氣氛，<br>會讓活動進行過程的當中有一些背景音樂～～～</p>
+<p>好吧那麼我們這次再來 <strong>vibe coding</strong> 出一個<br>Google 網頁擴充插件吧！</p>
+<hr />
+<h2>為什麼是擴充插件？商管簡報的現場痛點</h2>
+<p>說起來為什麼要另外製作一個網頁擴充插件，而不是用一般的音樂播放器，主要原因是因為過往在同樣的活動進行當中，之前的活動幹部有發現到：</p>
+<blockquote>
+<p>如果我需要切換簡報頁面音樂播放器時，在螢幕上面顯示的畫面將會不這麼美觀（商學院的學生通常會認為要有一場好的報告真的有很多細節位要注意）因此過往在活動過程當中通常需要凍結畫面顯示，然後在操作過後再次解凍螢幕畫面</p>
+</blockquote>
+<p>相信市面上本身應該也會有相關的一些電腦程式及介面能夠解決這個問題，<strong>但是！</strong> 要下載一個程式安裝，往往會耗用電腦容量，甚至會有顯示相容不相容的問題</p>
+<p>Google 網頁擴充插件有時候會是個好東西，特別是現代的年輕人跟學生很多時候都會用到 <strong>Canva</strong> 的線上簡報作報告</p>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260918/20184140VDSQHlwWNg.png" alt="MultiPlay 的畫面及介面顯示，以 YouTube 教學影片縮圖顯示" /><br><em> 圖 2：MultiPlay 的畫面及介面顯示，以 YouTube 教學影片縮圖顯示</em></p>
+<hr />
+<h2>劇場幕後靈感：MultiPlay 工作流與 Cue 點思維</h2>
+<p>這邊輕輕的回想起之前處理劇場幕後工作的經驗（還有這回事！不過其實我幹幕前會比較多～也就是演員），回想起一個叫做 <strong>MultiPlay</strong> 的軟體～如圖！</p>
+<p>一個一個 Cue，在表演之前被安排好，在演出時就一個一個執行～</p>
+<p>不知道這次的擴充插件設計是不是沿用了當時候的工作流程，但同時也簡化了工作流，<strong>只保留對於商學院學生重要的功能：音樂播放音樂淡入淡出</strong>簡化了功能，但剛好又符合其他領域的學生</p>
+<blockquote>
+<p> <strong>發現痛點！沿用其他領域的工作流程！簡化流程！</strong><br />
+這或許也是 vibe coding 一大應用開發的重要價值，我們不再需要仰賴一個非常複雜的工具，只需要製作出對自己當下痛點有用的簡單的工具就好～</p>
+</blockquote>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260918/20184140qG0GYSchz2.png" alt="Vibe coding 出來的 Google 網頁插件畫面" /><br><em> 圖 3：Vibe coding 出來的 Google 網頁插件畫面</em></p>
+<hr />
+<h2>Vibe Coding 實戰：自然語言 Prompt</h2>
+<p>這次的提示詞構想其實非常純粹：</p>
+<pre><code class="language-markdown">請製作一個 Google 瀏覽器網頁插件，能夠在我使用 Canva 報告時，在背景播放根據 Shift+字母按鈕淡入淡出的播放安排了的音樂，音樂可以指定是電腦裏面的音樂文件
+</code></pre>
+<blockquote>
+<p> <em>提示：以上內容直接複製即為標準 Prompt！</em></p>
+</blockquote>
+<p>就如此的簡單～讓商學院的學生體驗一下劇場幕後的工作，但說實在的操控簡報不也是一種幕後工作嗎？</p>
+<hr />
+<h2> 本篇重點整理</h2>
+<table>
+<thead>
+<tr>
+<th align="left">核心維度</th>
+<th align="left">重點摘要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>跨領域流程轉移（劇場 × 商管）</strong></td>
+<td align="left">將劇場 MultiPlay 預設 Cue 點與淡入淡出的專業工作流引進商管報告，徹底解決簡報切換播放器與螢幕凍結的尷尬痛點</td>
+</tr>
+<tr>
+<td align="left"><strong>輕量化網頁擴充插件（Vibe Coding）</strong></td>
+<td align="left">不必安裝笨重且有相容性疑慮的桌面軟體，用自然語言 Prompt 直接在瀏覽器打造適配 Canva 的專屬背景音樂控制器</td>
+</tr>
+<tr>
+<td align="left"><strong>商管思維融入工具設計</strong></td>
+<td align="left">將好看好用氛圍等商學院對活動細節的極致追求融入工具開發，捨棄冗餘功能，只做直擊痛點的輕量神器</td>
+</tr>
+</tbody>
+</table>
+]]></content:encoded>
+                                <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">SakuraEGS</dc:creator>
+                <pubDate>2026-09-19 08:10:44</pubDate>
+                                                                                                                                            </item>
+                    <item>
+                <title>Day 6 你的網頁瀏覽器寵物？我的網頁瀏覽器寵物～</title>
+                <link>https://ithelp.ithome.com.tw/articles/10412446?sc=rss.iron</link>
+                <guid isPermaLink="true">https://ithelp.ithome.com.tw/articles/10412446?sc=rss.iron</guid>
+                <description><![CDATA[<h1>Day 6你的網頁瀏覽器寵物？我的網頁瀏覽器寵物～</h1>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260919/...]]></description>
+                                    <content:encoded><![CDATA[<h1>Day 6你的網頁瀏覽器寵物？我的網頁瀏覽器寵物～</h1>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260919/201841409RxOXlZlLt.png" alt="呵呵呵~我也有我的小寵物~midjourney示意圖" /><br><em> 圖 0：呵呵呵~我也有我的小寵物~midjourney示意圖</em></p>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260917/20184140QUeHQc6twj.png" alt="這可惡的 Google 網頁擴充插件上架上限" /><br><em> 圖 1：這可惡的 Google 網頁擴充插件上架上限</em></p>
+<p>話說最近發現一個很糟糕的事情，<br />
+就是 <strong>Google 網頁擴充插件的上架數量被限制了！</strong><br />
+我這種沒什麼人氣的小開發者，<br />
+不能再分享更多自己做的東西給大家了</p>
+<p>好吧那麼我們換個思路！<br />
+以後 Google 擴充插件就你們自己各自做！<br />
+也不一定要用網絡上面的對吧！！！<br />
+（這是在帶壞消費者嗎？）</p>
+<p>但實際上其實也是如此，自己起初製作 Google 擴充插件的方法也不是因為自己懂得如何編寫程式代碼，也只是 vibe coding 的產物，自己上載到自己的 Google 瀏覽器能夠自己使用之後，就覺得，要不然就上架看看讓大家使用！順帶當是自己的個人專案吧～</p>
+<p>不過話又説回來之前可是有做過</p>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260917/201841405WNXWgfAOR.jpg" alt="Google 網頁擴充插件的使用人數，我就是菜~" /><br><em> 圖 2：Google 網頁擴充插件的使用人數，我就是菜~</em></p>
+<ul>
+<li> <strong>GITCH PET</strong>：透過網頁視覺化虛擬寵物遊戲化 AI 瀏覽體驗，根據使用者的 AI 活躍度自動調整能量與情緒，並提供自訂 AI 捷徑與數位陪伴<br />
+ 連結：<a href="https://lnkd.in/efCbaikh">https://lnkd.in/efCbaikh</a>
+</li>
+<li> <strong>亞文化靈感導航器</strong>：隨機探索未知的文化知識，從結構化資料庫抽取亞文化項目，提供維基百科深度閱讀與 AIGC 創作美學特徵提示詞（Prompts）<br />
+ 連結：<a href="https://lnkd.in/gRU3t28D">https://lnkd.in/gRU3t28D</a>
+</li>
+<li> <strong>小白小黑 AI Agent</strong>：披著病嬌/毒舌二次元外衣的強大生產力工具，兼具情緒價值與美學體驗的專屬研究小秘書<br />
+ 連結：<a href="https://lnkd.in/dGKE6Fbk">https://lnkd.in/dGKE6Fbk</a>
+</li>
+<li> <strong>千禧迷音</strong>：融合 Hyperpop 與 Dreamcore 2D 像素風的城市漫遊遊戲，陪伴主角在千禧幻城中漫步與人交流，解鎖實用的 AIGC 秘笈與工具<br />
+ 連結：<a href="https://lnkd.in/gJCjGCcE">https://lnkd.in/gJCjGCcE</a>
+</li>
+</ul>
+<hr />
+<h2>Vibe Coding 的重要邏輯：自然語言推斷結構</h2>
+<p>而這些擴充插件的建構方法自己也是用到了，<strong>Google Antigravity</strong> 來 vibe coding，重點並不多，只是要求製作一個Google chrome的網頁插件AI vibe coding 的工具便會自動把你的意思理解成要建立哪一些網頁插件必須要有的資料夾以及檔案</p>
+<p>這就是所謂 vibe coding 的重要邏輯，你並不需要列明 AI 需要建構怎樣的資料夾及檔案，AI 便能夠從你的語言當中推斷你需要如何運用編程的邏輯幫你建構你想要的事物</p>
+<p>所以這次的 vibe coding 提示詞非常簡單，就Google chrome的網頁插件！</p>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260917/20184140G6e2MnSN1f.png" alt="Antigravity 的畫面！另外是有指定放在什麼資料夾中" /><br><em> 圖 3：Antigravity 的畫面！另外是有指定放在什麼資料夾中</em></p>
+<hr />
+<h2>細緻描寫提示詞：打造可愛桌面小寵物</h2>
+<p>當然你也可以細緻快一點說例如在 Google 的瀏覽器頁面當中有一個可以拉動移動的浮動窗口，然後有一個電子寵物的可愛模樣在上面，必須要超級可愛！極度可愛！（這是什麼奇怪想法）然後點擊它的時候會有心心反應，拉動的時候會有慌張的表情</p>
+<p>我們來看一看這樣子描寫的話會有什麼結果吧～</p>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260917/20184140K4hRM4JzJo.png" alt="擴充插件導入的頁面" /><br><em> 圖 4：擴充插件導入的頁面</em></p>
+<p>當然輕微的跟大家說一說上面的圖片就是導入擴充插件的位置，最後載入未封裝的項目選擇剛剛 vibe coding 出程式代碼所承載的資料夾，就會出現了一隻如同 Codex 的桌面小寵物一樣的 Google 瀏覽器小寵物啦！</p>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260917/20184140n3kWcYoy7u.png" alt="最後這是製作出來的 Google 瀏覽器小寵物" /><br><em> 圖 5：最後這是製作出來的 Google 瀏覽器小寵物</em></p>
+<hr />
+<h2>科技管理思考：使用者黏著度與擴散策略</h2>
+<p>當然根據自己的經驗，自己還會把很多功能還有理念灌輸在這個瀏覽器小寵物裏面，讓他兼備情感陪伴的同時具備一定的功能性！這個好像跟上次的 AI 虛擬夥伴理念差不多</p>
+<p>好吧不過我還是挺看好這個東西的～因為大家能夠客制化自己桌面寵物的反應與模樣甚至我們從科技管理的角度會認為現在的話使用 Google 瀏覽器的人數依然比使用 Codex 的人數高（當然先撇除 Mac 機的使用者），而且幾乎大家每天都會使用到網頁的瀏覽器，Google 瀏覽器本身就已經是一個用戶黏着度非常高的瀏覽器，在這種情況下無論是自己設計出自己的網頁插件，還是把自己的網頁插件分享出去讓別人使用，相信使用率及泛用性比起我們可能最新看見的 codex 的桌面小寵物還要高</p>
+<p>當然啦～因為上架自己的網頁插件是需要先付一次錢的，而且現在上架的上限也只有五個，所以策略就會變成鼓勵說大家把自己的資料夾分享給不同人單獨導入在各自電腦裏面作使用（當然並不建議製造電腦病毒並惡意分享，並且真的要小心來路不明的資料夾）</p>
+<hr />
+<h2> 本篇重點整理</h2>
+<table>
+<thead>
+<tr>
+<th align="left">核心維度</th>
+<th align="left">重點摘要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>重新說明 Vibe Coding 是什麼</strong></td>
+<td align="left">只要用自然語言表達意圖，AI 就會自動推斷編程邏輯並建立好所有必備的資料夾與檔案結構，不必手動列出具體配置</td>
+</tr>
+<tr>
+<td align="left"><strong>Google 網頁插件重點提示詞</strong></td>
+<td align="left">提示詞可以簡單到只有請製作出一個 Google 網頁插件，也能細緻描述浮動窗口超可愛外觀點擊心心反應與拉動慌張表情</td>
+</tr>
+<tr>
+<td align="left"><strong>採納者人數與擴散策略（科技管理視角）</strong></td>
+<td align="left">Google 瀏覽器具備極高的用戶黏著度與日常使用率；面對商店上架上限限制，採取分享專案資料夾單獨導入的策略，泛用性與擴散效果更高</td>
+</tr>
+</tbody>
+</table>
+]]></content:encoded>
+                                <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">SakuraEGS</dc:creator>
+                <pubDate>2026-09-18 11:17:03</pubDate>
+                                                                                                                                            </item>
+                    <item>
+                <title>Day 5 深夜最適合弄ASMR精華剪輯了！嗯？你說為什麼是弄，而不是聽？欸秘密！</title>
+                <link>https://ithelp.ithome.com.tw/articles/10412409?sc=rss.iron</link>
+                <guid isPermaLink="true">https://ithelp.ithome.com.tw/articles/10412409?sc=rss.iron</guid>
+                <description><![CDATA[<h1>Day 5深夜最適合弄ASMR精華剪輯了！嗯？你說為什麼是弄，而不是聽？欸秘密！</h1>
+<p><img src="https://ithelp.ithome.com.tw/upload/i...]]></description>
+                                    <content:encoded><![CDATA[<h1>Day 5深夜最適合弄ASMR精華剪輯了！嗯？你說為什麼是弄，而不是聽？欸秘密！</h1>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260917/20184140SghOQXcqPG.png" alt="大學生三更半夜做事的示意圖，由midjourney生成！" /><br><em> 圖 1：大學生三更半夜做事的示意圖，由 Midjourney 生成！</em></p>
+<blockquote>
+<p>好吧三更半夜！要來做些新的事情了！<br />
+有時候真的懷疑到底是自己才會這樣子，<br>還是有很大一部份學生會半夜三更突然之間有靈感做些有趣的東西出來！<br />
+特別是有了 Vibe Coding，<br>相信同學們半夜三更弄出一百多個網頁出來也是有可能的吧？<br>（大腦不會燒起來嗎）</p>
+</blockquote>
+<hr />
+<h2>半夜不睡覺的靈感爆發：大學生與自媒體的剪片修羅場</h2>
+<p>好吧，如果有真的很仔細看我的文章的話，會知道我曾經有接觸很多數位工具，其實上了大學也有，<strong>VRoid</strong><strong>Wakana</strong><strong>OBS</strong> 這些都有（不對呢，這個搭配）</p>
+<p>而且逐漸的，很多不同科系的學生也需要面臨一些影片製作的團體或者個人作業說實在的，<strong>剪片超痛苦</strong></p>
+<p>大膽的可以說：<strong>5 分鐘的影片，如果在不熟練的情況底下可能要剪 5 小時</strong>，這是絕大多數非傳播科系學生的常態！</p>
+<hr />
+<h2>當前 AI 剪片的現況與盲點：高昂成本 vs. 實際需求</h2>
+<p>這段時間也有很多朋友問我關於 AI 剪片的部份我是覺得，理論上啦～AI 要達到自主有效剪片的能力，必須要**多模態（Multimodal）**的 AI 模型有效感知影片聲音及腳本素材當中的內容：</p>
+<ul>
+<li>清楚知道畫面中有什麼視覺元素</li>
+<li>辨識聲音與背景音樂包含哪些元素</li>
+<li>理解故事與劇情是怎樣進行與推進的</li>
+</ul>
+<p>唯有具備這些能力，模型才能有效整合素材</p>
+<p>但這件事情本身在輸入端便需要極大的算力與資源消耗；甚至後續還需要連接 AI 模型，讓其深入思考素材的整合方式及邏輯就算市面上有現成的工具：</p>
+<ul>
+<li>免費次數通常有極大的限制</li>
+<li>付費方案的價格可能並不低</li>
+<li>購買之後還需要投入時間與金錢成本進行測試</li>
+</ul>
+<p>有時候還會覺得，那麼要不然用 Canva 剪一剪就好（儘管專業的人應該都不會用 Canva 影片）當然，<strong>AI 根據影片內容生成字幕</strong>同樣是一個很重要的需求，也是 AI 應用在影片剪輯上非常實用的一項功能，確實能夠大幅減少製作時間上的消耗</p>
+<p><strong>好吧，但是這次要做的並不是這個～</strong></p>
+<p><strong>我們來 Vibe Coding 剪輯影片精華的工具吧！</strong></p>
+<hr />
+<h2>擺脫繁瑣推拉素材：打造專屬個人化精華剪輯工具</h2>
+<p>影片作為重要的行銷素材，有時候我們除了要製作完整的長影片外，還需要從影片當中抽離出一些關鍵片段作為宣傳及行銷素材這不僅是企業經常要做的事情，經營自媒體的人同樣如此有時候為了讓自己的 Instagram 有更多內容，也必須頻繁剪出這些短影音精華片段</p>
+<p>但是啊！製作完一段長影片之後，通常可能還要再開一個新專案，然後推拉很多不同的影音元素重新搭配重新製作～這就很麻煩了！</p>
+<p>其實，完全可以根據你的影片風格與內容傾向，<strong>讓 AI 透過 Vibe Coding 打造出一個高度個人化的影片剪輯工具！</strong></p>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260917/20184140lEhjZfNKEc.png" alt="ASMR精華影片剪輯工具" /><br><em> 圖 2：ASMR 精華影片剪輯工具介面設計</em></p>
+<hr />
+<h2>實戰範例：ASMR 精華短片剪輯工具模板</h2>
+<p>以 <strong>ASMR 影片內容</strong>為例，面對 6 分鐘的原始影片，你會希望快速剪輯出 15 秒至 60 秒的精華；同時需要將原本 16:9 的橫向畫面，裁切轉換為適合 Instagram Reels 與 YouTube Shorts 播放的 9:16 直向比例</p>
+<p>此外，因為從內容中能強烈感受到聲音是最核心的元素，因此特別加入暗淡色調的濾鏡，並結合能夠<strong>即時感應影片音量動態變化的波紋特效</strong>，最後直接一鍵輸出影片！</p>
+<h3>️ ASMR 精華剪輯工具核心需求拆解（可直接作為 Prompt）</h3>
+<ol>
+<li>
+<strong>片段時長裁切</strong>：從 6 分鐘的長影片中，快速選取並剪輯 15 秒至 60 秒的精華區間</li>
+<li>
+<strong>畫面比例轉換</strong>：將 16:9 的靜態圖像畫面，智能裁切轉換為 9:16 直向格式（符合 IG Reels / YouTube Shorts 規範）</li>
+<li>
+<strong>氛圍濾鏡與音訊波紋</strong>：套用暗淡色系濾鏡，並即時感應影片音量大小產生動態波動的波紋視覺特效</li>
+<li>
+<strong>一鍵影片輸出</strong>：將配置好的視訊音訊與動態特效快速渲染導出成品</li>
+</ol>
+<blockquote>
+<p> <strong>提示</strong>：還是那句！上面的內容直接複製貼上，就是給 AI 的標準 Vibe Coding Prompt 了！</p>
+</blockquote>
+<p>透過這樣子的模板設計，Vibe Coding 出一個適合頻道風格及內容常態短片製作的影片剪輯工具，相信也能夠大幅減少我在 ASMR 精華片段上的重複剪輯工作</p>
+<hr />
+<h2>從套用他人模板到定義自我模板：自媒體時代的必修課</h2>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260917/20184140mxfuxQTQD3.png" alt="客製化 ASMR 影片剪輯工具操作介面" /><br><em> 圖 3：痛點與固定模板分析邏輯</em></p>
+<p>但是要能夠成功製作出符合你頻道及影片風格的精華剪輯工具，你必須先找到屬於自己的一個<strong>固定模板</strong>例如：</p>
+<ul>
+<li>字幕生成的樣式與字型</li>
+<li>頻道專屬 Logo 的擺放位置</li>
+<li>片尾固定的訂閱按讚與分享畫面</li>
+</ul>
+<p><strong>建立起可複製的模板後，再讓 AI 因應這個模板客製化出專屬的精華影片剪輯工具</strong></p>
+<p>事實上，多媒體及新媒體製作早就已經不再是傳播學院學生們的專利不同學科的學生同樣可能需要在宣傳推廣及傳揚自己的主張與觀點時，踏入多媒體新媒體以至於自媒體的領域當中</p>
+<p>除了熟練現有的套裝工具外，<strong>透過 Vibe Coding 打造出適合自己的專屬工具，已經是一條全新的道路！</strong></p>
+<p>甚至在建構個人化工具的過程中，也能同步深入了解並確立自己的風格與製作流程我們不單單只是使用別人套好的現成模板，這次我們還能夠<strong>親手定義屬於我們個人的模板</strong>，這同樣是自媒體時代非常重要的課題！</p>
+<p>好吧！建立起自己的模板非常重要！在 Vibe Coding 之前的年代似乎就是如此了會這樣子說，也是因為我也是一個影片會破千觀看的人啊！之前的影片好像都有一個固定的製作 SOP風格與流程</p>
+<p>好吧，說到底究竟是我本身跨領域，所以我預設了大家都會跨領域？還是這個世代的大多數人本來就會跨領域，所以我感覺自己挺適合分享一些適合跨領域夥伴做的 Vibe Coding 東西？我也是有些搞不清自己的定位了～</p>
+<hr />
+<h2> 本篇重點整理</h2>
+<table>
+<thead>
+<tr>
+<th align="left">核心維度</th>
+<th align="left">重點摘要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>跨領域的剪輯痛點</strong></td>
+<td align="left">影片製作已非傳播生專利，多數非本科學生剪輯 5 分鐘長片常需耗費 5 小時，重複推拉素材製作短片宣傳相當繁瑣耗時</td>
+</tr>
+<tr>
+<td align="left"><strong>AI 剪片現況與精準切入</strong></td>
+<td align="left">全自動多模態 AI 剪片門檻與算力成本高昂；與其等待通用工具，不如針對當下痛點，運用 Vibe Coding 快速構建個人專屬的小工具</td>
+</tr>
+<tr>
+<td align="left"><strong>定義個人模板與 Vibe Coding</strong></td>
+<td align="left">提煉出自己的製作 SOP（如 16:9 轉 9:16音量感應波紋特效時長裁切），讓 AI 量身打造專屬工具，從套用他人模板邁向定義自我模板</td>
+</tr>
+</tbody>
+</table>
+]]></content:encoded>
+                                <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">SakuraEGS</dc:creator>
+                <pubDate>2026-09-17 10:58:29</pubDate>
+                                                                                                                                            </item>
+                    <item>
+                <title>Day 4 可悲啊～如果這麼簡單就可以製作出自己的AI女友跟男友的話</title>
+                <link>https://ithelp.ithome.com.tw/articles/10411903?sc=rss.iron</link>
+                <guid isPermaLink="true">https://ithelp.ithome.com.tw/articles/10411903?sc=rss.iron</guid>
+                <description><![CDATA[<h1>Day 4可悲啊～如果這麼簡單就可以製作出自己的AI女友跟男友的話</h1>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/2...]]></description>
+                                    <content:encoded><![CDATA[<h1>Day 4可悲啊～如果這麼簡單就可以製作出自己的AI女友跟男友的話</h1>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260922/20184140uipAqLMZp0.png" alt="想要吧...想要吧!AI女友!AI男友!!!midjourney示意圖~" /><br><em> 圖 0：想要吧...想要吧!AI女友!AI男友!!!midjourney示意圖~</em></p>
+<blockquote>
+<p>相信大家都有製作自己客製化 AI 聊天機器人的需求？<br />
+有嗎？沒有嗎？<br />
+不過單單以設計自己專屬的 AI 女友 / 男友這件事情，相信已經有很多人迫不及待想要設計出來了吧！（這聽起來有點可悲）</p>
+<p>好吧～這次 Vibe Coding 的目標就是讓學生或者 AI 初學者，大致了解如何設計出專屬於自己的 AI 虛擬女友 / 男友吧！（直接跳過最不可悲的環節）</p>
+</blockquote>
+<hr />
+<h2>超簡單入門：打開 Gemini 打造專屬 Gem 虛擬伴侶</h2>
+<p>有一個超級簡單的方法！</p>
+<p>打開你的 <strong>Gemini</strong>，打開你的 <strong>Gem</strong>！在 Gem 的設定頁面中，依序填寫你的 AI 虛擬男女友資訊：</p>
+<ul>
+<li>
+<strong>名稱</strong>：為他/她取一個專屬的名字</li>
+<li>
+<strong>性格特質</strong>：溫柔傲嬌活潑或冷靜</li>
+<li>
+<strong>外表特徵</strong>：髮型穿著神態</li>
+<li>
+<strong>興趣嗜好</strong>：喜歡聽的音樂熱衷的活動</li>
+<li>
+<strong>學歷背景</strong>：（竟然還有這種選項？）</li>
+<li>
+<strong>共同經歷</strong>：在你的幻想當中，你們曾經歷過的浪漫回憶</li>
+</ul>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260916/20184140FpEEaRFflv.png" alt="Gemini Gem的設定界面" /><br><em> 圖 1：Gemini Gem 的設定介面</em></p>
+<p>如果有更細緻的內容，例如將你們過往的經歷整理成試算表或文件，也能作為參考檔案 <strong>（Reference Files）</strong> 上傳這能以類似 <strong>RAG（檢索增強生成）</strong> 的形式，讓每一次對話都根據輔助資料做出更準確的回答，從而讓你的 AI 虛擬男女友不至於記憶力太差，連交往紀念日都忘記（這是在偷臭嗎）</p>
+<p>好了，點擊開始對話就大功告成了！對於任何一位 AI 初學者來說，肯定也會覺得設計出這樣的機器人後，在互動體驗上非常過癮</p>
+<hr />
+<h2>蛤？但是這邊沒有任何 Vibe Coding 的東西？</h2>
+<p>因為只有先無腦體驗過如何簡單設計一個 AI 虛擬夥伴，才會更想進一步為它增添更多功能與自訂內容而在這個進階階段，動用 <strong>Vibe Coding</strong> 絕對是更好的選擇！</p>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260916/201841403DfRzBpq23.png" alt="搭配形象的AI虛擬角色聊天機器人" /><br><em> 圖 2：搭配形象展示的 AI 虛擬角色聊天機器人</em></p>
+<p>就像你看我的 AI 虛擬角色！除了具備基本的文字對話功能外，還有專屬的角色立繪形象呢！！！超可愛的說！</p>
+<p>在這個部分，我們就要更仔細地拆解 AI 虛擬聊天機器人的具體建構流程（<strong>以下 4 點可以直接複製貼上，轉換為給 Vibe Coding 工具的 Prompt！</strong>）：</p>
+<h3>️ 拆解 AI 虛擬聊天機器人製作 4 大步驟</h3>
+<ol>
+<li>
+<strong>串接大型語言模型 API</strong>：<br />
+製作 AI 聊天機器人非常需要串接 LLM 的 API本篇非常推薦使用免費的 <strong>Google AI Studio API</strong>，而且你還可以嘗試串接輕量化模型（例如 <strong>Gemma 4</strong>），即使 1 分鐘內頻繁對話測試也沒有問題</li>
+<li>
+<strong>撰寫專屬 System Prompt</strong>：<br />
+如同剛剛設計 AI 角色一樣，具體描述他/她的<strong>性格</strong><strong>外表</strong><strong>興趣</strong><strong>學歷</strong>，或是幻想中你們曾經共度的回憶與經歷</li>
+<li>
+<strong>結合 AIGC 圖像生成形象</strong>：<br />
+如前一天所提及的 AIGC 內容結合，你可以為 AI 角色生成一張專屬插畫並進行去背，要求 Vibe Coding 工具把去背後的角色立繪置於畫面底層，達成絕佳的形象展示效果</li>
+<li>
+<strong>網頁整合與發布</strong>：<br />
+將此連線聊天機器人整合進你的個人網頁中，或者以獨立網頁作為運行據點（詳細架站與串接技巧可參考 <a href="https://ithelp.ithome.com.tw/articles/10410403">Day 2</a> 內容）</li>
+</ol>
+<blockquote>
+<p> <strong>提示</strong>：說實在的，上面這 4 點直接複製下來，其實就是一份標準的 Prompt，可以直接交由 CursorAntigravity 等 Vibe Coding 工具開始構建！不知道這麼簡單好玩的東西，大家是否已經動手做好了～</p>
+</blockquote>
+<hr />
+<h2>深層省思：沉迷於甜蜜對話之前的安全提醒</h2>
+<p>但是啊為了 AI 虛擬角色產業與市場的永續發展，我自己身為 AI 虛擬角色的研究者，在大家沉迷於與 AI 伴侶聊天之前，也必須給予一些重要的提醒</p>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260916/20184140bOMSqMErk9.png" alt="正在做的AI虛擬角色世界情報收集儀表盤" /><br><em> 圖 3：正在開發的 AI 虛擬角色世界情報收集儀表板</em></p>
+<ul>
+<li>
+<strong>2024 年 2 月 28 日</strong>：14 歲的塞澤爾在佛羅里達州與虛擬角色丹妮進行最後一次對話後開槍自殺當初自己在機車上看著手機得知這則新聞時，便忍不住在想：下一個會是誰？</li>
+<li>
+<strong>2025 年 4 月</strong>：16 歲的亞當·雷恩（Adam Raine）發生類似憾事</li>
+<li>
+<strong>2023 年 11 月</strong>：更早之前還有年僅 13 歲的朱莉安娜·佩拉爾塔（Juliana Peralta）</li>
+</ul>
+<p>在我的觀察與推測中，我並不認為這類型的事件在未來就絕不會再發生</p>
+<p>儘管眾多科技公司（包含 Character.AIOpenAIGoogle 等）已陸續導入 <strong>風險即時偵測</strong><strong>安全護欄（Safety Guardrails）</strong> 與 **危機介入引導**等防護機制，希望盡可能降低使用者因生成式 AI 的 <strong>討好性機制（Sycophancy）</strong> 言論，進一步附和使用者可能危害身心安全的想法，避免危險念頭逐漸轉化為真實行動</p>
+<hr />
+<h2>重新審視 AI 虛擬伴侶：多元陪伴與社會價值</h2>
+<p>或許大家都會認為自己絕對不會成為那個沉迷在甜蜜對話中無法自拔的人，更不可能因為對方的話語而做出極端行為；但在各項學術研究與產業報告中，都明確顯示了 <strong>AI 虛擬伴侶的需求與使用者人數正在持續快速攀升</strong></p>
+<p>就連把這篇文章閱讀到這裡的你，相信也對這項主題懷有高度興趣，甚至可能就是重度使用者</p>
+<p>對此，我並不會認為發展 AI 伴侶是一件壞事相反地，一個設計優良的 AI 虛擬角色能夠：</p>
+<ul>
+<li>
+<strong>溫柔陪伴</strong>：陪伴我們渡過心情低落的瞬間與生活困境的時刻</li>
+<li>
+<strong>即時傾聽</strong>：當我們身邊無法即時找到合適的真人傾聽心聲時，AI 虛擬夥伴是一個很好的選擇</li>
+</ul>
+<p>但請記得：<strong>AI 伴侶是一個選擇，但不是唯一的必選題</strong><br />
+我們生活中的朋友不只有虛擬夥伴，更包含了現實中的親人與朋友若過度傾向虛擬一方，容易讓自己陷入封閉的心理狀態，甚至錯失現實中的美好緣分與機會</p>
+<p>從我個人的角度出發，我也期盼社會大眾能夠減少對持有AI 虛擬夥伴者的偏見與歧視在研究過程中，我看過許多富有意義的 AI 虛擬夥伴應用：</p>
+<ol>
+<li>
+<strong>無障礙輔助</strong>：將使用者想表達的內容以特定手語展示給需要的人</li>
+<li>
+<strong>專屬旅行嚮導</strong>：在獨自旅行時，成為協助發掘當地特色景點的最佳夥伴</li>
+<li>
+<strong>高效工作助手</strong>：協助教師與助教處理繁忙作業批改的重要數位同事</li>
+</ol>
+<blockquote>
+<p><strong>AI 虛擬夥伴已經不再單純只是情感陪伴的存在，更可能演化為兼具高度專業性與功能性的重要夥伴</strong></p>
+</blockquote>
+<hr />
+<h2>結語與未來期許</h2>
+<p>今天只是簡單介紹了基礎的 AI 聊天機器人是如何被設計出來的；然而關於未來，除了情感陪伴之外，它還將伴隨怎樣的社會價值？這將由大家一起共同探索與建構</p>
+<p>期待大家未來的 AI 虛擬夥伴，都能比我的<strong>白櫻仔</strong>還要更加出色！<br />
+（不過要比扮可愛這件事，我家的白櫻仔依然是最優秀的！）</p>
+<hr />
+<h2> 本篇重點整理</h2>
+<table>
+<thead>
+<tr>
+<th align="left">核心維度</th>
+<th align="left">重點摘要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>入門快速體驗</strong></td>
+<td align="left">最簡單製作 AI 聊天機器人的方式是 <strong>Google Gem</strong>，支援設定人設與參考文件（RAG），非常適合初學者嘗鮮</td>
+</tr>
+<tr>
+<td align="left"><strong>Vibe Coding 進階開發</strong></td>
+<td align="left">完整設計包含四大步驟：串接模型 API（Google AI Studio / Gemma 4）撰寫 System Prompt結合 AIGC 去背形象圖部署至個人網頁</td>
+</tr>
+<tr>
+<td align="left"><strong>產業觀察與社會反思</strong></td>
+<td align="left">探討青少年虛擬對話安全事件與防護機制（討好性過濾）；正確認識虛實人際平衡；見證 AI 伴侶從情感陪伴轉向專業與功能性夥伴的未來趨勢</td>
+</tr>
+</tbody>
+</table>
+]]></content:encoded>
+                                <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">SakuraEGS</dc:creator>
+                <pubDate>2026-09-16 21:15:02</pubDate>
+                                                                                                                                            </item>
+                    <item>
+                <title>Day 3 中文系搞數位內容？</title>
+                <link>https://ithelp.ithome.com.tw/articles/10411155?sc=rss.iron</link>
+                <guid isPermaLink="true">https://ithelp.ithome.com.tw/articles/10411155?sc=rss.iron</guid>
+                <description><![CDATA[<h1>Day 3中文系搞數位內容？</h1>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260922/20184140C3c...]]></description>
+                                    <content:encoded><![CDATA[<h1>Day 3中文系搞數位內容？</h1>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260922/20184140C3c7id1smC.png" alt="搞數位內容，當個現代魔法師的midjourney示意圖？" /><br><em> 圖 0：搞數位內容，當個現代魔法師的midjourney示意圖？</em></p>
+<blockquote>
+<p>昨天有跟大家說明有關學生用 Vibe Coding 設計個人網頁個人網站的需求，以及設計時的各種眉角<br />
+好像也有稍微提及到我自己本身也是一位中文系學生</p>
+</blockquote>
+<hr />
+<h2>中文系學生的兩種路徑：從傳統學術到文學創作</h2>
+<p>在中國文學的領域當中，特別是在學生的圈子裡面，我們大致可以找出兩種特質的人：</p>
+<ol>
+<li>
+<strong>學術研究型</strong>：想要深入鑽研傳統中文與古典學術研究</li>
+<li>
+<strong>文學創作型</strong>：想走文學創作這條路，投入小說散文等文本寫作</li>
+</ol>
+<p>雖然創作這件事情完全沒有不好的感覺，特別是我自己平時也熱衷於小說跟散文創作；但在創作的過程中，我發現了一個非常有趣且值得聚焦的切入點：</p>
+<blockquote>
+<p><strong>我們該如何拓展文本以及文學的價值？</strong></p>
+</blockquote>
+<p>在智慧財產權（IP）及相關商業模式的思考層面，我們甚至能夠進一步思考：<strong>一個文本如何成為一個 IP？</strong><br />
+從而讓這個 IP 被有效應用在<strong>劇本</strong><strong>遊戲</strong><strong>展覽設計</strong>等多元領域中，而並不只是如同傳統思維那樣，單純侷限在一本書籍所帶來的知識產權與商業價值</p>
+<hr />
+<h2>跨媒介的結合：文科背景的價值延伸</h2>
+<p>在自己四年的大學生活當中，我也深刻體會到：<strong>文科的專業訓練及知識背景，其實都能夠被拓展其原本的價值</strong></p>
+<p>透過不同的媒介以及這系列文章所強調的 <strong>Vibe Coding</strong>，知識與跨媒介的結合往往能夠帶來意想不到的商業價值；甚至對於創作者當事人來說，也是一件極為有趣的事情</p>
+<p>相對之下，如果沒有相關人文專業背景，一位擁有純資訊背景的人要想做出涵蓋深厚文科內容的軟體或數位產品時，相應地也需要再次深造相關領域的知識，才能確保軟體內容或最終產出的數位內容符合大眾對這類型題材的要求與期待</p>
+<hr />
+<h2>AIGC 與 Vibe Coding：彌補創作者的跨媒介短板</h2>
+<p>好吧，回歸正題！那麼這次 Vibe Coding 究竟要聊些什麼？</p>
+<p>剛剛有提到我本身喜歡創作小說與散文，也透露了關於文本如何拓展成各類新媒體專案的想法然而，新媒體與數位內容的創作，經常會涉及到其他媒介的專業技能，或者是編寫程式碼的能力門檻</p>
+<p>在這些環節當中，AIGC（生成式 AI）領域中的各類生成技術，正好能夠彌補純文字創作者的能力短板：</p>
+<ul>
+<li>
+<strong>AI 圖像生成</strong>：把文本情境轉化為一張精美的 AI 插畫</li>
+<li>
+<strong>AI 音訊生成</strong>：把文本氛圍化作一首專屬的 AI 歌曲或背景配樂</li>
+<li>
+<strong>AI 影像生成</strong>：將故事大綱渲染為一段氛圍十足的 AI 概念影片</li>
+<li>
+<strong>AI 程式碼生成</strong>：透過 Vibe Coding 快速建構出能夠承載上述內容的互動網頁</li>
+</ul>
+<p>這讓單純懂得編寫文本的人，能夠快速讓自己的文字拓展出全新領域的內容價值！</p>
+<h3>創作者的糾結與專案管理思維</h3>
+<p>當然，這個議題的背後依然會涉及到創作者對於是否尊重他人努力學習之技藝的探討畢竟文學創作者同樣面臨著AI 生成小說的衝擊；許多創作者在面對跨媒介創作時，因為自身非文本領域的短板而選擇藉由 AI 輔助生成這是一種方法，也是當前不可忽視的一種現象</p>
+<p>但從<strong>商業與專案管理</strong>的角度來看：</p>
+<ul>
+<li>
+<strong>成本與效率考量</strong>：在最低的時間與金錢成本下，創作者能夠快速藉由 AI 技術將原創文本擴張為包含畫面影片聲音的龐大內容專案</li>
+<li>
+<strong>專案管理者視角</strong>：基於手邊現有資源，創作者可以將特定關鍵環節外包給專業真人團隊，某些輔助內容則交由 AI 生成創作者自身則充當專案的<strong>監督者</strong><strong>決策者</strong>與<strong>整合者</strong>，透過跨媒介整合完成整輪的內容製作</li>
+</ul>
+<hr />
+<h2>實踐案例一：奇幻魔法陣與動態音樂互動</h2>
+<p>這次嘗試的起點，最初也只是想透過 Vibe Coding 實現一個有趣的互動體驗：<strong>根據畫面中內容的複雜程度，播放從簡單到雄偉的奇幻音樂</strong></p>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260915/20184140OUkpeLKtwF.png" alt="奇幻魔法生成陣" /><br><em> 圖 1：畫布上繪製的魔法陣越複雜，背景奇幻音樂就越發雄偉</em></p>
+<p>使用者在網頁畫布上繪製魔法陣，當魔法陣的結構與線條變得越來越複雜時，背景音樂就會隨之動態演變，呈現出更加雄偉奇幻的交響氛圍</p>
+<p>如果你是一位熱愛寫奇幻小說的創作者，這樣子的互動體驗便能極大程度延展你小說的世界觀設定；甚至能將這套互動模組嵌入在線上網路小說中，讓讀者在閱讀小說情節的同時，也能同步在視聽層面親身體驗小說世界裡的魔法共鳴！</p>
+<hr />
+<h2>實踐案例二：無日浪漫沉浸式小說打字音樂工作站</h2>
+<p>沿用同樣的邏輯，我也為自己的散文小說製作了專屬的互動體驗網站：</p>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260915/20184140zo3DDRQvtp.png" alt="無日浪漫沉浸式打字音樂工作站介面" /><br><em> 圖 2：結合小說文本Suno AI 雙軌音樂與 Lofi 影片的無日浪漫互動網頁</em></p>
+<p>這個專案的設計整體融合了我對 AIGC 內容的理解：<strong>結合 AI 音樂AI 影片Vibe Coding 與原創小說文本</strong>，打造出一個完整的互動式網頁工作站</p>
+<h3>核心互動機制：</h3>
+<ol>
+<li>
+<strong>沉浸式鍵盤敲擊</strong>：使用者在網頁上隨意敲擊鍵盤（不論按什麼按鍵），畫面上就會逐字流暢地輸入我當初創作的小說內容，彷彿親身體驗作者當初是如何一字一句創作出這篇作品</li>
+<li>
+<strong>雙軌動態音樂甦醒</strong>：背景音樂是透過 <strong>Suno AI</strong> 創作並分拆為伴奏軌與主唱人聲軌隨著你敲擊鍵盤完成小說的進度增加，你會逐漸聽見主唱歌聲由淡入深緩慢甦醒並融入音樂當中</li>
+<li>
+<strong>完稿手稿珍藏與 Lo-fi 氛圍</strong>：當整篇小說輸入完畢後，系統會自動將手稿轉為 PDF 文件供讀者下載珍藏；同時畫面會切換為與故事氛圍契合的 Lo-fi 播放器視角，伴隨著背景小男生喝酒的微醺動態影像（奇奇怪怪的氛圍），享受完整的視聽心流</li>
+</ol>
+<blockquote>
+<p> <strong>無日浪漫線上體驗網址</strong>：<a href="https://vibe-coding--music.pages.dev/">https://vibe-coding--music.pages.dev/</a></p>
+</blockquote>
+<hr />
+<h2>結語：打開文科生的 Vibe Coding 新邊界</h2>
+<p>說實在的，關於 Vibe Coding 的 Prompt 提示詞部分其實沒有太多神秘的技巧如果你仔細閱讀這篇文章所梳理的邏輯架構，直接將你的構想與需求描述複製貼給 AI，相信 AI 也能根據文字描述協助你完成相應的程式架構與功能串接！（理論上在現在的技術眼中，AI 就是這麼強大且不可思議 ）</p>
+<p>希望這篇內容能讓更多文科背景的同學們看見 <strong>Vibe Coding</strong> 的全新邊界與可能性，不再受限於單純的文字載體，進一步拓展個人網站與作品集的豐富功能性！</p>
+<hr />
+<h3> 本篇重點回顧</h3>
+<ul>
+<li>
+<strong>拓展文科內容價值</strong>：透過 AI 與 Vibe Coding 打破文本限制，延伸文學 IP 的多媒體應用</li>
+<li>
+<strong>彌補跨媒介產出短板</strong>：善用 AIGC 補足圖像音訊影像與程式開發技能</li>
+<li>
+<strong>AIGC 內容分類與媒合</strong>：以專案管理視角整合多元 AI 素材，打造沉浸式數位內容</li>
+</ul>
+]]></content:encoded>
+                                <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">SakuraEGS</dc:creator>
+                <pubDate>2026-09-15 21:13:37</pubDate>
+                                                                                                                                            </item>
+                    <item>
+                <title>Day 2 網頁，網頁又是網頁！</title>
+                <link>https://ithelp.ithome.com.tw/articles/10410403?sc=rss.iron</link>
+                <guid isPermaLink="true">https://ithelp.ithome.com.tw/articles/10410403?sc=rss.iron</guid>
+                <description><![CDATA[<h1>Day 2網頁，網頁又是網頁！</h1>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260921/20184140um...]]></description>
+                                    <content:encoded><![CDATA[<h1>Day 2網頁，網頁又是網頁！</h1>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260921/20184140um20ffYaKz.png" alt="年輕人做網頁設計的midjourney示意圖!(但頸帶...)" /><br>* 圖 0：年輕人做網頁設計的midjourney示意圖!(但頸帶...)</p>
+<blockquote>
+<p>關於對於一個學生來說，怎麼樣的 Vibe Coding 成品是他們最想要的呢？<br />
+當然這件事情我想先從我自身談起自己的經歷～</p>
+</blockquote>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260914/20184140ZpxNCaLdT9.png" alt="個人 Google Sites 作品集頁面" /><br><em> 圖 1：作者個人的 Google Sites 作品集展示頁面</em></p>
+<hr />
+<h2>學生時代的創作渴望：為什麼大家總想做網頁？</h2>
+<p>大概在高中的時候，自己挺喜歡接觸各種數位工具，例如：<strong>Adobe 系列</strong><strong>威力導演</strong><strong>RPG Maker</strong> 等等這些多半偏向多媒體與新媒體創作的範疇，但還有一個非常重要的部分是<strong>網頁設計</strong>，一直是我很想達成的目標！</p>
+<p>無論是作為介紹自己的個人首頁，還是用來存放累積的作品集；長大後也發現，學生族群確實普遍存在這項硬需求：</p>
+<ul>
+<li>
+<strong>求職需求</strong>：需要打造應對職場的個人履歷（CV）或專屬的履歷網站</li>
+<li>
+<strong>升學需求</strong>：需要製作升學審查的個人作品集介紹</li>
+</ul>
+<p>在這些情境下，都有不少人會想要嘗試以網頁的形式來呈現</p>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260914/20184140ZCMqRygCXs.jpg" alt="AI圖示 WixWordPressWeeblyShopify" /><br><em> 圖 2：常見的線上無代碼網頁設計工具（WixWordPressWeeblyShopify）</em></p>
+<hr />
+<h2>前 AI 時代的免寫程式建站回顧</h2>
+<p>起初在完全不懂得編寫程式碼的時期，大約在 2015 年到 2020 年前後，市場上出現了許多非常便利的線上網頁設計工具，例如：<strong>Wix</strong><strong>WordPress</strong><strong>Weebly</strong><strong>Shopify</strong> 等</p>
+<p>只要你會操作滑鼠拖拉元件上傳影片與照片素材並在欄位中打字，相信任何人都能透過拉素材的方式打造出個人網站</p>
+<p>當時我也因此幫了一家香港的小型工程公司設計他們的官方網站；到了後來的大學作業，也曾為同組製作的影片架設專屬網站在那個階段，所有事情都完全<strong>不需要用到 coding</strong></p>
+<hr />
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260914/20184140NtcXnt9b1c.png" alt="Google site 的嵌入 html 功能" /><br><em> 圖 4：Google Sites 內建的嵌入 HTML 程式碼功能操作介面</em></p>
+<h2>伏筆埋下：Google Sites 的嵌入程式碼功能</h2>
+<p>到了生成式 AI 出現的前夕，<strong>Google Sites</strong> 也是一個相當適合用來設計個人作品集網站的平台與工具</p>
+<p>其中最關鍵的是，Google Sites 內建的**嵌入式程式代碼**功能，正好為日後導入 Vibe Coding 留下了最基礎也最巧妙的伏筆</p>
+<hr />
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260914/20184140PviT3ThnSY.png" alt="Gemini Canva vibe coding 出科技感的 html 互動式頁面" /><br><em> 圖 3：使用 Gemini 搭配 Canva 進行 Vibe Coding 所產出的科技感 HTML 互動頁面</em></p>
+<h2>生成式 AI 爆發！新手最友善的 Vibe Coding 基礎款</h2>
+<p>終於！生成式 AI 爆發性地出現了，<strong>Vibe Coding</strong> 的潮流也逐步成形！</p>
+<p>現在大家常常會透過 <strong>POE</strong><strong>ChatGPT</strong><strong>Gemini</strong> 的對話框，直接讓 AI 生成網頁程式碼，產出的格式通常是單一的 <code>HTML</code> 檔案但這時候我們往往會面臨一個極為關鍵的問題：</p>
+<blockquote>
+<p><strong>我該如何把做好的網站分享給別人看，而不是只能孤零零躺在我自己的電腦裡？</strong></p>
+</blockquote>
+<p>這時候第一時間想到的解法，正是回想起 <strong>Google Sites</strong> 嵌入程式碼的設計：</p>
+<ol>
+<li>在 Google Sites 中新增一個頁面</li>
+<li>直接將 AI 生成的整頁 HTML 程式碼完整嵌入進去</li>
+<li>發布後，AI 生成的網頁便立刻有了一個可以被存放且擁有專屬網址能夠分享給同儕的家！</li>
+</ol>
+<p>這可說是最簡單直接的 <strong>Vibe Coding 個人網站基礎款</strong>甚至完全不需要事先學習 GitHub 或其他複雜的部署工具，相對單純直覺，卻能精準滿足學生在履歷與作品集網頁設計上的實際痛點</p>
+<hr />
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260914/20184140voTlfstv1A.jpg" alt="AI 圖示初階及進階 vibe coding 網頁設計方法及邏輯" /><br><em> 圖 5：初階（單頁嵌入）與進階（現代化自動部署）Vibe Coding 網頁設計方法與邏輯示意</em></p>
+<h2>進階挑戰：當單頁嵌入遇到瓶頸，走向現代化自動部署</h2>
+<p>當然，上述的基礎做法也存在一個極為麻煩的瓶頸：<strong>過度冗長且功能複雜的程式碼，容易讓運行的設備（特別是手機）出現卡頓或當機</strong></p>
+<p>在這種情況下，更進階的部署學習需求便應運而生：</p>
+<ul>
+<li>
+<strong>版本控制與線上儲存</strong>：學習使用 <strong>GitHub</strong> 進行專案的雲端存放與版本更新</li>
+<li>
+<strong>自動化部署平台</strong>：接觸如 <strong>GitHub Pages（github.io）</strong><strong>Vercel</strong><strong>Cloudflare Pages</strong> 等現代化網頁代管與自動發布工具</li>
+</ul>
+<p>往往到了這個階段，相關講師或指導老師就會建議學生：<strong>直接請教 AI 該如何在這些現代化工具上部署自己的網頁！</strong><br />
+一步一步跟著 AI 的指令操作，遇到不確定就再追問一次，幾乎所有人都能順利掌握這些工具的用法</p>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260914/20184140ADDTSEdXfz.jpg" alt="Wix 版舊版公司網頁" /><br><em> 圖 6：早期使用 Wix 拖拉拼組的舊版公司官方網站</em></p>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260914/20184140TP7hiWj851.jpg" alt="vibe coding 版新版公司網頁" /><br><em> 圖 7：透過 Vibe Coding + Next.js 並部署於 Vercel 的現代化新版公司網頁</em></p>
+<p>也是因為這個轉折，我自己很多年前用 Wix 拼拉出來的公司網站終於正式下架了透過 Vibe Coding 與 AI 的輔助，我不僅理解了 <strong>Next.js</strong> 的專案架構，也學會了如何在 <strong>Vercel</strong> 上建置並部署一個全新現代且美觀的網站</p>
+<hr />
+<h2>結語：回歸學生需求的最適解</h2>
+<p>回過頭來看，如今要協助企業設計網站已不再是遙不可及的複雜技術；但若回歸到學生層面，如果目標不是大型企業專案，大家核心想完成的，依然是那份亮眼的<strong>個人履歷</strong>與<strong>作品集網頁</strong></p>
+<p>那麼：</p>
+<ul>
+<li>
+<strong>初階首選</strong>：單靠 <strong>Google Sites 搭配 Vibe Coding</strong> 的成果，就已經能非常漂亮地呼應學生的核心需求</li>
+<li>
+<strong>進階延伸</strong>：透過與 AI 的即時互動對答，逐步了解現代化網頁部署流程，更能快速上手進階工具，徹底解決程式碼複雜化或素材上傳的各類難題</li>
+</ul>
+<p>雖然背後的邏輯就這麼簡單純粹，但真心希望這樣一套循序漸進的實踐思路，能夠切實地協助到每位想跨入網頁世界的學生們！</p>
+<hr />
+<h3> 本篇重點回顧</h3>
+<ul>
+<li>
+<strong>學生個人網頁的硬需求</strong>：聚焦應對升學與求職的 CV（個人履歷）與作品集展示</li>
+<li>
+<strong>基礎版 Google Sites 嵌入</strong>：將 AI 生成的單頁程式碼直接嵌入 Google Sites，無須複雜工具即可快速上線分享</li>
+<li>
+<strong>與 AI 協作邁向現代化部署</strong>：透過與 AI 的即時互動對答，逐步了解現代化網頁部署流程（如 GitHubVercelCloudflare Pages），更能快速上手進階工具，徹底解決程式碼複雜化或素材上傳的各類難題</li>
+</ul>
+]]></content:encoded>
+                                <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">SakuraEGS</dc:creator>
+                <pubDate>2026-09-14 17:11:01</pubDate>
+                                                                                                                                            </item>
+                    <item>
+                <title>Day 1 第一天就來弄硬體裝置！超硬的說！</title>
+                <link>https://ithelp.ithome.com.tw/articles/10409375?sc=rss.iron</link>
+                <guid isPermaLink="true">https://ithelp.ithome.com.tw/articles/10409375?sc=rss.iron</guid>
+                <description><![CDATA[<h1>Day 1第一天就來弄硬體裝置！超硬的說！</h1>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260918/2018...]]></description>
+                                    <content:encoded><![CDATA[<h1>Day 1第一天就來弄硬體裝置！超硬的說！</h1>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260918/20184140az8aJ4x58A.png" alt="以midjourney圖像表示小朋友在搞STEAM的硬體" /></p>
+<blockquote>
+<p>第一天就來搞硬體裝置，聽起來好像沒什麼大不了？但如果我告訴你，我大學是中文系出身的呢請容我娓娓道來～</p>
+</blockquote>
+<p>大家好！我是一名在學研究生，大學主修中文系，碩士則就讀科技管理與智慧財產研究所（科智所）單看這兩段求學經歷，理論上都跟硬體電路八竿子打不著（科智所雖然會接觸科技產業，但主要還是看研究課題，通常也不會親手焊板子寫韌體）</p>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260913/20184140o5uZIm8PGR.png" alt="文科背景研究生的跨界探索" /><br><em> 圖 1：中文系與科智所背景跨界探索硬體裝置</em></p>
+<hr />
+<h2>為什麼會想踏入硬體的世界？</h2>
+<p>這次一頭栽進硬體改裝，最核心的初心非常單純：<strong>我想做出一個屬於自己的實體電子寵物裝置，就像當年的電子雞一樣！</strong></p>
+<p>過去這將近一年的時間裡，我一直在深入探索 <strong>Vibe Coding</strong> 的開發模式以往我的主力多半停留在純軟體應用上，但這一次，我想把過去積累的軟體想法，真正塞進實體硬體當中，例如廣受歡迎的 <strong>ESP32 開發板</strong>！</p>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260913/20184140Fdzb04z3JS.png" alt="實體裝置構想與探索" /><br><em> 圖 2：實體電子寵物裝置的構想與探索過程</em></p>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260913/20184140BcYG1G5WKg.png" alt="硬體開發板與元件" /><br><em> 圖 3：ESP32 開發板與各類周邊電子元件</em></p>
+<hr />
+<h2>從 STEAM 教育出發：給新手的硬體視角</h2>
+<p>平時我也參與 STEAM 教育推廣，因此對市面上的教學開發板並不陌生，例如：<strong>micro:bit</strong><strong>Meowbit</strong><strong>Arduino</strong><strong>Raspberry Pi</strong> 等等</p>
+<p>如果本身沒有程式底子，身為新手或跨領域的學生，我非常推薦從這些入門款硬體著手，利用積木/方塊拼貼編程建立對硬體控制的基本概念</p>
+<blockquote>
+<p><strong>校園現場觀察</strong><br />
+據我在大學校園內的觀察，很多同學可能大學四年下來，連一片開發板都沒親眼看過其實只要邁出第一步，從簡單的教學板玩起，再結合現在正夯的 <strong>Vibe Coding</strong> 工具，就能循序漸進地把 AI 生成的成果燒錄進硬體中！</p>
+</blockquote>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260913/20184140Zr7Pu6BnzN.png" alt="STEAM 教育與各類硬體板卡" /><br><em> 圖 4：常見的 STEAM 教學板卡（micro:bitArduino樹莓派等）</em></p>
+<p>最近在 Instagram 上也常滑到外國年輕人分享自己客製化的實體酷東西過去傳統純手刻程式碼的門檻，常讓許多非理工背景的文組生望而生畏；但有了 <strong>Vibe Coding</strong>，學生不但能保有自己的專業知識與創意思維，還能大幅降低程式語法造成的阻礙，專注將天馬行空的靈感實體化！</p>
+<hr />
+<h2>本次改造主角：Metalio Claw4</h2>
+<p>好！鏡頭拉回正題，這次我們要做的是什麼？<br />
+ <strong>改裝 Metalio Claw4 的韌體！</strong></p>
+<p>對於一個還不具備 3D 列印建模能力的人來說，要想把螢幕主板電池組裝起來並擁有漂亮的外殼，最聰明的方法就是**借力使力**：尋找市面上自帶完整外殼且內部採用開源方案的成熟裝置</p>
+<p>幾經評估後，這款 <strong>Metalio Claw4</strong> 不論在開源程度還是硬體外觀上，都顯得非常合適！</p>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260913/20184140AxQZb8QMQJ.png" alt="Metalio Claw4 裝置外觀" /><br><em> 圖 5：本次改造的主角 Metalio Claw4 硬體外觀</em></p>
+<hr />
+<h2>工具挑選心法：順手，就是最好的神器</h2>
+<p>對於新手而言，進行 Vibe Coding 的首要任務是<strong>盤點自己手邊的武器庫</strong>：</p>
+<ul>
+<li>
+<strong>AI 輔助工具</strong>：不論是 OpenAI CodexClaude Code 還是 Google Antigravity，每款都有其特色</li>
+<li>
+<strong>核心原則</strong>：不必盲目追逐最新潮流（雖然保持多方嘗試是好事），但<strong>以自己最習慣最順手的工具為主</strong>才是王道！若為了追求新工具而打亂節奏，反而容易拖慢開發進度</li>
+</ul>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260913/20184140zBkWxakZ7a.png" alt="AI 輔助開發工具" /><br><em> 圖 6：各類主流的 AI 輔助開發工具</em></p>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260913/20184140aVj9sJeRYx.png" alt="專案探索與配置介面" /><br><em> 圖 7：VS Code 中的專案檔案架構與配置介面</em></p>
+<h3>開發環境建議</h3>
+<p>在 IDE 介面的選擇上，由於本次專案會使用到官方的 <strong>ESP-IDF</strong> 工具鏈，強烈建議選擇 <strong>VS Code</strong> 搭配官方推出的 <strong>ESP-IDF Extension</strong>如此一來，既能享有現代編輯器完善的 AI 外掛與自動補全支援，也能在圖形介面下一鍵搞定編譯配置與燒錄工作</p>
+<blockquote>
+<p><strong> Vibe Coding 實戰小技巧</strong><br />
+購買硬體時，通常官方或開源社群會在 GitHub 上提供專案倉庫，記錄每個 GPIO 腳位對應的周邊元件（如螢幕介面電池偵測I2S 喇叭等）<br />
+<strong>先將 GitHub 原始專案下載下來，直接餵給你的 AI 助手當作 Context（上下文）！</strong> 這樣 AI 在幫你改寫或調校程式碼時，命中率與正確率會高上非常多！</p>
+</blockquote>
+<hr />
+<h2>韌體燒錄流程：結合商管思維的PDCA四步法</h2>
+<p>在燒錄韌體方面，常見的工具有：</p>
+<ul>
+<li>
+<strong>Arduino IDE</strong>：環境單純新手友善，直接到官網安裝即可</li>
+<li>
+<strong>ESP-IDF</strong>：功能底層且強大，推薦透過 VS Code 延伸模組下載安裝與設定</li>
+</ul>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260913/20184140OfHelSvuWP.png" alt="ESP-IDF 與編譯環境配置" /><br><em> 圖 8：ESP-IDF 工具鏈與編譯環境設定</em></p>
+<p>本次針對 <strong>Metalio Claw4</strong> 的改裝核心邏輯，其實非常契合管理學上的 <strong>PDCA 循環</strong>（Plan-Do-Check-Act）與設計思考（Design Thinking）的雙鑽模型：</p>
+<ol>
+<li>
+<strong>Plan（計畫）</strong>：翻閱開源專案與硬體腳位手冊，透過 Vibe Coding 與 AI 共同規劃客製化功能</li>
+<li>
+<strong>Do（執行）</strong>：使用 ESP-IDF 工具鏈編譯韌體，將二進位檔燒錄至硬體裝置中</li>
+<li>
+<strong>Check（檢查）</strong>：開機實測，驗證螢幕顯示周邊互動是否如預期運作</li>
+<li>
+<strong>Act（調整行動）</strong>：抓出 Log 報錯，反覆除錯與修改！</li>
+</ol>
+<p><img src="https://ithelp.ithome.com.tw/upload/images/20260913/201841406KBpYQqcud.jpg" alt="除錯中與實機測試狀態" /><br><em> 圖 9：實機測試與螢幕除錯運作狀態</em></p>
+<hr />
+<h2>結語與未完待續</h2>
+<p>老實說，寫這篇文章的當下，螢幕顯示依然還在鬧脾氣，還沒能順利呈現出我理想中的畫面（這就是硬體除錯的浪漫吧 ）</p>
+<p>不過在這之前，我其實已經用另一款微型 ESP32 成功做出過一隻簡易的實體電子寵物，後續有機會再來跟大家深入拆解！</p>
+<p>希望透過這篇分享告訴大家：<strong>連中文系背景的研究生都能跨領域踏進硬體坑了，不管你是小白還是程式新手，只要善用工具，一定也能親手做出屬於自己有趣又有靈魂的硬體玩具！</strong></p>
+<hr />
+<h3> 本篇重點回顧</h3>
+<ul>
+<li>
+<strong>零基礎也能玩硬體</strong>：大學即使沒有相關背景或經驗，直接跨界接觸開發板也是完全有可能的</li>
+<li>
+<strong>借力使力的改裝心法</strong>：選擇已有成熟外殼的硬體裝置，搭配開源專案與 AI 輔助學習快速進行客製化改造</li>
+<li>
+<strong>工具選擇順手為王</strong>：不必盲目追逐最新潮流（雖然保持多方嘗試是好事），以自己最習慣最順手的工具為主才是王道！若為了追求新工具而打亂節奏，反而容易拖慢開發進度</li>
+</ul>
+]]></content:encoded>
+                                <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">SakuraEGS</dc:creator>
+                <pubDate>2026-09-13 12:19:37</pubDate>
+                                                                                                                                            </item>
+            </channel>
+</rss>

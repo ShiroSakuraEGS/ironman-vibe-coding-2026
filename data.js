@@ -1,4 +1,4 @@
-// 鐵人賽系列圖文數據庫 (Series 9607)
+// 鐵人賽系列圖文數據庫 (Series 9607) - 自動由 RSS 萃取生成
 window.IRONMAN_DATA = {
   "series_title": "學生身份如何每天透過Vibe Coding每天做跨領域的創新項目",
   "series_url": "https://ithelp.ithome.com.tw/2026ironman/signup/user/20184140",
@@ -78,7 +78,9 @@ window.IRONMAN_DATA = {
         25,
         26,
         27,
-        28
+        28,
+        29,
+        30
       ],
       "desc": "建立 GitHub Pages 戰略發布首頁、賽博時空簽證護照計時器，深入辯證人機犯錯光譜——到底錯的是我，還是這個世界？唯有溝通能達成共識。"
     }
