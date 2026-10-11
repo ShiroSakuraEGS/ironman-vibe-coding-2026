@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="no-referrer">
+  <title>學生身份 Vibe Coding 跨領域創新專案 · 鐵人賽科幻圖文檔案庫</title>
+  <meta name="description" content="2026 iThome 鐵人賽系列《學生身份如何每天透過Vibe Coding每天做跨領域的創新項目》科幻未來極簡風圖文檔案庫與案件線索板">
+
+  <!-- 字型配置：Space Grotesk (科幻無襯線), JetBrains Mono (等寬代碼), Inter & Noto Sans TC (內文) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+TC:wght@300;400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 科幻背景網格與動態量子粒子 -->
+  <div class="cyber-grid-overlay"></div>
+  <canvas id="quantumCanvas"></canvas>
+
+  <!-- 頂部科幻導覽 HUD -->
+  <header class="hud-header">
+    <div class="header-left">
+      <div class="brand-badge">
+        <span class="beacon-dot"></span>
+        <span class="brand-code">PROMETHEUS // 2026</span>
+      </div>
+      <div class="brand-titles">
+        <h1 class="main-title">學生身份 Vibe Coding 跨領域創新專案</h1>
+        <p class="sub-title">iThome 鐵人賽 Series 9607 · 28 天跨界實作紀錄與視覺檔案庫</p>
+      </div>
+    </div>
+
+    <!-- 即時指標數據膠囊 -->
+    <div class="hud-metrics">
+      <div class="metric-item">
+        <span class="m-label">INVESTIGATION</span>
+        <span class="m-val highlight">28 DAYS</span>
+      </div>
+      <div class="metric-item">
+        <span class="m-label">VISUAL EVIDENCE</span>
+        <span class="m-val" id="totalImagesCount">144 IMAGES</span>
+      </div>
+      <div class="metric-item">
+        <span class="m-label">CASE ARCS</span>
+        <span class="m-val">6 DOSSIERS</span>
+      </div>
+      <div class="metric-item">
+        <span class="m-label">STATUS</span>
+        <span class="m-val status-active">ONLINE // GH-PAGES</span>
+      </div>
+    </div>
+
+    <!-- 分頁切換器 (Tab Switcher) -->
+    <nav class="hud-tab-switcher">
+      <button class="tab-btn active" id="tabBtnClue" data-tab="clueBoard">
+        <span class="tab-icon">◈</span>
+        <span class="tab-text">分頁一：案件線索板</span>
+        <span class="tab-tag">28 AI CLUES</span>
+      </button>
+      <button class="tab-btn" id="tabBtnCodex" data-tab="articleCodex">
+        <span class="tab-icon">▤</span>
+        <span class="tab-text">分頁二：鐵人賽圖文檔案庫</span>
+        <span class="tab-tag">ALL ARTICLES</span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- 主容器 -->
+  <main class="main-viewport">
+
+    <!-- ==============================================
+         分頁一：案件線索板 (Detective Clue Board)
+         ============================================== -->
+    <section class="tab-content active" id="viewClueBoard">
+      <!-- 頂部案件檔案總覽簡報 (Noir Case Dossier Header) -->
+      <div class="case-dossier-header noir-glow-panel">
+        <div class="dossier-banner">
+          <div class="dossier-title-col">
+            <div class="case-file-badge">
+              <span class="badge-dot"></span>
+              <span>CASE FILE 001 · 主案件</span>
+            </div>
+            <h1 class="main-case-title">Vibe Coding：跨域創新事件調查</h1>
+            <p class="case-meta-line">
+              <span class="meta-chip">28 日調查紀錄</span>
+              <span class="meta-sep">·</span>
+              <span class="meta-chip">6 份卷宗檔案</span>
+              <span class="meta-sep">·</span>
+              <span class="meta-chip">6 條跨卷宗調查支線</span>
+              <span class="meta-sep">·</span>
+              <span class="meta-chip highlight-chip">4 色神經關聯網絡</span>
+            </p>
+          </div>
+          <div class="dossier-quote-col">
+            <div class="mystery-box">
+              <div class="mystery-label">【待解核心問題】</div>
+              <div class="mystery-lead">「一名中文系研究生，如何在 28 天內逐漸失去對『自己究竟在創作什麼』的掌控？」</div>
+              <p class="mystery-sub">究竟是人類在使用 AI，還是 AI 正在改變人類創作、學習與思考的方式？</p>
+            </div>
+            <div class="investigator-whisper">
+              <span class="whisper-quote">“</span>
+              <span>28 天，28 件證物。看似調查的是 Vibe Coding，真正需要被理解的，可能是創作者自己。你認為，這起案件的真相是什麼？</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 三重子視圖切換器 (Sub-View Switcher) -->
+        <div class="subview-toolbar">
+          <div class="subview-tabs-group" id="subviewTabsGroup">
+            <button class="subview-tab-btn active" id="btnSubViewPinboard" data-subview="pinboard">
+              <span class="sv-icon">◈</span>
+              <span class="sv-title">視圖 A｜案件牆</span>
+              <span class="sv-desc">軟木板散落證物與四色連線</span>
+            </button>
+            <button class="subview-tab-btn" id="btnSubViewTimeline" data-subview="timeline">
+              <span class="sv-icon">⏱</span>
+              <span class="sv-title">視圖 B｜時間線</span>
+              <span class="sv-desc">Day 01–28 調查進程演變</span>
+            </button>
+            <button class="subview-tab-btn" id="btnSubViewInference" data-subview="inference">
+              <span class="sv-icon">🕸</span>
+              <span class="sv-title">視圖 C｜關聯推理</span>
+              <span class="sv-desc">6 大跨域支線與知識網絡</span>
+            </button>
+          </div>
+
+          <div class="subview-search-box">
+            <input type="text" id="clueSearchInput" placeholder="搜尋證物名稱、Day 編號、案件主題、標籤...">
+            <span class="search-indicator" id="clueSearchIndicator">28 / 28</span>
+          </div>
+        </div>
+
+        <!-- 多維度調查控制矩陣 (Filters & Storylines) -->
+        <div class="clue-control-matrix">
+          <!-- 1. 第一層：證物類型 (E1 ~ E6) 標籤 -->
+          <div class="filter-row">
+            <div class="filter-label"><span class="f-icon">🏷️</span> 證物類型：</div>
+            <div class="filter-pill-group" id="evidenceTypeGroup">
+              <button class="f-pill active" data-type="ALL">全部證物 (28)</button>
+              <button class="f-pill" data-type="E1"><span class="pill-dot e1-dot"></span>E1 實驗證物</button>
+              <button class="f-pill" data-type="E2"><span class="pill-dot e2-dot"></span>E2 跨域證物</button>
+              <button class="f-pill" data-type="E3"><span class="pill-dot e3-dot"></span>E3 角色證物</button>
+              <button class="f-pill" data-type="E4"><span class="pill-dot e4-dot"></span>E4 風險證物</button>
+              <button class="f-pill" data-type="E5"><span class="pill-dot e5-dot"></span>E5 心智證物</button>
+              <button class="f-pill" data-type="E6"><span class="pill-dot e6-dot"></span>E6 反諷證物</button>
+            </div>
+          </div>
+
+          <!-- 2. 六條跨域調查支線 (線索 A ~ F) -->
+          <div class="filter-row sublines-row">
+            <div class="filter-label"><span class="f-icon">🔗</span> 調查支線：</div>
+            <div class="filter-pill-group" id="investigationLinesGroup">
+              <button class="line-btn active" data-line="ALL">全部連線網絡</button>
+              <button class="line-btn" data-line="LINE_A">線索 A｜從想法到實體</button>
+              <button class="line-btn" data-line="LINE_B">線索 B｜知識如何變成體驗</button>
+              <button class="line-btn" data-line="LINE_C">線索 C｜角色如何改變互動</button>
+              <button class="line-btn" data-line="LINE_D">線索 D｜成果背後的責任</button>
+              <button class="line-btn" data-line="LINE_E">線索 E｜創作者逐漸變成調查對象</button>
+              <button class="line-btn" data-line="LINE_F">線索 F｜誰才是真正的操作者？</button>
+            </div>
+          </div>
+
+          <!-- 4. 三大解鎖隱藏劇情與四色連線圖例列 -->
+          <div class="filter-row storyline-legend-row">
+            <!-- 隱藏劇情觸發按鈕 -->
+            <div class="hidden-storylines-bar" id="hiddenStorylinesBar">
+              <span class="hsl-title">🔍 解鎖隱藏劇情：</span>
+              <button class="storyline-trigger-btn" data-story="HIDDEN_01">
+                <span class="st-icon">🕵️</span>
+                <span>劇情 01｜AI 伴侶的變形記</span>
+              </button>
+              <button class="storyline-trigger-btn" data-story="HIDDEN_02">
+                <span class="st-icon">⚙️</span>
+                <span>劇情 02｜工具越多，自由越多？</span>
+              </button>
+              <button class="storyline-trigger-btn" data-story="HIDDEN_03">
+                <span class="st-icon">👤</span>
+                <span>劇情 03｜創作者失蹤案</span>
+              </button>
+            </div>
+
+            <!-- 四色連線圖例與總開關 -->
+            <div class="wire-legend-controls" id="wireLegendControls">
+              <div class="wire-legend-item wire-red">
+                <span class="wire-sample sample-red"></span>
+                <span>紅線：敘事推進</span>
+              </div>
+              <div class="wire-legend-item wire-blue">
+                <span class="wire-sample sample-blue"></span>
+                <span>藍虛線：概念呼應</span>
+              </div>
+              <div class="wire-legend-item wire-yellow">
+                <span class="wire-sample sample-yellow"></span>
+                <span>黃標記：矛盾反例</span>
+              </div>
+              <div class="wire-legend-item wire-purple">
+                <span class="wire-sample sample-purple"></span>
+                <span>紫點線：隱藏關聯</span>
+              </div>
+              <button class="tool-btn mini" id="btnToggleNetLines">
+                <span class="t-indicator active"></span>
+                <span>連線：開</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 隱藏劇情動態假說抽屜 (Hidden Storyline Hypotheses Drawer) -->
+        <div class="storyline-drawer" id="storylineDrawer">
+          <div class="drawer-header">
+            <div class="dh-left">
+              <span class="dh-icon" id="drawerIcon">🕵️</span>
+              <h3 class="dh-title" id="drawerTitle">隱藏劇情標題</h3>
+              <span class="dh-badge" id="drawerBadge">EXHIBIT CHAIN</span>
+            </div>
+            <button class="drawer-close-btn" id="btnDrawerClose">✕ 關閉劇情</button>
+          </div>
+          <div class="drawer-body">
+            <div class="drawer-section">
+              <div class="ds-label">【推理假說 (Investigative Hypothesis)】</div>
+              <p class="ds-text" id="drawerHypothesis">假說文字內容...</p>
+            </div>
+            <div class="drawer-section">
+              <div class="ds-label">【核心解鎖問題 (Unlocked Enigma)】</div>
+              <p class="ds-text highlight" id="drawerQuestion">核心問題...</p>
+            </div>
+            <div class="drawer-section">
+              <div class="ds-label">【關聯證物鏈 (Evidence Chain)】</div>
+              <div class="drawer-days-pills" id="drawerDaysPills"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==============================================
+           子視圖 A：案件牆 (Pinboard Wall - 可拖動平移畫布)
+           ============================================== -->
+      <div class="subview-pane active" id="subviewPinboard">
+        <!-- 畫布平移互動視窗 (Pannable Viewport) -->
+        <div class="pinboard-interactive-viewport" id="pinboardViewport">
+          <div class="clue-pinboard-container" id="pinboardContainer">
+            <!-- 四色 SVG 案件連線層 -->
+            <svg class="clue-wires-layer" id="clueWiresSvg"></svg>
+
+            <!-- 動態生成的 28 張散落證物卡片 -->
+            <div class="clue-cards-grid" id="clueCardsGrid">
+              <!-- 由 app.js 動態注入 -->
+            </div>
+          </div>
+
+          <!-- 連線理由浮動提示 (Tooltip - 獨立於縮放畫布外) -->
+          <div class="wire-tooltip" id="wireTooltip"></div>
+        </div>
+
+        <!-- 畫布懸浮控制 HUD -->
+        <div class="canvas-floating-controls" id="canvasFloatingControls">
+          <button class="canvas-hud-btn" id="btnCanvasZoomIn" title="放大畫布">＋</button>
+          <button class="canvas-hud-btn zoom-val-btn" id="btnCanvasZoomReset" title="還原視角">100%</button>
+          <button class="canvas-hud-btn" id="btnCanvasZoomOut" title="縮小畫布">－</button>
+          <div class="canvas-hint-pill">
+            <span class="hint-icon">✋</span>
+            <span class="hint-text">按住左鍵或單指滑動可任意拖動畫布</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==============================================
+           子視圖 B：時間線 (Timeline Progression)
+           ============================================== -->
+      <div class="subview-pane" id="subviewTimeline">
+        <div class="timeline-view-wrapper">
+          <div class="timeline-intro-banner">
+            <h2>⏱ 28 日調查時間線進程</h2>
+            <p>依 Day 01 至 Day 28 歷時順序排列，還原創作者在跨領域創作中，問題如何一步步演變與升級。</p>
+          </div>
+          <div class="timeline-stream-container" id="timelineContainer">
+            <!-- 由 app.js 動態注入 -->
+          </div>
+        </div>
+      </div>
+
+      <!-- ==============================================
+           子視圖 C：關聯推理網絡 (Inference Graph)
+           ============================================== -->
+      <div class="subview-pane" id="subviewInference">
+        <div class="inference-view-wrapper">
+          <div class="inference-intro-banner">
+            <h2>🕸 跨卷宗關聯推理知識網絡</h2>
+            <p>探索 6 條調查支線與 3 大隱藏劇情，拆解「看似無關的兩張證物，如何互相解釋彼此」。</p>
+          </div>
+          <div class="inference-network-container" id="inferenceContainer">
+            <!-- 由 app.js 動態注入 -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==============================================
+         分頁二：鐵人賽圖文檔案庫 (Article & Visual Codex)
+         ============================================== -->
+    <section class="tab-content" id="viewArticleCodex">
+      <!-- 圖文檔案庫控制列 -->
+      <div class="codex-control-panel">
+        <div class="codex-info-hub">
+          <div class="c-badge">ARCHIVE MATRIX</div>
+          <h2>28 篇系列圖文視覺牆</h2>
+          <p>完整收錄每一篇 iThome 文章之全部展示配圖、圖說用意解說與文章直達連結。</p>
+        </div>
+
+        <div class="codex-actions">
+          <div class="search-box wide">
+            <input type="text" id="codexSearchInput" placeholder="搜尋文章篇名、配圖說明、關鍵字 (如: RAG, micro:bit, 商標)...">
+          </div>
+          <div class="filter-stats" id="codexFilterStats">
+            顯示 0 張圖片
+          </div>
+        </div>
+      </div>
+
+      <!-- Pinterest Masonry 瀑布流圖片牆 -->
+      <div class="codex-masonry-wall" id="codexMasonryWall">
+        <!-- 由 app.js 動態注入 -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 底部極簡 HUD 狀態列 -->
+  <footer class="hud-footer">
+    <div class="footer-left">
+      <span>SERIES: 2026 iThome 鐵人賽 #9607</span>
+      <span class="split">/</span>
+      <span>AUTHOR: Anubis Chan (科智所研究生 × 中文系)</span>
+      <span class="split">/</span>
+      <a href="https://ithelp.ithome.com.tw/2026ironman/signup/user/20184140" target="_blank" rel="noopener" class="footer-link">官方主頁 ↗</a>
+      <span class="split">/</span>
+      <a href="https://ithelp.ithome.com.tw/rss/series/9607" target="_blank" rel="noopener" class="footer-link">RSS Feed ↗</a>
+    </div>
+    <div class="footer-right">
+      <span class="code-tag">CASE INVESTIGATION READY // GITHUB PAGES</span>
+    </div>
+  </footer>
+
+  <!-- 彈跳視窗：深層證物檢視器 (Clue Evidence Inspector Modal) -->
+  <div class="modal-backdrop" id="clueModal">
+    <div class="clue-modal-dialog">
+      <button class="modal-close-btn" id="btnClueModalClose">✕</button>
+      <div class="modal-layout">
+        <div class="modal-img-col">
+          <div class="clue-frame">
+            <img id="modalClueImg" src="" alt="證物大圖" referrerpolicy="no-referrer" onerror="handleImgError(this)">
+            <div class="clue-stamp" id="modalClueStamp">EVIDENCE VERIFIED</div>
+          </div>
+        </div>
+        <div class="modal-info-col">
+          <div class="clue-meta-header">
+            <div class="clue-id-badges">
+              <span class="clue-id-tag" id="modalClueId">EXHIBIT #DAY-01</span>
+              <span class="clue-type-tag" id="modalClueType">E1 ｜ 實驗證物</span>
+            </div>
+            <span class="clue-arc-tag" id="modalClueArc">卷宗 I: 初心破壁</span>
+          </div>
+
+          <h2 class="clue-headline" id="modalClueTitle">證物名稱</h2>
+          <div class="clue-article-sub" id="modalClueArticleSub">篇章：文章篇名</div>
+
+          <!-- 證物標籤 -->
+          <div class="modal-tags-row" id="modalTagsRow"></div>
+
+          <!-- 圖片用意 -->
+          <div class="clue-meaning-box">
+            <div class="cm-label">🔍 證物象徵用意與目的 (PURPOSE & INTENT)</div>
+            <p class="cm-content" id="modalClueMeaning">說明文字</p>
+          </div>
+
+          <!-- 調查筆記 -->
+          <div class="clue-story-box">
+            <div class="cm-label">📝 調查者案件突破口筆記 (INVESTIGATION NOTE)</div>
+            <p class="cm-content" id="modalClueStory">筆記文字</p>
+          </div>
+
+          <!-- 關鍵：關聯證物與推理理由 -->
+          <div class="clue-linked-exhibits-box">
+            <div class="cm-label">🔗 關聯證物與推理理由 (LINKED EXHIBITS & RATIONALE)</div>
+            <div class="linked-exhibits-list" id="modalLinkedExhibitsList">
+              <!-- 由 JS 動態注入關聯證物卡 -->
+            </div>
+          </div>
+
+          <div class="modal-action-row">
+            <a href="#" target="_blank" rel="noopener" class="cyber-cta-btn" id="modalClueArticleBtn">
+              <span>前往官方文章查證檔案 ↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 彈跳視窗：高解析圖片燈箱 (Image Lightbox) -->
+  <div class="lightbox-backdrop" id="lightboxModal">
+    <div class="lightbox-dialog">
+      <button class="lightbox-close-btn" id="btnLightboxClose">✕</button>
+      <div class="lightbox-img-wrapper">
+        <img id="lightboxImg" src="" alt="放大檢視" referrerpolicy="no-referrer" onerror="handleImgError(this)">
+      </div>
+      <div class="lightbox-caption-bar" id="lightboxCaption">
+        圖片說明文字
+      </div>
+    </div>
+  </div>
+
+  <!-- 數據載入與前端邏輯 -->
+  <script src="data.js"></script>
+  <script src="case_evidence_data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,1588 @@
+{
+  "series_title": "學生身份如何每天透過Vibe Coding每天做跨領域的創新項目",
+  "series_url": "https://ithelp.ithome.com.tw/2026ironman/signup/user/20184140",
+  "rss_url": "https://ithelp.ithome.com.tw/rss/series/9607",
+  "total_days": 28,
+  "total_articles": 29,
+  "case_arcs": {
+    "arc_1": {
+      "id": "CASE-ARC-01",
+      "name": "檔案卷宗 I：初心破壁與多重身份",
+      "codename": "GENESIS & IDENTITY",
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "desc": "中文系出身踏入科技管理，從跨領域日常自我介紹、光劍競賽規則查驗，到動手搓出 AI 虛擬伴侶與 ASMR 影音精華自動化剪輯系統。"
+    },
+    "arc_2": {
+      "id": "CASE-ARC-02",
+      "name": "檔案卷宗 II：實體穿透與賽博桌面",
+      "codename": "CYBER-PHYSICAL SYNAPSE",
+      "days": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "desc": "突破純軟體視窗枷鎖，創造陪伴系 Chrome 網頁桌寵、串接 micro:bit 與實體硬體信使，探索人機共生與文科靈魂的實體降臨。"
+    },
+    "arc_3": {
+      "id": "CASE-ARC-03",
+      "name": "檔案卷宗 III：高維向量與文學宇宙",
+      "codename": "HIGH-DIMENSIONAL RETRIEVAL",
+      "days": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "desc": "走進政大 Colab 課堂探索 RAG 原理，將個人文學創作降維映射為 487 顆發光星點的三維文學宇宙，見證數學空間與文字的浪漫交會。"
+    },
+    "arc_4": {
+      "id": "CASE-ARC-04",
+      "name": "檔案卷宗 IV：智財法規與多模態創作",
+      "codename": "POLICY, IP & FREQUENCY",
+      "days": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "desc": "科智所核心研究能量展現！歐盟 3D 商標審查智慧可視化、AI 工具政策諮詢智庫、結合 Suno 音樂多模態即時創作原型。"
+    },
+    "arc_5": {
+      "id": "CASE-ARC-05",
+      "name": "檔案卷宗 V：心智模型與自動化工廠",
+      "codename": "AUTOMATION & PSYCHE",
+      "days": [
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "desc": "建構全自動 RSS 文章排版工廠、心理諮商 AI 評估矩陣、系統一與系統二直覺辨證實驗，以及賽博龐克維修艙互動裝置。"
+    },
+    "arc_6": {
+      "id": "CASE-ARC-06",
+      "name": "檔案卷宗 VI：終極共識與時間哲學",
+      "codename": "TIME MATRIX & ULTIMATE ALIGNMENT",
+      "days": [
+        25,
+        26,
+        27,
+        28
+      ],
+      "desc": "建立 GitHub Pages 戰略發布首頁、賽博時空簽證護照計時器，深入辯證人機犯錯光譜——到底錯的是我，還是這個世界？唯有溝通能達成共識。"
+    }
+  },
+  "articles": [
+    {
+      "day": 1,
+      "is_extra": false,
+      "title": "第一天就來弄硬體裝置！超硬的說！",
+      "full_title": "Day 1 第一天就來弄硬體裝置！超硬的說！",
+      "link": "https://ithelp.ithome.com.tw/articles/10409375?sc=rss.iron",
+      "pub_date": "2026-09-13 12:19:37",
+      "arc": {
+        "arc_id": "CASE-ARC-01",
+        "arc_name": "檔案卷宗 I：初心破壁與多重身份",
+        "arc_code": "GENESIS & IDENTITY"
+      },
+      "ai_image": {
+        "local_file": "assets/ai-images/day1.png",
+        "online_url": "https://ithelp.ithome.com.tw/upload/images/20260918/20184140az8aJ4x58A.png",
+        "caption": "文章重要展示配圖",
+        "clue_summary": "【線索 #01】文章重要展示配圖"
+      },
+      "all_images": [
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260918/20184140az8aJ4x58A.png",
+          "alt": "",
+          "caption": "文章重要展示配圖",
+          "raw_caption": ""
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260913/20184140o5uZIm8PGR.png",
+          "alt": "",
+          "caption": "圖 1：中文系與科智所背景跨界探索硬體裝置",
+          "raw_caption": "圖 1：中文系與科智所背景跨界探索硬體裝置"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260913/20184140Fdzb04z3JS.png",
+          "alt": "",
+          "caption": "圖 2：實體電子寵物裝置的構想與探索過程",
+          "raw_caption": "圖 2：實體電子寵物裝置的構想與探索過程"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260913/20184140BcYG1G5WKg.png",
+          "alt": "",
+          "caption": "圖 3：ESP32 開發板與各類周邊電子元件",
+          "raw_caption": "圖 3：ESP32 開發板與各類周邊電子元件"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260913/20184140Zr7Pu6BnzN.png",
+          "alt": "",
+          "caption": "圖 4：常見的 STEAM 教學板卡（micro:bitArduino樹莓派等）",
+          "raw_caption": "圖 4：常見的 STEAM 教學板卡（micro:bitArduino樹莓派等）"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260913/20184140AxQZb8QMQJ.png",
+          "alt": "",
+          "caption": "圖 5：本次改造的主角 Metalio Claw4 硬體外觀",
+          "raw_caption": "圖 5：本次改造的主角 Metalio Claw4 硬體外觀"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260913/20184140zBkWxakZ7a.png",
+          "alt": "",
+          "caption": "圖 6：各類主流的 AI 輔助開發工具",
+          "raw_caption": "圖 6：各類主流的 AI 輔助開發工具"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260913/20184140aVj9sJeRYx.png",
+          "alt": "",
+          "caption": "圖 7：VS Code 中的專案檔案架構與配置介面",
+          "raw_caption": "圖 7：VS Code 中的專案檔案架構與配置介面"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260913/20184140OfHelSvuWP.png",
+          "alt": "",
+          "caption": "圖 8：ESP-IDF 工具鏈與編譯環境設定",
+          "raw_caption": "圖 8：ESP-IDF 工具鏈與編譯環境設定"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260913/201841406KBpYQqcud.jpg",
+          "alt": "",
+          "caption": "圖 9：實機測試與螢幕除錯運作狀態",
+          "raw_caption": "圖 9：實機測試與螢幕除錯運作狀態"
+        }
+      ],
+      "images_count": 10
+    },
+    {
+      "day": 2,
+      "is_extra": false,
+      "title": "網頁，網頁又是網頁！",
+      "full_title": "Day 2 網頁，網頁又是網頁！",
+      "link": "https://ithelp.ithome.com.tw/articles/10410403?sc=rss.iron",
+      "pub_date": "2026-09-14 17:11:01",
+      "arc": {
+        "arc_id": "CASE-ARC-01",
+        "arc_name": "檔案卷宗 I：初心破壁與多重身份",
+        "arc_code": "GENESIS & IDENTITY"
+      },
+      "ai_image": {
+        "local_file": "assets/ai-images/day 2.png",
+        "online_url": "https://ithelp.ithome.com.tw/upload/images/20260921/20184140um20ffYaKz.png",
+        "caption": "文章重要展示配圖",
+        "clue_summary": "【線索 #02】文章重要展示配圖"
+      },
+      "all_images": [
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260921/20184140um20ffYaKz.png",
+          "alt": "",
+          "caption": "文章重要展示配圖",
+          "raw_caption": ""
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260914/20184140ZpxNCaLdT9.png",
+          "alt": "",
+          "caption": "圖 1：作者個人的 Google Sites 作品集展示頁面",
+          "raw_caption": "圖 1：作者個人的 Google Sites 作品集展示頁面"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260914/20184140ZCMqRygCXs.jpg",
+          "alt": "",
+          "caption": "圖 2：常見的線上無代碼網頁設計工具（WixWordPressWeeblyShopify）",
+          "raw_caption": "圖 2：常見的線上無代碼網頁設計工具（WixWordPressWeeblyShopify）"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260914/20184140NtcXnt9b1c.png",
+          "alt": "",
+          "caption": "圖 4：Google Sites 內建的嵌入 HTML 程式碼功能操作介面",
+          "raw_caption": "圖 4：Google Sites 內建的嵌入 HTML 程式碼功能操作介面"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260914/20184140PviT3ThnSY.png",
+          "alt": "",
+          "caption": "圖 3：使用 Gemini 搭配 Canva 進行 Vibe Coding 所產出的科技感 HTML 互動頁面",
+          "raw_caption": "圖 3：使用 Gemini 搭配 Canva 進行 Vibe Coding 所產出的科技感 HTML 互動頁面"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260914/20184140voTlfstv1A.jpg",
+          "alt": "",
+          "caption": "圖 5：初階（單頁嵌入）與進階（現代化自動部署）Vibe Coding 網頁設計方法與邏輯示意",
+          "raw_caption": "圖 5：初階（單頁嵌入）與進階（現代化自動部署）Vibe Coding 網頁設計方法與邏輯示意"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260914/20184140ADDTSEdXfz.jpg",
+          "alt": "",
+          "caption": "圖 6：早期使用 Wix 拖拉拼組的舊版公司官方網站",
+          "raw_caption": "圖 6：早期使用 Wix 拖拉拼組的舊版公司官方網站"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260914/20184140TP7hiWj851.jpg",
+          "alt": "",
+          "caption": "圖 7：透過 Vibe Coding + Next.js 並部署於 Vercel 的現代化新版公司網頁",
+          "raw_caption": "圖 7：透過 Vibe Coding + Next.js 並部署於 Vercel 的現代化新版公司網頁"
+        }
+      ],
+      "images_count": 8
+    },
+    {
+      "day": 3,
+      "is_extra": false,
+      "title": "中文系搞數位內容？",
+      "full_title": "Day 3 中文系搞數位內容？",
+      "link": "https://ithelp.ithome.com.tw/articles/10411155?sc=rss.iron",
+      "pub_date": "2026-09-15 21:13:37",
+      "arc": {
+        "arc_id": "CASE-ARC-01",
+        "arc_name": "檔案卷宗 I：初心破壁與多重身份",
+        "arc_code": "GENESIS & IDENTITY"
+      },
+      "ai_image": {
+        "local_file": "assets/ai-images/day 3.png",
+        "online_url": "https://ithelp.ithome.com.tw/upload/images/20260922/20184140C3c7id1smC.png",
+        "caption": "圖 0：搞數位內容，當個現代魔法師的？",
+        "clue_summary": "【線索 #03】圖 0：搞數位內容，當個現代魔法師的？"
+      },
+      "all_images": [
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260922/20184140C3c7id1smC.png",
+          "alt": "",
+          "caption": "圖 0：搞數位內容，當個現代魔法師的？",
+          "raw_caption": "圖 0：搞數位內容，當個現代魔法師的midjourney示意圖？"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260915/20184140OUkpeLKtwF.png",
+          "alt": "",
+          "caption": "圖 1：畫布上繪製的魔法陣越複雜，背景奇幻音樂就越發雄偉",
+          "raw_caption": "圖 1：畫布上繪製的魔法陣越複雜，背景奇幻音樂就越發雄偉"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260915/20184140zo3DDRQvtp.png",
+          "alt": "",
+          "caption": "圖 2：結合小說文本Suno AI 雙軌音樂與 Lofi 影片的無日浪漫互動網頁",
+          "raw_caption": "圖 2：結合小說文本Suno AI 雙軌音樂與 Lofi 影片的無日浪漫互動網頁"
+        }
+      ],
+      "images_count": 3
+    },
+    {
+      "day": 4,
+      "is_extra": false,
+      "title": "可悲啊～如果這麼簡單就可以製作出自己的AI女友跟男友的話",
+      "full_title": "Day 4 可悲啊～如果這麼簡單就可以製作出自己的AI女友跟男友的話",
+      "link": "https://ithelp.ithome.com.tw/articles/10411903?sc=rss.iron",
+      "pub_date": "2026-09-16 21:15:02",
+      "arc": {
+        "arc_id": "CASE-ARC-01",
+        "arc_name": "檔案卷宗 I：初心破壁與多重身份",
+        "arc_code": "GENESIS & IDENTITY"
+      },
+      "ai_image": {
+        "local_file": "assets/ai-images/day 4.png",
+        "online_url": "https://ithelp.ithome.com.tw/upload/images/20260922/20184140uipAqLMZp0.png",
+        "caption": "圖 0：想要吧...想要吧!AI女友!AI男友!!!",
+        "clue_summary": "【線索 #04】圖 0：想要吧...想要吧!AI女友!AI男友!!!"
+      },
+      "all_images": [
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260922/20184140uipAqLMZp0.png",
+          "alt": "",
+          "caption": "圖 0：想要吧...想要吧!AI女友!AI男友!!!",
+          "raw_caption": "圖 0：想要吧...想要吧!AI女友!AI男友!!!midjourney示意圖~"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260916/20184140FpEEaRFflv.png",
+          "alt": "",
+          "caption": "圖 1：Gemini Gem 的設定介面",
+          "raw_caption": "圖 1：Gemini Gem 的設定介面"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260916/201841403DfRzBpq23.png",
+          "alt": "",
+          "caption": "圖 2：搭配形象展示的 AI 虛擬角色聊天機器人",
+          "raw_caption": "圖 2：搭配形象展示的 AI 虛擬角色聊天機器人"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260916/20184140bOMSqMErk9.png",
+          "alt": "",
+          "caption": "圖 3：正在開發的 AI 虛擬角色世界情報收集儀表板",
+          "raw_caption": "圖 3：正在開發的 AI 虛擬角色世界情報收集儀表板"
+        }
+      ],
+      "images_count": 4
+    },
+    {
+      "day": 5,
+      "is_extra": false,
+      "title": "深夜最適合弄ASMR精華剪輯了！嗯？你說為什麼是弄，而不是聽？欸秘密！",
+      "full_title": "Day 5 深夜最適合弄ASMR精華剪輯了！嗯？你說為什麼是弄，而不是聽？欸秘密！",
+      "link": "https://ithelp.ithome.com.tw/articles/10412409?sc=rss.iron",
+      "pub_date": "2026-09-17 10:58:29",
+      "arc": {
+        "arc_id": "CASE-ARC-01",
+        "arc_name": "檔案卷宗 I：初心破壁與多重身份",
+        "arc_code": "GENESIS & IDENTITY"
+      },
+      "ai_image": {
+        "local_file": "assets/ai-images/day5.png",
+        "online_url": "https://ithelp.ithome.com.tw/upload/images/20260917/20184140SghOQXcqPG.png",
+        "caption": "圖 1：大學生三更半夜做事的示意圖，由  生成！",
+        "clue_summary": "【線索 #05】圖 1：大學生三更半夜做事的示意圖，由  生成！"
+      },
+      "all_images": [
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260917/20184140SghOQXcqPG.png",
+          "alt": "",
+          "caption": "圖 1：大學生三更半夜做事的示意圖，由  生成！",
+          "raw_caption": "圖 1：大學生三更半夜做事的示意圖，由 Midjourney 生成！"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260917/20184140lEhjZfNKEc.png",
+          "alt": "",
+          "caption": "圖 2：ASMR 精華影片剪輯工具介面設計",
+          "raw_caption": "圖 2：ASMR 精華影片剪輯工具介面設計"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260917/20184140mxfuxQTQD3.png",
+          "alt": "",
+          "caption": "圖 3：痛點與固定模板分析邏輯",
+          "raw_caption": "圖 3：痛點與固定模板分析邏輯"
+        }
+      ],
+      "images_count": 3
+    },
+    {
+      "day": 6,
+      "is_extra": false,
+      "title": "你的網頁瀏覽器寵物？我的網頁瀏覽器寵物～",
+      "full_title": "Day 6 你的網頁瀏覽器寵物？我的網頁瀏覽器寵物～",
+      "link": "https://ithelp.ithome.com.tw/articles/10412446?sc=rss.iron",
+      "pub_date": "2026-09-18 11:17:03",
+      "arc": {
+        "arc_id": "CASE-ARC-02",
+        "arc_name": "檔案卷宗 II：實體穿透與賽博桌面",
+        "arc_code": "CYBER-PHYSICAL SYNAPSE"
+      },
+      "ai_image": {
+        "local_file": "assets/ai-images/day 6.png",
+        "online_url": "https://ithelp.ithome.com.tw/upload/images/20260919/201841409RxOXlZlLt.png",
+        "caption": "圖 0：呵呵呵我也有我的小寵物",
+        "clue_summary": "【線索 #06】圖 0：呵呵呵我也有我的小寵物"
+      },
+      "all_images": [
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260919/201841409RxOXlZlLt.png",
+          "alt": "",
+          "caption": "圖 0：呵呵呵我也有我的小寵物",
+          "raw_caption": "圖 0：呵呵呵~我也有我的小寵物~midjourney示意圖"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260917/20184140QUeHQc6twj.png",
+          "alt": "",
+          "caption": "圖 1：這可惡的 Google 網頁擴充插件上架上限",
+          "raw_caption": "圖 1：這可惡的 Google 網頁擴充插件上架上限"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260917/201841405WNXWgfAOR.jpg",
+          "alt": "",
+          "caption": "圖 2：Google 網頁擴充插件的使用人數，我就是菜",
+          "raw_caption": "圖 2：Google 網頁擴充插件的使用人數，我就是菜~"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260917/20184140G6e2MnSN1f.png",
+          "alt": "",
+          "caption": "圖 3：Antigravity 的畫面！另外是有指定放在什麼資料夾中",
+          "raw_caption": "圖 3：Antigravity 的畫面！另外是有指定放在什麼資料夾中"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260917/20184140K4hRM4JzJo.png",
+          "alt": "",
+          "caption": "圖 4：擴充插件導入的頁面",
+          "raw_caption": "圖 4：擴充插件導入的頁面"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260917/20184140n3kWcYoy7u.png",
+          "alt": "",
+          "caption": "圖 5：最後這是製作出來的 Google 瀏覽器小寵物",
+          "raw_caption": "圖 5：最後這是製作出來的 Google 瀏覽器小寵物"
+        }
+      ],
+      "images_count": 6
+    },
+    {
+      "day": 7,
+      "is_extra": false,
+      "title": "把劇場工作與商管工作結合！！！",
+      "full_title": "Day 7 把劇場工作與商管工作結合！！！",
+      "link": "https://ithelp.ithome.com.tw/articles/10413386?sc=rss.iron",
+      "pub_date": "2026-09-19 08:10:44",
+      "arc": {
+        "arc_id": "CASE-ARC-02",
+        "arc_name": "檔案卷宗 II：實體穿透與賽博桌面",
+        "arc_code": "CYBER-PHYSICAL SYNAPSE"
+      },
+      "ai_image": {
+        "local_file": "assets/ai-images/day7.png",
+        "online_url": "https://ithelp.ithome.com.tw/upload/images/20260918/20184140LkpiXsz6fp.png",
+        "caption": "圖 1：我他喵的要改寫舞台工作的流程導入到商管報告中的",
+        "clue_summary": "【線索 #07】圖 1：我他喵的要改寫舞台工作的流程導入到商管報告中的"
+      },
+      "all_images": [
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260918/20184140LkpiXsz6fp.png",
+          "alt": "",
+          "caption": "圖 1：我他喵的要改寫舞台工作的流程導入到商管報告中的",
+          "raw_caption": "圖 1：我他喵的要改寫舞台工作的流程導入到商管報告中的 Midjourney 示意圖"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260918/20184140VDSQHlwWNg.png",
+          "alt": "",
+          "caption": "圖 2：MultiPlay 的畫面及介面顯示，以 YouTube 教學影片縮圖顯示",
+          "raw_caption": "圖 2：MultiPlay 的畫面及介面顯示，以 YouTube 教學影片縮圖顯示"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260918/20184140qG0GYSchz2.png",
+          "alt": "",
+          "caption": "圖 3：Vibe coding 出來的 Google 網頁插件畫面",
+          "raw_caption": "圖 3：Vibe coding 出來的 Google 網頁插件畫面"
+        }
+      ],
+      "images_count": 3
+    },
+    {
+      "day": 8,
+      "is_extra": false,
+      "title": "一起來預習香港的強制性基本安全訓練課程（平安卡）吧！（？）",
+      "full_title": "Day 8 一起來預習香港的強制性基本安全訓練課程（平安卡）吧！（？）",
+      "link": "https://ithelp.ithome.com.tw/articles/10414259?sc=rss.iron",
+      "pub_date": "2026-09-20 13:38:47",
+      "arc": {
+        "arc_id": "CASE-ARC-02",
+        "arc_name": "檔案卷宗 II：實體穿透與賽博桌面",
+        "arc_code": "CYBER-PHYSICAL SYNAPSE"
+      },
+      "ai_image": {
+        "local_file": "assets/ai-images/day 8.png",
+        "online_url": "https://ithelp.ithome.com.tw/upload/images/20260919/20184140TgivNbD1uX.png",
+        "caption": "圖 1：小朋友勇闖香港建築工程界的",
+        "clue_summary": "【線索 #08】圖 1：小朋友勇闖香港建築工程界的"
+      },
+      "all_images": [
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260919/20184140TgivNbD1uX.png",
+          "alt": "",
+          "caption": "圖 1：小朋友勇闖香港建築工程界的",
+          "raw_caption": "圖 1：小朋友勇闖香港建築工程界的 Midjourney 示意圖"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260919/20184140TVJBaM2A3H.png",
+          "alt": "",
+          "caption": "圖 2：後來公司的網頁",
+          "raw_caption": "圖 2：後來公司的網頁"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260919/201841406suF2Cmk3u.png",
+          "alt": "",
+          "caption": "圖 3：公司管理的知識圖譜形式儀表盤",
+          "raw_caption": "圖 3：公司管理的知識圖譜形式儀表盤"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260919/20184140tXImP16OBL.jpg",
+          "alt": "",
+          "caption": "圖 4：大概圖示四大模塊架構",
+          "raw_caption": "圖 4：大概圖示四大模塊架構"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260919/201841408jXAavXXRQ.png",
+          "alt": "",
+          "caption": "圖 5：關於預習面試的題目時有研究所謂香港建築工程界的其中一項挑戰是人手不足（雖然我覺得...），那吸引及協助新人入行及讓原有合作夥伴持續進修的數位開發及企業作為，同樣有效提升企業形象及推動行業發展",
+          "raw_caption": "圖 5：關於預習面試的題目時有研究所謂香港建築工程界的其中一項挑戰是人手不足（雖然我覺得...），那吸引及協助新人入行及讓原有合作夥伴持續進修的數位開發及企業作為，同樣有效提升企業形象及推動行業發展"
+        }
+      ],
+      "images_count": 5
+    },
+    {
+      "day": 9,
+      "is_extra": false,
+      "title": "咖啡色計劃的心跳瞬間！SCA 的文章化成活潑的女角色！與你進行咖啡學問探討之旅～",
+      "full_title": "Day 9 咖啡色計劃的心跳瞬間！SCA 的文章化成活潑的女角色！與你進行咖啡學問探討之旅～",
+      "link": "https://ithelp.ithome.com.tw/articles/10414277?sc=rss.iron",
+      "pub_date": "2026-09-21 09:30:51",
+      "arc": {
+        "arc_id": "CASE-ARC-02",
+        "arc_name": "檔案卷宗 II：實體穿透與賽博桌面",
+        "arc_code": "CYBER-PHYSICAL SYNAPSE"
+      },
+      "ai_image": {
+        "local_file": "assets/ai-images/day 9.png",
+        "online_url": "https://ithelp.ithome.com.tw/upload/images/20260920/20184140EiTB6Fw0TI.png",
+        "caption": "圖 1： 少年咖啡師研究咖啡科學的示意圖",
+        "clue_summary": "【線索 #09】圖 1： 少年咖啡師研究咖啡科學的示意圖"
+      },
+      "all_images": [
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260920/20184140EiTB6Fw0TI.png",
+          "alt": "",
+          "caption": "圖 1： 少年咖啡師研究咖啡科學的示意圖",
+          "raw_caption": "圖 1：Midjourney 少年咖啡師研究咖啡科學的示意圖"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260920/20184140n76ssObUia.jpg",
+          "alt": "",
+          "caption": "圖 2：在學校沖咖啡被人偷拍 AwA",
+          "raw_caption": "圖 2：在學校沖咖啡被人偷拍 AwA"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260920/20184140KJpgbQH0nM.png",
+          "alt": "",
+          "caption": "圖 3：SCA 精品咖啡協會官方網站",
+          "raw_caption": "圖 3：SCA 精品咖啡協會官方網站"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260920/20184140Oid0pqZm6U.png",
+          "alt": "",
+          "caption": "圖 4：Paper 2 galgame 在 Steam 上的商店畫面",
+          "raw_caption": "圖 4：Paper 2 galgame 在 Steam 上的商店畫面"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260920/20184140PQJxAqYhiD.png",
+          "alt": "",
+          "caption": "圖 5：NotebookLM 做輔助學習超好用的介面",
+          "raw_caption": "圖 5：NotebookLM 做輔助學習超好用的介面"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260920/201841402sv1bYB51c.png",
+          "alt": "",
+          "caption": "圖 6： 生成的三位靈魂女主角立繪",
+          "raw_caption": "圖 6：Midjourney 生成的三位靈魂女主角立繪"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260920/20184140RTx99q9Z2K.png",
+          "alt": "",
+          "caption": "圖 7：後來在 Google AI Studio 打造出的咖啡館 RPG 探索遊戲畫面",
+          "raw_caption": "圖 7：後來在 Google AI Studio 打造出的咖啡館 RPG 探索遊戲畫面"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260920/20184140J3GlogtT9t.png",
+          "alt": "",
+          "caption": "圖 8：咖啡色計劃的最終好感度通關結算畫面 AwA",
+          "raw_caption": "圖 8：咖啡色計劃的最終好感度通關結算畫面 AwA"
+        }
+      ],
+      "images_count": 8
+    },
+    {
+      "day": 10,
+      "is_extra": false,
+      "title": "我要讓大家逐漸變成絕地武士！不單單是虛擬的！還要推現實的！",
+      "full_title": "Day 10 我要讓大家逐漸變成絕地武士！不單單是虛擬的！還要推現實的！",
+      "link": "https://ithelp.ithome.com.tw/articles/10414824?sc=rss.iron",
+      "pub_date": "2026-09-22 08:03:33",
+      "arc": {
+        "arc_id": "CASE-ARC-03",
+        "arc_name": "檔案卷宗 III：高維向量與文學宇宙",
+        "arc_code": "HIGH-DIMENSIONAL RETRIEVAL"
+      },
+      "ai_image": {
+        "local_file": "assets/ai-images/day 10.png",
+        "online_url": "https://ithelp.ithome.com.tw/upload/images/20260921/20184140QisWQQ4BpG.png",
+        "caption": "圖 1：大家比拼做最強絕地武士的",
+        "clue_summary": "【線索 #10】圖 1：大家比拼做最強絕地武士的"
+      },
+      "all_images": [
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260921/20184140QisWQQ4BpG.png",
+          "alt": "",
+          "caption": "圖 1：大家比拼做最強絕地武士的",
+          "raw_caption": "圖 1：大家比拼做最強絕地武士的 Midjourney 示意圖"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260921/20184140tZUYNFjC0J.jpg",
+          "alt": "",
+          "caption": "圖 2：當年玩光劍對決莫名入鏡報刊的照片",
+          "raw_caption": "圖 2：當年玩光劍對決莫名入鏡報刊的照片~~~"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260921/20184140qBc7tdyS69.png",
+          "alt": "",
+          "caption": "圖 3：法國擊劍協會（FFE）官網的光劍對決官方影像",
+          "raw_caption": "圖 3：法國擊劍協會（FFE）官網的光劍對決官方影像"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260921/20184140iBpgd27mbJ.png",
+          "alt": "",
+          "caption": "圖 4：在 Google AI Studio 上 Vibe Coding 出的 3D 光劍對決遊戲畫面！",
+          "raw_caption": "圖 4：在 Google AI Studio 上 Vibe Coding 出的 3D 光劍對決遊戲畫面！"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260922/20184140NZ1mZYGq5a.png",
+          "alt": "",
+          "caption": "圖 5：超難才贏一次...",
+          "raw_caption": "圖 5：超難才贏一次..."
+        }
+      ],
+      "images_count": 5
+    },
+    {
+      "day": 11,
+      "is_extra": false,
+      "title": "助教呀～～～～我不懂AIRAGCNN啊！！！不是，我不就是那個助教了嗎！？",
+      "full_title": "Day11 助教呀～～～～我不懂AIRAGCNN啊！！！不是，我不就是那個助教了嗎！？",
+      "link": "https://ithelp.ithome.com.tw/articles/10415845?sc=rss.iron",
+      "pub_date": "2026-09-23 12:49:22",
+      "arc": {
+        "arc_id": "CASE-ARC-03",
+        "arc_name": "檔案卷宗 III：高維向量與文學宇宙",
+        "arc_code": "HIGH-DIMENSIONAL RETRIEVAL"
+      },
+      "ai_image": {
+        "local_file": "assets/ai-images/day11.png",
+        "online_url": "https://ithelp.ithome.com.tw/upload/images/20260923/20184140HQxHrsUhNN.png",
+        "caption": "圖 1：少年與向量空間的",
+        "clue_summary": "【線索 #11】圖 1：少年與向量空間的"
+      },
+      "all_images": [
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260923/20184140HQxHrsUhNN.png",
+          "alt": "",
+          "caption": "圖 1：少年與向量空間的",
+          "raw_caption": "圖 1：少年與向量空間的 Midjourney 概念示意圖"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260923/20184140HDbJfqaFGp.png",
+          "alt": "",
+          "caption": "圖 2：動用 Google AI 模式快速搜尋並初步釐清 RAG 架構",
+          "raw_caption": "圖 2：動用 Google AI 模式快速搜尋並初步釐清 RAG 架構"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260923/20184140g1zU6a7Hro.png",
+          "alt": "",
+          "caption": "圖 3：政治大學蔡炎龍老師豐富的神經網絡與機器學習 Colab 學習範本",
+          "raw_caption": "圖 3：政治大學蔡炎龍老師豐富的神經網絡與機器學習 Colab 學習範本"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260923/20184140CVnCg2ytR9.png",
+          "alt": "",
+          "caption": "圖 4：近期大學教授程式語言與 AI 相關課程時也經常使用 Google Colab",
+          "raw_caption": "圖 4：近期大學教授程式語言與 AI 相關課程時也經常使用 Google Colab"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260923/20184140j99b8pe7BP.png",
+          "alt": "",
+          "caption": "圖 5：第一次接觸 Hugging Face，不論是 API 或權限設定都能詢問 Google AI 模式協助釐清",
+          "raw_caption": "圖 5：第一次接觸 Hugging Face，不論是 API 或權限設定都能詢問 Google AI 模式協助釐清"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260923/20184140Xc7pBo4KIN.png",
+          "alt": "",
+          "caption": "圖 6：Colab 執行後產出的兩個關鍵核心檔案：index.faiss 與 index.pkl",
+          "raw_caption": "圖 6：Colab 執行後產出的兩個關鍵核心檔案：index.faiss 與 index.pkl"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260923/20184140t31wzRcu3i.png",
+          "alt": "",
+          "caption": "圖 7：在 Antigravity 中以自然語言 Prompt 指示 AI 開發 3D 視覺化頁面",
+          "raw_caption": "圖 7：在 Antigravity 中以自然語言 Prompt 指示 AI 開發 3D 視覺化頁面"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260923/20184140nL5n6YNro7.png",
+          "alt": "",
+          "caption": "圖 8：親眼看見自己的文學作品在三維向量空間中綻放為璀璨星空！",
+          "raw_caption": "圖 8：親眼看見自己的文學作品在三維向量空間中綻放為璀璨星空！"
+        }
+      ],
+      "images_count": 8
+    },
+    {
+      "day": 12,
+      "is_extra": false,
+      "title": "AIGC生成與使用！著作權商用權利AI標示，這些使用者條款你都認識嗎！？",
+      "full_title": "Day 12 AIGC生成與使用！著作權商用權利AI標示，這些使用者條款你都認識嗎！？",
+      "link": "https://ithelp.ithome.com.tw/articles/10416042?sc=rss.iron",
+      "pub_date": "2026-09-24 12:24:17",
+      "arc": {
+        "arc_id": "CASE-ARC-03",
+        "arc_name": "檔案卷宗 III：高維向量與文學宇宙",
+        "arc_code": "HIGH-DIMENSIONAL RETRIEVAL"
+      },
+      "ai_image": {
+        "local_file": "assets/ai-images/day 12.png",
+        "online_url": "https://ithelp.ithome.com.tw/upload/images/20260924/20184140NF984i1qiH.png",
+        "caption": "圖 1：面對各家繁複使用者條款與政策文件的少年",
+        "clue_summary": "【線索 #12】圖 1：面對各家繁複使用者條款與政策文件的少年"
+      },
+      "all_images": [
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260924/20184140NF984i1qiH.png",
+          "alt": "",
+          "caption": "圖 1：面對各家繁複使用者條款與政策文件的少年",
+          "raw_caption": "圖 1：面對各家繁複使用者條款與政策文件的少年 Midjourney 概念示意圖"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260924/20184140wDBKC8z5o7.png",
+          "alt": "",
+          "caption": "圖 2：人工智慧（AI）生成式 AI 與 AIGC 之間的層級與前後端關係架構圖",
+          "raw_caption": "圖 2：人工智慧（AI）生成式 AI 與 AIGC 之間的層級與前後端關係架構圖"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260924/201841403qwm75nINn.png",
+          "alt": "",
+          "caption": "圖 3：以  為例的官方服務條款（Terms of Service）規範頁面",
+          "raw_caption": "圖 3：以 Midjourney 為例的官方服務條款（Terms of Service）規範頁面"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260924/20184140yiuChWV7DK.png",
+          "alt": "",
+          "caption": "圖 4：善用 Perplexity 精準搜尋 23 款熱門 AI 工具的官方政策與條款文件",
+          "raw_caption": "圖 4：善用 Perplexity 精準搜尋 23 款熱門 AI 工具的官方政策與條款文件"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260924/201841400lEyPVz2x9.png",
+          "alt": "",
+          "caption": "圖 5：透過 Vibe Coding 打造出的單機私有化AI 工具政策諮詢助理.exe 桌面應用程式成果",
+          "raw_caption": "圖 5：透過 Vibe Coding 打造出的單機私有化AI 工具政策諮詢助理.exe 桌面應用程式成果"
+        }
+      ],
+      "images_count": 5
+    },
+    {
+      "day": 13,
+      "is_extra": false,
+      "title": "會去了解後端的原因，是因為河川永續！？！？",
+      "full_title": "Day 13 會去了解後端的原因，是因為河川永續！？！？",
+      "link": "https://ithelp.ithome.com.tw/articles/10416447?sc=rss.iron",
+      "pub_date": "2026-09-25 15:51:05",
+      "arc": {
+        "arc_id": "CASE-ARC-03",
+        "arc_name": "檔案卷宗 III：高維向量與文學宇宙",
+        "arc_code": "HIGH-DIMENSIONAL RETRIEVAL"
+      },
+      "ai_image": {
+        "local_file": "assets/ai-images/day13.png",
+        "online_url": "https://ithelp.ithome.com.tw/upload/images/20260925/201841404rh8n8j8sA.png",
+        "caption": "圖 1：看看河川，也看看資訊科技如何協助河川永續的",
+        "clue_summary": "【線索 #13】圖 1：看看河川，也看看資訊科技如何協助河川永續的"
+      },
+      "all_images": [
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260925/201841404rh8n8j8sA.png",
+          "alt": "",
+          "caption": "圖 1：看看河川，也看看資訊科技如何協助河川永續的",
+          "raw_caption": "圖 1：看看河川，也看看資訊科技如何協助河川永續的 Midjourney 概念示意圖"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260925/20184140dyFI2k5NUj.png",
+          "alt": "",
+          "caption": "圖 2：聯合報與東海大學合作舉辦的河好如初河川永續設計思考工作坊",
+          "raw_caption": "圖 2：聯合報與東海大學合作舉辦的河好如初河川永續設計思考工作坊"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260925/20184140SzY7cftQN1.png",
+          "alt": "",
+          "caption": "圖 3：透過簡單提示詞讓 Google AI Studio 自動串接 Firebase 建立帳號登入系統",
+          "raw_caption": "圖 3：透過簡單提示詞讓 Google AI Studio 自動串接 Firebase 建立帳號登入系統"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260925/20184140Y2rq1sg8VK.png",
+          "alt": "",
+          "caption": "圖 4：後來志同道河平台（Next.js 架構，Cloudflare 部署）的正式登入系統（Supabase + Google Cloud）",
+          "raw_caption": "圖 4：後來志同道河平台（Next.js 架構，Cloudflare 部署）的正式登入系統（Supabase + Google Cloud）"
+        }
+      ],
+      "images_count": 4
+    },
+    {
+      "day": 14,
+      "is_extra": false,
+      "title": "便攜式 vibe coding！放假了，我想要不用電腦也能 vibe coding！",
+      "full_title": "Day 14 便攜式 vibe coding！放假了，我想要不用電腦也能 vibe coding！",
+      "link": "https://ithelp.ithome.com.tw/articles/10416957?sc=rss.iron",
+      "pub_date": "2026-09-26 22:45:26",
+      "arc": {
+        "arc_id": "CASE-ARC-03",
+        "arc_name": "檔案卷宗 III：高維向量與文學宇宙",
+        "arc_code": "HIGH-DIMENSIONAL RETRIEVAL"
+      },
+      "ai_image": {
+        "local_file": "assets/ai-images/day14.png",
+        "online_url": "https://ithelp.ithome.com.tw/upload/images/20260926/20184140Wrsd2V5mC2.png",
+        "caption": "圖 1：隨時隨地也能 vibe coding 的 vibe！",
+        "clue_summary": "【線索 #14】圖 1：隨時隨地也能 vibe coding 的 vibe！"
+      },
+      "all_images": [
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260926/20184140Wrsd2V5mC2.png",
+          "alt": "",
+          "caption": "圖 1：隨時隨地也能 vibe coding 的 vibe！",
+          "raw_caption": "圖 1：隨時隨地也能 vibe coding 的 vibe！Midjourney 概念示意圖"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260926/20184140nyCaSoTv1m.jpg",
+          "alt": "",
+          "caption": "圖 2：為便攜式 vibe coding 作準備的第一種方式：普通建立 AI 聊天機器人（例如設定 Gemini Gem）",
+          "raw_caption": "圖 2：為便攜式 vibe coding 作準備的第一種方式：普通建立 AI 聊天機器人（例如設定 Gemini Gem）"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260926/20184140NEv2AlncKW.jpg",
+          "alt": "",
+          "caption": "圖 3：為便攜式 vibe coding 作準備的第二種方式：為自己的 AI Agent 應用程式建立專屬 vibe coding skill",
+          "raw_caption": "圖 3：為便攜式 vibe coding 作準備的第二種方式：為自己的 AI Agent 應用程式建立專屬 vibe coding skill"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260926/20184140BcMqGbGtiy.jpg",
+          "alt": "",
+          "caption": "圖 4：為便攜式 vibe coding 作準備的第三種形式：建立自己的專屬 AI 應用程式",
+          "raw_caption": "圖 4：為便攜式 vibe coding 作準備的第三種形式：建立自己的專屬 AI 應用程式"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260926/20184140UoILpk4d2p.jpg",
+          "alt": "",
+          "caption": "圖 5：自己的 AI 應用程式根據自己的風格及模板所建立的客製化內容，中秋節快樂！",
+          "raw_caption": "圖 5：自己的 AI 應用程式根據自己的風格及模板所建立的客製化內容，中秋節快樂！"
+        }
+      ],
+      "images_count": 5
+    },
+    {
+      "day": 15,
+      "is_extra": false,
+      "title": "我們從地圖出發，用遊戲化的方式，不單單是要了解地域文化，向前推演，還要看這個地方的未來！",
+      "full_title": "Day 15 我們從地圖出發，用遊戲化的方式，不單單是要了解地域文化，向前推演，還要看這個地方的未來！",
+      "link": "https://ithelp.ithome.com.tw/articles/10417658?sc=rss.iron",
+      "pub_date": "2026-09-27 21:03:39",
+      "arc": {
+        "arc_id": "CASE-ARC-04",
+        "arc_name": "檔案卷宗 IV：智財法規與多模態創作",
+        "arc_code": "POLICY, IP & FREQUENCY"
+      },
+      "ai_image": {
+        "local_file": "assets/ai-images/day15.png",
+        "online_url": "https://ithelp.ithome.com.tw/upload/images/20260927/20184140qZHhZgwmbj.png",
+        "caption": "圖 1：工廠區的未來：以未來學情境預測結合數位體驗呈現的",
+        "clue_summary": "【線索 #15】圖 1：工廠區的未來：以未來學情境預測結合數位體驗呈現的"
+      },
+      "all_images": [
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260927/20184140qZHhZgwmbj.png",
+          "alt": "",
+          "caption": "圖 1：工廠區的未來：以未來學情境預測結合數位體驗呈現的",
+          "raw_caption": "圖 1：工廠區的未來：以未來學情境預測結合數位體驗呈現的 Midjourney 概念示意圖"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260927/20184140O2JBByhoSt.jpg",
+          "alt": "",
+          "caption": "圖 2：深夜的新蒲崗工廠區街景實拍：斑駁廠廈與高密度夾層空間",
+          "raw_caption": "圖 2：深夜的新蒲崗工廠區街景實拍：斑駁廠廈與高密度夾層空間"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260927/20184140hHms08josd.jpg",
+          "alt": "",
+          "caption": "圖 3：只用手機也能在 Google AI Studio 下 Prompt，Vibe Coding 出具備複雜架構的地圖遊戲",
+          "raw_caption": "圖 3：只用手機也能在 Google AI Studio 下 Prompt，Vibe Coding 出具備複雜架構的地圖遊戲"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260927/20184140ELVdLQpLxo.jpg",
+          "alt": "",
+          "caption": "圖 4：導入 OpenStreetMap（OSM）圖資的遊戲原型畫面實拍：結合實體建築與虛擬科技節點",
+          "raw_caption": "圖 4：導入 OpenStreetMap（OSM）圖資的遊戲原型畫面實拍：結合實體建築與虛擬科技節點"
+        }
+      ],
+      "images_count": 4
+    },
+    {
+      "day": 16,
+      "is_extra": false,
+      "title": "文本？電影海報？線上策展？繞這麼多，其實最後是想要講 QR Code！",
+      "full_title": "Day 16 文本？電影海報？線上策展？繞這麼多，其實最後是想要講 QR Code！",
+      "link": "https://ithelp.ithome.com.tw/articles/10417953?sc=rss.iron",
+      "pub_date": "2026-09-28 19:49:40",
+      "arc": {
+        "arc_id": "CASE-ARC-04",
+        "arc_name": "檔案卷宗 IV：智財法規與多模態創作",
+        "arc_code": "POLICY, IP & FREQUENCY"
+      },
+      "ai_image": {
+        "local_file": "assets/ai-images/day 16.png",
+        "online_url": "https://ithelp.ithome.com.tw/upload/images/20260928/20184140JWNiLnccWs.png",
+        "caption": "圖 1：掃個 QR Code，我們來看場文本改編的電影吧！",
+        "clue_summary": "【線索 #16】圖 1：掃個 QR Code，我們來看場文本改編的電影吧！"
+      },
+      "all_images": [
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260928/20184140JWNiLnccWs.png",
+          "alt": "",
+          "caption": "圖 1：掃個 QR Code，我們來看場文本改編的電影吧！",
+          "raw_caption": "圖 1：掃個 QR Code，我們來看場文本改編的電影吧！Midjourney 概念示意圖"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260928/20184140GM4mHM6qs6.jpg",
+          "alt": "",
+          "caption": "圖 2：之前還挺常去北美館看展的說，這是超現實大師馬格利特（René Magritte）的畫！",
+          "raw_caption": "圖 2：之前還挺常去北美館看展的說，這是超現實大師馬格利特（René Magritte）的畫！"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260928/20184140R3mn6P4z8D.png",
+          "alt": "",
+          "caption": "圖 3：馬格利特作品的線上說明與多模態詮釋介面",
+          "raw_caption": "圖 3：馬格利特作品的線上說明與多模態詮釋介面"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260928/201841407OrafliyZR.jpg",
+          "alt": "",
+          "caption": "圖 4：在手機端 Google AI Studio 實作相機呼叫與 QR Code 即時掃描功能",
+          "raw_caption": "圖 4：在手機端 Google AI Studio 實作相機呼叫與 QR Code 即時掃描功能"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260928/20184140GF4NGkyDIK.jpg",
+          "alt": "",
+          "caption": "圖 5：在手機端 AI Studio 縮小瀏覽器畫面，即可在程式碼檢視頁面直接上傳外部文本與海報檔案",
+          "raw_caption": "圖 5：在手機端 AI Studio 縮小瀏覽器畫面，即可在程式碼檢視頁面直接上傳外部文本與海報檔案"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260928/20184140aIIt67xgCf.png",
+          "alt": "",
+          "caption": "圖 6：在手機端 QRcode 的掃碼結果跟電影海報！",
+          "raw_caption": "圖 6：在手機端 QRcode 的掃碼結果跟電影海報！"
+        }
+      ],
+      "images_count": 6
+    },
+    {
+      "day": 17,
+      "is_extra": false,
+      "title": "邪門歪道！從企業官網的網頁結構分析企業！",
+      "full_title": "Day 17 邪門歪道！從企業官網的網頁結構分析企業！",
+      "link": "https://ithelp.ithome.com.tw/articles/10418378?sc=rss.iron",
+      "pub_date": "2026-09-29 18:15:46",
+      "arc": {
+        "arc_id": "CASE-ARC-04",
+        "arc_name": "檔案卷宗 IV：智財法規與多模態創作",
+        "arc_code": "POLICY, IP & FREQUENCY"
+      },
+      "ai_image": {
+        "local_file": "assets/ai-images/day 17.png",
+        "online_url": "https://ithelp.ithome.com.tw/upload/images/20260929/20184140vQ6jAMvgzU.png",
+        "caption": "圖 1：雜魚君～還在外包大腦給 AI 做企業分析嗎～呵～真是雜魚～的",
+        "clue_summary": "【線索 #17】圖 1：雜魚君～還在外包大腦給 AI 做企業分析嗎～呵～真是雜魚～的"
+      },
+      "all_images": [
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260929/20184140vQ6jAMvgzU.png",
+          "alt": "",
+          "caption": "圖 1：雜魚君～還在外包大腦給 AI 做企業分析嗎～呵～真是雜魚～的",
+          "raw_caption": "圖 1：雜魚君～還在外包大腦給 AI 做企業分析嗎～呵～真是雜魚～的 Midjourney 概念示意圖"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260929/20184140iuDylyLwf4.png",
+          "alt": "",
+          "caption": "圖 2：例如在創新經濟學與產業動態課上做 Character.ai 的企業分析作業",
+          "raw_caption": "圖 2：例如在創新經濟學與產業動態課上做 Character.ai 的企業分析作業"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260929/20184140s8zNQi9bTK.png",
+          "alt": "",
+          "caption": "圖 3：這次繼續用 Google AI Studio 來 Vibe Coding～",
+          "raw_caption": "圖 3：這次繼續用 Google AI Studio 來 Vibe Coding～"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260929/20184140MwIg6QZU2X.png",
+          "alt": "",
+          "caption": "圖 4：以元太科技官網為例，其涵蓋的多元業務與分頁架構",
+          "raw_caption": "圖 4：以元太科技官網為例，其涵蓋的多元業務與分頁架構"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260929/20184140vtvngwL4Ce.png",
+          "alt": "",
+          "caption": "圖 5：在 AI Studio 打造的企業網頁分析工具，解析元太科技官網的各個模塊（示範分析 10 個頁面）",
+          "raw_caption": "圖 5：在 AI Studio 打造的企業網頁分析工具，解析元太科技官網的各個模塊（示範分析 10 個頁面）"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260929/20184140YV7p7KljjL.png",
+          "alt": "",
+          "caption": "圖 6：自動排版產出的 16:9 簡報視覺成果！",
+          "raw_caption": "圖 6：自動排版產出的 16:9 簡報視覺成果！"
+        }
+      ],
+      "images_count": 6
+    },
+    {
+      "day": 18,
+      "is_extra": false,
+      "title": "用電腦模擬一個裝置爆開，然後看見裏面的零件，這種畫面我還是做不來嗎？",
+      "full_title": "Day 18 用電腦模擬一個裝置爆開，然後看見裏面的零件，這種畫面我還是做不來嗎？",
+      "link": "https://ithelp.ithome.com.tw/articles/10418943?sc=rss.iron",
+      "pub_date": "2026-09-30 20:45:23",
+      "arc": {
+        "arc_id": "CASE-ARC-04",
+        "arc_name": "檔案卷宗 IV：智財法規與多模態創作",
+        "arc_code": "POLICY, IP & FREQUENCY"
+      },
+      "ai_image": {
+        "local_file": "assets/ai-images/day 18.png",
+        "online_url": "https://ithelp.ithome.com.tw/upload/images/20260930/201841403001tz9CHc.png",
+        "caption": "圖 1：揭開吧！你原本的模樣！～",
+        "clue_summary": "【線索 #18】圖 1：揭開吧！你原本的模樣！～"
+      },
+      "all_images": [
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260930/201841403001tz9CHc.png",
+          "alt": "",
+          "caption": "圖 1：揭開吧！你原本的模樣！～",
+          "raw_caption": "圖 1：揭開吧！你原本的模樣！Midjourney 概念示意圖～"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260930/20184140IwucQl7f3P.png",
+          "alt": "",
+          "caption": "圖 2：初版介紹元太科技電泳式電子墨水原理的展示網頁",
+          "raw_caption": "圖 2：初版介紹元太科技電泳式電子墨水原理的展示網頁"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260930/20184140Z3CdvAdHPh.png",
+          "alt": "",
+          "caption": "圖 3：Antigravity 目前可以自由切換的多模型選單～",
+          "raw_caption": "圖 3：Antigravity 目前可以自由切換的多模型選單～"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260930/20184140BgWDRIcrWw.png",
+          "alt": "",
+          "caption": "圖 4：GitHub Pages 設定頁面：選擇 main 分支一鍵部署！",
+          "raw_caption": "圖 4：GitHub Pages 設定頁面：選擇 main 分支一鍵部署！"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20260930/2018414072Ilkaj5zx.png",
+          "alt": "",
+          "caption": "圖 5：Cyberpunk 修理員 3D 裝置拆解與遊戲化體驗畫面",
+          "raw_caption": "圖 5：Cyberpunk 修理員 3D 裝置拆解與遊戲化體驗畫面"
+        }
+      ],
+      "images_count": 5
+    },
+    {
+      "day": 19,
+      "is_extra": false,
+      "title": "娃啊～你著相了～AI不是你的神明，不是你最愛的那位，更不是你已去世的那位～",
+      "full_title": "Day 19 娃啊～你著相了～AI不是你的神明，不是你最愛的那位，更不是你已去世的那位～",
+      "link": "https://ithelp.ithome.com.tw/articles/10419499?sc=rss.iron",
+      "pub_date": "2026-10-01 22:28:46",
+      "arc": {
+        "arc_id": "CASE-ARC-04",
+        "arc_name": "檔案卷宗 IV：智財法規與多模態創作",
+        "arc_code": "POLICY, IP & FREQUENCY"
+      },
+      "ai_image": {
+        "local_file": "assets/ai-images/day 19.png",
+        "online_url": "https://ithelp.ithome.com.tw/upload/images/20261001/201841403cIgKWUP4V.png",
+        "caption": "圖 1：娃啊～你著相了～",
+        "clue_summary": "【線索 #19】圖 1：娃啊～你著相了～"
+      },
+      "all_images": [
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261001/201841403cIgKWUP4V.png",
+          "alt": "",
+          "caption": "圖 1：娃啊～你著相了～",
+          "raw_caption": "圖 1：娃啊～你著相了～Midjourney 概念示意圖"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261001/20184140kbTvy3HSII.png",
+          "alt": "",
+          "caption": "圖 2：心理測驗遊戲的科幻風格手機介面",
+          "raw_caption": "圖 2：心理測驗遊戲的科幻風格手機介面"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261001/20184140kwhnOtALWA.png",
+          "alt": "",
+          "caption": "圖 3：自己以前搜尋與研讀的心理學及精神科相關資料紀錄",
+          "raw_caption": "圖 3：自己以前搜尋與研讀的心理學及精神科相關資料紀錄"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261001/20184140Eqx5an2O73.png",
+          "alt": "",
+          "caption": "圖 4：測驗結束後的重要聲明外部佐證資訊與專業心理援助管道",
+          "raw_caption": "圖 4：測驗結束後的重要聲明外部佐證資訊與專業心理援助管道"
+        }
+      ],
+      "images_count": 4
+    },
+    {
+      "day": 20,
+      "is_extra": false,
+      "title": "要碰法律真的有點痛苦呢～但畢竟是作業",
+      "full_title": "Day 20 要碰法律真的有點痛苦呢～但畢竟是作業",
+      "link": "https://ithelp.ithome.com.tw/articles/10420057?sc=rss.iron",
+      "pub_date": "2026-10-02 20:45:54",
+      "arc": {
+        "arc_id": "CASE-ARC-05",
+        "arc_name": "檔案卷宗 V：心智模型與自動化工廠",
+        "arc_code": "AUTOMATION & PSYCHE"
+      },
+      "ai_image": {
+        "local_file": "assets/ai-images/day 20.png",
+        "online_url": "https://ithelp.ithome.com.tw/upload/images/20261002/20184140X33oxO1MH5.png",
+        "caption": "圖 1：法律呀世界毀滅吧～",
+        "clue_summary": "【線索 #20】圖 1：法律呀世界毀滅吧～"
+      },
+      "all_images": [
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261002/20184140X33oxO1MH5.png",
+          "alt": "",
+          "caption": "圖 1：法律呀世界毀滅吧～",
+          "raw_caption": "圖 1：法律呀世界毀滅吧Midjourney 示意圖～"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261002/20184140wb4O7N7oRW.png",
+          "alt": "",
+          "caption": "圖 2：透過 NotebookLM 進行文件分析解答，但有時候可能是錯的",
+          "raw_caption": "圖 2：透過 NotebookLM 進行文件分析解答，但有時候可能是錯的"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261002/20184140G627z6U0nz.png",
+          "alt": "",
+          "caption": "圖 3：透過沉浸式翻譯工具輔助，閱讀中文翻譯好多了～",
+          "raw_caption": "圖 3：透過沉浸式翻譯工具輔助，閱讀中文翻譯好多了～"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261002/20184140tSx7iUjclE.png",
+          "alt": "",
+          "caption": "圖 4：WIPO 官方網站頁面！通常是跨國佈局才會特別關注，台灣本土主要仍以智慧財產局 TIPO 為主",
+          "raw_caption": "圖 4：WIPO 官方網站頁面！通常是跨國佈局才會特別關注，台灣本土主要仍以智慧財產局 TIPO 為主"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261002/20184140ddt7gvbOyU.png",
+          "alt": "",
+          "caption": "圖 5：最後 AI 自主設計開發完成的高質感法律動態報告儀表板與思辨沙盒",
+          "raw_caption": "圖 5：最後 AI 自主設計開發完成的高質感法律動態報告儀表板與思辨沙盒"
+        }
+      ],
+      "images_count": 5
+    },
+    {
+      "day": 21,
+      "is_extra": false,
+      "title": "本來只想打造一個自動編輯音樂影片的工具，結果她好像變成了一個病嬌女友電台？",
+      "full_title": "Day 21 本來只想打造一個自動編輯音樂影片的工具，結果她好像變成了一個病嬌女友電台？",
+      "link": "https://ithelp.ithome.com.tw/articles/10420557?sc=rss.iron",
+      "pub_date": "2026-10-03 21:14:54",
+      "arc": {
+        "arc_id": "CASE-ARC-05",
+        "arc_name": "檔案卷宗 V：心智模型與自動化工廠",
+        "arc_code": "AUTOMATION & PSYCHE"
+      },
+      "ai_image": {
+        "local_file": "assets/ai-images/day 21.png",
+        "online_url": "https://ithelp.ithome.com.tw/upload/images/20261003/201841403Cxp5xAJuJ.png",
+        "caption": "圖 1：窩在頁面裡想要跟你一起聽 emo 音樂的地雷系女友～",
+        "clue_summary": "【線索 #21】圖 1：窩在頁面裡想要跟你一起聽 emo 音樂的地雷系女友～"
+      },
+      "all_images": [
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261003/201841403Cxp5xAJuJ.png",
+          "alt": "",
+          "caption": "圖 1：窩在頁面裡想要跟你一起聽 emo 音樂的地雷系女友～",
+          "raw_caption": "圖 1：窩在頁面裡想要跟你一起聽 emo 音樂的地雷系女友～Midjourney 示意圖"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261003/20184140GsnufGHSJB.png",
+          "alt": "",
+          "caption": "圖 2：在 GitHub 上意外發現的開源專案 gcui-art/suno-api～",
+          "raw_caption": "圖 2：在 GitHub 上意外發現的開源專案 gcui-art/suno-api～"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261003/20184140dSFJ01XDWC.png",
+          "alt": "",
+          "caption": "圖 3：象徵陪伴經濟與慢電視殿堂級代表的 Lofi Girl 直播頁面",
+          "raw_caption": "圖 3：象徵陪伴經濟與慢電視殿堂級代表的 Lofi Girl 直播頁面"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261003/20184140hIlhsBcScN.png",
+          "alt": "",
+          "caption": "圖 4：風格強烈色彩高飽和且充滿數位故障美學的 Hyperpop 音樂歌單",
+          "raw_caption": "圖 4：風格強烈色彩高飽和且充滿數位故障美學的 Hyperpop 音樂歌單"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261003/20184140v6aFVCOaqo.png",
+          "alt": "",
+          "caption": "圖 5：結合番茄鐘人格互動對白與 emo 氛圍的病態可愛地雷系電台陪伴頁面～",
+          "raw_caption": "圖 5：結合番茄鐘人格互動對白與 emo 氛圍的病態可愛地雷系電台陪伴頁面～"
+        }
+      ],
+      "images_count": 5
+    },
+    {
+      "day": 22,
+      "is_extra": false,
+      "title": "關於學習到底可以產生什麼怪物出來？",
+      "full_title": "Day 22 關於學習到底可以產生什麼怪物出來？",
+      "link": "https://ithelp.ithome.com.tw/articles/10420991?sc=rss.iron",
+      "pub_date": "2026-10-04 23:36:49",
+      "arc": {
+        "arc_id": "CASE-ARC-05",
+        "arc_name": "檔案卷宗 V：心智模型與自動化工廠",
+        "arc_code": "AUTOMATION & PSYCHE"
+      },
+      "ai_image": {
+        "local_file": "assets/ai-images/day 22.png",
+        "online_url": "https://ithelp.ithome.com.tw/upload/images/20261004/20184140lNLGZKR5XC.png",
+        "caption": "圖 1：學習而已，怎麼可能會有怪物出現",
+        "clue_summary": "【線索 #22】圖 1：學習而已，怎麼可能會有怪物出現"
+      },
+      "all_images": [
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261004/20184140lNLGZKR5XC.png",
+          "alt": "",
+          "caption": "圖 1：學習而已，怎麼可能會有怪物出現",
+          "raw_caption": "圖 1：學習而已，怎麼可能會有怪物出現Midjourney 示意圖"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261004/201841400OC19jfQtt.png",
+          "alt": "",
+          "caption": "圖 2：Vibe Coding 出來的頁面，讓 AI 告訴你新的科技可以做什麼有趣的事情～",
+          "raw_caption": "圖 2：Vibe Coding 出來的頁面，讓 AI 告訴你新的科技可以做什麼有趣的事情～"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261004/201841409xiRen4nez.png",
+          "alt": "",
+          "caption": "圖 3：對抗學習迭代到第 1543 次的生成結果",
+          "raw_caption": "圖 3：對抗學習迭代到第 1543 次的生成結果"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261004/20184140moRUri9HWJ.png",
+          "alt": "",
+          "caption": "圖 4：對抗學習迭代到第 8230 次的生成結果",
+          "raw_caption": "圖 4：對抗學習迭代到第 8230 次的生成結果"
+        }
+      ],
+      "images_count": 4
+    },
+    {
+      "day": 23,
+      "is_extra": false,
+      "title": "用 Vibe Coding 做學術研究會出大事吧！！！",
+      "full_title": "Day 23 用 Vibe Coding 做學術研究會出大事吧！！！",
+      "link": "https://ithelp.ithome.com.tw/articles/10421394?sc=rss.iron",
+      "pub_date": "2026-10-05 23:02:33",
+      "arc": {
+        "arc_id": "CASE-ARC-05",
+        "arc_name": "檔案卷宗 V：心智模型與自動化工廠",
+        "arc_code": "AUTOMATION & PSYCHE"
+      },
+      "ai_image": {
+        "local_file": "assets/ai-images/day 23.png",
+        "online_url": "https://ithelp.ithome.com.tw/upload/images/20261005/20184140BX4mKnwVF3.png",
+        "caption": "圖 1：道德敗壞的學術傢伙～",
+        "clue_summary": "【線索 #23】圖 1：道德敗壞的學術傢伙～"
+      },
+      "all_images": [
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261005/20184140BX4mKnwVF3.png",
+          "alt": "",
+          "caption": "圖 1：道德敗壞的學術傢伙～",
+          "raw_caption": "圖 1：道德敗壞的學術傢伙～Midjourney 示意圖"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261005/20184140BUxYMlyNvA.png",
+          "alt": "",
+          "caption": "圖 2：Perplexity 探討 AI 虛擬伴侶平台之負面外部性的結果",
+          "raw_caption": "圖 2：Perplexity 探討 AI 虛擬伴侶平台之負面外部性的結果"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261005/20184140l5idIbA4l3.png",
+          "alt": "",
+          "caption": "圖 3：學校 AI 研究助理探討 AI 虛擬伴侶平台之負面外部性的結果",
+          "raw_caption": "圖 3：學校 AI 研究助理探討 AI 虛擬伴侶平台之負面外部性的結果"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261005/20184140H282HesMkt.png",
+          "alt": "",
+          "caption": "圖 4：Antigravity 探討 AI 虛擬伴侶平台之負面外部性的結果",
+          "raw_caption": "圖 4：Antigravity 探討 AI 虛擬伴侶平台之負面外部性的結果"
+        }
+      ],
+      "images_count": 4
+    },
+    {
+      "day": 24,
+      "is_extra": false,
+      "title": "Google AI Studio x Antigravity 聯動！我要把之前做出來的東西做得更好！",
+      "full_title": "Day 24 Google AI Studio x Antigravity 聯動！我要把之前做出來的東西做得更好！",
+      "link": "https://ithelp.ithome.com.tw/articles/10421663?sc=rss.iron",
+      "pub_date": "2026-10-06 23:35:08",
+      "arc": {
+        "arc_id": "CASE-ARC-05",
+        "arc_name": "檔案卷宗 V：心智模型與自動化工廠",
+        "arc_code": "AUTOMATION & PSYCHE"
+      },
+      "ai_image": {
+        "local_file": "assets/ai-images/day 24.png",
+        "online_url": "https://ithelp.ithome.com.tw/upload/images/20261006/201841401Dsb7AejnF.png",
+        "caption": "圖 1：這麼多工具這麼多組合心累啊",
+        "clue_summary": "【線索 #24】圖 1：這麼多工具這麼多組合心累啊"
+      },
+      "all_images": [
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261006/201841401Dsb7AejnF.png",
+          "alt": "",
+          "caption": "圖 1：這麼多工具這麼多組合心累啊",
+          "raw_caption": "圖 1：這麼多工具這麼多組合心累啊Midjourney 示意圖"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261006/20184140U2BBGQ3Aqh.png",
+          "alt": "",
+          "caption": "圖 2：最近新一輪的 Google AI 學生福利",
+          "raw_caption": "圖 2：最近新一輪的 Google AI 學生福利"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261006/20184140GSU8jpUgdc.png",
+          "alt": "",
+          "caption": "圖 3：Google AI Studio 的 Vibe Coding 輸出（Export）選項",
+          "raw_caption": "圖 3：Google AI Studio 的 Vibe Coding 輸出（Export）選項"
+        }
+      ],
+      "images_count": 3
+    },
+    {
+      "day": 25,
+      "is_extra": false,
+      "title": "我已經淪落到要 Vibe Coding 工具幫我寫文章了嗎",
+      "full_title": "Day 25 我已經淪落到要 Vibe Coding 工具幫我寫文章了嗎",
+      "link": "https://ithelp.ithome.com.tw/articles/10421867?sc=rss.iron",
+      "pub_date": "2026-10-07 01:57:00",
+      "arc": {
+        "arc_id": "CASE-ARC-06",
+        "arc_name": "檔案卷宗 VI：終極共識與時間哲學",
+        "arc_code": "TIME MATRIX & ULTIMATE ALIGNMENT"
+      },
+      "ai_image": {
+        "local_file": "assets/ai-images/day 25.png",
+        "online_url": "https://ithelp.ithome.com.tw/upload/images/20261007/201841400m4K5bmNQv.png",
+        "caption": "圖 1：GitHub Pages 的部署～你懂了嗎？",
+        "clue_summary": "【線索 #25】圖 1：GitHub Pages 的部署～你懂了嗎？"
+      },
+      "all_images": [
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261007/201841400m4K5bmNQv.png",
+          "alt": "",
+          "caption": "圖 1：GitHub Pages 的部署～你懂了嗎？",
+          "raw_caption": "圖 1：GitHub Pages 的部署～你懂了嗎？Midjourney 示意圖"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261007/20184140n0hG7XjRtI.png",
+          "alt": "",
+          "caption": "圖 2：最近助教課的簡報封面（直播課程資訊：https://www.youtube.com/@ive-iveai）",
+          "raw_caption": "圖 2：最近助教課的簡報封面（直播課程資訊：https://www.youtube.com/@ive-iveai）"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261007/20184140kU3Uj7OAGn.png",
+          "alt": "",
+          "caption": "圖 3：克里艾提夫研究所官方網站發布的各種情報專欄文章",
+          "raw_caption": "圖 3：克里艾提夫研究所官方網站發布的各種情報專欄文章"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261007/20184140ofEP3nE6u3.png",
+          "alt": "",
+          "caption": "圖 4：國立政治大學 AIGC 創客工房（立體模型篇）工作坊簡報封面",
+          "raw_caption": "圖 4：國立政治大學 AIGC 創客工房（立體模型篇）工作坊簡報封面"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261007/20184140fGegRQR6UQ.png",
+          "alt": "",
+          "caption": "圖 5：國立政治大學 呆一布共學實驗室讀書會 AIGC 虛實應用／開源改造／開發板應用簡報封面",
+          "raw_caption": "圖 5：國立政治大學 呆一布共學實驗室讀書會 AIGC 虛實應用／開源改造／開發板應用簡報封面"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261007/201841407q28eACKcR.png",
+          "alt": "",
+          "caption": "圖 6：放伴教育協會 AI 培力活動AI 終局攻防戰AI Endgame Battle 網頁頁面",
+          "raw_caption": "圖 6：放伴教育協會 AI 培力活動AI 終局攻防戰AI Endgame Battle 網頁頁面"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261007/201841408KJYZfnfsj.png",
+          "alt": "",
+          "caption": "圖 7：就算是 Day 25 的文章在 Google 文件上也扎實寫了 2,576 字！",
+          "raw_caption": "圖 7：就算是 Day 25 的文章在 Google 文件上也扎實寫了 2,576 字！"
+        }
+      ],
+      "images_count": 7
+    },
+    {
+      "day": 25,
+      "is_extra": true,
+      "title": "AI寫的助教現場大揭秘！從 Gemini 規格書到 GitHub Pages 部署的 Vibe Coding 實戰指南（Day 25 - 外傳）",
+      "full_title": "AI寫的助教現場大揭秘！從 Gemini 規格書到 GitHub Pages 部署的 Vibe Coding 實戰指南（Day 25 - 外傳）",
+      "link": "https://ithelp.ithome.com.tw/articles/10421866?sc=rss.iron",
+      "pub_date": "2026-10-07 01:57:38",
+      "arc": {
+        "arc_id": "CASE-ARC-06",
+        "arc_name": "檔案卷宗 VI：終極共識與時間哲學",
+        "arc_code": "TIME MATRIX & ULTIMATE ALIGNMENT"
+      },
+      "ai_image": {
+        "local_file": "assets/ai-images/day 25.png",
+        "online_url": "",
+        "caption": "Day 25 概念示意圖",
+        "clue_summary": "【線索 #25】AI寫的助教現場大揭秘！從 Gemini 規格書到 GitHub Pages 部署的 Vibe Coding 實戰指南（Day 25 - 外傳）"
+      },
+      "all_images": [],
+      "images_count": 0
+    },
+    {
+      "day": 26,
+      "is_extra": false,
+      "title": "自己寫的文章已經足夠多了，是時候要去摘一下智慧果實了呢～",
+      "full_title": "Day 26 自己寫的文章已經足夠多了，是時候要去摘一下智慧果實了呢～",
+      "link": "https://ithelp.ithome.com.tw/articles/10422234?sc=rss.iron",
+      "pub_date": "2026-10-08 23:35:45",
+      "arc": {
+        "arc_id": "CASE-ARC-06",
+        "arc_name": "檔案卷宗 VI：終極共識與時間哲學",
+        "arc_code": "TIME MATRIX & ULTIMATE ALIGNMENT"
+      },
+      "ai_image": {
+        "local_file": "assets/ai-images/day26.png",
+        "online_url": "https://ithelp.ithome.com.tw/upload/images/20261008/20184140e4DwY6ejCW.png",
+        "caption": "圖 1：是時候要去摘一下智慧果實了呢～",
+        "clue_summary": "【線索 #26】圖 1：是時候要去摘一下智慧果實了呢～"
+      },
+      "all_images": [
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261008/20184140e4DwY6ejCW.png",
+          "alt": "",
+          "caption": "圖 1：是時候要去摘一下智慧果實了呢～",
+          "raw_caption": "圖 1：是時候要去摘一下智慧果實了呢～Midjourney 示意圖"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261008/20184140HWWs51xprE.png",
+          "alt": "",
+          "caption": "圖 2：每天早上 10:00 - 11:00 都會收到的生成式 AI 虛擬角色情報日報",
+          "raw_caption": "圖 2：每天早上 10:00 - 11:00 都會收到的生成式 AI 虛擬角色情報日報"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261008/20184140qoG9s9nfa8.png",
+          "alt": "",
+          "caption": "圖 3：Google Apps Script 雲端腳本編輯與執行環境",
+          "raw_caption": "圖 3：Google Apps Script 雲端腳本編輯與執行環境"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261008/20184140u4k5cAUlLl.png",
+          "alt": "",
+          "caption": "圖 4：鐵人賽系列主題右下角提供 RSS 訂閱連結，可直接複製 XML 來源網址",
+          "raw_caption": "圖 4：鐵人賽系列主題右下角提供 RSS 訂閱連結，可直接複製 XML 來源網址"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261008/20184140RL4cvL3ZFF.png",
+          "alt": "",
+          "caption": "圖 5：Google Cloud Platform (GCP) 的 API 管理後台多跟 AI 聊天就知道了！",
+          "raw_caption": "圖 5：Google Cloud Platform (GCP) 的 API 管理後台多跟 AI 聊天就知道了！"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261008/20184140gixBdqzmVr.png",
+          "alt": "",
+          "caption": "圖 6：只要指定網址，就能讓 AI 工具 Vibe Coding 出客製化的網頁爬蟲腳本！",
+          "raw_caption": "圖 6：只要指定網址，就能讓 AI 工具 Vibe Coding 出客製化的網頁爬蟲腳本！"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261008/20184140fjkSq0djPo.jpg",
+          "alt": "",
+          "caption": "圖 7：由 Anthropic 推出目前各大 AI 生態系共同支援的AI 專用萬用插頭（USB-C）",
+          "raw_caption": "圖 7：由 Anthropic 推出目前各大 AI 生態系共同支援的AI 專用萬用插頭（USB-C）"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261008/20184140ZO76tCQ44w.png",
+          "alt": "",
+          "caption": "圖 8：自己寫過的文章與收集的情報，被重新封裝成極具美感的 A4 排版電子報！",
+          "raw_caption": "圖 8：自己寫過的文章與收集的情報，被重新封裝成極具美感的 A4 排版電子報！"
+        }
+      ],
+      "images_count": 8
+    },
+    {
+      "day": 27,
+      "is_extra": false,
+      "title": "時間管理！但我不是大師！不過我有我的想法",
+      "full_title": "Day 27 時間管理！但我不是大師！不過我有我的想法",
+      "link": "https://ithelp.ithome.com.tw/articles/10422830?sc=rss.iron",
+      "pub_date": "2026-10-09 23:45:09",
+      "arc": {
+        "arc_id": "CASE-ARC-06",
+        "arc_name": "檔案卷宗 VI：終極共識與時間哲學",
+        "arc_code": "TIME MATRIX & ULTIMATE ALIGNMENT"
+      },
+      "ai_image": {
+        "local_file": "assets/ai-images/day 27.png",
+        "online_url": "https://ithelp.ithome.com.tw/upload/images/20261009/20184140eNcARoc2Gq.png",
+        "caption": "圖 1：被多重身份撕裂的我時間管理也要做哦",
+        "clue_summary": "【線索 #27】圖 1：被多重身份撕裂的我時間管理也要做哦"
+      },
+      "all_images": [
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261009/20184140eNcARoc2Gq.png",
+          "alt": "",
+          "caption": "圖 1：被多重身份撕裂的我時間管理也要做哦",
+          "raw_caption": "圖 1：被多重身份撕裂的我時間管理也要做哦（Midjourney 示意圖）"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261009/201841402mhYelbkFA.png",
+          "alt": "",
+          "caption": "圖 2：就算是自我介紹也說超多身份的說～",
+          "raw_caption": "圖 2：就算是自我介紹也說超多身份的說～"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261009/20184140avR4IpO7jN.png",
+          "alt": "",
+          "caption": "圖 3：賽博龐克時空引渡護照 Chrome 擴充套件實裝效果",
+          "raw_caption": "圖 3：賽博龐克時空引渡護照 Chrome 擴充套件實裝效果"
+        }
+      ],
+      "images_count": 3
+    },
+    {
+      "day": 28,
+      "is_extra": false,
+      "title": "錯的到底是我！還是這個世界！！！（？）",
+      "full_title": "Day 28 錯的到底是我！還是這個世界！！！（？）",
+      "link": "https://ithelp.ithome.com.tw/articles/10423008?sc=rss.iron",
+      "pub_date": "2026-10-10 15:42:25",
+      "arc": {
+        "arc_id": "CASE-ARC-06",
+        "arc_name": "檔案卷宗 VI：終極共識與時間哲學",
+        "arc_code": "TIME MATRIX & ULTIMATE ALIGNMENT"
+      },
+      "ai_image": {
+        "local_file": "assets/ai-images/day 28.png",
+        "online_url": "https://ithelp.ithome.com.tw/upload/images/20261010/201841402e6gqlv4oz.png",
+        "caption": "圖 1：我們要多溝通才不是這種啦！！！！！！",
+        "clue_summary": "【線索 #28】圖 1：我們要多溝通才不是這種啦！！！！！！"
+      },
+      "all_images": [
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261010/201841402e6gqlv4oz.png",
+          "alt": "",
+          "caption": "圖 1：我們要多溝通才不是這種啦！！！！！！",
+          "raw_caption": "圖 1：我們要多溝通才不是這種啦！！！！！！（Midjourney 示意圖）"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261010/20184140cCZHE6JTTU.png",
+          "alt": "",
+          "caption": "圖 2：看文章瀏覽量，咦！居然是有兩篇閱讀量這麼異常嗎！",
+          "raw_caption": "圖 2：看文章瀏覽量，咦！居然是有兩篇閱讀量這麼異常嗎！"
+        },
+        {
+          "src": "https://ithelp.ithome.com.tw/upload/images/20261010/20184140fmH5oDrn5L.png",
+          "alt": "",
+          "caption": "圖 3：Perplexity 只是用了 6 秒就發現文章有問題了，但多番查證，其實我也說對了一半～",
+          "raw_caption": "圖 3：Perplexity 只是用了 6 秒就發現文章有問題了，但多番查證，其實我也說對了一半～"
+        }
+      ],
+      "images_count": 3
+    }
+  ]
+}

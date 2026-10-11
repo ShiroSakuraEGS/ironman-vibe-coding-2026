@@ -1,0 +1,3005 @@
+/* ==========================================================
+   學生身份 Vibe Coding 跨領域創新專案 - 鐵人賽科幻圖文檔案庫
+   風格：科幻未來極簡風（分頁二）+ Noir 深夜偵探（分頁一）
+   ========================================================== */
+
+/* 載入 Noir 專用復古字型 */
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --bg-dark: #06080e;
+  --bg-card: rgba(12, 17, 28, 0.75);
+  --bg-card-hover: rgba(18, 25, 42, 0.9);
+  --bg-glass: rgba(10, 15, 25, 0.85);
+  
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-cyan: rgba(0, 245, 255, 0.35);
+  --border-cyan-bright: #00f5ff;
+  --border-purple: rgba(168, 85, 247, 0.4);
+  
+  --neon-cyan: #00f5ff;
+  --neon-purple: #a855f7;
+  --neon-amber: #fbbf24;
+  --neon-rose: #f43f5e;
+  --neon-emerald: #10b981;
+  
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --text-cyan: #67e8f9;
+  
+  --font-scifi: 'Space Grotesk', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-body: 'Inter', 'Noto Sans TC', sans-serif;
+  
+  --shadow-hud: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 245, 255, 0.08);
+  --blur-amt: blur(20px) saturate(180%);
+
+  /* === Noir 偵探主題變數 === */
+  --noir-bg: #1a1410;            /* 深炭黑底色 */
+  --noir-cork: #2a2218;          /* 軟木塞深色底 */
+  --noir-card: #f5efe0;          /* 舊報紙/暗米色 */
+  --noir-card-dark: #ede5cf;     /* 稍深的舊紙色 */
+  --noir-card-worn: #d4c9a8;     /* 磨損邊緣色 */
+  --noir-crimson: #8b1a1a;       /* 血染深紅 */
+  --noir-crimson-bright: #c0392b; /* 鮮血紅 */
+  --noir-crimson-glow: rgba(176, 42, 42, 0.6);
+  --noir-amber: #d4a017;         /* 復古琥珀 */
+  --noir-ink: #1c1410;           /* 深墨水色 */
+  --noir-ink-faded: #3d2f1e;     /* 淡化墨水 */
+  --noir-text: #2c1e0f;          /* 打字機墨水文字 */
+  --noir-text-secondary: #6b4f30; /* 次要文字 */
+  --noir-text-faded: #9a7d5a;    /* 褪色文字 */
+  --noir-wire: #c0392b;          /* 紅線顏色 */
+  --noir-wire-dim: rgba(192, 57, 43, 0.45);
+  --noir-border: rgba(100, 80, 50, 0.4); /* 舊紙邊框 */
+  --noir-border-worn: rgba(100, 80, 50, 0.65);
+  --font-typewriter: 'Special Elite', 'Courier Prime', 'Courier New', monospace;
+  --font-courier: 'Courier Prime', 'Courier New', monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 245, 255, 0.3) rgba(6, 8, 14, 0.8);
+}
+
+body {
+  background: var(--bg-dark);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 滾動條樣式 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 245, 255, 0.25);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neon-cyan);
+}
+
+/* 背景網格與動態粒子 */
+.cyber-grid-overlay {
+  position: fixed;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(0, 245, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 245, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+#quantumCanvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.65;
+}
+
+/* ==========================================================
+   頂部導覽 HUD Header
+   ========================================================== */
+.hud-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(6, 8, 14, 0.85);
+  backdrop-filter: var(--blur-amt);
+  -webkit-backdrop-filter: var(--blur-amt);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 14px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.brand-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0, 245, 255, 0.08);
+  border: 1px solid var(--border-cyan);
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--neon-cyan);
+}
+
+.beacon-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--neon-cyan);
+  box-shadow: 0 0 10px var(--neon-cyan);
+  animation: beaconPulse 2s infinite ease-in-out;
+}
+
+@keyframes beaconPulse {
+  0%, 100% { transform: scale(1); opacity: 0.6; }
+  50% { transform: scale(1.4); opacity: 1; }
+}
+
+.brand-titles .main-title {
+  font-family: var(--font-scifi);
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  background: linear-gradient(90deg, #ffffff, #cffafe 60%, var(--neon-cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brand-titles .sub-title {
+  font-size: 11px;
+  color: var(--text-secondary);
+  margin-top: 1px;
+}
+
+/* 數據膠囊 HUD */
+.hud-metrics {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-subtle);
+  padding: 6px 18px;
+  border-radius: 30px;
+}
+
+.metric-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.metric-item .m-label {
+  font-size: 9px;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  letter-spacing: 0.06em;
+}
+
+.metric-item .m-val {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.metric-item .m-val.highlight {
+  color: var(--neon-cyan);
+}
+
+.metric-item .m-val.status-active {
+  color: var(--neon-emerald);
+}
+
+/* 分頁切換器按鈕 */
+.hud-tab-switcher {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 4px;
+  gap: 6px;
+}
+
+.tab-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--text-secondary);
+  padding: 7px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-scifi);
+  font-size: 12.5px;
+  font-weight: 600;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tab-btn .tab-icon {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.tab-btn .tab-tag {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: var(--text-muted);
+}
+
+.tab-btn:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.tab-btn.active {
+  background: rgba(0, 245, 255, 0.12);
+  border-color: var(--border-cyan);
+  color: #ffffff;
+  box-shadow: 0 0 16px rgba(0, 245, 255, 0.2);
+}
+
+.tab-btn.active .tab-icon {
+  color: var(--neon-cyan);
+}
+
+.tab-btn.active .tab-tag {
+  background: rgba(0, 245, 255, 0.2);
+  color: var(--neon-cyan);
+}
+
+/* ==========================================================
+   主視圖容器與分頁架構
+   ========================================================== */
+.main-viewport {
+  position: relative;
+  z-index: 10;
+  max-width: 1540px;
+  margin: 0 auto;
+  padding: 24px 28px 80px 28px;
+  min-height: calc(100vh - 120px);
+}
+
+.tab-content {
+  display: none;
+  animation: tabFadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tab-content.active {
+  display: block;
+}
+
+@keyframes tabFadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ==========================================================
+   分頁一：案件線索板 - NOIR 深夜偵探主題
+   (Noir Detective Clue Board — Dark Cork + Crimson Wire)
+   ========================================================== */
+
+/* 整個分頁一的 Noir 容器 */
+#viewClueBoard {
+  /* 使整個分頁一進入 Noir 模式 */
+}
+
+/* Noir 控制面板 - 模仿舊木質案件桌面 */
+.clue-control-panel {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 20px;
+  background: linear-gradient(135deg, rgba(26, 20, 16, 0.97) 0%, rgba(30, 24, 18, 0.95) 100%);
+  border: 1px solid var(--noir-border-worn);
+  border-radius: 4px;
+  padding: 22px 26px;
+  margin-bottom: 22px;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.85),
+    inset 0 1px 0 rgba(212, 160, 23, 0.12),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+/* 控制面板頂部印章裝飾線 */
+.clue-control-panel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent 0%, var(--noir-crimson) 20%, var(--noir-crimson) 80%, transparent 100%);
+  opacity: 0.8;
+}
+
+.case-brief-card .case-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* 案件標籤：紅色印章風格 */
+.case-tag {
+  font-family: var(--font-typewriter);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--noir-card);
+  background: var(--noir-crimson);
+  border: none;
+  padding: 3px 8px;
+  border-radius: 2px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255,255,255,0.1);
+}
+
+.case-title {
+  font-family: var(--font-typewriter);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: var(--noir-amber);
+  text-shadow: 0 0 12px rgba(212, 160, 23, 0.4);
+}
+
+.case-desc {
+  font-size: 12px;
+  font-family: var(--font-courier);
+  color: var(--noir-text-faded);
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+}
+
+.panel-right {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+}
+
+/* 卷宗篩選按鈕群 - Noir 卷宗標籤風格 */
+.arc-filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.arc-btn {
+  background: rgba(42, 34, 24, 0.8);
+  border: 1px solid rgba(100, 80, 50, 0.35);
+  color: var(--noir-text-faded);
+  padding: 4px 11px;
+  border-radius: 2px;
+  font-size: 11px;
+  font-family: var(--font-typewriter);
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+}
+
+.arc-btn:hover {
+  background: rgba(60, 45, 28, 0.9);
+  color: var(--noir-amber);
+  border-color: rgba(212, 160, 23, 0.4);
+}
+
+.arc-btn.active {
+  background: var(--noir-crimson);
+  border-color: var(--noir-crimson-bright);
+  color: #fff;
+  box-shadow: 0 0 10px rgba(192, 57, 43, 0.4);
+}
+
+/* 操作按鈕行 */
+.board-action-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.search-box {
+  flex: 1;
+  position: relative;
+}
+
+/* 搜尋欄：打字機風格 */
+.search-box input {
+  width: 100%;
+  background: rgba(20, 15, 10, 0.9);
+  border: 1px solid rgba(100, 80, 50, 0.4);
+  border-radius: 2px;
+  padding: 8px 14px;
+  color: var(--noir-amber);
+  font-size: 12px;
+  font-family: var(--font-courier);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  letter-spacing: 0.03em;
+}
+
+.search-box input:focus {
+  border-color: var(--noir-crimson-bright);
+  box-shadow: 0 0 12px rgba(192, 57, 43, 0.25), inset 0 1px 3px rgba(0,0,0,0.4);
+}
+
+.search-box input::placeholder {
+  color: var(--noir-ink-faded);
+}
+
+/* 開關按鈕：復古撥桿風格 */
+.tool-btn {
+  background: rgba(42, 34, 24, 0.8);
+  border: 1px solid rgba(100, 80, 50, 0.35);
+  color: var(--noir-text-faded);
+  padding: 8px 14px;
+  border-radius: 2px;
+  font-size: 11px;
+  font-family: var(--font-typewriter);
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.tool-btn:hover {
+  background: rgba(60, 45, 28, 0.9);
+  color: var(--noir-amber);
+  border-color: rgba(212, 160, 23, 0.4);
+}
+
+/* 紅色電源指示燈 */
+.t-indicator {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--noir-ink-faded);
+}
+
+.t-indicator.active {
+  background: var(--noir-crimson-bright);
+  box-shadow: 0 0 8px var(--noir-crimson-glow), 0 0 16px rgba(192, 57, 43, 0.3);
+  animation: redPulse 2s infinite ease-in-out;
+}
+
+@keyframes redPulse {
+  0%, 100% { opacity: 0.8; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.3); }
+}
+
+/* =============================================
+   軟木塞案件線索板容器 (Cork Board)
+   ============================================= */
+.clue-pinboard-container {
+  position: relative;
+  min-height: 1440px;  /* 16:9 比例高度 */
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  /* 軟木塞紋理：以 CSS 漸層模擬 */
+  background-color: var(--noir-cork);
+  background-image:
+    /* 垂直木紋 */
+    repeating-linear-gradient(
+      93deg,
+      transparent,
+      transparent 2px,
+      rgba(60, 45, 20, 0.12) 2px,
+      rgba(60, 45, 20, 0.12) 4px
+    ),
+    /* 水平木紋 */
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 8px,
+      rgba(20, 14, 6, 0.08) 8px,
+      rgba(20, 14, 6, 0.08) 9px
+    ),
+    /* 軟木塞顆粒感底色漸層 */
+    radial-gradient(ellipse at 20% 30%, rgba(50, 38, 22, 0.6) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 70%, rgba(38, 28, 15, 0.5) 0%, transparent 50%),
+    linear-gradient(160deg, #2a2218 0%, #1e1a12 35%, #251e14 65%, #1a1610 100%);
+  border: 3px solid rgba(80, 60, 35, 0.5);
+  border-radius: 6px;
+  padding: 0;
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.9),
+    inset 0 2px 4px rgba(255, 220, 140, 0.04),
+    inset 0 -2px 4px rgba(0, 0, 0, 0.4);
+  outline: 1px solid rgba(100, 75, 40, 0.2);
+  outline-offset: 4px;
+}
+
+/* 板子邊角磨損效果 */
+.clue-pinboard-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 0% 0%, rgba(0,0,0,0.4) 0%, transparent 22%),
+    radial-gradient(ellipse at 100% 0%, rgba(0,0,0,0.35) 0%, transparent 22%),
+    radial-gradient(ellipse at 0% 100%, rgba(0,0,0,0.35) 0%, transparent 22%),
+    radial-gradient(ellipse at 100% 100%, rgba(0,0,0,0.4) 0%, transparent 22%);
+  pointer-events: none;
+  border-radius: 4px;
+  z-index: 0;
+}
+
+/* 紅線 SVG 連線層 */
+.clue-wires-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* 分散位置容器：占滿整個板子 */
+.clue-cards-grid {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  min-height: 1440px;
+  aspect-ratio: 16 / 9;
+}
+
+/* =============================================
+   Noir 照片/舊報紙線索卡片
+   ============================================= */
+.clue-card {
+  /* 舊照片/報紙底色 */
+  background: linear-gradient(145deg, var(--noir-card) 0%, var(--noir-card-dark) 60%, var(--noir-card-worn) 100%);
+  border: none;
+  border-radius: 2px;
+  padding: 10px 10px 12px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  cursor: pointer;
+  position: absolute;         /* 重要：絕對定位散落 */
+  width: 230px;               /* 固定寬度 */
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.3s ease,
+              z-index 0s;
+  /* 圖釘投影（模擬釘在板子上） */
+  box-shadow:
+    2px 3px 0 rgba(150, 110, 60, 0.4),
+    4px 6px 16px rgba(0, 0, 0, 0.65),
+    8px 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* 模擬圖釘（頂部中央紅色釘頭） */
+.clue-card::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #e74c3c, #8b1a1a);
+  box-shadow: 0 2px 8px rgba(139, 26, 26, 0.8), 0 1px 2px rgba(0,0,0,0.5);
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* 相片下緣膠帶陰影 */
+.clue-card::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 8px;
+  right: 8px;
+  height: 6px;
+  background: rgba(0, 0, 0, 0.15);
+  filter: blur(4px);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.clue-card:hover {
+  transform: translateY(-6px) rotate(0deg) scale(1.02);
+  box-shadow:
+    2px 3px 0 rgba(150, 110, 60, 0.4),
+    8px 18px 40px rgba(0, 0, 0, 0.8),
+    16px 28px 60px rgba(0, 0, 0, 0.5);
+}
+
+/* 卡片頂部：打字機編號與卷宗標籤 */
+.clue-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-typewriter);
+  font-size: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(100, 80, 50, 0.25);
+}
+
+/* 案件編號：打字機風格 */
+.clue-num {
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: var(--noir-crimson);
+  text-transform: uppercase;
+  text-shadow: none;
+}
+
+/* 卷宗徽章：復古橡皮印章感 */
+.clue-arc-badge {
+  font-size: 9px;
+  padding: 2px 6px;
+  border-radius: 2px;
+  background: transparent;
+  color: var(--noir-text-secondary);
+  border: 1px solid rgba(100, 80, 50, 0.4);
+  font-family: var(--font-typewriter);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* 照片框（帶磨損邊緣效果） */
+.clue-thumb-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 2px;
+  overflow: hidden;
+  /* 舊照片邊框效果 */
+  border: 3px solid rgba(200, 180, 140, 0.5);
+  box-shadow:
+    inset 0 0 0 1px rgba(100, 80, 40, 0.3),
+    inset 2px 2px 6px rgba(0, 0, 0, 0.3),
+    0 2px 8px rgba(0, 0, 0, 0.4);
+  background: #1a140e;
+}
+
+/* 照片本身：加入老舊感濾鏡 */
+.clue-thumb-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease, filter 0.3s ease;
+  filter: sepia(20%) contrast(1.05) brightness(0.95);
+}
+
+.clue-card:hover .clue-thumb-wrap img {
+  transform: scale(1.06);
+  filter: sepia(5%) contrast(1.08) brightness(1.0);
+}
+
+/* 照片上的膠片顆粒覆蓋層 */
+.clue-thumb-wrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.06'/%3E%3C/svg%3E");
+  pointer-events: none;
+  mix-blend-mode: multiply;
+  opacity: 0.4;
+}
+
+.clue-meta-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* 主標題：打字機字體，深墨水色 */
+.clue-meaning-tag {
+  font-family: var(--font-typewriter);
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--noir-text);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* 副標題：褪色打字 */
+.clue-title-sub {
+  font-size: 10.5px;
+  font-family: var(--font-courier);
+  color: var(--noir-text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: 0.01em;
+}
+
+/* 卡片底部：撕裂線效果 */
+.clue-card-footer {
+  border-top: 1px dashed rgba(100, 80, 50, 0.35);
+  padding-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-typewriter);
+  font-size: 9.5px;
+  color: var(--noir-text-secondary);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* 「檢驗證物」按鈕：血紅底線風格 */
+.btn-inspect-mini {
+  color: var(--noir-crimson);
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-bottom: 1px solid var(--noir-crimson);
+  padding-bottom: 1px;
+  letter-spacing: 0.06em;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.clue-card:hover .btn-inspect-mini {
+  color: var(--noir-crimson-bright);
+  border-color: var(--noir-crimson-bright);
+}
+
+/* ==========================================================
+   分頁二：鐵人賽圖文檔案庫 - Pinterest Masonry 瀑布流
+   ========================================================== */
+
+/* 控制列：棄用原有展開式，改為简潔標題列 */
+.codex-control-panel {
+  background: rgba(10, 12, 20, 0.8);
+  backdrop-filter: var(--blur-amt);
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  padding: 16px 22px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  box-shadow: var(--shadow-hud);
+}
+
+.codex-info-hub {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.codex-info-hub .c-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--neon-purple);
+  background: rgba(168, 85, 247, 0.12);
+  border: 1px solid var(--border-purple);
+  padding: 2px 7px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.codex-info-hub h2 {
+  font-family: var(--font-scifi);
+  font-size: 16px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.codex-info-hub p {
+  display: none;  /* 橫向布局時隐藏說明 */
+}
+
+.codex-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.search-box.wide {
+  width: 340px;
+}
+
+.filter-stats {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-cyan);
+  white-space: nowrap;
+}
+
+/* =============================================
+   Pinterest Masonry 瀑布流主容器
+   ============================================= */
+.codex-masonry-wall {
+  /* CSS Columns Masonry */
+  column-count: 4;
+  column-gap: 14px;
+  width: 100%;
+}
+
+@media (max-width: 1280px) { .codex-masonry-wall { column-count: 3; } }
+@media (max-width: 860px)  { .codex-masonry-wall { column-count: 2; } }
+@media (max-width: 540px)  { .codex-masonry-wall { column-count: 1; } }
+
+/* 圖片磚塊 */
+.masonry-brick {
+  break-inside: avoid;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  display: block;
+  background: #0a0d16;
+  /* 入場動畫 */
+  animation: brickFadeIn 0.45s ease both;
+}
+
+@keyframes brickFadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.masonry-brick img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.3s ease;
+  border-radius: 10px;
+  min-height: 80px;
+  object-fit: cover;
+}
+
+/* Hover 時檢視效果 */
+.masonry-brick:hover img {
+  transform: scale(1.04);
+  filter: brightness(0.7);
+}
+
+/* Hover 覆蓋說明層 */
+.masonry-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(5, 8, 18, 0.95) 0%,
+    rgba(5, 8, 18, 0.6) 45%,
+    transparent 75%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 16px 14px 14px 14px;
+  border-radius: 10px;
+}
+
+.masonry-brick:hover .masonry-overlay {
+  opacity: 1;
+}
+
+/* 文章日期標籤 */
+.masonry-day-tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--neon-cyan);
+  background: rgba(0, 245, 255, 0.15);
+  border: 1px solid rgba(0, 245, 255, 0.3);
+  padding: 2px 7px;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  align-self: flex-start;
+}
+
+/* 圖片說明文字 */
+.masonry-caption {
+  font-size: 12px;
+  font-family: var(--font-body);
+  color: #e8edf4;
+  line-height: 1.5;
+  font-weight: 400;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* 文章標題（最小字型） */
+.masonry-article-title {
+  font-size: 10.5px;
+  font-family: var(--font-mono);
+  color: rgba(255, 255, 255, 0.45);
+  margin-top: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 常餄1小字標籤（非 hover）：左上角 Day 標籤 */
+.masonry-corner-tag {
+  position: absolute;
+  top: 8px;
+  left: 9px;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.9);
+  background: rgba(0, 0, 0, 0.65);
+  padding: 2px 7px;
+  border-radius: 3px;
+  letter-spacing: 0.07em;
+  backdrop-filter: blur(4px);
+  z-index: 2;
+}
+
+/* 連結文章按鈕：右下角出現（hover） */
+.masonry-link-btn {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(0, 245, 255, 0.2);
+  border: 1px solid rgba(0, 245, 255, 0.5);
+  color: var(--neon-cyan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  text-decoration: none;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 5;
+}
+
+.masonry-brick:hover .masonry-link-btn {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* 文章流 (Articles Stream) */
+.codex-articles-stream {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* 單篇文章大卡片 (Article Dossier Card) */
+.article-dossier-card {
+  background: var(--bg-card);
+  backdrop-filter: var(--blur-amt);
+  border: 1px solid var(--border-subtle);
+  border-radius: 20px;
+  padding: 24px 28px;
+  box-shadow: var(--shadow-hud);
+  transition: border-color 0.25s ease;
+}
+
+.article-dossier-card:hover {
+  border-color: rgba(0, 245, 255, 0.25);
+}
+
+.dossier-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 20px;
+}
+
+.dossier-title-col {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.day-badge {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: rgba(0, 245, 255, 0.12);
+  border: 1px solid var(--border-cyan);
+  color: var(--neon-cyan);
+  white-space: nowrap;
+}
+
+.dossier-title-col h3 {
+  font-family: var(--font-scifi);
+  font-size: 16.5px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.dossier-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-open-article {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-family: var(--font-scifi);
+  font-size: 12px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.btn-open-article:hover {
+  background: rgba(0, 245, 255, 0.15);
+  border-color: var(--neon-cyan);
+  color: var(--neon-cyan);
+  transform: translateY(-1px);
+}
+
+/* 該篇文章的圖片陳列網格 (Gallery Grid) */
+.dossier-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 18px;
+}
+
+.gallery-item-card {
+  background: rgba(6, 10, 20, 0.7);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.gallery-item-card:hover {
+  border-color: var(--border-cyan);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-img-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #030508;
+  overflow: hidden;
+}
+
+.gallery-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item-card:hover .gallery-img-container img {
+  transform: scale(1.04);
+}
+
+.img-zoom-hint {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 3px 7px;
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-cyan);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.gallery-item-card:hover .img-zoom-hint {
+  opacity: 1;
+}
+
+.gallery-caption-wrap {
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.caption-label {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  color: var(--neon-amber);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.caption-text {
+  font-size: 12.5px;
+  color: #e2e8f0;
+  line-height: 1.5;
+}
+
+/* ==========================================================
+   底部 HUD 狀態列
+   ========================================================== */
+.hud-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(6, 8, 14, 0.92);
+  backdrop-filter: var(--blur-amt);
+  border-top: 1px solid var(--border-subtle);
+  padding: 8px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-muted);
+  z-index: 90;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-left .split {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.footer-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-link:hover {
+  color: var(--neon-cyan);
+}
+
+.code-tag {
+  color: var(--neon-emerald);
+}
+
+/* ==========================================================
+   彈跳視窗：深層證物檢驗器 (Clue Evidence Modal)
+   ========================================================== */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(3, 5, 10, 0.85);
+  backdrop-filter: blur(14px);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.modal-backdrop.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.clue-modal-dialog {
+  width: 960px;
+  max-width: 95vw;
+  max-height: 90vh;
+  /* Noir 風格 Modal：深木色背景 */
+  background: linear-gradient(145deg, #1a1410 0%, #161210 100%);
+  border: 1px solid rgba(100, 75, 40, 0.5);
+  border-radius: 4px;
+  box-shadow: 
+    0 30px 70px rgba(0, 0, 0, 0.92), 
+    0 0 0 4px rgba(60, 45, 25, 0.3),
+    0 0 60px rgba(192, 57, 43, 0.08);
+  position: relative;
+  overflow: hidden;
+  animation: modalPop 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Modal 頂部血紅橫條 */
+.clue-modal-dialog::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent 0%, var(--noir-crimson) 15%, var(--noir-crimson-bright) 50%, var(--noir-crimson) 85%, transparent 100%);
+}
+
+@keyframes modalPop {
+  from { transform: scale(0.95) rotate(-1deg); opacity: 0; }
+  to { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  width: 32px;
+  height: 32px;
+  border-radius: 2px;
+  background: rgba(42, 34, 24, 0.8);
+  border: 1px solid rgba(100, 80, 50, 0.4);
+  color: var(--noir-text-faded);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  transition: all 0.2s;
+  z-index: 10;
+  font-family: var(--font-typewriter);
+}
+
+.modal-close-btn:hover {
+  background: var(--noir-crimson);
+  border-color: var(--noir-crimson-bright);
+  color: #fff;
+}
+
+.modal-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  height: 100%;
+}
+
+.modal-img-col {
+  background: #0e0b08;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  border-right: 1px solid rgba(80, 60, 35, 0.4);
+}
+
+/* 證物照片框：舊照片質感 */
+.clue-frame {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: 
+    0 10px 40px rgba(0, 0, 0, 0.9),
+    inset 0 0 0 3px rgba(200, 180, 140, 0.2),
+    inset 0 0 0 6px rgba(100, 80, 40, 0.1);
+  border: 3px solid rgba(180, 155, 100, 0.3);
+}
+
+.clue-frame img {
+  width: 100%;
+  height: auto;
+  max-height: 70vh;
+  object-fit: contain;
+  display: block;
+  filter: sepia(15%) contrast(1.05);
+}
+
+/* 紅色「已驗證」印章 */
+.clue-stamp {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: transparent;
+  border: 2px solid var(--noir-crimson-bright);
+  color: var(--noir-crimson-bright);
+  padding: 4px 10px;
+  border-radius: 2px;
+  font-family: var(--font-typewriter);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transform: rotate(-8deg);
+  opacity: 0.85;
+  box-shadow: 0 0 12px rgba(192, 57, 43, 0.3);
+}
+
+/* Modal 資訊欄：Noir 舊紙感 */
+.modal-info-col {
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  overflow-y: auto;
+  background: linear-gradient(160deg, rgba(26, 20, 14, 0.95) 0%, rgba(20, 16, 10, 0.98) 100%);
+  scrollbar-color: rgba(192, 57, 43, 0.3) rgba(26, 20, 14, 0.5);
+}
+
+.clue-meta-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* 案件 ID 標籤：紅色印章 */
+.clue-id-tag {
+  font-family: var(--font-typewriter);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--noir-crimson);
+  padding: 3px 9px;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(139, 26, 26, 0.5);
+}
+
+.clue-arc-tag {
+  font-family: var(--font-typewriter);
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  color: var(--noir-text-faded);
+  text-transform: uppercase;
+}
+
+/* 案件標題：打字機字體 */
+.clue-headline {
+  font-family: var(--font-typewriter);
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--noir-amber);
+  line-height: 1.5;
+  text-shadow: 0 0 20px rgba(212, 160, 23, 0.2);
+}
+
+/* 說明方框：舊檔案紙感 */
+.clue-meaning-box, .clue-story-box {
+  background: rgba(30, 22, 14, 0.6);
+  border: 1px solid rgba(100, 80, 50, 0.3);
+  border-left: 3px solid var(--noir-crimson);
+  padding: 14px 16px;
+  border-radius: 2px;
+}
+
+.cm-label {
+  font-family: var(--font-typewriter);
+  font-size: 9.5px;
+  color: var(--noir-amber);
+  margin-bottom: 7px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+.cm-content {
+  font-family: var(--font-courier);
+  font-size: 12.5px;
+  color: var(--noir-text-faded);
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+}
+
+.modal-action-row {
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+/* 「前往文章」按鈕：血紅偵探風格 */
+.cyber-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 13px;
+  border-radius: 2px;
+  background: linear-gradient(135deg, rgba(139, 26, 26, 0.9), rgba(80, 15, 15, 0.95));
+  border: 1px solid var(--noir-crimson-bright);
+  color: var(--noir-card);
+  font-family: var(--font-typewriter);
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: none;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: all 0.25s;
+  box-shadow: 0 4px 16px rgba(139, 26, 26, 0.4);
+}
+
+.cyber-cta-btn:hover {
+  background: linear-gradient(135deg, rgba(192, 57, 43, 0.95), rgba(120, 25, 25, 0.98));
+  box-shadow: 0 6px 24px rgba(192, 57, 43, 0.5), 0 0 30px rgba(192, 57, 43, 0.2);
+  transform: translateY(-2px);
+  color: #fff;
+}
+
+/* ==========================================================
+   彈跳視窗：高解析度圖片燈箱 (Lightbox)
+   ========================================================== */
+.lightbox-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(2, 4, 8, 0.92);
+  backdrop-filter: blur(16px);
+  z-index: 250;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.lightbox-backdrop.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lightbox-dialog {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.lightbox-close-btn {
+  position: absolute;
+  top: -44px;
+  right: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border-subtle);
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+
+.lightbox-close-btn:hover {
+  background: var(--neon-cyan);
+  color: #000;
+}
+
+.lightbox-img-wrapper {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+  border: 1px solid var(--border-cyan);
+}
+
+.lightbox-img-wrapper img {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  display: block;
+}
+
+.lightbox-caption-bar {
+  background: rgba(14, 20, 34, 0.85);
+  border: 1px solid var(--border-subtle);
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 13px;
+  color: #ffffff;
+  max-width: 700px;
+  text-align: center;
+}
+
+/* ==========================================================
+   響應式設計 (RWD)
+   ========================================================== */
+@media (max-width: 1024px) {
+  .hud-header {
+    flex-wrap: wrap;
+    padding: 14px 18px;
+  }
+  .hud-metrics {
+    display: none;
+  }
+  .clue-control-panel {
+    grid-template-columns: 1fr;
+  }
+  .modal-layout {
+    grid-template-columns: 1fr;
+  }
+  .modal-img-col {
+    border-right: none;
+    border-bottom: 1px solid rgba(80, 60, 35, 0.4);
+  }
+}
+
+@media (max-width: 640px) {
+  .main-viewport {
+    padding: 16px 16px 80px 16px;
+  }
+  .hud-tab-switcher {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .tab-btn {
+    padding: 6px 10px;
+    font-size: 11.5px;
+  }
+  .tab-tag {
+    display: none;
+  }
+  .search-box.wide {
+    width: 100%;
+  }
+  .codex-control-panel {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  /* 注意：clue-cards-grid 已改為 absolute 佈局，移除 grid 覆蓋 */
+}
+
+/* ==========================================================
+   Noir 專用補丁 (Patch)
+   ========================================================== */
+
+/* 分頁一整體 — 深炭黑背景 */
+#viewClueBoard {
+  background: linear-gradient(160deg, #100d0a 0%, #0e0b08 50%, #12100d 100%);
+  border-radius: 12px;
+  padding: 20px 24px 28px 24px;
+}
+
+/* 卡片網格：絕對定位容器不需要 padding-top（由 JS 控制） */
+.clue-cards-grid {
+  padding-top: 0;
+}
+
+/* 卡片 hover 時保留微旋轉（以 CSS var 覆蓋 transform） */
+.clue-card:hover {
+  transform: rotate(var(--card-rot, 0deg)) translateY(-7px) scale(1.03) !important;
+  z-index: 10;
+}
+
+/* Noir 卷宗篩選列：加強對比度 */
+.arc-filter-group {
+  padding: 6px 0;
+}
+
+/* 線索板底部留白增強 */
+.clue-pinboard-container {
+  margin-bottom: 4px;
+}
+
+/* 分頁一搜尋板塊的整體組合對齊 */
+#viewClueBoard .clue-control-panel {
+  margin-top: 0;
+}
+
+/* Noir Modal 資訊欄滾動條 */
+.modal-info-col::-webkit-scrollbar {
+  width: 4px;
+}
+.modal-info-col::-webkit-scrollbar-track {
+  background: rgba(20, 15, 10, 0.5);
+}
+.modal-info-col::-webkit-scrollbar-thumb {
+  background: rgba(139, 26, 26, 0.5);
+  border-radius: 2px;
+}
+.modal-info-col::-webkit-scrollbar-thumb:hover {
+  background: var(--noir-crimson-bright);
+}
+
+/* 卡片：絕對定位不需要 margin-top（由 top/left JS 控制） */
+.clue-card {
+  margin-top: 0;
+}
+
+/* Noir 主題：Hover 卡片的升起動態發光 */
+@keyframes cardLift {
+  from { box-shadow: 2px 3px 0 rgba(150, 110, 60, 0.4), 4px 6px 16px rgba(0,0,0,0.65); }
+  to { box-shadow: 2px 3px 0 rgba(150, 110, 60, 0.4), 12px 24px 50px rgba(0,0,0,0.85), 0 0 20px rgba(192, 57, 43, 0.1); }
+}
+
+/* ==========================================================
+   VIBE CODING 案件線索板 - 升級 UI/UX 樣式系統 (Case File 001)
+   ========================================================== */
+
+/* 1. 案件檔案總覽簡報頂部 (Case Dossier Header) */
+.case-dossier-header {
+  background: radial-gradient(ellipse at top left, rgba(40, 25, 20, 0.6) 0%, rgba(15, 12, 10, 0.95) 70%);
+  border: 1px solid rgba(200, 160, 90, 0.25);
+  border-radius: 10px;
+  padding: 24px 28px 20px 28px;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+.case-dossier-header::before {
+  content: "TOP SECRET // CLASSIFIED";
+  position: absolute;
+  top: 14px;
+  right: 24px;
+  font-family: var(--font-typewriter);
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: rgba(192, 57, 43, 0.4);
+  pointer-events: none;
+}
+
+.dossier-banner {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 32px;
+  align-items: start;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed rgba(200, 160, 90, 0.2);
+}
+
+.case-file-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-typewriter);
+  font-size: 11.5px;
+  letter-spacing: 2px;
+  color: #e74c3c;
+  background: rgba(192, 57, 43, 0.12);
+  border: 1px solid rgba(192, 57, 43, 0.35);
+  padding: 3px 12px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.badge-dot {
+  width: 6px;
+  height: 6px;
+  background: #e74c3c;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #e74c3c;
+  animation: pulseDot 2s infinite ease-in-out;
+}
+@keyframes pulseDot {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+.main-case-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #f5eedc;
+  letter-spacing: 0.5px;
+  margin: 0 0 10px 0;
+  line-height: 1.25;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.case-meta-line {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-family: var(--font-typewriter);
+  font-size: 11.5px;
+  color: rgba(220, 195, 155, 0.7);
+  margin: 0;
+}
+.meta-chip {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+.meta-chip.highlight-chip {
+  background: rgba(192, 57, 43, 0.18);
+  color: #ff7675;
+  border: 1px solid rgba(192, 57, 43, 0.3);
+}
+.meta-sep {
+  color: rgba(200, 160, 90, 0.3);
+}
+
+.mystery-box {
+  background: rgba(18, 14, 11, 0.85);
+  border-left: 3px solid #e74c3c;
+  padding: 12px 16px;
+  border-radius: 0 6px 6px 0;
+  margin-bottom: 12px;
+}
+.mystery-label {
+  font-family: var(--font-typewriter);
+  font-size: 11px;
+  color: #e74c3c;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 4px;
+}
+.mystery-lead {
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #fff2db;
+  line-height: 1.45;
+  margin-bottom: 6px;
+}
+.mystery-sub {
+  font-size: 12.5px;
+  color: rgba(220, 195, 155, 0.8);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.investigator-whisper {
+  display: flex;
+  gap: 8px;
+  font-size: 12.5px;
+  font-style: italic;
+  color: rgba(200, 160, 90, 0.8);
+  line-height: 1.45;
+  padding-left: 6px;
+}
+.whisper-quote {
+  font-size: 22px;
+  line-height: 1;
+  color: #e74c3c;
+  font-style: normal;
+}
+
+/* 2. 三重子視圖切換列 (Sub-View Switcher) */
+.subview-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 18px 0 16px 0;
+  border-bottom: 1px solid rgba(200, 160, 90, 0.15);
+}
+
+.subview-tabs-group {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.subview-tab-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: rgba(25, 20, 16, 0.7);
+  border: 1px solid rgba(200, 160, 90, 0.25);
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+.subview-tab-btn:hover {
+  background: rgba(45, 32, 24, 0.9);
+  border-color: rgba(200, 160, 90, 0.5);
+  transform: translateY(-1px);
+}
+.subview-tab-btn.active {
+  background: linear-gradient(135deg, rgba(80, 25, 20, 0.9) 0%, rgba(45, 20, 16, 0.9) 100%);
+  border-color: #e74c3c;
+  box-shadow: 0 0 12px rgba(231, 76, 60, 0.25);
+}
+.subview-tab-btn .sv-icon {
+  font-size: 12px;
+  color: #e74c3c;
+  margin-bottom: 2px;
+}
+.subview-tab-btn.active .sv-icon {
+  color: #ff7675;
+}
+.subview-tab-btn .sv-title {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #f5eedc;
+}
+.subview-tab-btn .sv-desc {
+  font-size: 10.5px;
+  color: rgba(200, 160, 90, 0.65);
+  margin-top: 2px;
+}
+.subview-tab-btn.active .sv-desc {
+  color: rgba(255, 230, 200, 0.85);
+}
+
+.subview-search-box {
+  position: relative;
+  min-width: 280px;
+}
+.subview-search-box input {
+  width: 100%;
+  background: rgba(14, 11, 8, 0.9);
+  border: 1px solid rgba(200, 160, 90, 0.3);
+  border-radius: 5px;
+  padding: 10px 65px 10px 14px;
+  font-size: 12.5px;
+  color: #f5eedc;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+}
+.subview-search-box input:focus {
+  border-color: #e74c3c;
+  box-shadow: 0 0 8px rgba(231, 76, 60, 0.3);
+}
+.search-indicator {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-typewriter);
+  font-size: 11px;
+  color: rgba(200, 160, 90, 0.5);
+  pointer-events: none;
+}
+
+/* 3. 多維度調查控制矩陣 (Filter Matrix) */
+.clue-control-matrix {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 14px;
+}
+
+.filter-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.filter-label {
+  font-family: var(--font-typewriter);
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(220, 195, 155, 0.85);
+  min-width: 95px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.filter-pill-group {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.f-pill, .arc-btn, .line-btn {
+  background: rgba(24, 19, 15, 0.8);
+  border: 1px solid rgba(200, 160, 90, 0.2);
+  border-radius: 4px;
+  color: rgba(220, 195, 155, 0.85);
+  font-size: 11.5px;
+  padding: 5px 11px;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.f-pill:hover, .arc-btn:hover, .line-btn:hover {
+  background: rgba(45, 32, 24, 0.9);
+  border-color: rgba(200, 160, 90, 0.45);
+  color: #fff;
+}
+.f-pill.active, .arc-btn.active, .line-btn.active {
+  background: #8b1a1a;
+  border-color: #e74c3c;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 0 8px rgba(231, 76, 60, 0.3);
+}
+
+.pill-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+.pill-dot.e1-dot { background: #3b82f6; box-shadow: 0 0 6px #3b82f6; }
+.pill-dot.e2-dot { background: #10b981; box-shadow: 0 0 6px #10b981; }
+.pill-dot.e3-dot { background: #ec4899; box-shadow: 0 0 6px #ec4899; }
+.pill-dot.e4-dot { background: #ef4444; box-shadow: 0 0 6px #ef4444; }
+.pill-dot.e5-dot { background: #a855f7; box-shadow: 0 0 6px #a855f7; }
+.pill-dot.e6-dot { background: #f59e0b; box-shadow: 0 0 6px #f59e0b; }
+
+/* 調查支線按鈕特殊色系 */
+.line-btn.active {
+  background: linear-gradient(135deg, rgba(50, 40, 20, 0.95), rgba(90, 30, 25, 0.95));
+  border-color: #f59e0b;
+  color: #fef3c7;
+}
+
+/* 4. 隱藏劇情列與四色連線圖例 */
+.storyline-legend-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-top: 6px;
+  border-top: 1px dashed rgba(200, 160, 90, 0.15);
+}
+
+.hidden-storylines-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.hsl-title {
+  font-family: var(--font-typewriter);
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #f59e0b;
+  letter-spacing: 0.5px;
+}
+.storyline-trigger-btn {
+  background: rgba(35, 25, 18, 0.9);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  border-radius: 4px;
+  color: #fef3c7;
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 5px 12px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+.storyline-trigger-btn:hover {
+  background: rgba(60, 40, 20, 0.95);
+  border-color: #f59e0b;
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.3);
+  transform: translateY(-1px);
+}
+.storyline-trigger-btn.active {
+  background: #f59e0b;
+  color: #1a1005;
+  border-color: #fbbf24;
+  box-shadow: 0 0 12px rgba(245, 158, 11, 0.6);
+}
+
+.wire-legend-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-family: var(--font-typewriter);
+  font-size: 11px;
+  color: rgba(220, 195, 155, 0.8);
+}
+.wire-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.wire-sample {
+  display: inline-block;
+  width: 22px;
+  height: 2.5px;
+}
+.wire-sample.sample-red {
+  background: #ef4444;
+  box-shadow: 0 0 6px rgba(239, 68, 68, 0.8);
+}
+.wire-sample.sample-blue {
+  background: repeating-linear-gradient(90deg, #38bdf8 0, #38bdf8 5px, transparent 5px, transparent 8px);
+  box-shadow: 0 0 6px rgba(56, 189, 248, 0.8);
+}
+.wire-sample.sample-yellow {
+  background: repeating-linear-gradient(90deg, #f59e0b 0, #f59e0b 6px, transparent 6px, transparent 9px);
+  box-shadow: 0 0 6px rgba(245, 158, 11, 0.8);
+}
+.wire-sample.sample-purple {
+  background: radial-gradient(circle, #a855f7 40%, transparent 60%);
+  background-size: 5px 3px;
+  box-shadow: 0 0 6px rgba(168, 85, 247, 0.8);
+}
+
+.tool-btn.mini {
+  padding: 4px 10px;
+  font-size: 11px;
+}
+
+/* 5. 隱藏劇情假說動態抽屜 (Storyline Drawer) */
+.storyline-drawer {
+  display: none;
+  background: rgba(20, 15, 12, 0.95);
+  border: 1px solid rgba(245, 158, 11, 0.5);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-top: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(245, 158, 11, 0.2);
+  animation: slideDown 0.25s ease-out;
+}
+.storyline-drawer.active {
+  display: block;
+}
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(245, 158, 11, 0.2);
+}
+.dh-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.dh-icon {
+  font-size: 20px;
+}
+.dh-title {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: #fef3c7;
+}
+.dh-badge {
+  font-family: var(--font-typewriter);
+  font-size: 10.5px;
+  letter-spacing: 1px;
+  background: rgba(245, 158, 11, 0.2);
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  padding: 2px 7px;
+  border-radius: 3px;
+}
+.drawer-close-btn {
+  background: transparent;
+  border: 1px solid rgba(200, 160, 90, 0.3);
+  color: rgba(220, 195, 155, 0.8);
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.drawer-close-btn:hover {
+  background: rgba(192, 57, 43, 0.3);
+  border-color: #e74c3c;
+  color: #fff;
+}
+
+.drawer-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.8fr;
+  gap: 16px;
+}
+.drawer-section {
+  background: rgba(12, 9, 7, 0.7);
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid rgba(200, 160, 90, 0.1);
+}
+.ds-label {
+  font-family: var(--font-typewriter);
+  font-size: 11px;
+  font-weight: 700;
+  color: #f59e0b;
+  margin-bottom: 6px;
+}
+.ds-text {
+  font-size: 12.5px;
+  color: rgba(220, 195, 155, 0.9);
+  line-height: 1.45;
+  margin: 0;
+}
+.ds-text.highlight {
+  color: #fef08a;
+  font-weight: 600;
+}
+.drawer-days-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+.chain-pill {
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  color: #fef3c7;
+  font-family: var(--font-typewriter);
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.chain-pill:hover {
+  background: #f59e0b;
+  color: #1a1005;
+}
+
+/* 6. 子視圖切換容器 */
+.subview-pane {
+  display: none;
+}
+.subview-pane.active {
+  display: block;
+}
+
+/* 7. 連線懸浮 Tooltip */
+.wire-tooltip {
+  position: absolute;
+  display: none;
+  background: rgba(18, 14, 11, 0.96);
+  border: 1px solid #e74c3c;
+  border-radius: 6px;
+  padding: 10px 14px;
+  max-width: 320px;
+  z-index: 1000;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8), 0 0 12px rgba(231, 76, 60, 0.3);
+  pointer-events: none;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #f5eedc;
+}
+.wire-tooltip .wt-type {
+  font-family: var(--font-typewriter);
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.wire-tooltip .wt-reason {
+  color: rgba(220, 195, 155, 0.95);
+}
+
+/* 8. 散落證物卡片樣式增強 (Exhibit Card) */
+.clue-card {
+  width: 236px;
+}
+.exhibit-type-capsule {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 3px;
+  margin-bottom: 4px;
+  letter-spacing: 0.3px;
+}
+.exhibit-status-badge {
+  font-family: var(--font-typewriter);
+  font-size: 9.5px;
+  padding: 1px 5px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(200, 160, 90, 0.7);
+  border: 1px solid rgba(200, 160, 90, 0.2);
+}
+.exhibit-tags-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 6px 0;
+}
+.card-tag-pill {
+  font-size: 9.5px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(200, 160, 90, 0.15);
+  color: rgba(200, 160, 90, 0.7);
+  padding: 1px 5px;
+  border-radius: 2px;
+}
+
+/* 9. 子視圖 B：時間線樣式 (Timeline Progression) */
+.timeline-view-wrapper {
+  padding: 10px 10px 40px 10px;
+}
+.timeline-intro-banner {
+  background: rgba(20, 16, 12, 0.7);
+  border: 1px solid rgba(200, 160, 90, 0.2);
+  border-radius: 8px;
+  padding: 18px 24px;
+  margin-bottom: 30px;
+}
+.timeline-intro-banner h2 {
+  margin: 0 0 6px 0;
+  font-size: 20px;
+  color: #f5eedc;
+}
+.timeline-intro-banner p {
+  margin: 0;
+  font-size: 13px;
+  color: rgba(200, 160, 90, 0.8);
+}
+
+.timeline-stream-container {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.timeline-stream-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: linear-gradient(180deg, #8b1a1a 0%, #e74c3c 50%, #8b1a1a 100%);
+  transform: translateX(-50%);
+  box-shadow: 0 0 8px rgba(231, 76, 60, 0.5);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 36px;
+  width: 46%;
+  box-sizing: border-box;
+}
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+.timeline-item.right {
+  left: 54%;
+  text-align: left;
+}
+
+.timeline-node-pin {
+  position: absolute;
+  top: 18px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #e74c3c;
+  border: 3px solid #1a1005;
+  box-shadow: 0 0 10px #e74c3c;
+  z-index: 2;
+}
+.timeline-item.left .timeline-node-pin {
+  right: -9.8%;
+}
+.timeline-item.right .timeline-node-pin {
+  left: -9.8%;
+}
+
+.timeline-card {
+  background: #17130f;
+  border: 1px solid rgba(200, 160, 90, 0.3);
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+.timeline-item.left .timeline-card {
+  flex-direction: row-reverse;
+}
+.timeline-card:hover {
+  border-color: #e74c3c;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.8), 0 0 12px rgba(231, 76, 60, 0.2);
+}
+.tl-thumb {
+  width: 75px;
+  height: 75px;
+  border-radius: 4px;
+  object-fit: cover;
+  border: 1px solid rgba(200, 160, 90, 0.2);
+  flex-shrink: 0;
+}
+.tl-info {
+  flex-grow: 1;
+}
+.tl-meta {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.timeline-item.left .tl-meta {
+  justify-content: flex-end;
+}
+.tl-day-chip {
+  font-family: var(--font-typewriter);
+  font-size: 10.5px;
+  color: #ff7675;
+  font-weight: 700;
+}
+.tl-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #f5eedc;
+  margin: 0 0 4px 0;
+  line-height: 1.3;
+}
+.tl-note {
+  font-size: 11.5px;
+  color: rgba(200, 160, 90, 0.7);
+  line-height: 1.35;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* 10. 子視圖 C：關聯推理網絡樣式 (Inference Graph) */
+.inference-view-wrapper {
+  padding: 10px 10px 40px 10px;
+}
+.inference-intro-banner {
+  background: rgba(20, 16, 12, 0.7);
+  border: 1px solid rgba(200, 160, 90, 0.2);
+  border-radius: 8px;
+  padding: 18px 24px;
+  margin-bottom: 24px;
+}
+.inference-intro-banner h2 {
+  margin: 0 0 6px 0;
+  font-size: 20px;
+  color: #f5eedc;
+}
+.inference-intro-banner p {
+  margin: 0;
+  font-size: 13px;
+  color: rgba(200, 160, 90, 0.8);
+}
+
+.inference-network-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.inference-sub-heading {
+  font-family: var(--font-typewriter);
+  font-size: 13.5px;
+  letter-spacing: 1.5px;
+  color: #e74c3c;
+  border-bottom: 1px solid rgba(200, 160, 90, 0.2);
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lines-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 20px;
+}
+.investigation-line-card {
+  background: #16120e;
+  border: 1px solid rgba(200, 160, 90, 0.25);
+  border-radius: 8px;
+  padding: 20px;
+  position: relative;
+  transition: all 0.2s ease;
+}
+.investigation-line-card:hover {
+  border-color: #f59e0b;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+  transform: translateY(-2px);
+}
+.il-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.il-badge {
+  font-family: var(--font-typewriter);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+.il-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #f5eedc;
+  margin: 0 0 8px 0;
+}
+.il-hypothesis {
+  font-size: 12.5px;
+  color: rgba(220, 195, 155, 0.85);
+  line-height: 1.45;
+  margin-bottom: 12px;
+}
+.il-chain {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 10px 12px;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 6px;
+  margin-bottom: 14px;
+}
+.il-day-tag {
+  font-family: var(--font-typewriter);
+  font-size: 11px;
+  font-weight: 700;
+  background: rgba(245, 158, 11, 0.15);
+  color: #fef3c7;
+  padding: 2px 7px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.il-day-tag:hover {
+  background: #f59e0b;
+  color: #1a1005;
+}
+.il-arrow {
+  color: rgba(200, 160, 90, 0.4);
+  font-size: 11px;
+}
+.btn-focus-line {
+  background: transparent;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  color: #fef3c7;
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.2s;
+}
+.btn-focus-line:hover {
+  background: #f59e0b;
+  color: #1a1005;
+}
+
+.storylines-full-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 20px;
+}
+.storyline-card-full {
+  background: rgba(22, 16, 12, 0.9);
+  border: 1px solid rgba(236, 72, 153, 0.3);
+  border-radius: 8px;
+  padding: 20px;
+  transition: all 0.2s;
+}
+.storyline-card-full:hover {
+  border-color: #ec4899;
+  box-shadow: 0 0 16px rgba(236, 72, 153, 0.25);
+}
+.sc-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.sc-icon { font-size: 22px; }
+.sc-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fdf2f8;
+  margin: 0;
+}
+.sc-hypothesis {
+  font-size: 12.5px;
+  color: rgba(220, 195, 155, 0.85);
+  line-height: 1.45;
+  margin-bottom: 12px;
+}
+.sc-question-box {
+  background: rgba(0, 0, 0, 0.4);
+  border-left: 3px solid #ec4899;
+  padding: 8px 12px;
+  font-size: 12px;
+  color: #fbcfe8;
+  margin-bottom: 14px;
+}
+
+/* 11. 升級版 Modal 關聯證物清單 (Linked Exhibits) */
+.clue-linked-exhibits-box {
+  background: rgba(14, 11, 8, 0.8);
+  border: 1px solid rgba(200, 160, 90, 0.2);
+  border-radius: 6px;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+}
+.linked-exhibits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+.linked-exhibit-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  background: rgba(25, 20, 15, 0.7);
+  border: 1px solid rgba(200, 160, 90, 0.15);
+  border-radius: 5px;
+  padding: 8px 12px;
+  transition: all 0.15s;
+}
+.linked-exhibit-row:hover {
+  border-color: #e74c3c;
+  background: rgba(35, 25, 18, 0.9);
+}
+.ler-left {
+  flex-grow: 1;
+}
+.ler-badge-line {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+.ler-day {
+  font-family: var(--font-typewriter);
+  font-size: 10.5px;
+  font-weight: 700;
+  color: #e74c3c;
+}
+.ler-type {
+  font-size: 10px;
+  padding: 1px 5px;
+  border-radius: 2px;
+}
+.ler-reason {
+  font-size: 11.5px;
+  color: rgba(220, 195, 155, 0.9);
+  line-height: 1.35;
+  margin: 0;
+}
+.btn-jump-exhibit {
+  background: rgba(192, 57, 43, 0.2);
+  border: 1px solid rgba(192, 57, 43, 0.4);
+  color: #ff7675;
+  font-size: 10.5px;
+  padding: 4px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  white-space: nowrap;
+  align-self: center;
+  transition: all 0.15s;
+}
+.btn-jump-exhibit:hover {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.modal-tags-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 8px 0 12px 0;
+}
+.modal-tag-chip {
+  font-size: 11px;
+  background: rgba(200, 160, 90, 0.1);
+  border: 1px solid rgba(200, 160, 90, 0.25);
+  color: rgba(220, 195, 155, 0.85);
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+.clue-article-sub {
+  font-size: 13px;
+  color: rgba(200, 160, 90, 0.7);
+  margin-bottom: 6px;
+}
+
+/* ==========================================================
+   案件板可拖動平移畫布系統 (Pannable & Zoomable Canvas System)
+   ========================================================== */
+
+/* 1. 互動式外層視窗 (Viewport) - 嚴格 16:9 劇院寬螢幕比例 */
+.pinboard-interactive-viewport {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  min-height: 480px;
+  max-height: 84vh;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 2px solid rgba(80, 60, 35, 0.65);
+  background: #140f0c;
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.9), 0 10px 30px rgba(0, 0, 0, 0.8);
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: none;
+}
+.pinboard-interactive-viewport.is-panning {
+  cursor: grabbing !important;
+}
+
+/* 2. 內部可移動縮放的畫布容器 (Canvas Board) - 16:9 比例 (2560 x 1440) */
+.clue-pinboard-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2560px;
+  height: 1440px;
+  min-height: 1440px;
+  aspect-ratio: 16 / 9;
+  transform-origin: 0 0;
+  will-change: transform;
+  transition: transform 0.05s ease-out;
+}
+
+/* 3. 畫布浮動控制 HUD */
+.canvas-floating-controls {
+  position: absolute;
+  bottom: 18px;
+  right: 18px;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(18, 14, 11, 0.88);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(200, 160, 90, 0.35);
+  padding: 6px 12px;
+  border-radius: 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7), 0 0 10px rgba(231, 76, 60, 0.2);
+}
+
+.canvas-hud-btn {
+  background: rgba(40, 30, 22, 0.8);
+  border: 1px solid rgba(200, 160, 90, 0.3);
+  color: #f5eedc;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-family: var(--font-typewriter);
+  font-size: 15px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.canvas-hud-btn:hover {
+  background: #e74c3c;
+  border-color: #ff7675;
+  color: #fff;
+  transform: scale(1.1);
+}
+.canvas-hud-btn.zoom-val-btn {
+  width: auto;
+  border-radius: 14px;
+  padding: 0 10px;
+  font-size: 11px;
+}
+
+.canvas-hint-pill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding-left: 6px;
+  border-left: 1px solid rgba(200, 160, 90, 0.25);
+  font-family: var(--font-typewriter);
+  font-size: 11px;
+  color: rgba(220, 195, 155, 0.75);
+}
+.hint-icon {
+  font-size: 13px;
+}
+
+/* ==========================================================
+   全站文字與佈局全方位 RWD 響應式系統 (Responsive Design)
+   ========================================================== */
+
+/* 平板與中型螢幕 (<= 1100px) */
+@media (max-width: 1100px) {
+  .hud-header {
+    flex-wrap: wrap;
+    padding: 12px 18px;
+  }
+  .hud-metrics {
+    display: none; /* 隱藏次要膠囊，保留空間給標題與分頁 */
+  }
+  .dossier-banner {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .drawer-body {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* 小型平板與手機螢幕 (<= 768px) */
+@media (max-width: 768px) {
+  /* 1. 頂部 Header & 標題文字 */
+  .hud-header {
+    padding: 10px 14px;
+    gap: 10px;
+  }
+  .brand-badge {
+    font-size: 10px;
+    padding: 2px 6px;
+  }
+  .brand-titles .main-title {
+    font-size: 14.5px;
+  }
+  .brand-titles .sub-title {
+    display: none;
+  }
+  .hud-tab-switcher {
+    width: 100%;
+    justify-content: stretch;
+  }
+  .tab-btn {
+    flex: 1;
+    justify-content: center;
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+  .tab-tag {
+    display: none;
+  }
+
+  /* 2. 主視圖內距 */
+  .main-viewport {
+    padding: 12px 12px 60px 12px;
+  }
+
+  /* 3. 案件檔案橫幅 */
+  .case-dossier-header {
+    padding: 16px 14px;
+    margin-bottom: 16px;
+  }
+  .main-case-title {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+  .mystery-lead {
+    font-size: 13.5px;
+  }
+  .mystery-sub {
+    font-size: 11.5px;
+  }
+  .investigator-whisper {
+    font-size: 11.5px;
+  }
+
+  /* 4. 子視圖切換列與搜尋欄 */
+  .subview-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  .subview-tabs-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+  }
+  .subview-tab-btn {
+    padding: 6px 8px;
+    align-items: center;
+    text-align: center;
+  }
+  .subview-tab-btn .sv-title {
+    font-size: 11.5px;
+  }
+  .subview-tab-btn .sv-desc {
+    display: none;
+  }
+  .subview-search-box {
+    min-width: 100%;
+  }
+
+  /* 5. 篩選標籤橫向滑動 (避免折行爆炸) */
+  .filter-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .filter-label {
+    min-width: auto;
+    font-size: 11px;
+  }
+  .filter-pill-group {
+    width: 100%;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 6px;
+  }
+  .filter-pill-group::-webkit-scrollbar {
+    height: 3px;
+  }
+  .f-pill, .arc-btn, .line-btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+    font-size: 10.5px;
+    padding: 4px 9px;
+  }
+
+  /* 6. 隱藏劇情抽屜 */
+  .storyline-legend-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .hidden-storylines-bar {
+    width: 100%;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 4px;
+  }
+  .storyline-trigger-btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .drawer-body {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  /* 7. 畫布視窗尺寸 - 16:9 比例 */
+  .pinboard-interactive-viewport {
+    aspect-ratio: 16 / 9;
+    height: auto;
+    min-height: 320px;
+  }
+  .canvas-floating-controls {
+    bottom: 10px;
+    right: 10px;
+    padding: 4px 8px;
+  }
+  .canvas-hint-pill .hint-text {
+    display: none; /* 手機版僅保留手勢圖標 */
+  }
+
+  /* 8. 時間線視圖 RWD (單側貼左中軸線) */
+  .timeline-stream-container::before {
+    left: 18px;
+  }
+  .timeline-item {
+    width: 100%;
+    left: 0 !important;
+    padding-left: 42px;
+    text-align: left !important;
+    margin-bottom: 24px;
+  }
+  .timeline-node-pin {
+    left: 11px !important;
+    width: 12px;
+    height: 12px;
+  }
+  .timeline-item.left .timeline-card,
+  .timeline-item.right .timeline-card {
+    flex-direction: row;
+    gap: 10px;
+    padding: 12px;
+  }
+  .timeline-item.left .tl-meta,
+  .timeline-item.right .tl-meta {
+    justify-content: flex-start;
+  }
+  .tl-thumb {
+    width: 60px;
+    height: 60px;
+  }
+  .tl-title {
+    font-size: 13px;
+  }
+  .tl-note {
+    font-size: 11px;
+  }
+
+  /* 9. 關聯推理網絡 RWD */
+  .lines-grid, .storylines-full-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* 10. Modal 檢視器手機版 RWD */
+  .clue-modal-dialog {
+    width: 95vw !important;
+    max-height: 92vh !important;
+    margin: 10px auto;
+  }
+  .modal-layout {
+    grid-template-columns: 1fr !important;
+    max-height: 85vh;
+    overflow-y: auto;
+  }
+  .modal-img-col {
+    max-height: 240px;
+  }
+  .modal-img-col img {
+    max-height: 220px;
+    object-fit: cover;
+  }
+  .modal-info-col {
+    padding: 14px;
+  }
+  .clue-headline {
+    font-size: 17px !important;
+  }
+
+  /* 11. 底部狀態列 */
+  .hud-footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 14px;
+    font-size: 10.5px;
+    text-align: center;
+  }
+}
+
+
